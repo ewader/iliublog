@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>manjaro on 图南博客</title>
+    <link>https://iliu.org/tags/manjaro/</link>
+    <description>Recent content in manjaro on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Apr 2023 09:47:27 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在manjaro中安装使用Rime并启用雾凇输入法</title>
+      <link>https://iliu.org/4367.html</link>
+      <pubDate>Sun, 23 Apr 2023 09:47:27 +0000</pubDate>
+      
+      <guid>https://iliu.org/4367.html</guid>
+      <description>前几天，在朋友的推荐下，使用了小狼毫rime输入法，不过那是在Windows11里使用的，装的另外一个系统是manjaro，偶尔想搞几下Py</description>
+    </item>
+    
+    <item>
+      <title>manjaro的gnome版本升级到43.1了</title>
+      <link>https://iliu.org/4295.html</link>
+      <pubDate>Wed, 16 Nov 2022 01:40:50 +0000</pubDate>
+      
+      <guid>https://iliu.org/4295.html</guid>
+      <description>都说使用manjaro最频繁使用的就是命令是 sudo pacman -Syyu 这不，照例这么运行了一下，提示有更新，好家伙下载了1g多，不过更新替换后，系统反而小了1m</description>
+    </item>
+    
+    <item>
+      <title>正式使用Manjaro系统</title>
+      <link>https://iliu.org/4036.html</link>
+      <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
+      
+      <guid>https://iliu.org/4036.html</guid>
+      <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
+    </item>
+    
+  </channel>
+</rss>

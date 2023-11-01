@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>zoundry raven on 图南博客</title>
+    <link>https://iliu.org/tags/zoundry-raven/</link>
+    <description>Recent content in zoundry raven on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 Jan 2010 13:50:01 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/zoundry-raven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小测三款博客离线编辑软件</title>
+      <link>https://iliu.org/500.html</link>
+      <pubDate>Sun, 24 Jan 2010 13:50:01 +0000</pubDate>
+      
+      <guid>https://iliu.org/500.html</guid>
+      <description>现在window下主要的离线博客主要有windows live write，zoundry raven以及国内一家公司开发的菊子曰。下面本人就对这三个软</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>人工智能 on 图南博客</title>
+    <link>https://iliu.org/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+    <description>Recent content in 人工智能 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Jun 2019 01:19:52 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大数据悖论及人工智能等</title>
+      <link>https://iliu.org/1705.html</link>
+      <pubDate>Tue, 11 Jun 2019 01:19:52 +0000</pubDate>
+      
+      <guid>https://iliu.org/1705.html</guid>
+      <description>前几天在kindle搜索《未来简史》，包月的书库里这本书没有，但是却有一本《新未来简史》，是讲区块链、大数据以及人工智能等方面的的书，作者是</description>
+    </item>
+    
+  </channel>
+</rss>

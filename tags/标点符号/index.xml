@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>标点符号 on 图南博客</title>
+    <link>https://iliu.org/tags/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7/</link>
+    <description>Recent content in 标点符号 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 12 Jul 2019 08:59:58 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>记一次因为标点符号导致重装服务器的经历</title>
+      <link>https://iliu.org/2257.html</link>
+      <pubDate>Fri, 12 Jul 2019 08:59:58 +0000</pubDate>
+      
+      <guid>https://iliu.org/2257.html</guid>
+      <description>前两天的时候，镜缘轩网站出了点问题，加上那个服务器被我折腾的乱七八糟的，所以就想重新弄一下生产环境。为了不影响网站的访问，就先暂时把网站解析</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>nginx使用CDN后获取用户真实IP的方法 | 图南博客</title>
+<meta name="keywords" content="cdn, Nginx, 真实ip">
+<meta name="description" content="老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/3486.html">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF1DN3F3NG"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VF1DN3F3NG', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="nginx使用CDN后获取用户真实IP的方法" />
+<meta property="og:description" content="老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://iliu.org/3486.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-12-21T07:15:11+00:00" />
+<meta property="article:modified_time" content="2020-12-21T07:15:11+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nginx使用CDN后获取用户真实IP的方法"/>
+<meta name="twitter:description" content="老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iliu.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "nginx使用CDN后获取用户真实IP的方法",
+      "item": "https://iliu.org/3486.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "nginx使用CDN后获取用户真实IP的方法",
+  "name": "nginx使用CDN后获取用户真实IP的方法",
+  "description": "老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的",
+  "keywords": [
+    "cdn", "Nginx", "真实ip"
+  ],
+  "articleBody": "老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的是centos8，可惜这个系统明年官方就不再支持了，所以，长痛不如短痛，早晚都要换系统，不如早换。于是先把博客也迁到了这个rn的空间里。顺便又给加了个CF的套，加上之后，加的时候是扫了几个本地延迟最低的IP，直接分联通、移动、电信把这几个ip分别解析了。经过这么几天的试用，老刘觉得加了CF的速度还算差强人意。准备一直用下去。\n但是加了CDN后，有一个问题，那就是不管日志里还是wordpress后台的评论里的IP都是cf的IP，无法获取用户的真实IP，这对管理网站有点麻烦，比如受到攻击或者想封一些发垃圾邮件IP的地址的时候，就没有办法。老刘记得以前看过这方面的文章。于是找了一下，把经过记录下来。\n阿帕奇老刘好久没有用过了，这里只说nginx的方面，从网上的教程来看，可以分成两种。老刘把两种方法的说说\n一、利用ngx_http_realip_module模块获取用户真实IP 由于老刘用的是oneinstack一键安装包，所以之说这个方法，lnmp一键安装包也可以用类似的方面来搞定。宝塔面板的话，就很简单，装那款免费的防火墙，里面就是cdn的设置，设置完了之后就OK了，不得不说还是可视化面板方便。好了，闲话少说，正式开始。\n首先通过nginx -V我们发现默认编译的nginx并不会安装ngx_http_realip_module模块，我们需要重新编译nginx使其载入这个功能模块。\n这里我们直接利用oneinstack的升级脚本来完成，这样做，一是很简单，二是一般不会出错，很适合初学者使用，第三，就是以后你升级nginx的话，也能一劳永逸。\n#增量添加参数到${nginx_configure_args}后面 vim /root/oneinstack/include/upgrade_web.sh #在${nginx_configure_args}后面增加--with-http_realip_module即可 #大致位于升级脚本的第57行 保存并退出，执行oneinstack的升级脚本/root/oneinstack/upgrade.sh进行nginx升级编译即可。\n最后执行nginx -V查看最终编译后的结果。\nNginx设置set_real_ip_from 编译好了ngx_http_realip_module，现在我们只需要在Nginx配置文件中添加set_real_ip_from代码到nginx.conf文件的http段落里面，老刘用的cf的，用期待的CDN类似，只有知道IP段可以了。示例如下：\nset_real_ip_from 103.21.244.0/22; set_real_ip_from 103.22.200.0/22; set_real_ip_from 103.31.4.0/22; set_real_ip_from 104.16.0.0/12; set_real_ip_from 108.162.192.0/18; set_real_ip_from 131.0.72.0/22; set_real_ip_from 141.101.64.0/18; set_real_ip_from 162.158.0.0/15; set_real_ip_from 172.64.0.0/13; set_real_ip_from 173.245.48.0/20; set_real_ip_from 188.114.96.0/20; set_real_ip_from 190.93.240.0/20; set_real_ip_from 197.234.240.0/22; set_real_ip_from 198.41.128.0/17; set_real_ip_from 199.27.128.0/21; set_real_ip_from 2400:cb00::/32; set_real_ip_from 2606:4700::/32; set_real_ip_from 2803:f800::/32; set_real_ip_from 2405:b500::/32; set_real_ip_from 2405:8100::/32; set_real_ip_from 2c0f:f248::/32; set_real_ip_from 2a06:98c0::/29; real_ip_header X-Forwarded-For; real_ip_recursive on; 配置完成后，使用nginx -t检查配置文件是否存在格式问题。如果没有报错执行service nginx reload重载nginx服务即可。\n然后访问网站，再次查看nginx日志，就可以正常获取到用户真实IP了。\n二、利用nginx的日期格式来达到目的 首先，将下面的代码添加到nginx.conf文件的http{后面让日志重置化：\n#自定义一个日志格式 log_format cdn '$http_x_forwarded_for - $remote_user [$time_local] ' '\"$request\" $status $body_bytes_sent ' '\"$http_referer\" \"$http_user_agent\"'; 然后，我们修改nginx站点原来的日志输出格式，修改access_log /home/wwwlogs/xxxx.log; 为access_log /home/wwwlogs/xxxx.log cdn;全部保存之后不要急着重启nginx，再次强调一个命令nginx -t，用于检查nginx配置文件是否存在错误。这是一个非常实用的命令，可以让你在业务运行的同时从起nginx服务，不至于造成业务中断或者业务停止。\n这个方法的有点是不需要编译nginx，设置完了之后也是一劳永逸。但是对于oneinstack一键安装包来说，因为它已经重置了日志的格式，所以就不适用了。\n小结 以上就是两种在使用CDN后可以获取用户真实IP的方法，可以根据自己的情况来使用。\n",
+  "wordCount" : "1580",
+  "inLanguage": "zh",
+  "datePublished": "2020-12-21T07:15:11Z",
+  "dateModified": "2020-12-21T07:15:11Z",
+  "author":{
+    "@type": "Person",
+    "name": "老刘"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iliu.org/3486.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "图南博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iliu.org/img/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/guidang" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="栏目">
+                    <span>栏目</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="tag">
+                    <span>tag</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/about" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/boyoupeijing" title="配镜">
+                    <span>配镜</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <h1 class="post-title">
+      nginx使用CDN后获取用户真实IP的方法
+    </h1>
+    <div class="post-meta"><span title='2020-12-21 07:15:11 +0000 +0000'>2020-12-21</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e4%b8%80%e5%88%a9%e7%94%a8ngx_http_realip_module%e6%a8%a1%e5%9d%97%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eip" aria-label="一、利用ngx_http_realip_module模块获取用户真实IP">一、利用ngx_http_realip_module模块获取用户真实IP</a><ul>
+                        
+                <li>
+                    <a href="#nginx%e8%ae%be%e7%bd%aeset_real_ip_from" aria-label="Nginx设置set_real_ip_from">Nginx设置set_real_ip_from</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e4%ba%8c%e5%88%a9%e7%94%a8nginx%e7%9a%84%e6%97%a5%e6%9c%9f%e6%a0%bc%e5%bc%8f%e6%9d%a5%e8%be%be%e5%88%b0%e7%9b%ae%e7%9a%84" aria-label="二、利用nginx的日期格式来达到目的">二、利用nginx的日期格式来达到目的</a></li>
+                <li>
+                    <a href="#%e5%b0%8f%e7%bb%93" aria-label="小结">小结</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的是centos8，可惜这个系统明年官方就不再支持了，所以，长痛不如短痛，早晚都要换系统，不如早换。于是先把博客也迁到了这个rn的空间里。顺便又给加了个CF的套，加上之后，加的时候是扫了几个本地延迟最低的IP，直接分联通、移动、电信把这几个ip分别解析了。经过这么几天的试用，老刘觉得加了CF的速度还算差强人意。准备一直用下去。</p>
+<p>但是加了CDN后，有一个问题，那就是不管日志里还是wordpress后台的评论里的IP都是cf的IP，无法获取用户的真实IP，这对管理网站有点麻烦，比如受到攻击或者想封一些发垃圾邮件IP的地址的时候，就没有办法。老刘记得以前看过这方面的文章。于是找了一下，把经过记录下来。</p>
+<p>阿帕奇老刘好久没有用过了，这里只说nginx的方面，从网上的教程来看，可以分成两种。老刘把两种方法的说说</p>
+<h2 class="wp-block-heading" id="一利用ngx_http_realip_module模块获取用户真实ip">一、利用ngx_http_realip_module模块获取用户真实IP</h2>
+<p>由于老刘用的是oneinstack一键安装包，所以之说这个方法，lnmp一键安装包也可以用类似的方面来搞定。宝塔面板的话，就很简单，装那款免费的防火墙，里面就是cdn的设置，设置完了之后就OK了，不得不说还是可视化面板方便。好了，闲话少说，正式开始。</p>
+<p>首先通过nginx -V我们发现默认编译的nginx并不会安装ngx_http_realip_module模块，我们需要重新编译nginx使其载入这个功能模块。</p>
+<p>这里我们直接利用oneinstack的升级脚本来完成，这样做，一是很简单，二是一般不会出错，很适合初学者使用，第三，就是以后你升级nginx的话，也能一劳永逸。</p>
+<pre class="wp-block-code"><code>#增量添加参数到${nginx_configure_args}后面
+vim /root/oneinstack/include/upgrade_web.sh
+#在${nginx_configure_args}后面增加--with-http_realip_module即可
+#大致位于升级脚本的第57行</code></pre><figure class="wp-block-image size-large">
+<p><a href="https://iliu.org/wp-content/uploads/2021/01/3c4e83f775536ad.jpg"><img decoding="async" loading="lazy" width="500" height="301" src="https://iliu.org/wp-content/uploads/2021/01/3c4e83f775536ad.jpg" alt="" class="wp-image-3593" srcset="https://iliu.org/wp-content/uploads/2021/01/3c4e83f775536ad.jpg 500w, https://iliu.org/wp-content/uploads/2021/01/3c4e83f775536ad-300x181.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></figure></p>
+<p>保存并退出，执行oneinstack的升级脚本/root/oneinstack/upgrade.sh进行nginx升级编译即可。</p>
+<p>最后执行nginx -V查看最终编译后的结果。<figure class="wp-block-image size-large"></p>
+<p><a href="https://iliu.org/wp-content/uploads/2020/12/43904aa51d7dce2.png"><img decoding="async" src="https://iliu.org/wp-content/uploads/2020/12/43904aa51d7dce2-1024x109.png" alt="" class="wp-image-3488" /></a></figure></p>
+<h3 class="wp-block-heading" id="nginx设置set_real_ip_from">Nginx设置set_real_ip_from</h3>
+<p>编译好了ngx_http_realip_module，现在我们只需要在Nginx配置文件中添加set_real_ip_from代码到nginx.conf文件的http段落里面，老刘用的cf的，用期待的CDN类似，只有知道IP段可以了。示例如下：</p>
+<pre class="wp-block-code"><code>set_real_ip_from 103.21.244.0/22;
+ set_real_ip_from 103.22.200.0/22;
+ set_real_ip_from 103.31.4.0/22;
+ set_real_ip_from 104.16.0.0/12;
+ set_real_ip_from 108.162.192.0/18;
+ set_real_ip_from 131.0.72.0/22;
+ set_real_ip_from 141.101.64.0/18;
+ set_real_ip_from 162.158.0.0/15;
+ set_real_ip_from 172.64.0.0/13;
+ set_real_ip_from 173.245.48.0/20;
+ set_real_ip_from 188.114.96.0/20;
+ set_real_ip_from 190.93.240.0/20;
+ set_real_ip_from 197.234.240.0/22;
+ set_real_ip_from 198.41.128.0/17;
+ set_real_ip_from 199.27.128.0/21;
+ set_real_ip_from 2400:cb00::/32;
+ set_real_ip_from 2606:4700::/32;
+ set_real_ip_from 2803:f800::/32;
+ set_real_ip_from 2405:b500::/32;
+ set_real_ip_from 2405:8100::/32;
+ set_real_ip_from 2c0f:f248::/32;
+ set_real_ip_from 2a06:98c0::/29;
+ real_ip_header  X-Forwarded-For;
+ real_ip_recursive on;</code></pre>
+<p>配置完成后，使用nginx -t检查配置文件是否存在格式问题。如果没有报错执行service nginx reload重载nginx服务即可。</p>
+<p>然后访问网站，再次查看nginx日志，就可以正常获取到用户真实IP了。</p>
+<h2 class="wp-block-heading" id="二利用nginx的日期格式来达到目的">二、利用nginx的日期格式来达到目的</h2>
+<p>首先，将下面的代码添加到nginx.conf文件的http{后面让日志重置化：</p>
+<pre class="wp-block-code"><code>#自定义一个日志格式
+log_format cdn '$http_x_forwarded_for - $remote_user &#91;$time_local] '
+                    '"$request" $status $body_bytes_sent '
+                    '"$http_referer" "$http_user_agent"';</code></pre>
+<p>然后，我们修改nginx站点原来的日志输出格式，修改access_log /home/wwwlogs/xxxx.log; 为access_log /home/wwwlogs/xxxx.log cdn;全部保存之后不要急着重启nginx，再次强调一个命令nginx -t，用于检查nginx配置文件是否存在错误。这是一个非常实用的命令，可以让你在业务运行的同时从起nginx服务，不至于造成业务中断或者业务停止。</p>
+<p>这个方法的有点是不需要编译nginx，设置完了之后也是一劳永逸。但是对于oneinstack一键安装包来说，因为它已经重置了日志的格式，所以就不适用了。</p>
+<h2 class="wp-block-heading" id="小结">小结</h2>
+<p>以上就是两种在使用CDN后可以获取用户真实IP的方法，可以根据自己的情况来使用。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://iliu.org/tags/cdn/">cdn</a></li>
+      <li><a href="https://iliu.org/tags/nginx/">Nginx</a></li>
+      <li><a href="https://iliu.org/tags/%E7%9C%9F%E5%AE%9Eip/">真实ip</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://iliu.org/3492.html">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>一叶莲还是寿终正寝了</span>
+  </a>
+  <a class="next" href="https://iliu.org/3474.html">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>为什么要换域名</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on twitter"
+        href="https://twitter.com/intent/tweet/?text=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95&amp;url=https%3a%2f%2filiu.org%2f3486.html&amp;hashtags=cdn%2cNginx%2c%e7%9c%9f%e5%ae%9eip">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2filiu.org%2f3486.html&amp;title=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95&amp;summary=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95&amp;source=https%3a%2f%2filiu.org%2f3486.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2filiu.org%2f3486.html&title=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2filiu.org%2f3486.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on whatsapp"
+        href="https://api.whatsapp.com/send?text=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95%20-%20https%3a%2f%2filiu.org%2f3486.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on telegram"
+        href="https://telegram.me/share/url?text=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95&amp;url=https%3a%2f%2filiu.org%2f3486.html">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share nginx使用CDN后获取用户真实IP的方法 on ycombinator"
+        href="https://news.ycombinator.com/submitlink?t=nginx%e4%bd%bf%e7%94%a8CDN%e5%90%8e%e8%8e%b7%e5%8f%96%e7%94%a8%e6%88%b7%e7%9c%9f%e5%ae%9eIP%e7%9a%84%e6%96%b9%e6%b3%95&u=https%3a%2f%2filiu.org%2f3486.html">
+        <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+            <path
+                d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

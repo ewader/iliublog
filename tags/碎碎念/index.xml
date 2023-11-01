@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>碎碎念 on 图南博客</title>
+    <link>https://iliu.org/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+    <description>Recent content in 碎碎念 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Aug 2022 12:33:43 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>陆续把一些基础服务转到nas上</title>
+      <link>https://iliu.org/4211.html</link>
+      <pubDate>Tue, 02 Aug 2022 12:33:43 +0000</pubDate>
+      
+      <guid>https://iliu.org/4211.html</guid>
+      <description>前几天RSS不太正常访问了，这个RSS服务一直建立在甲骨文的一个免费小鸡上面。一直也挺稳定的，貌似是容器还是什么出了点问题，就访问不了。而且</description>
+    </item>
+    
+  </channel>
+</rss>
