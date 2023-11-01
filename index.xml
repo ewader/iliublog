@@ -6,7 +6,16 @@
     <description>Recent content on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Oct 2023 00:24:17 +0000</lastBuildDate><atom:link href="https://iliu.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 00:24:17 +0000</lastBuildDate><atom:link href="https://iliu.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从WordPress转到Hugo</title>
+      <link>https://iliu.org/frome-wordpress-to-hugo/</link>
+      <pubDate>Wed, 01 Nov 2023 00:24:17 +0000</pubDate>
+      
+      <guid>https://iliu.org/frome-wordpress-to-hugo/</guid>
+      <description>在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能</description>
+    </item>
+    
     <item>
       <title>豆麦十宝粥</title>
       <link>https://iliu.org/4544.html</link>
@@ -2318,15 +2327,6 @@
       
       <guid>https://iliu.org/3264.html</guid>
       <description>昨天晚上给女儿辅导完作业，顺手拿起手机看看群里的信息什么的。忽然发现有一封新邮件。点开一看，发现是西部数码发过来的： 尊敬的用户： 您发布的一口</description>
-    </item>
-    
-    <item>
-      <title>My 1st post</title>
-      <link>https://iliu.org/posts/first/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://iliu.org/posts/first/</guid>
-      <description>Desc Text.</description>
     </item>
     
     <item>
@@ -7856,6 +7856,15 @@ Creative Commons是国际上一套通用的网络作品许可协议，它致力�
       
       <guid>https://iliu.org/308.html</guid>
       <description>实在是收不了啦，发现这个是个骗局，到今天狐狸终于露出的真面目，现在我就把我在这里的经历给大家说一说，免得其他朋友再次上当。 2008年12月接</description>
+    </item>
+    
+    <item>
+      <title>从WordPress转向Hugo</title>
+      <link>https://iliu.org/%E4%BB%8Ewordpress%E8%BD%AC%E5%90%91hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iliu.org/%E4%BB%8Ewordpress%E8%BD%AC%E5%90%91hugo/</guid>
+      <description>在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能</description>
     </item>
     
   </channel>
