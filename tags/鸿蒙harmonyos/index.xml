@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>鸿蒙HarmonyOS on 图南博客</title>
+    <link>https://iliu.org/tags/%E9%B8%BF%E8%92%99harmonyos/</link>
+    <description>Recent content in 鸿蒙HarmonyOS on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Jun 2021 07:49:01 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E9%B8%BF%E8%92%99harmonyos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>体验鸿蒙HarmonyOS</title>
+      <link>https://iliu.org/3794.html</link>
+      <pubDate>Wed, 30 Jun 2021 07:49:01 +0000</pubDate>
+      
+      <guid>https://iliu.org/3794.html</guid>
+      <description>最早的时候，应该是看到了响石潭主任发的升级鸿蒙HarmonyOS的文章。并且响石潭也说，使用起来和原来的系统没有什么区别，就是更流畅了一些。</description>
+    </item>
+    
+  </channel>
+</rss>

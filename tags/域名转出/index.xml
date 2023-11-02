@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>域名转出 on 图南博客</title>
+    <link>https://iliu.org/tags/%E5%9F%9F%E5%90%8D%E8%BD%AC%E5%87%BA/</link>
+    <description>Recent content in 域名转出 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 03 Jan 2021 08:33:54 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%9F%9F%E5%90%8D%E8%BD%AC%E5%87%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>把域名从阿里云转出到name.com的方法</title>
+      <link>https://iliu.org/3545.html</link>
+      <pubDate>Sun, 03 Jan 2021 08:33:54 +0000</pubDate>
+      
+      <guid>https://iliu.org/3545.html</guid>
+      <description>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。 首先，登录阿里云的后</description>
+    </item>
+    
+  </channel>
+</rss>

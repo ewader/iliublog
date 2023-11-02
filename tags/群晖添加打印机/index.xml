@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>群晖添加打印机 on 图南博客</title>
+    <link>https://iliu.org/tags/%E7%BE%A4%E6%99%96%E6%B7%BB%E5%8A%A0%E6%89%93%E5%8D%B0%E6%9C%BA/</link>
+    <description>Recent content in 群晖添加打印机 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 12 Jan 2020 03:05:02 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BE%A4%E6%99%96%E6%B7%BB%E5%8A%A0%E6%89%93%E5%8D%B0%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用群晖，配置打印机，实现无线打印机的功能</title>
+      <link>https://iliu.org/3005.html</link>
+      <pubDate>Sun, 12 Jan 2020 03:05:02 +0000</pubDate>
+      
+      <guid>https://iliu.org/3005.html</guid>
+      <description>换成荣耀的这台笔记本之后，由于接口比较少，再加上一个笔记本插上usb数据线连上打印机，也不够方便，因为有时候笔记本还要拿回家用用。恰好再群晖</description>
+    </item>
+    
+  </channel>
+</rss>

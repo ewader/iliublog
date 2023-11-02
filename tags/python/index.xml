@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on 图南博客</title>
+    <link>https://iliu.org/tags/python/</link>
+    <description>Recent content in python on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Jan 2022 09:34:09 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django部署在debian11服务器</title>
+      <link>https://iliu.org/4029.html</link>
+      <pubDate>Fri, 14 Jan 2022 09:34:09 +0000</pubDate>
+      
+      <guid>https://iliu.org/4029.html</guid>
+      <description>Python加Django开发网页程序真的很方便，连我这个菜鸟看看教程之类的也能写出来程序。本地测试完了之后，想在服务器上跑跑看，结果发现，</description>
+    </item>
+    
+    <item>
+      <title>python开发web程序，最好还是在Linux下</title>
+      <link>https://iliu.org/3947.html</link>
+      <pubDate>Tue, 14 Dec 2021 12:57:17 +0000</pubDate>
+      
+      <guid>https://iliu.org/3947.html</guid>
+      <description>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。</description>
+    </item>
+    
+    <item>
+      <title>用input和字典初步实现我的一点小想法</title>
+      <link>https://iliu.org/3929.html</link>
+      <pubDate>Sat, 30 Oct 2021 04:28:51 +0000</pubDate>
+      
+      <guid>https://iliu.org/3929.html</guid>
+      <description>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。 通过上面8</description>
+    </item>
+    
+  </channel>
+</rss>

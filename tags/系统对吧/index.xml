@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>系统对吧 on 图南博客</title>
+    <link>https://iliu.org/tags/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%90%A7/</link>
+    <description>Recent content in 系统对吧 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Oct 2021 01:18:46 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%90%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>几种Linux系统安装之后的体验</title>
+      <link>https://iliu.org/3925.html</link>
+      <pubDate>Mon, 25 Oct 2021 01:18:46 +0000</pubDate>
+      
+      <guid>https://iliu.org/3925.html</guid>
+      <description>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，</description>
+    </item>
+    
+  </channel>
+</rss>

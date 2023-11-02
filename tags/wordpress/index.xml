@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>wordpress on 图南博客</title>
+    <link>https://iliu.org/tags/wordpress/</link>
+    <description>Recent content in wordpress on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客web端改用apache</title>
+      <link>https://iliu.org/3520.html</link>
+      <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
+      
+      <guid>https://iliu.org/3520.html</guid>
+      <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
+    </item>
+    
+    <item>
+      <title>给7b2的主题加上评论回复功能</title>
+      <link>https://iliu.org/2552.html</link>
+      <pubDate>Thu, 25 Jul 2019 00:54:22 +0000</pubDate>
+      
+      <guid>https://iliu.org/2552.html</guid>
+      <description>7b2主题默认是不会给评论者回复邮件的。也曾经问过作者，作者说如果实现这个的话，没几天邮箱就被封掉了，可能作者有作者的理由吧，但是不加的话，</description>
+    </item>
+    
+    <item>
+      <title>wordpress自动升级到5.2.2</title>
+      <link>https://iliu.org/1787.html</link>
+      <pubDate>Wed, 19 Jun 2019 02:15:39 +0000</pubDate>
+      
+      <guid>https://iliu.org/1787.html</guid>
+      <description>今天打开邮箱，发现系统发的邮件。 嗨！您位于 https://iliu.org 的站点已被成功升级到WordPress 5.2.2。 您不需要再做什么。 要获取更多关于5.2.2版本</description>
+    </item>
+    
+    <item>
+      <title>7b2主题添加百度是否收录及禁止非管理员访问后台</title>
+      <link>https://iliu.org/1636.html</link>
+      <pubDate>Sat, 25 May 2019 07:00:29 +0000</pubDate>
+      
+      <guid>https://iliu.org/1636.html</guid>
+      <description>原来使用的是知更鸟的begin主题，和7b2的主题可以说是侧重点不同，不可否认的是7b2主题 在展示网页的方面和begin有一定的差距，比如b</description>
+    </item>
+    
+    <item>
+      <title>只需三步，让你的wordpress在godaddy免费空间上完美呈现</title>
+      <link>https://iliu.org/950.html</link>
+      <pubDate>Thu, 28 Oct 2010 06:03:38 +0000</pubDate>
+      
+      <guid>https://iliu.org/950.html</guid>
+      <description>以前本站有一篇文章，说是解决godaddy免费空间广告条对wordpress后台的影响，当时是采用第三方软件来实现的，但是到底有没有一种方法</description>
+    </item>
+    
+    <item>
+      <title>解决godaddy免费空间广告带来影响的方法</title>
+      <link>https://iliu.org/476.html</link>
+      <pubDate>Tue, 19 Jan 2010 01:39:32 +0000</pubDate>
+      
+      <guid>https://iliu.org/476.html</guid>
+      <description>众所周知，godaddy免费空间带有一个很大的广告条，有广告也就罢了，不厚道的是通过增加的广告代码，使得很多源代码发生了错误，这是因为它的广</description>
+    </item>
+    
+    <item>
+      <title>wordpress中文tag、中文分类找不到文章的解决方法</title>
+      <link>https://iliu.org/407.html</link>
+      <pubDate>Sat, 09 Jan 2010 02:19:28 +0000</pubDate>
+      
+      <guid>https://iliu.org/407.html</guid>
+      <description>原来用的linux的主机，在设定固定连接后不存在中文tag、中文分类找不到文章，但自从换了godaddy的windows主机以后，由于iis</description>
+    </item>
+    
+    <item>
+      <title>完美解决godaddy免费空间广告条对wordpress后台的影响</title>
+      <link>https://iliu.org/388.html</link>
+      <pubDate>Sun, 03 Jan 2010 13:09:22 +0000</pubDate>
+      
+      <guid>https://iliu.org/388.html</guid>
+      <description>自从从godaddy搞了域名之后，一直对它提供的免费空间耿耿于怀，用也不是，不用又觉得可惜，难怪网上都说此空间是一个鸡肋。很多童鞋都把此空间</description>
+    </item>
+    
+    <item>
+      <title>提供WordPress 主题 Marcelle的汉化版本</title>
+      <link>https://iliu.org/304.html</link>
+      <pubDate>Sat, 26 Dec 2009 08:05:16 +0000</pubDate>
+      
+      <guid>https://iliu.org/304.html</guid>
+      <description>昨天发掘出 Marcelle这个主题，很快为他的那种简约而清爽的界面而吸引，打算使用这个主题，简单的汉化以后，觉得还不错，不过今天就又发现了个</description>
+    </item>
+    
+    <item>
+      <title>如何增加WordPress上传文件类型</title>
+      <link>https://iliu.org/196.html</link>
+      <pubDate>Thu, 17 Dec 2009 02:20:09 +0000</pubDate>
+      
+      <guid>https://iliu.org/196.html</guid>
+      <description>WordPress默认的上传文件类型只有图片、视频、音频、其他媒体。但是如果我们想分享一些其他的文件比如文档等怎么办呢？其实Wordpres</description>
+    </item>
+    
+  </channel>
+</rss>

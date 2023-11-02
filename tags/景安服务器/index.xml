@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>景安服务器 on 图南博客</title>
+    <link>https://iliu.org/tags/%E6%99%AF%E5%AE%89%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in 景安服务器 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 07 Sep 2019 03:35:21 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E6%99%AF%E5%AE%89%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>再说说景安的服务</title>
+      <link>https://iliu.org/2697.html</link>
+      <pubDate>Sat, 07 Sep 2019 03:35:21 +0000</pubDate>
+      
+      <guid>https://iliu.org/2697.html</guid>
+      <description>自从上次看到景安欠薪的消息以后，虽然觉得很惋惜，但是也没有太放在心上，毕竟作为河南最大的IDC，还是再新三板上市的企业，不可能马上就挂的，况</description>
+    </item>
+    
+    <item>
+      <title>景安服务器（vps)挂载数据盘</title>
+      <link>https://iliu.org/2585.html</link>
+      <pubDate>Sun, 04 Aug 2019 09:37:21 +0000</pubDate>
+      
+      <guid>https://iliu.org/2585.html</guid>
+      <description>以前没有注意，后来在做快照的时候发现服务器还有个数据盘的快照，和系统盘是分开的。查了一下，数据盘是送的一块专门用来放数据的另一个盘，就象我们</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2022年黑五 on 图南博客</title>
+    <link>https://iliu.org/tags/2022%E5%B9%B4%E9%BB%91%E4%BA%94/</link>
+    <description>Recent content in 2022年黑五 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 15 Nov 2022 07:47:39 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/2022%E5%B9%B4%E9%BB%91%E4%BA%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RackNerd的2022年黑五活动</title>
+      <link>https://iliu.org/4292.html</link>
+      <pubDate>Tue, 15 Nov 2022 07:47:39 +0000</pubDate>
+      
+      <guid>https://iliu.org/4292.html</guid>
+      <description>今年各大IDC的活动都不如往年，RackNerd也不例外，作为活动狂魔，双11活动刚结束，这不，又来了黑五的活动。 768 MB KVM VPS 1 vCPU Core 10 GB Pure SSD Storage 768</description>
+    </item>
+    
+  </channel>
+</rss>
