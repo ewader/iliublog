@@ -109,8 +109,8 @@ if (!doNotTrack) {
   "keywords": [
     "Docker", "思源笔记", "群晖"
   ],
-  "articleBody": "最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。\n事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！\n成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。\n经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。\n第一，在运行命令那处填写：​ -workspace /siyuan/workspace/ 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置.wp-block-heading} /Home/siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。\n这样就可以运行起来了。\n",
-  "wordCount" : "557",
+  "articleBody": "最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。\n事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！\n成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。\n经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。\n第一，在运行命令那处填写：​ -workspace /siyuan/workspace/ 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} /Home/siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。\n这样就可以运行起来了。\n",
+  "wordCount" : "540",
   "inLanguage": "zh",
   "datePublished": "2023-07-01T05:08:24Z",
   "dateModified": "2023-07-01T05:08:24Z",
@@ -235,14 +235,14 @@ if (!doNotTrack) {
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#%e4%ba%8b%e6%83%85%e7%9a%84%e8%b5%b7%e5%9b%a0.wp-block-heading" aria-label="事情的起因">事情的起因</a></li>
+                    <a href="#%e4%ba%8b%e6%83%85%e7%9a%84%e8%b5%b7%e5%9b%a0" aria-label="事情的起因">事情的起因</a></li>
                 <li>
-                    <a href="#%e6%88%90%e5%8a%9f%e9%83%a8%e7%bd%b2%e7%9a%84%e6%96%b9%e6%b3%95.wp-block-heading" aria-label="成功部署的方法">成功部署的方法</a><ul>
+                    <a href="#%e6%88%90%e5%8a%9f%e9%83%a8%e7%bd%b2%e7%9a%84%e6%96%b9%e6%b3%95" aria-label="成功部署的方法">成功部署的方法</a><ul>
                         
                 <li>
-                    <a href="#%e7%ac%ac%e4%b8%80-%e5%9c%a8%e8%bf%90%e8%a1%8c%e5%91%bd%e4%bb%a4%e9%82%a3%e5%a4%84%e5%a1%ab%e5%86%99--.wp-block-heading" aria-label="第一，在运行命令那处填写：​"><s>第一，在运行命令那处填写：</s>​</a></li>
+                    <a href="#%e7%ac%ac%e4%b8%80-%e5%9c%a8%e8%bf%90%e8%a1%8c%e5%91%bd%e4%bb%a4%e9%82%a3%e5%a4%84%e5%a1%ab%e5%86%99--" aria-label="第一，在运行命令那处填写：​"><s>第一，在运行命令那处填写：</s>​</a></li>
                 <li>
-                    <a href="#%e7%ac%ac%e4%ba%8c%e5%82%a8%e5%ad%98%e7%a9%ba%e9%97%b4%e8%ae%be%e7%bd%ae-%e7%ac%ac%e4%ba%8c%e5%82%a8%e5%ad%98%e7%a9%ba%e9%97%b4%e8%ae%be%e7%bd%aewp-block-headingfigure-classwp-block-image" aria-label="第二，储存空间设置 {#第二储存空间设置.wp-block-heading}">第二，储存空间设置 {#第二储存空间设置.wp-block-heading}<figure class="wp-block-image"></a>
+                    <a href="#%e7%ac%ac%e4%ba%8c%e5%82%a8%e5%ad%98%e7%a9%ba%e9%97%b4%e8%ae%be%e7%bd%ae-%e7%ac%ac%e4%ba%8c%e5%82%a8%e5%ad%98%e7%a9%ba%e9%97%b4%e8%ae%be%e7%bd%aefigure-classwp-block-image" aria-label="第二，储存空间设置 {#第二储存空间设置}">第二，储存空间设置 {#第二储存空间设置}<figure class="wp-block-image"></a>
                 </li>
             </ul>
             </li>
@@ -252,18 +252,18 @@ if (!doNotTrack) {
 </div>
 
   <div class="post-content"><p>最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。</p>
-<h2 id="事情的起因.wp-block-heading">事情的起因<a hidden class="anchor" aria-hidden="true" href="#事情的起因.wp-block-heading">#</a></h2>
+<h2 id="事情的起因">事情的起因<a hidden class="anchor" aria-hidden="true" href="#事情的起因">#</a></h2>
 <p>思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！</p>
-<h2 id="成功部署的方法.wp-block-heading">成功部署的方法<a hidden class="anchor" aria-hidden="true" href="#成功部署的方法.wp-block-heading">#</a></h2>
+<h2 id="成功部署的方法">成功部署的方法<a hidden class="anchor" aria-hidden="true" href="#成功部署的方法">#</a></h2>
 <p>关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。</p>
 <p>经过博友@<a href="https://laomai.org">老麦</a>的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。</p>
-<h3 id="第一-在运行命令那处填写--.wp-block-heading"><s>第一，在运行命令那处填写：</s>​<a hidden class="anchor" aria-hidden="true" href="#第一-在运行命令那处填写--.wp-block-heading">#</a></h3>
+<h3 id="第一-在运行命令那处填写--"><s>第一，在运行命令那处填写：</s>​<a hidden class="anchor" aria-hidden="true" href="#第一-在运行命令那处填写--">#</a></h3>
 <pre class="wp-block-code"><code> &lt;s>-workspace /siyuan/workspace/&lt;/s>
 </code></pre>
 <p id="20230705161659-s98znc4">
   <s>经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​</s>
 </p>
-<h3 id="第二储存空间设置-第二储存空间设置wp-block-headingfigure-classwp-block-image">第二，储存空间设置 {#第二储存空间设置.wp-block-heading}<figure class="wp-block-image"><a hidden class="anchor" aria-hidden="true" href="#第二储存空间设置-第二储存空间设置wp-block-headingfigure-classwp-block-image">#</a></h3>
+<h3 id="第二储存空间设置-第二储存空间设置figure-classwp-block-image">第二，储存空间设置 {#第二储存空间设置}<figure class="wp-block-image"><a hidden class="anchor" aria-hidden="true" href="#第二储存空间设置-第二储存空间设置figure-classwp-block-image">#</a></h3>
 <p><img decoding="async" src="https://cdn.staticaly.com/gh/ewader/img@master/20230701/xxx.6lnukqsan6c0.webp" alt="" /> </figure></p>
 <div class="joplin-editable">
   <pre class="hljs"><code>&lt;span class="hljs-regexp">/Home/&lt;/span>siyuan</code></pre>

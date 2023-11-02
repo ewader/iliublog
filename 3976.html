@@ -249,9 +249,9 @@ if (!doNotTrack) {
   <div class="post-content"><p>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。</p>
 <p>ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。<figure class="wp-block-image size-full"></p>
 <p><img decoding="async" loading="lazy" width="610" height="756" src="https://iliu.org/wp-content/uploads/2021/12/60de06b8adb7048.png" alt="" class="wp-image-3977" /> <figcaption>如上图，ibus-libpinyin已经有了云输入，非常的方便</figcaption></figure></p>
-<h2 class="wp-block-heading" id="首先下载ibus-libpinyin输入法源码">首先，下载ibus-libpinyin输入法源码</h2>
+<h2 id="首先下载ibus-libpinyin输入法源码">首先，下载ibus-libpinyin输入法源码<a hidden class="anchor" aria-hidden="true" href="#首先下载ibus-libpinyin输入法源码">#</a></h2>
 <p>源码地址是：<a href="https://github.com/libpinyin/ibus-libpinyin">https://github.com/libpinyin/ibus-libpinyin</a></p>
-<h2 class="wp-block-heading" id="第二步安装编译环境">第二步，安装编译环境</h2>
+<h2 id="第二步安装编译环境">第二步，安装编译环境<a hidden class="anchor" aria-hidden="true" href="#第二步安装编译环境">#</a></h2>
 <pre class="wp-block-code"><code>sudo apt install libibus-1.0-dev
 sudo apt install sqlite3
 sudo apt install libsqlite3-dev
@@ -261,7 +261,7 @@ sudo apt install libjson-glib-dev
 sudo apt install libsoup2.4-dev
 sudo apt install gnome-common checkinstall
 </code></pre>
-<h2 class="wp-block-heading" id="第三步编译输入法">第三步，编译输入法</h2>
+<h2 id="第三步编译输入法">第三步，编译输入法<a hidden class="anchor" aria-hidden="true" href="#第三步编译输入法">#</a></h2>
 <pre class="wp-block-code"><code>./autogen.sh --prefix=/usr/  --enable-cloud-input-mode
 make
 sudo make install</code></pre>

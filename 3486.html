@@ -253,7 +253,7 @@ if (!doNotTrack) {
   <div class="post-content"><p>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的是centos8，可惜这个系统明年官方就不再支持了，所以，长痛不如短痛，早晚都要换系统，不如早换。于是先把博客也迁到了这个rn的空间里。顺便又给加了个CF的套，加上之后，加的时候是扫了几个本地延迟最低的IP，直接分联通、移动、电信把这几个ip分别解析了。经过这么几天的试用，老刘觉得加了CF的速度还算差强人意。准备一直用下去。</p>
 <p>但是加了CDN后，有一个问题，那就是不管日志里还是wordpress后台的评论里的IP都是cf的IP，无法获取用户的真实IP，这对管理网站有点麻烦，比如受到攻击或者想封一些发垃圾邮件IP的地址的时候，就没有办法。老刘记得以前看过这方面的文章。于是找了一下，把经过记录下来。</p>
 <p>阿帕奇老刘好久没有用过了，这里只说nginx的方面，从网上的教程来看，可以分成两种。老刘把两种方法的说说</p>
-<h2 class="wp-block-heading" id="一利用ngx_http_realip_module模块获取用户真实ip">一、利用ngx_http_realip_module模块获取用户真实IP</h2>
+<h2 id="一利用ngx_http_realip_module模块获取用户真实ip">一、利用ngx_http_realip_module模块获取用户真实IP<a hidden class="anchor" aria-hidden="true" href="#一利用ngx_http_realip_module模块获取用户真实ip">#</a></h2>
 <p>由于老刘用的是oneinstack一键安装包，所以之说这个方法，lnmp一键安装包也可以用类似的方面来搞定。宝塔面板的话，就很简单，装那款免费的防火墙，里面就是cdn的设置，设置完了之后就OK了，不得不说还是可视化面板方便。好了，闲话少说，正式开始。</p>
 <p>首先通过nginx -V我们发现默认编译的nginx并不会安装ngx_http_realip_module模块，我们需要重新编译nginx使其载入这个功能模块。</p>
 <p>这里我们直接利用oneinstack的升级脚本来完成，这样做，一是很简单，二是一般不会出错，很适合初学者使用，第三，就是以后你升级nginx的话，也能一劳永逸。</p>
@@ -265,7 +265,7 @@ vim /root/oneinstack/include/upgrade_web.sh
 <p>保存并退出，执行oneinstack的升级脚本/root/oneinstack/upgrade.sh进行nginx升级编译即可。</p>
 <p>最后执行nginx -V查看最终编译后的结果。<figure class="wp-block-image size-large"></p>
 <p><a href="https://iliu.org/wp-content/uploads/2020/12/43904aa51d7dce2.png"><img decoding="async" src="https://iliu.org/wp-content/uploads/2020/12/43904aa51d7dce2-1024x109.png" alt="" class="wp-image-3488" /></a></figure></p>
-<h3 class="wp-block-heading" id="nginx设置set_real_ip_from">Nginx设置set_real_ip_from</h3>
+<h3 id="nginx设置set_real_ip_from">Nginx设置set_real_ip_from<a hidden class="anchor" aria-hidden="true" href="#nginx设置set_real_ip_from">#</a></h3>
 <p>编译好了ngx_http_realip_module，现在我们只需要在Nginx配置文件中添加set_real_ip_from代码到nginx.conf文件的http段落里面，老刘用的cf的，用期待的CDN类似，只有知道IP段可以了。示例如下：</p>
 <pre class="wp-block-code"><code>set_real_ip_from 103.21.244.0/22;
  set_real_ip_from 103.22.200.0/22;
@@ -293,7 +293,7 @@ vim /root/oneinstack/include/upgrade_web.sh
  real_ip_recursive on;</code></pre>
 <p>配置完成后，使用nginx -t检查配置文件是否存在格式问题。如果没有报错执行service nginx reload重载nginx服务即可。</p>
 <p>然后访问网站，再次查看nginx日志，就可以正常获取到用户真实IP了。</p>
-<h2 class="wp-block-heading" id="二利用nginx的日期格式来达到目的">二、利用nginx的日期格式来达到目的</h2>
+<h2 id="二利用nginx的日期格式来达到目的">二、利用nginx的日期格式来达到目的<a hidden class="anchor" aria-hidden="true" href="#二利用nginx的日期格式来达到目的">#</a></h2>
 <p>首先，将下面的代码添加到nginx.conf文件的http{后面让日志重置化：</p>
 <pre class="wp-block-code"><code>#自定义一个日志格式
 log_format cdn '$http_x_forwarded_for - $remote_user &#91;$time_local] '
@@ -301,7 +301,7 @@ log_format cdn '$http_x_forwarded_for - $remote_user &#91;$time_local] '
                     '"$http_referer" "$http_user_agent"';</code></pre>
 <p>然后，我们修改nginx站点原来的日志输出格式，修改access_log /home/wwwlogs/xxxx.log; 为access_log /home/wwwlogs/xxxx.log cdn;全部保存之后不要急着重启nginx，再次强调一个命令nginx -t，用于检查nginx配置文件是否存在错误。这是一个非常实用的命令，可以让你在业务运行的同时从起nginx服务，不至于造成业务中断或者业务停止。</p>
 <p>这个方法的有点是不需要编译nginx，设置完了之后也是一劳永逸。但是对于oneinstack一键安装包来说，因为它已经重置了日志的格式，所以就不适用了。</p>
-<h2 class="wp-block-heading" id="小结">小结</h2>
+<h2 id="小结">小结<a hidden class="anchor" aria-hidden="true" href="#小结">#</a></h2>
 <p>以上就是两种在使用CDN后可以获取用户真实IP的方法，可以根据自己的情况来使用。</p>
 
 

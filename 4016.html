@@ -251,7 +251,7 @@ if (!doNotTrack) {
   <div class="post-content"><p>网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。<figure class="wp-block-image size-full"></p>
 <p><img decoding="async" loading="lazy" width="1920" height="1080" src="https://iliu.org/wp-content/uploads/2022/01/c6945447f0fce29.jpeg" alt="" class="wp-image-4017" srcset="https://iliu.org/wp-content/uploads/2022/01/c6945447f0fce29.jpeg 1920w, https://iliu.org/wp-content/uploads/2022/01/c6945447f0fce29-768x432.jpeg 768w, https://iliu.org/wp-content/uploads/2022/01/c6945447f0fce29-1536x864.jpeg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" /> </figure></p>
 <p>kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。</p>
-<h2 class="wp-block-heading" id="以下是安装流程">以下是安装流程</h2>
+<h2 id="以下是安装流程">以下是安装流程<a hidden class="anchor" aria-hidden="true" href="#以下是安装流程">#</a></h2>
 <pre class="wp-block-code"><code>sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk
 #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块
 sudo nano  /etc/environment
@@ -263,15 +263,15 @@ SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
 </code></pre>
 <p>然后注销一下系统，输入法的图标就已经出来了。</p>
-<h2 class="wp-block-heading" id="然后安装词库">然后安装词库</h2>
+<h2 id="然后安装词库">然后安装词库<a hidden class="anchor" aria-hidden="true" href="#然后安装词库">#</a></h2>
 <pre class="wp-block-code"><code>sudo pacman -S fcitx5-pinyin-zhwiki
 #安装中文维基百科词库
 sudo pacman -S fcitx5-pinyin-moegirl
 #安装二刺螈萌娘百科词库 
 </code></pre>
-<h2 class="wp-block-heading" id="一点坑">一点坑</h2>
+<h2 id="一点坑">一点坑<a hidden class="anchor" aria-hidden="true" href="#一点坑">#</a></h2>
 <p>安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。</p>
-<h2 class="wp-block-heading" id="最后说一下">最后说一下</h2>
+<h2 id="最后说一下">最后说一下<a hidden class="anchor" aria-hidden="true" href="#最后说一下">#</a></h2>
 <p>这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。</p>
 
 

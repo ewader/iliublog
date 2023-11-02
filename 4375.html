@@ -248,13 +248,13 @@ if (!doNotTrack) {
 
   <div class="post-content"><p>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。</p>
 <p>无论你是使用<a href="https://iliu.org/3997.html">ddns</a>，或者<a href="https://iliu.org/2918.html">frp</a>、<a href="https://iliu.org/3356.html">zerotier</a>内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。</p>
-<h2 class="wp-block-heading" id="安全性设置">安全性设置</h2>
+<h2 id="安全性设置">安全性设置<a hidden class="anchor" aria-hidden="true" href="#安全性设置">#</a></h2>
 <p>如下图，该选择打勾的都给他打上。<figure class="wp-block-image"></p>
 <p><img decoding="async" src="https://cdn.staticaly.com/gh/ewader/img@master/20230515/xxx.280z3g2nkeas.webp" alt="xxx" /> </figure></p>
-<h2 class="wp-block-heading" id="账户的安全性设置">账户的安全性设置</h2>
+<h2 id="账户的安全性设置">账户的安全性设置<a hidden class="anchor" aria-hidden="true" href="#账户的安全性设置">#</a></h2>
 <p>建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。<figure class="wp-block-image"></p>
 <p><img decoding="async" src="https://cdn.staticaly.com/gh/ewader/img@master/20230515/xxx.6gfe0eb5w8g0.webp" alt="xxx" /> </figure></p>
-<h2 class="wp-block-heading" id="群晖防火墙的设置">群晖防火墙的设置</h2>
+<h2 id="群晖防火墙的设置">群晖防火墙的设置<a hidden class="anchor" aria-hidden="true" href="#群晖防火墙的设置">#</a></h2>
 <p>开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。<figure class="wp-block-image"></p>
 <p><img decoding="async" src="https://cdn.staticaly.com/gh/ewader/img@master/20230515/xxx.13k03whzr0u8.webp" alt="xxx" /> </figure></p>
 <p>开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。</p>

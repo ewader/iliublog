@@ -265,11 +265,11 @@ if (!doNotTrack) {
 <p>这里，我们只需要在通用设置这里进行设置就可以了，其他的可以不用设置，不影响使用。端口号之类的可以改也可以不改，主要的是设置验证密钥，设置成你自己的。</p>
 <p>设置完这个之后，一定要在宝塔面板——安全选项里，把你设置的这些端口号放行。不然是用不了的。</p>
 <p>至此，frp服务器端已经设置完毕。下面我们来设置客户端，由于我们是要远程控制群晖，所以这里就以群晖为例。</p>
-<h3 class="wp-block-heading" id="设置域名解析">设置域名解析</h3>
+<h3 id="设置域名解析">设置域名解析<a hidden class="anchor" aria-hidden="true" href="#设置域名解析">#</a></h3>
 <p>登录你的域名服务商<br>
 域名解析<br>
 设置域名解析到frp服务器地址</p>
-<h3 class="wp-block-heading" id="安装frpc文件">安装frpc文件</h3>
+<h3 id="安装frpc文件">安装frpc文件<a hidden class="anchor" aria-hidden="true" href="#安装frpc文件">#</a></h3>
 <p>开启群晖SSH功能<br>
 控制面板-终端机和SNMP<br>
 启动SSH功能-应用<figure class="wp-block-image size-large"></p>
@@ -279,7 +279,7 @@ if (!doNotTrack) {
 <p>进入安装目录(本文以/usr/local/为例) cd /usr/local/</p>
 <p>因为我们服务器端用的是最新30版的，所以我们也要下载最新版本的。可以到如下的网址查询最新版本：</p>
 <p><a href="https://github.com/fatedier/frp/releases/">https://github.com/fatedier/frp/releases/</a></p>
-<h3 class="wp-block-heading" id="配置frpc">配置frpc</h3>
+<h3 id="配置frpc">配置frpc<a hidden class="anchor" aria-hidden="true" href="#配置frpc">#</a></h3>
 <pre>编辑frpc.ini文件<br />cd /usr/local/frpc<br />vi frpc.ini</pre>
 <pre>[common] server_addr = x.x.x.x<br /><br /> server_port = 7000<br /><br /> token = 你在宝塔里设置的 <br /><br />[rdp] type = tcp <br /><br />local_ip = 127.0.0.1 <br /><br />local_port = 3389 <br /><br />remote_port = 7001<br /><br /> [smb] type = tcp <br /><br />local_ip = 127.0.0.1<br /><br /> local_port = 445 <br /><br />remote_port = 7002</pre>
 <ul>
@@ -289,10 +289,10 @@ if (!doNotTrack) {
 </ul>
 <p>ESC退出编辑<br>
 输入:wq回车即可保存</p>
-<h3 class="wp-block-heading" id="启动frpc">启动frpc</h3>
+<h3 id="启动frpc">启动frpc<a hidden class="anchor" aria-hidden="true" href="#启动frpc">#</a></h3>
 <p>启动frpc命令： ./frpc -c ./frpc.ini</p>
 <p>保持后台运行frpc命令 ： nohup ./frpc -c ./frpc.ini &amp;</p>
-<h2 class="wp-block-heading" id="设置群晖nas重启开机自动运行frpc">设置群晖NAS重启开机自动运行frpc</h2>
+<h2 id="设置群晖nas重启开机自动运行frpc">设置群晖NAS重启开机自动运行frpc<a hidden class="anchor" aria-hidden="true" href="#设置群晖nas重启开机自动运行frpc">#</a></h2>
 <p>控制面板——任务计划<figure class="wp-block-image size-large"></p>
 <p><img decoding="async" loading="lazy" width="1024" height="649" src="https://iliu.org/wp-content/uploads/2019/12/280926576-1024x649.jpg" alt="" class="wp-image-2922" srcset="https://iliu.org/wp-content/uploads/2019/12/280926576-1024x649.jpg 1024w, https://iliu.org/wp-content/uploads/2019/12/280926576-300x190.jpg 300w, https://iliu.org/wp-content/uploads/2019/12/280926576-768x487.jpg 768w, https://iliu.org/wp-content/uploads/2019/12/280926576-1536x974.jpg 1536w, https://iliu.org/wp-content/uploads/2019/12/280926576-2048x1298.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure></p>
 <p>新增<br>
