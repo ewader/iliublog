@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>群晖 on 图南博客</title>
+    <link>https://iliu.org/tags/%E7%BE%A4%E6%99%96/</link>
+    <description>Recent content in 群晖 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Jul 2023 05:08:24 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>思源笔记群晖正确的部署方法</title>
+      <link>https://iliu.org/4418.html</link>
+      <pubDate>Sat, 01 Jul 2023 05:08:24 +0000</pubDate>
+      
+      <guid>https://iliu.org/4418.html</guid>
+      <description>最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级</description>
+    </item>
+    
+    <item>
+      <title>浅谈群晖安全性方面的设置</title>
+      <link>https://iliu.org/4375.html</link>
+      <pubDate>Mon, 15 May 2023 07:11:31 +0000</pubDate>
+      
+      <guid>https://iliu.org/4375.html</guid>
+      <description>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖</description>
+    </item>
+    
+    <item>
+      <title>群晖安装trilium笔记web端不刷新的处理方法</title>
+      <link>https://iliu.org/4154.html</link>
+      <pubDate>Sun, 26 Jun 2022 03:50:24 +0000</pubDate>
+      
+      <guid>https://iliu.org/4154.html</guid>
+      <description>最初装上trilium上之后，发现web端新建笔记或者删除笔记等都不会刷新。也和中文博客群里的少君等人讨论过，也没有得出过什么结论，毕竟环境</description>
+    </item>
+    
+    <item>
+      <title>使用群晖自动备份网站</title>
+      <link>https://iliu.org/4131.html</link>
+      <pubDate>Sat, 28 May 2022 08:23:06 +0000</pubDate>
+      
+      <guid>https://iliu.org/4131.html</guid>
+      <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法</description>
+    </item>
+    
+    <item>
+      <title>没有公网IP也能玩转群晖DDNS</title>
+      <link>https://iliu.org/3997.html</link>
+      <pubDate>Thu, 30 Dec 2021 02:47:58 +0000</pubDate>
+      
+      <guid>https://iliu.org/3997.html</guid>
+      <description>我们知道，玩群晖，没有公网IP，可玩性就下降很多，虽然可以用QuickConnect，但是速度还是不太理想。其他的内网穿透啊，zerotie</description>
+    </item>
+    
+    <item>
+      <title>更新群晖至DSM7.0</title>
+      <link>https://iliu.org/3887.html</link>
+      <pubDate>Mon, 06 Sep 2021 10:25:46 +0000</pubDate>
+      
+      <guid>https://iliu.org/3887.html</guid>
+      <description>今天上午来到店内，不知道是怎么回事，产生了一些惰性，看到群里小胡同学发的白嫖亚马逊12本的电子书，就去搞了一下，看了会书，也不想更新商城的产</description>
+    </item>
+    
+    <item>
+      <title>keepass配合群晖及keepasshttp实现密码快速登陆</title>
+      <link>https://iliu.org/3413.html</link>
+      <pubDate>Thu, 26 Nov 2020 09:10:34 +0000</pubDate>
+      
+      <guid>https://iliu.org/3413.html</guid>
+      <description>前两天看老张老师到处寻找管理密码的软件，老刘由于一直在使用Norton的密码管理，所以没有在意，后来发现Norton的服务器链接较慢，使用起</description>
+    </item>
+    
+    <item>
+      <title>纯代码设置frp服务器</title>
+      <link>https://iliu.org/3340.html</link>
+      <pubDate>Sun, 18 Oct 2020 07:27:04 +0000</pubDate>
+      
+      <guid>https://iliu.org/3340.html</guid>
+      <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp</description>
+    </item>
+    
+    <item>
+      <title>使用群晖，配置打印机，实现无线打印机的功能</title>
+      <link>https://iliu.org/3005.html</link>
+      <pubDate>Sun, 12 Jan 2020 03:05:02 +0000</pubDate>
+      
+      <guid>https://iliu.org/3005.html</guid>
+      <description>换成荣耀的这台笔记本之后，由于接口比较少，再加上一个笔记本插上usb数据线连上打印机，也不够方便，因为有时候笔记本还要拿回家用用。恰好再群晖</description>
+    </item>
+    
+  </channel>
+</rss>

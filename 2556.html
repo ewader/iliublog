@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>lnmp一键开启waf及使用 Fail2Ban防护 | 图南博客</title>
+<meta name="keywords" content="cnd获取真实ip, Fail2Ban, lnmp">
+<meta name="description" content="试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/2556.html">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VF1DN3F3NG"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-VF1DN3F3NG', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="lnmp一键开启waf及使用 Fail2Ban防护" />
+<meta property="og:description" content="试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://iliu.org/2556.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-07-28T09:07:40+00:00" />
+<meta property="article:modified_time" content="2019-07-28T09:07:40+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="lnmp一键开启waf及使用 Fail2Ban防护"/>
+<meta name="twitter:description" content="试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://iliu.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "lnmp一键开启waf及使用 Fail2Ban防护",
+      "item": "https://iliu.org/2556.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "lnmp一键开启waf及使用 Fail2Ban防护",
+  "name": "lnmp一键开启waf及使用 Fail2Ban防护",
+  "description": "试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥",
+  "keywords": [
+    "cnd获取真实ip", "Fail2Ban", "lnmp"
+  ],
+  "articleBody": "试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥的lnmp如果使用mysql5.6以上的话就必须要内存2G衣裳，这次用的就是2G的，所以还是使用lnmp一键安装包比较舒心。和one的区别是，one很多的事项在编译环境的时候已经弄好了，而lnmp需要西西的打磨，这也是一个好事，毕竟服务器不同，弄的规则也不尽一样。闲言少续，开始正体。\nlnmp开启waf的方法 LNMP一键安装包从1.5开始增加了lua支持的选项，可以通过修改lnmp.conf中Enable_Nginx_Lua后的参数为 y 来启用lua，如果没安装lnmp，修改lnmp.conf后保存，安装完lnmp就是支持lua的，如果已经安装好lnmp，也是按前面修改lnmp.conf，然后lnmp安装包目录下 ./upgrade.sh nginx 升级nginx，输入当前 nginx 版本号或更新的nginx版本号，升级完成就是支持lua的了。\n下载安装ngx_lua_waf： wget https://github.com/loveshell/ngx_lua_waf/archive/master.zip -O ngx_lua_waf.zip\nunzip ngx_lua_waf.zip\nmv ngx_lua_waf-master /usr/local/nginx/conf/waf\nnginx上设置并启用ngx_lua_waf 编辑 /usr/local/nginx/conf/nginx.conf 在 server_tokens off; 下面添加如下代码：\nlua_package_path “/usr/local/nginx/conf/waf/?.lua”;\nlua_shared_dict limit 10m;\ninit_by_lua_file /usr/local/nginx/conf/waf/init.lua;\n修改完成保存\n如果要想在某个虚拟主机启用ngx_lua_waf可以修改对应虚拟主机的server段，在该server段中 root 网站目录行下面添加如下代码：\naccess_by_lua_file /usr/local/nginx/conf/waf/waf.lua;\n修改完成保存\n测试nginx配置文件： /usr/local/nginx/sbin/nginx -t\n重载nginx配置生效： /usr/local/nginx/sbin/nginx -s reload\n如果测试和重载都没报错就已经生效。\n可以通过访问 http://域名/test.php?id=../etc/passwd 来测试\n提示：您的请求带有\u003e不合法参数，已被网站管理员设置拦截！说明已经正确设置\nngx_lua_waf配置文件位置：/usr/local/nginx/conf/waf/config.lua\n使用 Fail2Ban防护网站及服务器 Fail2Ban 是一种入侵防御软件框架，可以保护计算机服务器免受暴力攻击。它以 Python 编程语言编写，能够在 POSIX 系统上运行，该系统具有本地安装的数据包控制系统或防火墙的接口，例如 iptables 或 TCP Wrapper。\n所以要想使用Fail2Ban，就必须让服务器识别来源的真实IP地址，而不是套的cdn的地址。\n套用CDN后获取来源的真实IP的方法\n在nginx.conf内的http下增加：\n#自定义一个日志格式\nlog_format main '$http_x_forwarded_for - $remote_user [$time_local] '\n‘”$request” $status $body_bytes_sent ‘\n‘”$http_referer” “$http_user_agent”‘;\n然后修改access_log /home/wwwlogs/xxxx.log; 为access_log /home/wwwlogs/xxxx.log main;\nnginx-t 检查无误后，service nginx restart,现在在看日志文件，里面的地址就是真正的来源地址了。\n使用 Fail2Ban 保护 Nginx、WordPress\ncp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local\rFail2Ban 会自动读取 .local 文件的配置，然后再增量地读取 conf 配置，这样就避免了更新它时你辛辛苦苦写好的配置被覆盖掉了。\n然后我们就来编辑 Fail2Ban 的配置\nvim /etc/fail2ban/jail.local\r首先是在 [DEFAULT] 字段下，我们可以改变一些行为参数，比如这样修改（多余的没有提到的配置就保留默认，不要理会即可）：\nbantime = 3600 #默认是 10 分钟，这个是说要 ban 多久，我们改长一点\r#下面这两个是说在多长时间内失败多少次就被屏蔽，\r#比如这个是在 3600 秒内失败 6 次就被屏蔽\rfindtime = 3600\rmaxretry = 6 接下来就是添加我们的监狱配置了，默认配置信息中并没有内置 Nginx ，只有 Apache：\n[nginx-http-auth]\r# HTTP 验证防暴力破解\renabled = true\rfilter = nginx-http-auth\rport = http,https\rlogpath = /var/log/nginx/error.log\r[nginx-badbots]\r#屏蔽恶意爬虫\renabled = true\rport = http,https\rfilter = nginx-badbots\rlogpath = /var/log/nginx/access.log\rmaxretry = 2\r[nginx-nohome]\r#避免恶意请求网站目录结构\renabled = true\rport = http,https\rfilter = nginx-nohome\rlogpath = /var/log/nginx/access.log\rmaxretry = 2\r[nginx-noproxy]\r#避免 nginx 被他人用于反向代理\renabled = true\rport = http,https\rfilter = nginx-noproxy\rlogpath = /var/log/nginx/access.log\rmaxretry = 2\r[wp-login]\r#防范 WordPress 暴力破解登录请求\renabled = true\rport = http,https\rfilter = wp-login\rmaxretry = 10\rfindtime = 60\rbantime = 43600\rlogpath = /var/log/nginx/access.log\r[xmlrpc]\r#防止 WordPress 受到 xmlrpc.php CC 攻击\renabled = true\rport = http,https\rfilter = xmlrpc\rlogpath = /var/log/nginx/access.log\rbantime = 43600\rmaxretry = 1\rfindtime = 5\r注意这里的配置都是基于 Nginx 的日志的，所以你必须要允许 Nginx 记录日志，有些管理员为了性能考量会关闭日志，这样我们这篇文章也就失去了意义。\n上述配置中 logpath 是指日志文件的路径的（如：/var/log/nginx/access.log），需要注意的是这里可以指定多个日志文件的，具体格式如下：\nlogpath = /home/wwwlogs/access.log\r/home/wwwlogs/www.1111.com.log\r/home/wwwlogs/www.2222.tech.log\r/home/wwwlogs/service.3333.com.log\r/home/wwwlogs/eat.4444.com.log\r每个日志文件需要回车换行（空格直接去掉了，所以可以放心用空格对齐）才能识别到哦！\n另，在配置 Fail2Ban 之前，你就应该先安装好 Nginx，否则 Fail2Ban 读不到 Nginx 的日志，会报错。\n设置好了要启用的监狱，接下来就是给监狱创建规则了：\ncd /etc/fail2ban/filter.d\r在这个目录下，存放这所有规则文件，一个配置名一个文件，有多少个文件就有多少个规则，这些规则被上文中监狱配置里 filter 字段调用。\nvim nginx-http-auth.conf\r这个规则是存在的，我们在规则中加一行配置，来过滤除了账号密码错误外，空白账号或者密码的错误：\n[Definition]\nfailregex = ^ [error] d+#d+: d+ user “\\S+”:? (password mismatch|was not found in “.”), client: «/span\u003eHOST\u003e, server: S+, request: “\\S+ \\S+ HTTP/\\d+.\\d+”, host: “\\S+”s*$\n^ [error] d+#d+: d+ no user/password was provided for basic authentication, client: «/strong\u003eHOST\u003e, server: S+, request: “\\S+ \\S+ HTTP/\\d+.\\d+”, host: “\\S+”s$\nignoreregex =\n添加的是加粗的那一行。\ncp apache-badbots.conf nginx-badbots.conf\r过滤爬虫的规则是有现成的，所以我们只需要改个名就可以了；\nvim nginx-nohome.conf 这是过滤获取目录的：\n[Definition]\nfailregex = ^«/span\u003eHOST\u003e -.GET ./~.*\nignoreregex =\nvim nginx-noproxy.conf 这是过滤反代的：\n[Definition]\nfailregex = ^«/span\u003eHOST\u003e –.GET http.\nignoreregex =\nvim wp-login.conf 这是防止 WordPress 受到 xmlrpc.php 请求的 CC 攻击：\n[Definition]\nfailregex = ^«/span\u003eHOST\u003e -.* /wp-login.php.* HTTP/1..“\nignoreregex =\nvim xmlrpc.conf 防范 WordPress 暴力破解登录请求\n[Definition]\nfailregex = ^«/span\u003eHOST\u003e -.*POST .*xmlrpc.php.*\nignoreregex =\n跋涉者提示 很多网站上面的代码都不正确，是因为，高亮代码不知道怎么会屏蔽这个语法，造成错误，本文已经更正，放心的使用。\n做完上述配置之后，就可以重启\nservice fail2ban restart\r这时你可以通过命令 fail2ban-client status 来查看，不出意外，应该类似这样：\nfail2ban-client status\r或者：/usr/local/python/bin/fail2ban-client status Status\n|- Number of jail: 7\n`- Jail list: nginx-badbots, nginx-http-auth, nginx-nohome, nginx-noproxy, sshd, wp-login, xmlrpc\n至此，Fail2Ban 保护 Nginx、WordPress 基本算是完成了，至少跋涉者目前需要的安全策略都完成了，平时可以观察一下 Fail2Ban 的日志文件来观察 Fail2Ban 的防御效果，如：\ntail -f /var/log/fail2ban.log\riptables --list -n\r用 Fail2Ban屏蔽无效的404请求 借助 Fail2Ban 可以筛选出发送这些请求的 IP 地址来进行拦截屏蔽处理，根据日志中返回 404 的记录制定 Fail2Ban 监狱规则命名为 nginx-not-found.conf，具体内容如下：\nvim /etc/fail2ban/filter.d/nginx-not-found.conf\r打开编辑 nginx-not-found.conf 监狱规则文件，注意一定要在/etc/fail2ban/filter.d/目录内哦。\n[Definition]\rfailregex = ^.*\"(GET|POST).*\" (404|444|403|400) .*$\rignoreregex =\r保存退出。\n再打开编辑 jail.local 启用这个监狱规则。\nvim /etc/fail2ban/jail.local\r添加下面的代码到 jail.local 里即可。同样的，注意 jail.local 文件的目录哦。\n[nginxno404]\r#处理 nginx 下的恶意 404 结果扫描\renabled = true\rport = http,https\rfilter = nginx-not-found\raction = iptables[name=nginxno404, port=http, protocol=tcp]\r#Fail2Ban 要监控的站点日志文件，大家可以根据自己站点来灵活调整。\rlogpath = /home/wwwlogs/access.log\rbantime = 3600 #默认是屏蔽 IP 地址 10 分钟\r#下面这两个是说 60 秒内 5 次 404 失败请求就开始屏蔽这个 IP 地址\rfindtime = 60\rmaxretry = 5\r保存退出。\n重新启动 Fail2Ban：\nsystemctl restart fail2ban.service\r看下日志：\nnginxno404已经开始生效，并且Ban了一个ip，14.204.69.48\n看一下iptables的记录，如上图，已经拒绝这个IP的访问了\n本文参考了落格部落及明月登楼博客里的一些文章，在此表示感谢\n",
+  "wordCount" : "2857",
+  "inLanguage": "zh",
+  "datePublished": "2019-07-28T09:07:40Z",
+  "dateModified": "2019-07-28T09:07:40Z",
+  "author":{
+    "@type": "Person",
+    "name": "老刘"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iliu.org/2556.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "图南博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iliu.org/img/favicon.png"
+    }
+  }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3628863674934446"
+ crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠首页">
+                    <span>🏠首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/guidang" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="栏目">
+                    <span>栏目</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🌷tag">
+                    <span>🌷tag</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/about" title="🐸关于">
+                    <span>🐸关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
+                    <span>👓配镜</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <h1 class="post-title">
+      lnmp一键开启waf及使用 Fail2Ban防护
+    </h1>
+    <div class="post-meta"><span title='2019-07-28 09:07:40 +0000 +0000'>2019-07-28</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;老刘
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#lnmp%e5%bc%80%e5%90%afwaf%e7%9a%84%e6%96%b9%e6%b3%95" aria-label="lnmp开启waf的方法">lnmp开启waf的方法</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85ngx_lua_waf" aria-label="下载安装ngx_lua_waf："><strong>下载安装ngx_lua_waf：</strong></a></li>
+                <li>
+                    <a href="#nginx%e4%b8%8a%e8%ae%be%e7%bd%ae%e5%b9%b6%e5%90%af%e7%94%a8ngx_lua_waf" aria-label="nginx上设置并启用ngx_lua_waf"><strong>nginx上设置并启用ngx_lua_waf</strong></a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8-fail2ban%e9%98%b2%e6%8a%a4%e7%bd%91%e7%ab%99%e5%8f%8a%e6%9c%8d%e5%8a%a1%e5%99%a8" aria-label="使用 Fail2Ban防护网站及服务器">使用 Fail2Ban防护网站及服务器</a></li>
+                <li>
+                    <a href="#vim-nginx-nohomeconf" aria-label="vim nginx-nohome.conf">vim nginx-nohome.conf</a></li>
+                <li>
+                    <a href="#vim-nginx-noproxyconf" aria-label="vim nginx-noproxy.conf">vim nginx-noproxy.conf</a></li>
+                <li>
+                    <a href="#vim-wp-loginconf" aria-label="vim wp-login.conf"><strong>vim wp-login.conf</strong></a></li>
+                <li>
+                    <a href="#vim-xmlrpcconf" aria-label="vim xmlrpc.conf"><strong>vim xmlrpc.conf</strong></a></li>
+                <li>
+                    <a href="#span-stylecolor-ff9900%e8%b7%8b%e6%b6%89%e8%80%85%e6%8f%90%e7%a4%baspan" aria-label="跋涉者提示"><span style="color: #ff9900;">跋涉者提示</span></a></li>
+                <li>
+                    <a href="#%e7%94%a8fail2ban%e5%b1%8f%e8%94%bd%e6%97%a0%e6%95%88%e7%9a%84404%e8%af%b7%e6%b1%82" aria-label="用 Fail2Ban屏蔽无效的404请求">用 Fail2Ban屏蔽无效的404请求</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥的lnmp如果使用mysql5.6以上的话就必须要内存2G衣裳，这次用的就是2G的，所以还是使用lnmp一键安装包比较舒心。和one的区别是，one很多的事项在编译环境的时候已经弄好了，而lnmp需要西西的打磨，这也是一个好事，毕竟服务器不同，弄的规则也不尽一样。闲言少续，开始正体。</p>
+<h2 id="lnmp开启waf的方法">lnmp开启waf的方法<a hidden class="anchor" aria-hidden="true" href="#lnmp开启waf的方法">#</a></h2>
+<p><span style="background-color: #ffffff; color: #404040;">LNMP一键安装包从1.5开始增加了lua支持的选项，可以通过修改lnmp.conf中Enable_Nginx_Lua后的参数为 y 来启用lua，如果没安装lnmp，修改lnmp.conf后保存，安装完lnmp就是支持lua的，如果已经安装好lnmp，也是按前面修改lnmp.conf，然后lnmp安装包目录下 </span><strong style="background-color: #ffffff; color: #000000;">./upgrade.sh nginx</strong><span style="background-color: #ffffff; color: #404040;"> 升级nginx，输入当前 </span><a style="background-color: #ffffff; color: #404040;" href="http://www.codercto.com/category/nginx.html" target="_blank" rel="noopener noreferrer">nginx</a><span style="background-color: #ffffff; color: #404040;"> 版本号或更新的nginx版本号，升级完成就是支持lua的了。</span></p>
+<h4 id="下载安装ngx_lua_waf"><strong>下载安装ngx_lua_waf：</strong><a hidden class="anchor" aria-hidden="true" href="#下载安装ngx_lua_waf">#</a></h4>
+<p>wget <a href="https://github.com/loveshell/ngx">https://github.com/loveshell/ngx</a>_lua_waf/archive/master.zip -O ngx_lua_waf.zip</p>
+<p>unzip ngx_lua_waf.zip</p>
+<p>mv ngx_lua_waf-master /usr/local/nginx/conf/waf</p>
+<h4 id="nginx上设置并启用ngx_lua_waf"><strong>nginx上设置并启用ngx_lua_waf</strong><a hidden class="anchor" aria-hidden="true" href="#nginx上设置并启用ngx_lua_waf">#</a></h4>
+<p>编辑 /usr/local/nginx/conf/nginx.conf 在 server_tokens off; 下面添加如下代码：</p>
+<p>lua_package_path “/usr/local/nginx/conf/waf/?.lua”;</p>
+<p>lua_shared_dict limit 10m;</p>
+<p>init_by_lua_file /usr/local/nginx/conf/waf/init.lua;</p>
+<p>修改完成保存</p>
+<p>如果要想在某个虚拟主机启用ngx_lua_waf可以修改对应虚拟主机的server段，在该server段中 root 网站目录行下面添加如下代码：</p>
+<p>access_by_lua_file /usr/local/nginx/conf/waf/waf.lua;</p>
+<p>修改完成保存</p>
+<p>测试nginx配置文件： <strong style="color: #000000;">/usr/local/nginx/sbin/nginx -t</strong></p>
+<p>重载nginx配置生效： <strong style="color: #000000;">/usr/local/nginx/sbin/nginx -s reload</strong></p>
+<p>如果测试和重载都没报错就已经生效。</p>
+<p>可以通过访问 http://域名/test.php?id=../etc/passwd 来测试<figure id="2559" class="content-img-box "></p>
+<p><img decoding="async" id="412D35F8" class="po-img-big" src="https://iliu.org/wp-content/uploads/2019/07/1d3c90a5a17d65.JPG" alt="lnmp一键开启waf及使用 Fail2Ban防护" /> <figcaption class="addDesn"></figcaption></figure></p>
+<p>提示：您的请求带有&gt;不合法参数，已被网站管理员设置拦截！说明已经正确设置</p>
+<p>ngx_lua_waf配置文件位置：/usr/local/nginx/conf/waf/config.lua</p>
+<h2 id="使用-fail2ban防护网站及服务器">使用 Fail2Ban防护网站及服务器<a hidden class="anchor" aria-hidden="true" href="#使用-fail2ban防护网站及服务器">#</a></h2>
+<p><span style="background-color: #ffffff; color: #333333;">Fail2Ban 是一种入侵防御软件框架，可以保护计算机服务器免受暴力攻击。它以 Python 编程语言编写，能够在 POSIX 系统上运行，该系统具有本地安装的数据包控制系统或防火墙的接口，例如 iptables 或 TCP Wrapper。</span></p>
+<p><span style="background-color: #ffffff; color: #333333;">所以要想使用Fail2Ban，就必须让服务器识别来源的真实IP地址，而不是套的cdn的地址。</span></p>
+<p><strong style="background-color: #ffffff; color: #333333;">套用CDN后获取来源的真实IP的方法</strong></p>
+<p>在nginx.conf内的http下增加：</p>
+<p>#自定义一个日志格式</p>
+<p><code>log_format main '$http_x_forwarded_for - $remote_user [$time_local] '</code></p>
+<p>‘”<span style="color: blue;">$request</span>” <span style="color: blue;">$status</span> $body_bytes_sent ‘</p>
+<p>‘”$http_referer” “$http_user_agent”‘;</p>
+<p>然后<span style="background-color: #ffffff; color: #333333;">修改access_log /home/wwwlogs/xxxx.log; 为access_log /home/wwwlogs/xxxx.log main;</span></p>
+<p><span style="background-color: #ffffff; color: #333333;">nginx-t 检查无误后，service nginx restart,现在在看日志文件，里面的地址就是真正的来源地址了。</span></p>
+<p><strong>使用 Fail2Ban 保护 Nginx、WordPress</strong></p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-attribute">cp</span> /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+</pre>
+<p>Fail2Ban 会自动读取 .local 文件的配置，然后再<strong>增量</strong>地读取 conf 配置，这样就避免了更新它时你辛辛苦苦写好的配置被覆盖掉了。</p>
+<p>然后我们就来编辑 Fail2Ban 的配置</p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-attribute">vim</span> /etc/fail2ban/jail.local
+</pre>
+<p>首先是在 [DEFAULT] 字段下，我们可以改变一些行为参数，比如这样修改（多余的没有提到的配置就保留默认，不要理会即可）：</p>
+<pre class="ql-syntax" spellcheck="false">bantime = 3600 <span class="hljs-comment">#默认是 10 分钟，这个是说要 ban 多久，我们改长一点</span>
+<span class="hljs-comment">#下面这两个是说在多长时间内失败多少次就被屏蔽，</span>
+<span class="hljs-comment">#比如这个是在 3600 秒内失败 6 次就被屏蔽</span>
+findtime = 3600
+maxretry = 6  
+</pre>
+<p>接下来就是添加我们的监狱配置了，默认配置信息中并没有内置 Nginx ，只有 Apache：</p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-section">[nginx-http-auth]</span>
+<span class="hljs-comment"># HTTP 验证防暴力破解</span>
+<span class="hljs-attr">enabled</span>  = <span class="hljs-literal">true</span>
+<span class="hljs-attr">filter</span>  = nginx-http-auth
+<span class="hljs-attr">port</span>    = http,https
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/error.log
+<span class="hljs-section"> 
+[nginx-badbots]</span>
+<span class="hljs-comment">#屏蔽恶意爬虫</span>
+<span class="hljs-attr">enabled</span>  = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span>    = http,https
+<span class="hljs-attr">filter</span>  = nginx-badbots
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/access.log
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">2</span>
+<span class="hljs-section"> 
+[nginx-nohome]</span>
+<span class="hljs-comment">#避免恶意请求网站目录结构</span>
+<span class="hljs-attr">enabled</span>  = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span>    = http,https
+<span class="hljs-attr">filter</span>  = nginx-nohome
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/access.log
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">2</span>
+<span class="hljs-section"> 
+[nginx-noproxy]</span>
+<span class="hljs-comment">#避免 nginx 被他人用于反向代理</span>
+<span class="hljs-attr">enabled</span>  = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span>    = http,https
+<span class="hljs-attr">filter</span>  = nginx-noproxy
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/access.log
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">2</span>
+<span class="hljs-section">
+[wp-login]</span>
+<span class="hljs-comment">#防范 WordPress 暴力破解登录请求</span>
+<span class="hljs-attr">enabled</span> = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span> = http,https
+<span class="hljs-attr">filter</span> = wp-login
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">10</span>
+<span class="hljs-attr">findtime</span> = <span class="hljs-number">60</span>
+<span class="hljs-attr">bantime</span> = <span class="hljs-number">43600</span>
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/access.log
+<span class="hljs-section">
+[xmlrpc]</span>
+<span class="hljs-comment">#防止 WordPress 受到 xmlrpc.php CC 攻击</span>
+<span class="hljs-attr">enabled</span> = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span> = http,https
+<span class="hljs-attr">filter</span> = xmlrpc
+<span class="hljs-attr">logpath</span>  = /var/log/nginx/access.log
+<span class="hljs-attr">bantime</span> = <span class="hljs-number">43600</span>
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">1</span>
+<span class="hljs-attr">findtime</span>  = <span class="hljs-number">5</span>
+</pre>
+<p>注意这里的配置都是基于 Nginx 的日志的，所以你必须要允许 Nginx 记录日志，有些管理员为了性能考量会关闭日志，这样我们这篇文章也就失去了意义。</p>
+<p>上述配置中 logpath 是指日志文件的路径的（如：/var/log/nginx/access.log），需要注意的是这里可以指定多个日志文件的，具体格式如下：</p>
+<pre class="ql-syntax" spellcheck="false">logpath  = /home/wwwlogs/access.<span class="hljs-built_in">log</span>
+           /home/wwwlogs/www<span class="hljs-number">.1111</span>.com.<span class="hljs-built_in">log</span>
+           /home/wwwlogs/www<span class="hljs-number">.2222</span>.tech.<span class="hljs-built_in">log</span>
+           /home/wwwlogs/service<span class="hljs-number">.3333</span>.com.<span class="hljs-built_in">log</span>
+           /home/wwwlogs/eat<span class="hljs-number">.4444</span>.com.<span class="hljs-built_in">log</span>
+</pre>
+<p><strong>每个日志文件需要回车换行（空格直接去掉了，所以可以放心用空格对齐）才能识别到哦！</strong></p>
+<blockquote>
+<p>另，在配置 Fail2Ban 之前，你就应该先安装好 Nginx，否则 Fail2Ban 读不到 Nginx 的日志，会报错。</p>
+</blockquote>
+<p>设置好了要启用的监狱，接下来就是给监狱创建规则了：</p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-built_in">cd</span> /etc/fail2ban/filter.d
+</pre>
+<p>在这个目录下，存放这所有规则文件，一个配置名一个文件，有多少个文件就有多少个规则，这些规则被上文中监狱配置里 filter 字段调用。</p>
+<pre class="ql-syntax" spellcheck="false">vim nginx-http-auth.conf
+</pre>
+<p>这个规则是存在的，我们在规则中加一行配置，来过滤除了账号密码错误外，空白账号或者密码的错误：</p>
+<p><span style="color: #333333;">[</span><span style="color: #5c2699;">Definition</span><span style="color: #333333;">]</span></p>
+<p><span style="color: #5c2699;">failregex</span> <span style="color: #2e0d6e;">=</span> <span style="color: #2e0d6e;">^</span> <span style="color: #333333;">[</span><span style="color: #5c2699;">error</span><span style="color: #333333;">]</span> <span style="color: #333333;">&lt;/span&gt;<span style="color: #5c2699;">d</span><span style="color: #2e0d6e;">+#</span><span style="color: #333333;">&lt;/span&gt;<span style="color: #5c2699;">d</span><span style="color: #2e0d6e;">+:</span> <span style="color: #333333;">&lt;/span&gt;<span style="color: #2e0d6e;"><em></span><span style="color: #333333;">&lt;/span&gt;<span style="color: #5c2699;">d</span><span style="color: #2e0d6e;">+</span> <span style="color: #aa0d91;">user</span> <span style="color: #c41a16;">“\S+”</span><span style="color: #2e0d6e;">:</span><span style="color: #333333;">?</span> <span style="color: #333333;">(</span><span style="color: #2e0d6e;">password </span><span style="color: #5c2699;">mismatch</span><span style="color: #2e0d6e;">|was </span><span style="color: #aa0d91;">not</span> <span style="color: #2e0d6e;">found </span><span style="color: #aa0d91;">in</span> <span style="color: #c41a16;">“.</em>”</span><span style="color: #333333;">),</span> <span style="color: #5c2699;">client</span><span style="color: #2e0d6e;">:</span> <span style="color: #2e0d6e;">&laquo;/span&gt;<span style="color: #5c2699;">HOST</span><span style="color: #2e0d6e;">&gt;</span><span style="color: #333333;">,</span> <span style="color: #5c2699;">server</span><span style="color: #2e0d6e;">:</span> <span style="color: #333333;">&lt;/span&gt;<span style="color: #5c2699;">S</span><span style="color: #2e0d6e;">+</span><span style="color: #333333;">,</span> <span style="color: #5c2699;">request</span><span style="color: #2e0d6e;">:</span> <span style="color: #c41a16;">“\S+ \S+ HTTP/\d+.\d+”</span><span style="color: #333333;">,</span> <span style="color: #5c2699;">host</span><span style="color: #2e0d6e;">:</span> <span style="color: #c41a16;">“\S+”</span><span style="color: #333333;">&lt;/span&gt;<span style="color: #5c2699;">s</span><span style="color: #2e0d6e;">*</span><span style="color: #333333;">$</span></p>
+<p><strong style="color: #2e0d6e; background-color: #cce0f5;">^</strong> <strong style="color: #333333; background-color: #cce0f5;">[</strong><strong style="color: #5c2699; background-color: #cce0f5;">error</strong><strong style="color: #333333; background-color: #cce0f5;">]</strong> <strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">d</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">+#</strong><strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">d</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">+:</strong> <strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #2e0d6e; background-color: #cce0f5;"><em></strong><strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">d</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">+</strong> <strong style="color: #2e0d6e; background-color: #cce0f5;">no </strong><strong style="color: #5c2699; background-color: #cce0f5;">user</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">/password was provided </strong><strong style="color: #aa0d91; background-color: #cce0f5;">for</strong> <strong style="color: #2e0d6e; background-color: #cce0f5;">basic </strong><strong style="color: #5c2699; background-color: #cce0f5;">authentication</strong><strong style="color: #333333; background-color: #cce0f5;">,</strong> <strong style="color: #5c2699; background-color: #cce0f5;">client</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">:</strong> <strong style="color: #2e0d6e; background-color: #cce0f5;">&laquo;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">HOST</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">&gt;</strong><strong style="color: #333333; background-color: #cce0f5;">,</strong> <strong style="color: #5c2699; background-color: #cce0f5;">server</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">:</strong> <strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">S</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">+</strong><strong style="color: #333333; background-color: #cce0f5;">,</strong> <strong style="color: #5c2699; background-color: #cce0f5;">request</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">:</strong> <strong style="color: #c41a16; background-color: #cce0f5;">“\S+ \S+ HTTP/\d+.\d+”</strong><strong style="color: #333333; background-color: #cce0f5;">,</strong> <strong style="color: #5c2699; background-color: #cce0f5;">host</strong><strong style="color: #2e0d6e; background-color: #cce0f5;">:</strong> <strong style="color: #c41a16; background-color: #cce0f5;">“\S+”</strong><strong style="color: #333333; background-color: #cce0f5;">&lt;/strong&gt;<strong style="color: #5c2699; background-color: #cce0f5;">s</strong><strong style="color: #2e0d6e; background-color: #cce0f5;"></em></strong><strong style="color: #333333; background-color: #cce0f5;">$</strong></p>
+<p><span style="color: #5c2699;">ignoreregex</span> <span style="color: #2e0d6e;">=</span></p>
+<p>添加的是加粗的那一行。</p>
+<pre class="ql-syntax" spellcheck="false">cp apache-badbots.conf nginx-badbots.conf
+</pre>
+<p>过滤爬虫的规则是有现成的，所以我们只需要改个名就可以了；</p>
+<h2 id="vim-nginx-nohomeconf">vim nginx-nohome.conf<a hidden class="anchor" aria-hidden="true" href="#vim-nginx-nohomeconf">#</a></h2>
+<p>这是过滤获取目录的：</p>
+<p><em style="color: #007400;">[Definition]</em></p>
+<p><em style="color: #007400;">failregex = ^</em><span style="color: #2e0d6e; background-color: #ffffff;">&laquo;/span&gt;<span style="color: #5c2699; background-color: #ffffff;">HOST</span><span style="color: #2e0d6e; background-color: #ffffff;">&gt;</span> <em style="color: #007400;">-.<em>GET .</em>/</em><span style="color: #2e0d6e;">~</span><span style="color: #333333;">.</span><span style="color: #2e0d6e;">*</span></p>
+<p><span style="color: #5c2699;">ignoreregex</span> <span style="color: #2e0d6e;">=</span></p>
+<h2 id="vim-nginx-noproxyconf">vim nginx-noproxy.conf<a hidden class="anchor" aria-hidden="true" href="#vim-nginx-noproxyconf">#</a></h2>
+<p>这是过滤反代的：</p>
+<p><span style="color: #333333;">[</span><span style="color: #5c2699;">Definition</span><span style="color: #333333;">]</span></p>
+<p><span style="color: #5c2699;">failregex</span> <span style="color: #2e0d6e;">=</span> <span style="color: #2e0d6e;">^&laquo;/span&gt;<span style="color: #5c2699;">HOST</span><span style="color: #2e0d6e;">&gt;</span> <span style="color: #2e0d6e;">–</span><span style="color: #333333;">.</span><span style="color: #2e0d6e;"><em></span><span style="color: #800080;">GET</span> <span style="color: #5c2699;">http</span><span style="color: #333333;">.</span><span style="color: #2e0d6e;"></em></span></p>
+<p><span style="color: #5c2699;">ignoreregex</span> <span style="color: #2e0d6e;">=</span></p>
+<h2 id="vim-wp-loginconf"><strong>vim wp-login.conf</strong><a hidden class="anchor" aria-hidden="true" href="#vim-wp-loginconf">#</a></h2>
+<p>这是防止 WordPress 受到 xmlrpc.php 请求的 CC 攻击：</p>
+<p><span style="background-color: #f8f8f8; color: #333333;">[Definition]</span></p>
+<p><span style="background-color: #f8f8f8; color: #333333;">failregex = ^</span><span style="background-color: #ffffff; color: #2e0d6e;">&laquo;/span&gt;<span style="background-color: #ffffff; color: #5c2699;">HOST</span><span style="background-color: #ffffff; color: #2e0d6e;">&gt;</span> <span style="background-color: #f8f8f8; color: #333333;">-.* /wp-login.php.* HTTP/1..</span><span class="hljs-string" style="color: #dd1144;">“</span></p>
+<p><span class="hljs-string" style="color: #dd1144;">ignoreregex =</span></p>
+<h2 id="vim-xmlrpcconf"><strong>vim xmlrpc.conf</strong><a hidden class="anchor" aria-hidden="true" href="#vim-xmlrpcconf">#</a></h2>
+<p>防范 WordPress 暴力破解登录请求</p>
+<p>[Definition]</p>
+<p>failregex = ^<span style="background-color: #ffffff; color: #2e0d6e;">&laquo;/span&gt;<span style="background-color: #ffffff; color: #5c2699;">HOST</span><span style="background-color: #ffffff; color: #2e0d6e;">&gt;</span> -.*POST .*xmlrpc.php.*</p>
+<p>ignoreregex =</p>
+<h2 id="span-stylecolor-ff9900跋涉者提示span"><span style="color: #ff9900;">跋涉者提示</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-ff9900跋涉者提示span">#</a></h2>
+<p><span style="color: #ff9900;">很多网站上面的代码都不正确，是因为，高亮代码不知道怎么会屏蔽</span><span style="color: #ff9900; background-color: #ffffff;">这个语法，造成错误，本文已经更正，放心的使用。</span></p>
+<p>做完上述配置之后，就可以重启</p>
+<pre class="ql-syntax" spellcheck="false"> <span class="hljs-attribute">service</span> fail2ban restart
+</pre>
+<p>这时你可以通过命令 fail2ban-client status 来查看，不出意外，应该类似这样：</p>
+<pre class="ql-syntax" spellcheck="false">fail2ban-client status
+或者：/usr/local/python/bin/fail2ban-client status</pre>
+<p>Status</p>
+<p>|- Number of jail: 7</p>
+<p>`- Jail list: nginx-badbots, nginx-http-auth, nginx-nohome, nginx-noproxy, sshd, wp-login, xmlrpc</p>
+<p>至此，Fail2Ban 保护 Nginx、WordPress 基本算是完成了，至少跋涉者目前需要的安全策略都完成了，平时可以观察一下 Fail2Ban 的日志文件来观察 Fail2Ban 的防御效果，如：</p>
+<pre class="ql-syntax" spellcheck="false">tail -f /var/<span class="hljs-built_in">log</span>/fail2ban.<span class="hljs-built_in">log</span>
+iptables --<span class="hljs-built_in">list</span> -n
+</pre>
+<h2 id="用fail2ban屏蔽无效的404请求">用 Fail2Ban屏蔽无效的404请求<a hidden class="anchor" aria-hidden="true" href="#用fail2ban屏蔽无效的404请求">#</a></h2>
+<p>借助 Fail2Ban 可以筛选出发送这些请求的 IP 地址来进行拦截屏蔽处理，根据日志中返回 404 的记录制定 Fail2Ban 监狱规则命名为 nginx-not-found.conf，具体内容如下：</p>
+<pre class="ql-syntax" spellcheck="false">vim /etc/fail2ban/filter.d/nginx-<span class="hljs-keyword">not</span>-found.conf
+</pre>
+<p>打开编辑 nginx-not-found.conf 监狱规则文件，注意一定要在<span style="color: #333333; background-color: #ffffff;">/etc/fail2ban/filter.d/目录内哦</span>。</p>
+<pre class="ql-syntax" spellcheck="false">[Definition]
+failregex = ^&lt;HOST&gt;.*"(GET|POST).*" (404|444|403|400) .*$
+ignoreregex =
+</pre>
+<p>保存退出。</p>
+<p>再打开编辑 jail.local 启用这个监狱规则。</p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-attribute">vim</span> /etc/fail2ban/jail.local
+</pre>
+<p>添加下面的代码到 jail.local 里即可。同样的，注意 jail.local 文件的目录哦。</p>
+<pre class="ql-syntax" spellcheck="false"><span class="hljs-section">[nginxno404]</span>
+<span class="hljs-comment">#处理 nginx 下的恶意 404 结果扫描</span>
+<span class="hljs-attr">enabled</span> = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span> = http,https
+<span class="hljs-attr">filter</span> = nginx-not-found
+<span class="hljs-attr">action</span> = iptables[name=nginxno404, port=http, protocol=tcp]
+<span class="hljs-comment">#Fail2Ban 要监控的站点日志文件，大家可以根据自己站点来灵活调整。</span>
+<span class="hljs-attr">logpath</span>  = /home/wwwlogs/access.log
+           
+<span class="hljs-attr">bantime</span> = <span class="hljs-number">3600</span> #默认是屏蔽 IP 地址 <span class="hljs-number">10</span> 分钟
+<span class="hljs-comment">#下面这两个是说 60 秒内 5 次 404 失败请求就开始屏蔽这个 IP 地址</span>
+<span class="hljs-attr">findtime</span> = <span class="hljs-number">60</span>
+<span class="hljs-attr">maxretry</span> = <span class="hljs-number">5</span>
+</pre>
+<p>保存退出。</p>
+<p>重新启动 Fail2Ban：</p>
+<pre class="ql-syntax" spellcheck="false">systemctl restart fail2ban.service
+</pre>
+<p>看下日志：<figure id="2561" class="content-img-box "></p>
+<p><img decoding="async" id="23B1CECF" class="po-img-big" src="https://iliu.org/wp-content/uploads/2019/07/136d1bd3715987.JPG" alt="lnmp一键开启waf及使用 Fail2Ban防护" /> <figcaption class="addDesn"></figcaption></figure></p>
+<p>nginxno404已经开始生效，并且Ban了一个ip，14.204.69.48<figure id="2560" class="content-img-box "></p>
+<p><img decoding="async" id="8BDD51AF" class="po-img-big" src="https://iliu.org/wp-content/uploads/2019/07/16ce4571631d8d.JPG" alt="lnmp一键开启waf及使用 Fail2Ban防护" /> <figcaption class="addDesn"></figcaption></figure></p>
+<p>看一下iptables的记录，如上图，已经拒绝这个IP的访问了</p>
+<p>本文参考了<a href="https://www.logcg.com/archives/2998.html" target="_blank" rel="noopener noreferrer">落格部落</a>及<a href="https://www.imydl.com" target="_blank" rel="noopener noreferrer">明月登楼博客</a>里的一些文章，在此表示感谢</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://iliu.org/tags/cnd%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9Eip/">cnd获取真实ip</a></li>
+      <li><a href="https://iliu.org/tags/fail2ban/">Fail2Ban</a></li>
+      <li><a href="https://iliu.org/tags/lnmp/">lnmp</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://iliu.org/2574.html">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>尽信书不如无书</span>
+  </a>
+  <a class="next" href="https://iliu.org/2552.html">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>给7b2的主题加上评论回复功能</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on twitter"
+        href="https://twitter.com/intent/tweet/?text=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4&amp;url=https%3a%2f%2filiu.org%2f2556.html&amp;hashtags=cnd%e8%8e%b7%e5%8f%96%e7%9c%9f%e5%ae%9eip%2cFail2Ban%2clnmp">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2filiu.org%2f2556.html&amp;title=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4&amp;summary=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4&amp;source=https%3a%2f%2filiu.org%2f2556.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2filiu.org%2f2556.html&title=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2filiu.org%2f2556.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on whatsapp"
+        href="https://api.whatsapp.com/send?text=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4%20-%20https%3a%2f%2filiu.org%2f2556.html">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on telegram"
+        href="https://telegram.me/share/url?text=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4&amp;url=https%3a%2f%2filiu.org%2f2556.html">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share lnmp一键开启waf及使用 Fail2Ban防护 on ycombinator"
+        href="https://news.ycombinator.com/submitlink?t=lnmp%e4%b8%80%e9%94%ae%e5%bc%80%e5%90%afwaf%e5%8f%8a%e4%bd%bf%e7%94%a8%20Fail2Ban%e9%98%b2%e6%8a%a4&u=https%3a%2f%2filiu.org%2f2556.html">
+        <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+            <path
+                d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+   <div class="article-comments"><link href="/artalk/Artalk.css" rel="stylesheet">
+<script src="/artalk/Artalk.js"></script>
+
+
+<div id="Comments"></div>
+
+<script>
+  Artalk.init({
+    el:        '#Comments',
+    pageKey:   'https:\/\/iliu.org\/2556.html',
+    pageTitle: 'lnmp一键开启waf及使用 Fail2Ban防护',
+    server:    'https:\/\/artalk.iliu.org',
+    site:      '图南博客',
+    
+  })
+</script>
+</div>
+</article>
+    </main>
+    
+<footer class="footer">
+   
+    
+    <span>COPYRIGHT&copy; 2009-2023 <a href="https://iliu.org/">图南博客</a></span>
+    </a></br>
+    <font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
+            target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
+            rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
+    <br>
+    <span id="span" style="color:#808695"></span>
+    <script type="text/javascript">
+        function runtime() {
+            
+            X = new Date("12/07/2018 12:50:18");
+            Y = new Date();
+            T = (Y.getTime() - X.getTime());
+            M = 24 * 60 * 60 * 1000;
+            a = T / M;
+            A = Math.floor(a);
+            b = (a - A) * 24;
+            B = Math.floor(b);
+            c = (b - B) * 60;
+            C = Math.floor((b - B) * 60);
+            D = Math.floor((c - C) * 60);
+            
+            span.innerHTML = "本站已运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
+        }
+        setInterval(runtime, 1000);
+    </script>
+    </br>
+    
+
+    <div id="cc-myssl-id" style="text-align: center;display:inline;">
+        <div title="MySSL安全签章" id="myssl_seal"
+            onclick="window.open('https://myssl.com/seal/detail?domain=sharpgan.com','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')"
+            style="text-align: center;display: inline-block"><img src="/img/seal.png" alt="myssl.com-MySSL安全签章"
+                style="width: 100px; height: auto; cursor: pointer"></div>
+    </div>
+    <div id="written-by-human-id" style="text-align: center;display:inline;">
+        <div title="written by human" id="written-by-human" style="text-align: center;display: inline-block"><a href="https://notbyai.fyi/" rel="noopener noreferrer nofollow" target="_blank"><img
+                src="/img/Written-By-Human-Not-By-AI-Badge-white.png" alt="written by human badge" style="width: 100px; height: auto; cursor: pointer"></a></div>
+    </div>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

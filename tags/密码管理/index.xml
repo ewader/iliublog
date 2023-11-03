@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>密码管理 on 图南博客</title>
+    <link>https://iliu.org/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 密码管理 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 29 Nov 2020 00:53:36 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keepass加群辉实现数据同步及浏览器自动填充密码（二）</title>
+      <link>https://iliu.org/3430.html</link>
+      <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
+      
+      <guid>https://iliu.org/3430.html</guid>
+      <description>自从前两天体验了keepass的方便后，真的是对这个软件爱不释手了。但是在上一篇中，总体设置较为复杂，而且使用当中发现了诸多不方便之处。虽然</description>
+    </item>
+    
+    <item>
+      <title>keepass配合群晖及keepasshttp实现密码快速登陆</title>
+      <link>https://iliu.org/3413.html</link>
+      <pubDate>Thu, 26 Nov 2020 09:10:34 +0000</pubDate>
+      
+      <guid>https://iliu.org/3413.html</guid>
+      <description>前两天看老张老师到处寻找管理密码的软件，老刘由于一直在使用Norton的密码管理，所以没有在意，后来发现Norton的服务器链接较慢，使用起</description>
+    </item>
+    
+  </channel>
+</rss>

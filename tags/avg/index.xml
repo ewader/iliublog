@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>avg on 图南博客</title>
+    <link>https://iliu.org/tags/avg/</link>
+    <description>Recent content in avg on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Aug 2021 09:59:10 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/avg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cccleaner变流氓了</title>
+      <link>https://iliu.org/3844.html</link>
+      <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
+      
+      <guid>https://iliu.org/3844.html</guid>
+      <description>老刘的笔记本电脑自从去年1月份买回来之后，一直也没怎么管过它，最近发现C盘的可用空间已经变的非常的小了，当时给分配了80G，现在只剩下不到1</description>
+    </item>
+    
+  </channel>
+</rss>

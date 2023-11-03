@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>失而复得 on 图南博客</title>
+    <link>https://iliu.org/tags/%E5%A4%B1%E8%80%8C%E5%A4%8D%E5%BE%97/</link>
+    <description>Recent content in 失而复得 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Jan 2010 12:17:03 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%A4%B1%E8%80%8C%E5%A4%8D%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>体验了下失而复得</title>
+      <link>https://iliu.org/477.html</link>
+      <pubDate>Wed, 20 Jan 2010 12:17:03 +0000</pubDate>
+      
+      <guid>https://iliu.org/477.html</guid>
+      <description>昨天下午4点多的时候，忽然发现网站打不开了，显示404错误，发现ftp也不能用，进到godaddy的后台，文件管理也进不去了，不过数据库没有</description>
+    </item>
+    
+  </channel>
+</rss>
