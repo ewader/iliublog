@@ -10,7 +10,7 @@
 <meta name="description" content="在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/frome-wordpress-to-hugo/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.ddf4dce4505377a7a4fc28619f2ca32a915541614eedee09477d2e87da7acc1b.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8c66a81ac6d82f28fdb9c760e070e403887d7fdf6629041dd06881365beeafe9.css" integrity="" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.837a6fa5b0c736b52bbde2b2b6190f305da3fc9ed41681db5321507057b5c846.js" integrity="sha256-g3pvpbDHNrUrveKythkPMF2j/J7UFoHbUyFQcFe1yEY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://iliu.org/img/favicon.png">
@@ -98,8 +98,8 @@
   "keywords": [
     
   ],
-  "articleBody": "在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能续费的了。原本打算在荷兰的liteserver这个上面暂时放一段时间。这是一台2c2g的机子，装完php、MySQL、和Nginx之后，只要运行一段时间，内存就基本上爆了。再加上最近lnmp和oneinstack都被收购而且被挂恶意代码，也不想用宝塔之类的面板，自己编译环境又很麻烦。于是，就产生了转成静态博客的想法。在这里也要感谢阿甘和韩宇的帮助。\n原本以为很复杂，其实操作下来发现也是挺简单的。\n首先，WordPress的文章转换成md文件 这里有大佬已经整好了，我是使用的插件的形式。 在WordPress的插件目录wp-content/plugins/下，直接克隆”WordPress to Hugo Exporter”的源码。\n$ git clone https://github.com/SchumacherFM/wordpress-to-hugo-exporter.git 然后进到网站的后台，在插件里启用这个插件。然后在工具里，点Export to Hugo。会下载一个压缩包，这个压缩包就是你网站的文章转换成的md文件。 这个插件还好用，能保留网站原来的目录，换成Hugo后，搜索引擎的收录不会受到影响。\n第二步，安装Hugo 我是用的系统是Ubuntu22.04，所以直接安装就好了。\nsudo snap install hugo hugo new site youweb 然后进入到你的网站文件夹，找一个喜欢的主题。一般主题都会使用的方法，按照使用方法安装即可。 安装设置完成后，把你下载的文件，md文件copy到content这个文件夹，图片之类的放到static。然后\nhugo server 打开浏览器，localhost：1313，文章是不是显示出来了？\n第三，生成HTML文件，并上传 使用代码\nhugo 然后把public这个文件夹的内容传到你的虚拟主机、VPS或者GitHub，Cloudflare page等，再绑定域名就可以了。 至于如何操作，网上的教程大把的，直接参考就行了。\n测试一下代码高亮 代码：\n",
-  "wordCount" : "835",
+  "articleBody": "在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能续费的了。原本打算在荷兰的liteserver这个上面暂时放一段时间。这是一台2c2g的机子，装完php、MySQL、和Nginx之后，只要运行一段时间，内存就基本上爆了。再加上最近lnmp和oneinstack都被收购而且被挂恶意代码，也不想用宝塔之类的面板，自己编译环境又很麻烦。于是，就产生了转成静态博客的想法。在这里也要感谢阿甘和韩宇的帮助。\n原本以为很复杂，其实操作下来发现也是挺简单的。\n首先，WordPress的文章转换成md文件 这里有大佬已经整好了，我是使用的插件的形式。 在WordPress的插件目录wp-content/plugins/下，直接克隆”WordPress to Hugo Exporter”的源码。\n1 $ git clone https://github.com/SchumacherFM/wordpress-to-hugo-exporter.git 然后进到网站的后台，在插件里启用这个插件。然后在工具里，点Export to Hugo。会下载一个压缩包，这个压缩包就是你网站的文章转换成的md文件。 这个插件还好用，能保留网站原来的目录，换成Hugo后，搜索引擎的收录不会受到影响。\n第二步，安装Hugo 我是用的系统是Ubuntu22.04，所以直接安装就好了。\n1 2 sudo snap install hugo hugo new site youweb 然后进入到你的网站文件夹，找一个喜欢的主题。一般主题都会使用的方法，按照使用方法安装即可。 安装设置完成后，把你下载的文件，md文件copy到content这个文件夹，图片之类的放到static。然后\n1 hugo server 打开浏览器，localhost：1313，文章是不是显示出来了？\n第三，生成HTML文件，并上传 使用代码\n1 hugo 然后把public这个文件夹的内容传到你的虚拟主机、VPS或者GitHub，Cloudflare page等，再绑定域名就可以了。 至于如何操作，网上的教程大把的，直接参考就行了。\n测试一下代码高亮 代码：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ",
+  "wordCount" : "856",
   "inLanguage": "zh",
   "datePublished": "2023-11-01T00:24:17Z",
   "dateModified": "2023-11-01T00:24:17Z",
@@ -238,25 +238,74 @@
 <h2 id="首先wordpress的文章转换成md文件">首先，WordPress的文章转换成md文件<a hidden class="anchor" aria-hidden="true" href="#首先wordpress的文章转换成md文件">#</a></h2>
 <p>这里有大佬已经整好了，我是使用的插件的形式。
 在WordPress的插件目录<code>wp-content/plugins/</code>下，直接克隆”WordPress to Hugo Exporter”的源码。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">$</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">SchumacherFM</span><span class="o">/</span><span class="n">wordpress</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">hugo</span><span class="o">-</span><span class="n">exporter</span><span class="o">.</span><span class="n">git</span>
-</span></span></code></pre></div><p>然后进到网站的后台，在插件里启用这个插件。然后在工具里，点Export to Hugo。会下载一个压缩包，这个压缩包就是你网站的文章转换成的md文件。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">$</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">SchumacherFM</span><span class="o">/</span><span class="n">wordpress</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">hugo</span><span class="o">-</span><span class="n">exporter</span><span class="o">.</span><span class="n">git</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后进到网站的后台，在插件里启用这个插件。然后在工具里，点Export to Hugo。会下载一个压缩包，这个压缩包就是你网站的文章转换成的md文件。
 这个插件还好用，能保留网站原来的目录，换成Hugo后，搜索引擎的收录不会受到影响。</p>
 <h2 id="第二步安装hugo">第二步，安装Hugo<a hidden class="anchor" aria-hidden="true" href="#第二步安装hugo">#</a></h2>
 <p>我是用的系统是Ubuntu22.04，所以直接安装就好了。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo snap install hugo
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo snap install hugo
 </span></span><span class="line"><span class="cl">hugo new site youweb
-</span></span></code></pre></div><p>然后进入到你的网站文件夹，找一个喜欢的主题。一般主题都会使用的方法，按照使用方法安装即可。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后进入到你的网站文件夹，找一个喜欢的主题。一般主题都会使用的方法，按照使用方法安装即可。
 安装设置完成后，把你下载的文件，md文件copy到content这个文件夹，图片之类的放到static。然后</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
-</span></span></code></pre></div><p>打开浏览器，localhost：1313，文章是不是显示出来了？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>打开浏览器，localhost：1313，文章是不是显示出来了？</p>
 <h2 id="第三生成html文件并上传">第三，生成HTML文件，并上传<a hidden class="anchor" aria-hidden="true" href="#第三生成html文件并上传">#</a></h2>
 <p>使用代码</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo
-</span></span></code></pre></div><p>然后把public这个文件夹的内容传到你的虚拟主机、VPS或者GitHub，Cloudflare page等，再绑定域名就可以了。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后把public这个文件夹的内容传到你的虚拟主机、VPS或者GitHub，Cloudflare page等，再绑定域名就可以了。
 至于如何操作，网上的教程大把的，直接参考就行了。</p>
 <h2 id="测试一下代码高亮">测试一下代码高亮<a hidden class="anchor" aria-hidden="true" href="#测试一下代码高亮">#</a></h2>
 <p>代码：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;link href=&#34;/artalk/Artalk.css&#34; rel=&#34;stylesheet&#34;&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;link href=&#34;/artalk/Artalk.css&#34; rel=&#34;stylesheet&#34;&gt;
 </span></span><span class="line"><span class="cl">&lt;script src=&#34;/artalk/Artalk.js&#34;&gt;&lt;/script&gt;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">&lt;!-- Artalk --&gt;
@@ -272,7 +321,9 @@
 </span></span><span class="line"><span class="cl">    // ...你的其他配置
 </span></span><span class="line"><span class="cl">  })
 </span></span><span class="line"><span class="cl">&lt;/script&gt;
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
   </div>
 
