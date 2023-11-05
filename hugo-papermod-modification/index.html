@@ -10,8 +10,8 @@
 <meta name="description" content="在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用Paper">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/hugo-papermod-modification/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.e309e40c82e4d56f6195a4da6b93d6ca5a9b1342728a4793175ac78709554229.css" integrity="" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.ad58479dafd4e3c1ba8fcedd5c0f4b4319025b2dfa300859dff092cd8c02bc15.js" integrity="sha256-rVhHna/U48G6j87dXA9LQxkCWy36MAhZ3/CSzYwCvBU="
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
@@ -98,8 +98,8 @@
   "keywords": [
     "hugo", "papermod"
   ],
-  "articleBody": "在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用PaperMod主题的时候，也是遇到了一些问题，本文就遇到的问题作一个记录。目前，主题的代码高亮功能还是没有搞定，不过也是影响不大，先放一放也无所谓。\n首页不显示文章 把WordPress导出的md文件导入的Hugo的psots目录后，在使用代码创建新文件时候\n1 hugo new posts/***.md 发现新建的md文件，生成网页后不会在首页显示。但是在栏目里是会有的。后来的在@阿甘博客博客的提醒下，使用导出的md文件的文档属性标头，成功的显示了。但是，每次在生成文章md的时候，都需要手动的更改，不是太方便。后来，在看某篇文章的时候得到启发，修改archetypes/default.md,把默认的代码删除，改成：\n1 2 3 4 5 6 7 8 9 --- title: \"{{ replace .Name \"-\" \" \" | title }}\" author: 老刘 type: post date: {{ .Date }} url: /optics-weekly-issue-8/ categories: - 齐物论 --- 然后，再创建md文件后，只需要修改一下url里的值就OK了。\n增加评论功能 这个主要是copy了阿甘博客的方法。 在artalk的官方文档中找到Artalk.css和Artalk.js文件的cdn地址然后下载到本地，在hugo项目根目录的/static文件夹下面新建一个叫 artalk的文件夹，然后把前述两个静态文件放进这个文件夹\n创建模板文件 /主题目录/layouts/partials/comment/artalk.html，文件内容如下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 文章页模板 /主题目录/layouts/_default/single.html 合适的位置添加：\n1 2 3 {{- partial \"comment/artalk\" . -}} 具体位置为single.html文件的{{- if (.Param “comments”) }}判断体中，完整的代码如下：\n1 2 3 4 5 {{- if (.Param \"comments\") }} {{- partial \"comment/artalk\" . -}} {{- end }} 然后在 Hugo 配置文件中添加如下内容：\n1 2 3 4 params: artalk: server: 'https://artalk.sharpgan.com' site: '图南博客' 至于artalk的部署方法，可以用docker来部署，官方有详细的方法\n不加载CSS和JS 这个问题有点玄学，很多教程给出的答案都是去Cloudflare里修改，使优化不压缩js和CSS，但是在我这里没有效果。看了错误的提示好像是SHA-256完整性的检查不通过，浏览器阻塞了。 一般的解决办法是： 是要么关闭 SRI，要么取消 Cloudflare 的「Auto Minify」。 Cloudflare 关闭的方法：速度 - 优化 - Auto Minify。 在 Hugo 中关闭的方法：\n1 2 3 params: assets: disableFingerprinting: true 但是，在我这里怎么搞都没有用。 后来看到一个哥们的博客，网址我忘掉了，通过修改一个值，搞定了。 在 themes\\PaperMod\\layouts\\partials 文件夹下找到一个 head.html 文件，发现里面确实有 integrity=\"{{ $stylesheet.Data.Integrity }}\" 这么一句代码，把它改为 integrity=\"\" 然后重新发布\n代码高亮 这个我参考了阿甘和其他的一些文章，但是都没有成功，有时候有一点颜色，有时候一丢丢颜色也没有。我感觉可能是和物品修改了上面的那个head.html有关系。\n",
-  "wordCount" : "1215",
+  "articleBody": "在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用PaperMod主题的时候，也是遇到了一些问题，本文就遇到的问题作一个记录。目前，主题的代码高亮功能还是没有搞定，不过也是影响不大，先放一放也无所谓。\n首页不显示文章 把WordPress导出的md文件导入的Hugo的psots目录后，在使用代码创建新文件时候\nhugo new posts/***.md 发现新建的md文件，生成网页后不会在首页显示。但是在栏目里是会有的。后来的在@阿甘博客博客的提醒下，使用导出的md文件的文档属性标头，成功的显示了。但是，每次在生成文章md的时候，都需要手动的更改，不是太方便。后来，在看某篇文章的时候得到启发，修改archetypes/default.md,把默认的代码删除，改成：\n--- title: \"{{ replace .Name \"-\" \" \" | title }}\" author: 老刘 type: post date: {{ .Date }} url: /optics-weekly-issue-8/ categories: - 齐物论 --- 然后，再创建md文件后，只需要修改一下url里的值就OK了。\n增加评论功能 这个主要是copy了阿甘博客的方法。 在artalk的官方文档中找到Artalk.css和Artalk.js文件的cdn地址然后下载到本地，在hugo项目根目录的/static文件夹下面新建一个叫 artalk的文件夹，然后把前述两个静态文件放进这个文件夹\n创建模板文件 /主题目录/layouts/partials/comment/artalk.html，文件内容如下：\n文章页模板 /主题目录/layouts/_default/single.html 合适的位置添加：\n{{- partial \"comment/artalk\" . -}} 具体位置为single.html文件的{{- if (.Param “comments”) }}判断体中，完整的代码如下：\n{{- if (.Param \"comments\") }} {{- partial \"comment/artalk\" . -}} {{- end }} 然后在 Hugo 配置文件中添加如下内容：\nparams: artalk: server: 'https://artalk.sharpgan.com' site: '图南博客' 至于artalk的部署方法，可以用docker来部署，官方有详细的方法\n不加载CSS和JS 这个问题有点玄学，很多教程给出的答案都是去Cloudflare里修改，使优化不压缩js和CSS，但是在我这里没有效果。看了错误的提示好像是SHA-256完整性的检查不通过，浏览器阻塞了。 一般的解决办法是： 是要么关闭 SRI，要么取消 Cloudflare 的「Auto Minify」。 Cloudflare 关闭的方法：速度 - 优化 - Auto Minify。 在 Hugo 中关闭的方法：\nparams: assets: disableFingerprinting: true 但是，在我这里怎么搞都没有用。 后来看到一个哥们的博客，网址我忘掉了，通过修改一个值，搞定了。 在 themes\\PaperMod\\layouts\\partials 文件夹下找到一个 head.html 文件，发现里面确实有 integrity=\"{{ $stylesheet.Data.Integrity }}\" 这么一句代码，把它改为 integrity=\"\" 然后重新发布\n代码高亮 这个我参考了阿甘和其他的一些文章，但是都没有成功，有时候有一点颜色，有时候一丢丢颜色也没有。我感觉可能是和物品修改了上面的那个head.html有关系。 然而，我的猜测是错误❌的，加上那个代码也没有用。然后我回复用官方的一个dome，发现是可以显示代码高亮的，仔细查看了我的配置文件和官方的配置文件的差别，发现是在设置代码高亮的那个地方，有一个选项不能是true，不然就不显示，太玄学了。 具体代码：\nhighlight: # anchorLineNos: true noClasses: false # anchorLineNos: true #codeFences: true #guessSyntax: true lineNos: true style: monokai ",
+  "wordCount" : "1313",
   "inLanguage": "zh",
   "datePublished": "2023-11-04T20:36:45+08:00",
   "dateModified": "2023-11-04T20:36:45+08:00",
@@ -188,6 +188,16 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
+            <li>
+                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
+                    <span>🙋🏻‍♂️ 关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
+                    <span>👓配镜</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -226,152 +236,86 @@
   <div class="post-content"><p>在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用PaperMod主题的时候，也是遇到了一些问题，本文就遇到的问题作一个记录。目前，主题的代码高亮功能还是没有搞定，不过也是影响不大，先放一放也无所谓。</p>
 <h3 id="首页不显示文章">首页不显示文章<a hidden class="anchor" aria-hidden="true" href="#首页不显示文章">#</a></h3>
 <p>把WordPress导出的md文件导入的Hugo的psots目录后，在使用代码创建新文件时候</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new posts/***.md
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>发现新建的md文件，生成网页后不会在首页显示。但是在栏目里是会有的。后来的在@<a href="https://www.sharpgan.com">阿甘博客</a>博客的提醒下，使用导出的md文件的文档属性标头，成功的显示了。但是，每次在生成文章md的时候，都需要手动的更改，不是太方便。后来，在看某篇文章的时候得到启发，修改archetypes/default.md,把默认的代码删除，改成：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
-</span></span><span class="line"><span class="cl">title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34; 
-</span></span><span class="line"><span class="cl">author: 老刘
-</span></span><span class="line"><span class="cl">type: post
-</span></span><span class="line"><span class="cl">date: {{ .Date }}
-</span></span><span class="line"><span class="cl">url: /optics-weekly-issue-8/
-</span></span><span class="line"><span class="cl">categories:
-</span></span><span class="line"><span class="cl">  - 齐物论
-</span></span><span class="line"><span class="cl">---
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>然后，再创建md文件后，只需要修改一下url里的值就OK了。</p>
+<pre tabindex="0"><code>hugo new posts/***.md
+</code></pre><p>发现新建的md文件，生成网页后不会在首页显示。但是在栏目里是会有的。后来的在@<a href="https://www.sharpgan.com">阿甘博客</a>博客的提醒下，使用导出的md文件的文档属性标头，成功的显示了。但是，每次在生成文章md的时候，都需要手动的更改，不是太方便。后来，在看某篇文章的时候得到启发，修改archetypes/default.md,把默认的代码删除，改成：</p>
+<pre tabindex="0"><code>---
+title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34; 
+author: 老刘
+type: post
+date: {{ .Date }}
+url: /optics-weekly-issue-8/
+categories:
+  - 齐物论
+---
+</code></pre><p>然后，再创建md文件后，只需要修改一下url里的值就OK了。</p>
 <h3 id="增加评论功能">增加评论功能<a hidden class="anchor" aria-hidden="true" href="#增加评论功能">#</a></h3>
 <p>这个主要是copy了阿甘博客的方法。
 在artalk的官方文档中找到<code>Artalk.css</code>和<code>Artalk.js</code>文件的cdn地址然后下载到本地，在hugo项目根目录的/static文件夹下面新建一个叫 artalk的文件夹，然后把前述两个静态文件放进这个文件夹</p>
 <p>创建模板文件 /主题目录/layouts/partials/comment/artalk.html，文件内容如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;link href=&#34;/artalk/Artalk.css&#34; rel=&#34;stylesheet&#34;&gt;
-</span></span><span class="line"><span class="cl">&lt;script src=&#34;/artalk/Artalk.js&#34;&gt;&lt;/script&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;!-- Artalk --&gt;
-</span></span><span class="line"><span class="cl">&lt;div id=&#34;Comments&#34;&gt;&lt;/div&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;script&gt;
-</span></span><span class="line"><span class="cl">  Artalk.init({
-</span></span><span class="line"><span class="cl">    el:        &#39;#Comments&#39;,
-</span></span><span class="line"><span class="cl">    pageKey:   &#39;{{ .Permalink }}&#39;,
-</span></span><span class="line"><span class="cl">    pageTitle: &#39;{{ .Title }}&#39;,
-</span></span><span class="line"><span class="cl">    server:    &#39;{{ $.Site.Params.artalk.server }}&#39;,
-</span></span><span class="line"><span class="cl">    site:      &#39;{{ $.Site.Params.artalk.site }}&#39;,
-</span></span><span class="line"><span class="cl">    // ...你的其他配置
-</span></span><span class="line"><span class="cl">  })
-</span></span><span class="line"><span class="cl">&lt;/script&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>文章页模板 /主题目录/layouts/_default/single.html 合适的位置添加：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;div class=&#34;article-comments&#34;&gt;
-</span></span><span class="line"><span class="cl">  {{- partial &#34;comment/artalk&#34; . -}}
-</span></span><span class="line"><span class="cl">&lt;/div&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>具体位置为<code>single.html</code>文件的{{- if (.Param “comments”) }}判断体中，完整的代码如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{- if (.Param &#34;comments&#34;) }}
-</span></span><span class="line"><span class="cl">  &lt;div class=&#34;article-comments&#34;&gt;
-</span></span><span class="line"><span class="cl">  {{- partial &#34;comment/artalk&#34; . -}}
-</span></span><span class="line"><span class="cl">&lt;/div&gt;
-</span></span><span class="line"><span class="cl">  {{- end }}
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>然后在 Hugo 配置文件中添加如下内容：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">params:
-</span></span><span class="line"><span class="cl">  artalk:
-</span></span><span class="line"><span class="cl">    server: &#39;https://artalk.sharpgan.com&#39;
-</span></span><span class="line"><span class="cl">    site: &#39;图南博客&#39;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>至于artalk的部署方法，可以用docker来部署，官方有详细的方法</p>
+<pre tabindex="0"><code>&lt;link href=&#34;/artalk/Artalk.css&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;script src=&#34;/artalk/Artalk.js&#34;&gt;&lt;/script&gt;
+
+&lt;!-- Artalk --&gt;
+&lt;div id=&#34;Comments&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  Artalk.init({
+    el:        &#39;#Comments&#39;,
+    pageKey:   &#39;{{ .Permalink }}&#39;,
+    pageTitle: &#39;{{ .Title }}&#39;,
+    server:    &#39;{{ $.Site.Params.artalk.server }}&#39;,
+    site:      &#39;{{ $.Site.Params.artalk.site }}&#39;,
+    // ...你的其他配置
+  })
+&lt;/script&gt;
+</code></pre><p>文章页模板 /主题目录/layouts/_default/single.html 合适的位置添加：</p>
+<pre tabindex="0"><code>&lt;div class=&#34;article-comments&#34;&gt;
+  {{- partial &#34;comment/artalk&#34; . -}}
+&lt;/div&gt;
+</code></pre><p>具体位置为<code>single.html</code>文件的{{- if (.Param “comments”) }}判断体中，完整的代码如下：</p>
+<pre tabindex="0"><code>{{- if (.Param &#34;comments&#34;) }}
+  &lt;div class=&#34;article-comments&#34;&gt;
+  {{- partial &#34;comment/artalk&#34; . -}}
+&lt;/div&gt;
+  {{- end }}
+</code></pre><p>然后在 Hugo 配置文件中添加如下内容：</p>
+<pre tabindex="0"><code>params:
+  artalk:
+    server: &#39;https://artalk.sharpgan.com&#39;
+    site: &#39;图南博客&#39;
+</code></pre><p>至于artalk的部署方法，可以用docker来部署，官方有详细的方法</p>
 <h3 id="不加载css和js">不加载CSS和JS<a hidden class="anchor" aria-hidden="true" href="#不加载css和js">#</a></h3>
 <p>这个问题有点玄学，很多教程给出的答案都是去Cloudflare里修改，使优化不压缩js和CSS，但是在我这里没有效果。看了错误的提示好像是SHA-256完整性的检查不通过，浏览器阻塞了。
 一般的解决办法是：
 是要么关闭 SRI，要么取消 Cloudflare 的「Auto Minify」。
 Cloudflare 关闭的方法：速度 - 优化 - Auto Minify。
 在 Hugo 中关闭的方法：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">params:
-</span></span><span class="line"><span class="cl">  assets:
-</span></span><span class="line"><span class="cl">    disableFingerprinting: true
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>但是，在我这里怎么搞都没有用。
+<pre tabindex="0"><code>params:
+  assets:
+    disableFingerprinting: true
+</code></pre><p>但是，在我这里怎么搞都没有用。
 后来看到一个哥们的博客，网址我忘掉了，通过修改一个值，搞定了。
 在 themes\PaperMod\layouts\partials 文件夹下找到一个 head.html 文件，发现里面确实有 integrity=&quot;{{ $stylesheet.Data.Integrity }}&quot; 这么一句代码，把它改为 integrity=&quot;&quot; 然后重新发布</p>
 <h3 id="代码高亮">代码高亮<a hidden class="anchor" aria-hidden="true" href="#代码高亮">#</a></h3>
-<p>这个我参考了阿甘和其他的一些文章，但是都没有成功，有时候有一点颜色，有时候一丢丢颜色也没有。我感觉可能是和物品修改了上面的那个head.html有关系。</p>
+<p>这个我参考了阿甘和其他的一些文章，但是都没有成功，有时候有一点颜色，有时候一丢丢颜色也没有。我感觉可能是和物品修改了上面的那个head.html有关系。
+然而，我的猜测是错误❌的，加上那个代码也没有用。然后我回复用官方的一个dome，发现是可以显示代码高亮的，仔细查看了我的配置文件和官方的配置文件的差别，发现是在设置代码高亮的那个地方，有一个选项不能是true，不然就不显示，太玄学了。
+具体代码：</p>
+<pre tabindex="0"><code>highlight:
 
+# anchorLineNos: true
+
+noClasses: false
+
+# anchorLineNos: true
+
+#codeFences: true
+
+#guessSyntax: true
+
+lineNos: true
+
+style: monokai
+</code></pre>
 
   </div>
 
@@ -390,11 +334,11 @@ Cloudflare 关闭的方法：速度 - 优化 - Auto Minify。
 
 
 <div class="share-buttons">
-    <a target="_blank" rel="noopener noreferrer" aria-label="share Hugo-papermod主题的优化记录 on twitter"
-        href="https://twitter.com/intent/tweet/?text=Hugo-papermod%e4%b8%bb%e9%a2%98%e7%9a%84%e4%bc%98%e5%8c%96%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2filiu.org%2fhugo-papermod-modification%2f&amp;hashtags=hugo%2cpapermod">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share Hugo-papermod主题的优化记录 on x"
+        href="https://x.com/intent/tweet/?text=Hugo-papermod%e4%b8%bb%e9%a2%98%e7%9a%84%e4%bc%98%e5%8c%96%e8%ae%b0%e5%bd%95&amp;url=https%3a%2f%2filiu.org%2fhugo-papermod-modification%2f&amp;hashtags=hugo%2cpapermod">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
             <path
-                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+                d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"/>
         </svg>
     </a>
     <a target="_blank" rel="noopener noreferrer" aria-label="share Hugo-papermod主题的优化记录 on linkedin"
@@ -443,7 +387,7 @@ Cloudflare 关闭的方法：速度 - 优化 - Auto Minify。
 </div>
 
   </footer>
-   <div class="article-comments"><link href="/artalk/Artalk.css" rel="stylesheet">
+  <div class="article-comments"><link href="/artalk/Artalk.css" rel="stylesheet">
 <script src="/artalk/Artalk.js"></script>
 
 
