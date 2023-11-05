@@ -6,7 +6,16 @@
     <description>Recent content on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Nov 2023 15:19:25 +0800</lastBuildDate><atom:link href="https://iliu.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Nov 2023 20:36:45 +0800</lastBuildDate><atom:link href="https://iliu.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo-papermod主题的优化记录</title>
+      <link>https://iliu.org/hugo-papermod-modification/</link>
+      <pubDate>Sat, 04 Nov 2023 20:36:45 +0800</pubDate>
+      
+      <guid>https://iliu.org/hugo-papermod-modification/</guid>
+      <description>在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用Paper</description>
+    </item>
+    
     <item>
       <title>视光周刊（第9期）：年轻的时候近视，年老不花眼？</title>
       <link>https://iliu.org/optics-weekly-issue-9/</link>
