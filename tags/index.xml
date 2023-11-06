@@ -6,7 +6,25 @@
     <description>Recent content in Tags on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Nov 2023 20:36:45 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 17:08:14 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://iliu.org/tags/git/</link>
+      <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
+      
+      <guid>https://iliu.org/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://iliu.org/tags/linux/</link>
+      <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
+      
+      <guid>https://iliu.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://iliu.org/tags/hugo/</link>
@@ -2047,15 +2065,6 @@
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
       <guid>https://iliu.org/tags/deepin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://iliu.org/tags/linux/</link>
-      <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
-      
-      <guid>https://iliu.org/tags/linux/</guid>
       <description></description>
     </item>
     

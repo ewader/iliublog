@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Jan 2022 00:24:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 17:08:14 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用git并把代码提交到GitHub</title>
+      <link>https://iliu.org/how-to-use-git/</link>
+      <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
+      
+      <guid>https://iliu.org/how-to-use-git/</guid>
+      <description>这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用</description>
+    </item>
+    
     <item>
       <title>正式使用Manjaro系统</title>
       <link>https://iliu.org/4036.html</link>

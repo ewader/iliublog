@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>git on 图南博客</title>
+    <link>https://iliu.org/tags/git/</link>
+    <description>Recent content in git on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 05 Nov 2023 17:08:14 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用git并把代码提交到GitHub</title>
+      <link>https://iliu.org/how-to-use-git/</link>
+      <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
+      
+      <guid>https://iliu.org/how-to-use-git/</guid>
+      <description>这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Nov 2023 20:36:45 +0800</lastBuildDate><atom:link href="https://iliu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Nov 2023 17:08:14 +0800</lastBuildDate><atom:link href="https://iliu.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用git并把代码提交到GitHub</title>
+      <link>https://iliu.org/how-to-use-git/</link>
+      <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
+      
+      <guid>https://iliu.org/how-to-use-git/</guid>
+      <description>这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用</description>
+    </item>
+    
     <item>
       <title>Hugo-papermod主题的优化记录</title>
       <link>https://iliu.org/hugo-papermod-modification/</link>
