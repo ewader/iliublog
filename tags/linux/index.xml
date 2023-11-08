@@ -6,7 +6,16 @@
     <description>Recent content in Linux on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Nov 2023 17:08:14 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Nov 2023 18:27:29 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EndeavourOS安装之后的几件事</title>
+      <link>https://iliu.org/A-few-things-after-installing-EndeavourOS/</link>
+      <pubDate>Wed, 08 Nov 2023 18:27:29 +0800</pubDate>
+      
+      <guid>https://iliu.org/A-few-things-after-installing-EndeavourOS/</guid>
+      <description>很多追求新，追求精简的Linux系统的使用者，往往都会推荐Arch Linux，这个系统特点是精简，精简到什么都需要你来搞定，所以也让很多人望</description>
+    </item>
+    
     <item>
       <title>如何使用git并把代码提交到GitHub</title>
       <link>https://iliu.org/how-to-use-git/</link>
