@@ -3,24 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://iliu.org/categories/</loc>
-    <lastmod>2023-11-08T18:27:29+08:00</lastmod>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/posts/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/%E9%BB%84%E6%96%91%E5%8F%98%E6%80%A7/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/%E8%BF%91%E8%A7%86%E9%98%B2%E6%8E%A7/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/optics-weekly-issue-10/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/%E7%BB%B4%E7%94%9F%E7%B4%A0b/</loc>
+    <lastmod>2023-11-10T18:42:36+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/A-few-things-after-installing-EndeavourOS/</loc>
     <lastmod>2023-11-08T18:27:29+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/linux/</loc>
-    <lastmod>2023-11-08T18:27:29+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/posts/</loc>
-    <lastmod>2023-11-08T18:27:29+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/tags/</loc>
-    <lastmod>2023-11-08T18:27:29+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</loc>
-    <lastmod>2023-11-08T18:27:29+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/</loc>
     <lastmod>2023-11-08T18:27:29+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/ok%E9%95%9C/</loc>
@@ -1728,9 +1740,6 @@
     <lastmod>2021-05-14T01:44:52+00:00</lastmod>
   </url><url>
     <loc>https://iliu.org/3739.html</loc>
-    <lastmod>2021-05-14T01:44:52+00:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/tags/%E8%BF%91%E8%A7%86%E9%98%B2%E6%8E%A7/</loc>
     <lastmod>2021-05-14T01:44:52+00:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/%E6%8A%96%E9%9F%B3/</loc>
