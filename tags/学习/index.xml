@@ -4,6 +4,11 @@
     <title>学习 on 图南博客</title>
     <link>https://iliu.org/tags/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 30 Oct 2021 04:28:51 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <pubDate>Sat, 30 Oct 2021 04:28:51 +0000</pubDate>
       
       <guid>https://iliu.org/3929.html</guid>
-      <description>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。 通过上面8</description>
+      <description>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。
+通过上面8章的学习，基本上有了实现我那个小项目的想法。今天根据前八章的知识，初步用input函数，实现了用特殊关键字的查询。继续加油。
+kehu = {&#39;张明&#39;:{&#39;右眼度数&#39;:&#39;-1.25&#39;,&#39;左眼度数&#39;:&#39;-2.00&#39;,&#39;瞳距&#39;:&#39;60mm&#39;,&#39;镜架&#39;:&#39;纯钛&#39;,&#39;镜片&#39;:&#39;康耐特&#39;,&#39;价格&#39;:&#39;￥450&#39;,&#39;手机号码&#39;:&#39;13027511600&#39;,},}xingming = input(&#34;请输入你的姓名：&#34;)shoujihaoma = input(&#34;请输入你的手机号码：&#34;)for name , info in kehu.items():if name == xingming and info[&#39;手机号码&#39;] == shoujihaoma:right = f&#34;{info[&#39;右眼度数&#39;]}&#34;lift = f&#34;{info[&#39;左眼度数&#39;]}&#34;tongju = f&#34;{info[&#39;瞳距&#39;]}&#34;jingjia = f&#34;{info[&#39;镜架&#39;]}&#34;jingpian = f&#34;{info[&#39;镜片&#39;]}&#34;jiage = f&#34;{info[&#39;价格&#39;]}&#34;print(&#34;验光单&#34;)print(f&#34;姓名：{name}&#34;)print(f&#34;右眼度数:{right} 左眼度数：{lift}&#34;)print(f&#34;瞳距：{tongju} &#34;)else:print(&#34;您输入的资料不正确，请重新输入&#34;)虽然简单，确实独立写出来的，应该是一大步吧。
+学好了，用python自己做个博客，哈哈哈</description>
     </item>
     
   </channel>

@@ -4,6 +4,11 @@
     <title>碎玉 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%A2%8E%E7%8E%89/</link>
     <description>Recent content in 碎玉 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 24 Jan 2021 03:35:03 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%A2%8E%E7%8E%89/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <pubDate>Sun, 24 Jan 2021 03:35:03 +0000</pubDate>
       
       <guid>https://iliu.org/3623.html</guid>
-      <description>昨天反思了一下自己，发现在过去的一年，折腾的挺多，但是折腾来折腾去，很多时候又回到了起点。翻看了一下记录，就博客来说，域名换了好几次，博客的</description>
+      <description>昨天反思了一下自己，发现在过去的一年，折腾的挺多，但是折腾来折腾去，很多时候又回到了起点。翻看了一下记录，就博客来说，域名换了好几次，博客的类型也一变又变，原来想大而全，后来又想弄专业，现在回头看，如果一直坚持同一个类型一直坚持同一个域名的话，可能情况会好很多吧。
+然后就是主机，又想配置好，又想价格便宜，还想线路速度快和运行的稳定。但这个世界哪有那么多好事都能给你遇到，天上掉馅饼的事情是不可能的，真的掉了，你捡了也会用期待的方式去偿还。所以，要有取舍，稳定性事首先要考虑的，其次是价格，对于这个日均100来IP的小博客来说，配置反而不是很重要的了。因此，抛弃一切不起实际的幻想，保留一个香港的主机就行。其他的，该怎么处理就怎么处理就是，然后想了一下，其他的也就剩下NR的那个vps了，就放个freshrss等它过期吧。
+国内的VPS一个，主要事运行公司的网站及商城，也是几经折腾，好像现在已经稳定了下来，以前折腾的原因是没有什么用户，现在稳定下来是因为前端时间推广了一下，有了一些用户后，你就不能在折腾别的了。需要承认的是，自己在运营方面确实有一定的缺陷，新的一年应该在这方面要加强一下。
+啰嗦了这么多，总而言之一句话，主机以后就两个，香港一个，国内一个，域名也就这么几个，公司官网以及商城及博客程序也就这样了，不会在变了，新的一年，重点放在内容输出以及商城的运营上面。其他的就不再折腾了。</description>
     </item>
     
   </channel>

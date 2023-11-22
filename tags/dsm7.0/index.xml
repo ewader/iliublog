@@ -4,6 +4,11 @@
     <title>dsm7.0 on 图南博客</title>
     <link>https://iliu.org/tags/dsm7.0/</link>
     <description>Recent content in dsm7.0 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 06 Sep 2021 10:25:46 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/dsm7.0/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,12 @@
       <pubDate>Mon, 06 Sep 2021 10:25:46 +0000</pubDate>
       
       <guid>https://iliu.org/3887.html</guid>
-      <description>今天上午来到店内，不知道是怎么回事，产生了一些惰性，看到群里小胡同学发的白嫖亚马逊12本的电子书，就去搞了一下，看了会书，也不想更新商城的产</description>
+      <description>今天上午来到店内，不知道是怎么回事，产生了一些惰性，看到群里小胡同学发的白嫖亚马逊12本的电子书，就去搞了一下，看了会书，也不想更新商城的产品了，后来就想不行把群晖的系统升级一下吧。
+群晖6.0的的系统不能自动升级到7.0，需要进行手动升级。于是到群晖官网下载相应型号的固件，在群晖的管理面板里手动升级即可。升级也很顺利。升级后有点小坑。
+Dsm6.0系统里的很多套件不能用了 具体有哪些不是很清楚，我原来主要用的是moment这个相册的套件，还有synology drive,已经note station这三个套件。至于下载之类的，老刘也没有什么需要一天到晚下载的数据。升级完之后发现moment这个套件不能用了。
+查找了一下发现，群晖dsm7.0的相册套件是synology photos。老刘手机上把Google市场卸载了，安装不上，后来找了一个可以下载Google市场APP的网站，下载了synology photos之后，传到手机上，算是顺利的解决了这一个问题。
+升级后的感觉 感觉和以前的6.0相差不大，节目好看了那么一丢丢。如果非要比喻的话是xp到win7的感觉吧。更精致了一些。
+不过升级后有些套件不支持了，看你的需求了。</description>
     </item>
     
   </channel>

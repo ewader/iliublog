@@ -4,6 +4,11 @@
     <title>百度小程序 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%99%BE%E5%BA%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
     <description>Recent content in 百度小程序 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 31 Jul 2021 04:03:46 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%99%BE%E5%BA%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <pubDate>Sat, 31 Jul 2021 04:03:46 +0000</pubDate>
       
       <guid>https://iliu.org/3831.html</guid>
-      <description>前几天有了根据主站镜缘轩做一个百度小程序的想法。因为，一直镜缘轩网站没有快速收录的选项。据百度说，弄了小程序就会有了，所以产生了这么一个想法</description>
+      <description>前几天有了根据主站镜缘轩做一个百度小程序的想法。因为，一直镜缘轩网站没有快速收录的选项。据百度说，弄了小程序就会有了，所以产生了这么一个想法。
+可是实际的体验缺真的不好
+提交了几次都审核不过，其中有页面空白，不过；文章里的图片有二维码，不过；小程序里的图片指向的是网页，不过；好咱改还不行。最后来一个，文章内链有链接，以有诱导用户打开小程序以外的网页为由，继续审核不过。
+这么一看，不是我的内容有问题，而是百度小程序的吃相太难看了。闭环的厉害，生怕出去一丁点的流量。那么只好放弃了。</description>
     </item>
     
   </channel>

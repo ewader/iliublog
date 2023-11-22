@@ -4,6 +4,11 @@
     <title>商城 on 图南博客</title>
     <link>https://iliu.org/tags/%E5%95%86%E5%9F%8E/</link>
     <description>Recent content in 商城 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 22 Jun 2021 07:45:38 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%95%86%E5%9F%8E/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,26 @@
       <pubDate>Tue, 22 Jun 2021 07:45:38 +0000</pubDate>
       
       <guid>https://iliu.org/3785.html</guid>
-      <description>crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一</description>
+      <description>crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。
+今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。
+首先，修改两处文件
+一处在view/admin/src/config/index.js
+另一处在/view/admin/src/router/routes.js
+使用notepad++打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。
+第二步，打包
+因为用的是H5，所以需要用Nodejs。
+安装Nodejs，官方地址
+文件目录：
+后台文件目录： view / admin/
+打包教程：
+1.本地安装 Nodejs（已安装可以跳过）
+2.进入 命令行，具体方法如下
+windows 系统用户进入 view/admin文件夹后，按住shift + 鼠标右击，点击[在此处打开 Powershell窗口]
+命令行输入npm install或者 npm i
+回车。
+等待安装完成。
+然后
+npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。</description>
     </item>
     
   </channel>

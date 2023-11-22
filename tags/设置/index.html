@@ -10,7 +10,7 @@
 <meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/tags/%E8%AE%BE%E7%BD%AE/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="设置" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/%E8%AE%BE%E7%BD%AE/" />
+<meta property="og:url" content="https://iliu.org/tags/%E8%AE%BE%E7%BD%AE/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="设置"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -81,7 +83,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,23 +133,21 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     设置
+    <a href="/tags/%E8%AE%BE%E7%BD%AE/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -157,9 +157,16 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖...</p>
+    <p>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。
+无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。
+安全性设置 如下图，该选择打勾的都给他打上。
+账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。
+群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。
+开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。
+具体的规则如下：
+上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。</p>
   </div>
-  <footer class="entry-footer"><span title='2023-05-15 07:11:31 +0000 +0000'>2023-05-15</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2023-05-15 07:11:31 +0000 +0000'>五月 15, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 浅谈群晖安全性方面的设置" href="https://iliu.org/4375.html"></a>
 </article>
 
@@ -169,28 +176,22 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>昨天开车回家，路过一个路口的时候，明明觉得直行还有左传的灯都是亮的，但是转过去的时候，又抬眼看了一眼，发现左传的灯不亮。于是，对自己刚开始看...</p>
+    <p>昨天开车回家，路过一个路口的时候，明明觉得直行还有左传的灯都是亮的，但是转过去的时候，又抬眼看了一眼，发现左传的灯不亮。于是，对自己刚开始看到的产生了怀疑，不知道到底是有没有闯红灯。
+然后就一路想这个事情，结果又一个路口右转，灯我转过去后才发现，竟然一个小路口，右转灯竟然是红的。我刚转过去才变绿的，这个路口的右转灯设置的也太奇葩了，一般情况，小路口都不设置右转灯，直接转就好了，大路口右转灯在刚开始直行的时候，是红灯，过一会就是绿灯了，这个路口奇葩在于，直行的时候，右转灯是红灯，直行是红灯的时候，右转才是绿灯。我的神。
+今天又路过这个路口，仔细看了一下，幸亏没有安装摄像头。不然得有多少人中招啊。</p>
   </div>
-  <footer class="entry-footer"><span title='2022-01-30 07:38:15 +0000 +0000'>2022-01-30</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2022-01-30 07:38:15 +0000 +0000'>一月 30, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 好像闯红灯了" href="https://iliu.org/4051.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -10,7 +10,7 @@
 <meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="亮度最大" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/" />
+<meta property="og:url" content="https://iliu.org/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="亮度最大"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -81,7 +83,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,23 +133,21 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     亮度最大
+    <a href="/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -157,28 +157,29 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直...</p>
+    <p>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直都没有修复。不过网上也有很多的教程，试用了一下，有些有用，有些没用，直到扒到了一个很老的文章，上面记载的一个很简单的方法，却解决了这样一个问题。
+别的不说，直接上代码，照着做就行了：
+sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，替换为以下GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet acpi_osi=Linux cpi_backlight=vendor&#34;sudo update-grub 最后一步一定要做。另外GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;可能是会多出几个单词，不影响不影响，就是这一行。 然后说说ubunut的输入法
+以前（十年前吧）的时候，linux下的输入法很难用，现在主流的输入法也都有了，比如搜狗，百度，讯飞等等。最近看了一下，发现已经不需要额外在安装其他的输入法了，用系统自带的中文输入法已经很好用了。
+系统自带的输入法是ibuslibpinyin，只需要简单的设置一下，就非常好用了。
+第一步：常规设置，如下图，根据个人的习惯来吧，老刘喜欢候选词以词频方式展示。
+第二步：拼音模式，勾选“启用云输入”
+第三步：用户词典，勾选全部
+第四步：重启
+至此，输入法使用起来基本上和在win10的微软拼音方便程度差不多了。</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-20 09:20:38 +0000 +0000'>2021-12-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-20 09:20:38 +0000 +0000'>十二月 20, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to ubuntu20.04开机亮度最大的解决方法及输入法设置" href="https://iliu.org/3951.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

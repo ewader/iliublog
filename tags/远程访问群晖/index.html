@@ -10,7 +10,7 @@
 <meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/tags/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E7%BE%A4%E6%99%96/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="远程访问群晖" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E7%BE%A4%E6%99%96/" />
+<meta property="og:url" content="https://iliu.org/tags/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E7%BE%A4%E6%99%96/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="远程访问群晖"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -81,7 +83,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,23 +133,21 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     远程访问群晖
+    <a href="/tags/%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E7%BE%A4%E6%99%96/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -157,52 +157,31 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比...</p>
+    <p>在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。
+注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。
+下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。
+如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。
+群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。
+Linux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：
+yay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：
+sudo systemctl start tailscaled 然后登录：
+sudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。
+登录后使用命令查看目前在线的设备：
+tailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？
+后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。</p>
   </div>
-  <footer class="entry-footer"><span title='2023-11-12 17:23:22 +0800 CST'>2023-11-12</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2023-11-12 17:23:22 +0800 CST'>十一月 12, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 在群晖中使用tailscale实现内网穿透" href="https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>宝塔面板安装FRP内网穿透控制群晖
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>前两天给大家介绍了利用zerotier来进行内网穿透控制群晖的方法，详见：黑群晖的福音，利用zerotier进行内网穿透。但是，zeroti...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-12-07 03:28:28 +0000 +0000'>2019-12-07</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 宝塔面板安装FRP内网穿透控制群晖" href="https://iliu.org/2918.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>使用zerotier进行内网穿透
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>自从到手了暴风酷播之后，抽空就折腾了下NAS，目前来说系统方面已经没有什么问题了，自己需要使用的套件也基本上弄好了，唯一一个需要搞定的问题就...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-11-27 07:33:08 +0000 +0000'>2019-11-27</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 使用zerotier进行内网穿透" href="https://iliu.org/2872.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

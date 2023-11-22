@@ -4,6 +4,11 @@
     <title>安全 on 图南博客</title>
     <link>https://iliu.org/tags/%E5%AE%89%E5%85%A8/</link>
     <description>Recent content in 安全 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 17 Oct 2020 03:50:44 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,14 @@
       <pubDate>Sat, 17 Oct 2020 03:50:44 +0000</pubDate>
       
       <guid>https://iliu.org/3326.html</guid>
-      <description>很多人都戏称宝塔面板为bug塔面板，特别是前几天出现的phpmyadmin事件，似乎更进一步的坐实了bug塔bug的地位，但是平信而论，经过</description>
+      <description>很多人都戏称宝塔面板为bug塔面板，特别是前几天出现的phpmyadmin事件，似乎更进一步的坐实了bug塔bug的地位，但是平信而论，经过这么多年的发展，宝塔面板在配置服务器方面还是很方便的，而里面一些小插件也是非常的好用，所以，对于这个面板老刘是非常的纠结，喜欢他的简单和好用的插件，纠结它的稳定性。毕竟老刘是吃过这方面的亏的，早点5.x的时代，有一次，什么都没动，网站也正常打开，面板却挂了….
+闲话少说了，思前想后，还是决定用它吧，多备份，万一挂了，恢复起来也快。既然决定要用这个一个有着安全漏洞前科的面板，把它打造的相对安全一些是一件迫在眉睫的事情了。老刘是在以下几个方面做的，有需要的朋友可以参考。
+第一，面板的设置 这个好多的教程都有提到，比如别名，安全入口名字、默认目录，默认端口 面板用户及密码，都需要一一更改，由于比较简单，这里就不一一进行说明了。
+第二步，加装防火墙 宝塔官方有waf的防火墙，但是是收费的。所有，这里老刘强烈建议搭建使用nginx作为网站服务器的web框架而不是使用阿帕奇。这是因为使用nginx后，有个叫叫明国三年一场雨大佬开发的Nginx免费防火墙，目前已经更新到了4.5的版本，由于没有用过官方的防火墙，老刘认为这个免费的对一般的网站已经完全够用了。
+使用防火墙的默认设置已经足矣，当然你也可以打开里面的设置项，把所有的开关都打开，但是这样会造成一些正常的动作被误报，因此建议直接使用默认设置即可。如果网站使用了CDN加速，可以在网站设置里选择开启CDN选项，这样就不会误报你的CDN的IP了。
+第三步，对常见挂马的实时查杀 这个也是老刘纠结宝塔的原因之一，就是因为宝塔里的这款插件，openrasp管理器插件，OpenRASP 是百度安全推出的一款 免费、开源 的应用运行时自我保护产品，对一句话木马的查杀相当不错。项目的介绍可以在这里了解。
+宝塔软件列表里搜索openrasp，点击安装，安装后开启即可，目前支持到php7.3,首次安装的时间可能有点长，耐心等待即可。
+第四步 安装fail2ban 这个是放爆破扫描端口的的，宝塔的这个设置的比较简单，安装后可以参考老刘的另一篇文章进行详细的设置《lnmp一键开启waf及使用 Fail2Ban防护》。然后，把所有用不到的端口删除。</description>
     </item>
     
   </channel>

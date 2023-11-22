@@ -4,6 +4,11 @@
     <title>keepassxc on 图南博客</title>
     <link>https://iliu.org/tags/keepassxc/</link>
     <description>Recent content in keepassxc on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 29 Nov 2020 00:53:36 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/keepassxc/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,15 @@
       <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
       
       <guid>https://iliu.org/3430.html</guid>
-      <description>自从前两天体验了keepass的方便后，真的是对这个软件爱不释手了。但是在上一篇中，总体设置较为复杂，而且使用当中发现了诸多不方便之处。虽然</description>
+      <description>自从前两天体验了keepass的方便后，真的是对这个软件爱不释手了。但是在上一篇中，总体设置较为复杂，而且使用当中发现了诸多不方便之处。虽然对于老刘来说，因为只是店和家同步，路由器里设置好zerotier就行了，但是后来想想，这个方案还有有点依赖硬件，没有普遍性，而且如果老刘不在局域网范围内的话，手机上使用也很不方便。熟悉这个软件之后发现，根本不需要如此复杂的设置，就能很容易的同步数据，如果是使用的白群晖的话，利用quickconnet,可以做到无论在何地，都能方便的使用群辉和keepass的便利之处。
+软件介绍 这次老刘介绍的软件叫KeePassXC,也是开源的作品，和keepass是一脉相承，可以说是keepass的分支吧，但是和前者相比，使用起来更方便。系统自带中文，不需要在装语言插件了，软件自带有对浏览器的支持，也不需要再装keepasshttp插件了，要知道，http这个插件作者已经好多年没有更新了，用起来确实没有keepassxc方便了。
+软件下载地址：KeePassXC Password Manager
+也可以通过老刘提供的链接下载：keepassxc
+老刘这个应该下载速度会快那么一丢丢！~
+使用方法介绍 软件和keepass大同小异，会用那个，这个是没有问题的。浏览器配合里面设置如上图，由于老刘没有用firefox，所以没有选择。
+重点说说同步
+电脑和手机上都安装安装synology drive 。安装设置完毕后，把keepass/keepassxc的数据kdbx文件保存在drive的同步文件夹了，这样，无论那个终端更新了数据，都会同步至其他的终端。妈妈再也不用担心我密码的问题了。
+有同学担心把数据存到NAS硬盘挂了，数据丢了怎么办，其实这真的不是一个需要担心的事情，NAS早就想到了这一点，两块或者更多额硬盘设置成raid模式就行。再怎么着，两块硬盘不会同时坏吧，就算同时坏了，keepass还支持同步到云盘，比如Google，DropBox等等都支持。</description>
     </item>
     
   </channel>

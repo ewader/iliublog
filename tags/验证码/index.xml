@@ -4,6 +4,11 @@
     <title>验证码 on 图南博客</title>
     <link>https://iliu.org/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/</link>
     <description>Recent content in 验证码 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 20 Feb 2021 01:38:02 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E9%AA%8C%E8%AF%81%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,14 @@
       <pubDate>Sat, 20 Feb 2021 01:38:02 +0000</pubDate>
       
       <guid>https://iliu.org/3687.html</guid>
-      <description>去年10月份的时候，Google adsense的余额到了10块钱，然后Google提示说发了一个验证码的信件。老刘查看了一下地址发现，地址是</description>
+      <description>去年10月份的时候，Google adsense的余额到了10块钱，然后Google提示说发了一个验证码的信件。老刘查看了一下地址发现，地址是老地址。说明第一封邮件是不会收到的了。
+把地址改成现在的地址，然后又等了20来天，提交第二次发邮件。可能是疫情的原因吧，一直都是石沉大海的样子。
+前几天已经把发邮件的次数用尽了，Google后台也提示，如果再不提交验证码就不再展示广告了。其实一天也就那么几分钱，展示不展示都无所谓，只不过是留个念想罢了。网上有教程说可以申请在线认证，不过老刘也没有找到在哪个位置。
+昨天下午，正在店铺里整理一些东西，邮政的小孩来说有我的一封快递。我还纳闷呢，没有买什么东西啊，结果来一看，原来是adsense的验证码。
+也不知道后续还会不会陆续收到其他的，登录adsense后台，填进去。了事！
+所以，申请了Adsense的朋友，只要你的地址是正确的，不妨多等几天，应该总会到的，这不快5个月了，不收到了嘛！~
+另外在说说和这个不相关的事情：
+我又搬回篱落的vps了，这几天腾讯香港轻量卡到爆了，我博客后台都登录不进去。网站打包后，下载速度只有几十k，看来怎么着还是国内的服务器比较稳定。既然腾讯的篱落的香港服务器都差不多，当然还是选更便宜一些的了</description>
     </item>
     
   </channel>

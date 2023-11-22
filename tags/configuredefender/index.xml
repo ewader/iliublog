@@ -4,6 +4,11 @@
     <title>ConfigureDefender on 图南博客</title>
     <link>https://iliu.org/tags/configuredefender/</link>
     <description>Recent content in ConfigureDefender on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 10 Oct 2020 07:53:31 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/configuredefender/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,9 @@
       <pubDate>Sat, 10 Oct 2020 07:53:31 +0000</pubDate>
       
       <guid>https://iliu.org/3279.html</guid>
-      <description>自从Windows 10推出以来，微软的Microsoft Defender已经可以作为一款合格的杀毒软件来使用了，但是微软为了平衡误杀和安全之</description>
+      <description>自从Windows 10推出以来，微软的Microsoft Defender已经可以作为一款合格的杀毒软件来使用了，但是微软为了平衡误杀和安全之间的关系，默认情况西安Microsoft Defender很多先进的技术都没有开启，比如对流氓软件pup的查杀等。要想开启高级功能就必须去组策略里进行调整，这一步对软件小白来说是真的费事。好消息来了，有大神开发出来了一款可以设置Microsoft Defender的辅助软件，不需要进组策略即可对Microsoft Defender进行调整。目前已经更新到了3.0.0.1版，坏消息是没有中文版。不过软件的设置很简单。看着本文的图片进行设置就行。或者设置成“HIGH”即可。
+用于配置Windows 10内置Defender防病毒设置的实用程序.它是一个便携式实用程序 Version 3.0.0.1
+1. Added tip text feature to some buttons (</description>
     </item>
     
   </channel>

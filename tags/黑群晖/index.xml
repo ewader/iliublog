@@ -4,6 +4,11 @@
     <title>黑群晖 on 图南博客</title>
     <link>https://iliu.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/</link>
     <description>Recent content in 黑群晖 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 04 Jun 2020 10:02:22 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
@@ -13,25 +18,10 @@
       <pubDate>Thu, 04 Jun 2020 10:02:22 +0000</pubDate>
       
       <guid>https://iliu.org/3179.html</guid>
-      <description>去年的看老张弄NAS，也跟风弄了一个黑群晖，不过弄来之后就基本上处于闲置的状态。想不到用来做什么。存个图片，备份个文件，完事之后就关机，不然</description>
-    </item>
-    
-    <item>
-      <title>再次折腾黑群晖系统</title>
-      <link>https://iliu.org/2860.html</link>
-      <pubDate>Sat, 23 Nov 2019 02:51:56 +0000</pubDate>
-      
-      <guid>https://iliu.org/2860.html</guid>
-      <description>昨天拍了一些眼镜架的图片，可以却同步不到群晖的monents里面，有了群晖之后有些事情确实特别的方便，比如我拍的镜架的图片，想传到在线商城里</description>
-    </item>
-    
-    <item>
-      <title>记暴风酷播云2期折腾黑群晖</title>
-      <link>https://iliu.org/2855.html</link>
-      <pubDate>Mon, 18 Nov 2019 07:28:30 +0000</pubDate>
-      
-      <guid>https://iliu.org/2855.html</guid>
-      <description>双11前后，张波老师弄了个zhang.gg和zhang.bo的两个域名，看gg不贵，而且有www.liuday.com这个域名还没有被注册，</description>
+      <description>去年的看老张弄NAS，也跟风弄了一个黑群晖，不过弄来之后就基本上处于闲置的状态。想不到用来做什么。存个图片，备份个文件，完事之后就关机，不然开着也是开着，净浪费电。
+后来，把打印机和NAS连在一起，算是有了一个打印的功能，笔记本不用再插打印机的线了。但是还是感觉有些鸡肋。前两天阿里云OSS到期了，不准备再续费了，因为这个oss也是一个天坑啊，阿里云离有300来块钱的余额，都被这玩意给吃了。有苦说不出，谁让自己发现的晚了呢。
+另一个主做视光的网站，提供一些培训视频，培训资料的下载，一直没有合适的地方放置这些资源，灵机一动，发现NAS其实提供了分享文件的功能，这样，自己的这些资料只需存到nas了，对外提供下载就可以了。嗯嗯嗯，
+发现nas很多的功能自己都没有用到，另外，哪位知道不知道，黑群晖里的视频，能不能再网站上播放？</description>
     </item>
     
   </channel>

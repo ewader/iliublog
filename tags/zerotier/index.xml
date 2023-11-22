@@ -4,6 +4,11 @@
     <title>zerotier on 图南博客</title>
     <link>https://iliu.org/tags/zerotier/</link>
     <description>Recent content in zerotier on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 24 Oct 2020 07:49:34 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
@@ -13,16 +18,12 @@
       <pubDate>Sat, 24 Oct 2020 07:49:34 +0000</pubDate>
       
       <guid>https://iliu.org/3356.html</guid>
-      <description>刚开始完群晖的时候，写过一片使用zerotier进行内网穿透实现连接群晖的功能。详情《使用zerotier进行内网穿透 》但是后来升级移动宽带</description>
-    </item>
-    
-    <item>
-      <title>使用zerotier进行内网穿透</title>
-      <link>https://iliu.org/2872.html</link>
-      <pubDate>Wed, 27 Nov 2019 07:33:08 +0000</pubDate>
-      
-      <guid>https://iliu.org/2872.html</guid>
-      <description>自从到手了暴风酷播之后，抽空就折腾了下NAS，目前来说系统方面已经没有什么问题了，自己需要使用的套件也基本上弄好了，唯一一个需要搞定的问题就</description>
+      <description>刚开始完群晖的时候，写过一片使用zerotier进行内网穿透实现连接群晖的功能。详情《使用zerotier进行内网穿透 》但是后来升级移动宽带，带了一个光猫的路由，导致群晖成为了内网中的内网，使用zerotier总链接不上。因此，改用了frp进行内网穿透。
+FRP和zerotier各有千秋，本站也一些文章来结束这些，有兴趣可以利用搜索来查询。昨天，发现路由器里带的又zerotier的插件。其实以前也见到过，只是觉得只是控制路由器，用处不大，所以也没有过多的理会。昨天，突发奇想，是不是在两台路由器都设置zerotier的情况下，能实现各自路由下的设备能访问另一台路由下的设备。网上查了一下，发现是可行的。而且，设置起来也要简单的多。
+首先，注册zerotier 这里就不在多说了，上面那篇文章有说明如何注册。
+在公司和家中的两台路由内都设置zerotier。 这个网上有一堆的教程，又是设置端口的，又是设置防火墙的。其实那都已经很老了，目前的的插件简单不能再简单了。
+如果上图，填入zero的 id 勾选下面的运行客户端NAT。不需要在设置别的了。
+进入zero控制台，设置路由 在下面add routes里进行添加 前面是你路由器的IP段，后面是zero给你分配的ip，千万不要填反了。在设置的时候要注意，家里和办公司的IP不能一致。其他的就没有关系了。设置完之后，就可以在办公室输入家里设备的IP或者在家里输入办公室设备的IP进行控制了。</description>
     </item>
     
   </channel>

@@ -4,6 +4,11 @@
     <title>眼镜店 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%9C%BC%E9%95%9C%E5%BA%97/</link>
     <description>Recent content in 眼镜店 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 30 Jun 2022 09:04:37 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%9C%BC%E9%95%9C%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,13 @@
       <pubDate>Thu, 30 Jun 2022 09:04:37 +0000</pubDate>
       
       <guid>https://iliu.org/4157.html</guid>
-      <description>下午忽然有一个人加我微信，出于职业的敏感，我觉得她（他）不是做广告的，就是骗人的。但是，又怕再次闹出把粉丝当骗子的乌龙。所以，还是通过了。 过</description>
+      <description>下午忽然有一个人加我微信，出于职业的敏感，我觉得她（他）不是做广告的，就是骗人的。但是，又怕再次闹出把粉丝当骗子的乌龙。所以，还是通过了。
+过了一会，这个人给我发了一个活动的截图，并且问，是你们的店在做这个活动吗？图片是一个投票的图片，说是2022年中原区首届“金牌眼镜店”什么玩意的。店名是我的店名，活动肯定是假的。
+我回复她（他），店是我们的，活动不是我们的，也每兴趣参与。她（他）再也不理我了。
+那么他的目的是什么呢？
+获取我的个人信息？
+或者是二维码链接的是恶意网站。
+不敢瞎扫，反正不是什么好玩意。</description>
     </item>
     
     <item>
@@ -22,7 +33,12 @@
       <pubDate>Sun, 14 Nov 2021 13:45:40 +0000</pubDate>
       
       <guid>https://iliu.org/3939.html</guid>
-      <description>一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其</description>
+      <description>一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
+前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
+说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
+1、后台添加客户资料，验光配镜的数据等
+2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
+至此基本的功能已经实现。后面就是完善细节以及美化一下了。</description>
     </item>
     
   </channel>

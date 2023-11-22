@@ -4,6 +4,11 @@
     <title>纯代码 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/</link>
     <description>Recent content in 纯代码 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 18 Oct 2020 07:27:04 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,18 @@
       <pubDate>Sun, 18 Oct 2020 07:27:04 +0000</pubDate>
       
       <guid>https://iliu.org/3340.html</guid>
-      <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp</description>
+      <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp服务器插件已经在商店里找不到了。其实，这也没什么，直接用代码的方式部署也是可以的。
+SSH连接到VPS之后运行如下命令查看处理器架构，根据架构下载不同版本的frp
+arch 查看结果，如果是“X86_64“即可选择”amd64”，
+运行如下命令，根据架构不同，选择相应版本并进行下载，然后登陆frp的官网地址，现在最新的应该是0.34.1，所以，运行如下的命令：
+wget https://github.com/fatedier/frp/releases/download/v0.34.1/frp_0.34.1_linux_amd64.tar.gz 然后解压，给文件换一个名字，进入frp目录
+tar -zxvf frp_0.34.1_linux_amd64.tar.gz cp -r frp_0.34.1_linux_amd64 frp cd frp 修改frps.ini文件
+vim frps.ini 格式如下：
+[common] bind_port = 7000 dashboard_port = 7500 token = *******（根据情况自己设置） dashboard_user = 自己设置 dashboard_pwd = 自己设置 vhost_http_port = 10080 vhost_https_port = 10443 编辑完成后保存（vim保存如果不会请自行搜索）。
+之后我们就可以运行frps的服务端了。
+使用命令：
+./frps -c frps.ini 如果输出如下文字，说明服务器配置成功
+2019/01/12 15:22:39 [I] [service.go:130] frps tcp listen on 0.0.0.0:7000 2019/01/12 15:22:39 [I] [service.go:172] http service listen on 0.0.0.0:10080 2019/01/12 15:22:39 [I] [service.</description>
     </item>
     
   </channel>

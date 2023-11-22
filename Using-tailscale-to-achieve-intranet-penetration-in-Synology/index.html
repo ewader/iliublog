@@ -7,12 +7,22 @@
 <meta name="robots" content="index, follow">
 <title>在群晖中使用tailscale实现内网穿透 | 图南博客</title>
 <meta name="keywords" content="群晖, 远程访问群晖, 内网穿透">
-<meta name="description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比">
+<meta name="description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。
+注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。
+下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。
+如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。
+群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。
+Linux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：
+yay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：
+sudo systemctl start tailscaled 然后登录：
+sudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。
+登录后使用命令查看目前在线的设备：
+tailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？
+后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity=""
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -57,31 +67,55 @@
 
     </style>
 </noscript><meta property="og:title" content="在群晖中使用tailscale实现内网穿透" />
-<meta property="og:description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比" />
+<meta property="og:description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。
+注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。
+下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。
+如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。
+群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。
+Linux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：
+yay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：
+sudo systemctl start tailscaled 然后登录：
+sudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。
+登录后使用命令查看目前在线的设备：
+tailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？
+后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-12T17:23:22+08:00" />
 <meta property="article:modified_time" content="2023-11-12T17:23:22+08:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="在群晖中使用tailscale实现内网穿透"/>
-<meta name="twitter:description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比"/>
+<meta name="twitter:description" content="在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。
+注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。
+下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。
+如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。
+群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。
+Linux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：
+yay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：
+sudo systemctl start tailscaled 然后登录：
+sudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。
+登录后使用命令查看目前在线的设备：
+tailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？
+后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "在群晖中使用tailscale实现内网穿透",
       "item": "https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/"
     }
@@ -94,12 +128,12 @@
   "@type": "BlogPosting",
   "headline": "在群晖中使用tailscale实现内网穿透",
   "name": "在群晖中使用tailscale实现内网穿透",
-  "description": "在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比",
+  "description": "在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。\n注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。\n下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。\n如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。\n群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。\nLinux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：\nyay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：\nsudo systemctl start tailscaled 然后登录：\nsudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。\n登录后使用命令查看目前在线的设备：\ntailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？\n后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。",
   "keywords": [
     "群晖", "远程访问群晖", "内网穿透"
   ],
   "articleBody": "在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比较麻烦，IPv6很好，速度也快，但是有些环境中还只有IPv4，直到我听别人介绍到tailscale这个软件。它的工作原理其实和zerotier差不多，但是不需要什么复杂的设置，直接注册、登录，同一个账号的所有设备都连接到一起了。\n注册tailscale 百度直接搜，或者打看tailscale官方网站。注册就行，不过它不支持自由注册，需要用Google、apple、或者微软的outlook账号注册。\n下载tailscale 网页的右上角，有个downloads，点击就可以了。里面有常用的Windows、Linux等的客户端，直接点击下载相应的客户端，并安装。安装后登录，然后在个人中心里，系统自动给你分配了一个ip地址，如果你要了解某个设备，直接在浏览器里打开那个ip地址就好了。\n如果你的系统没有在常用的客户端页面，可以点击这里，会进入一个所有的客户端的页面，找到你的系统下载即可。\n群晖中安装 点击我上面说的那个连接，然后找到群晖的客户端。根据你群晖的系统选。如果你群晖是DSM6就选6，DSM7就选7，不要选错了。下载之后进入群晖的后台，进入套件中心，点击手动安装。 安装的时候DSM会有一些权限的提示，选择允许就行了。安装后打开套件，点connect那个黑色的按钮，登录你的账号就可以了。\nLinux里安装与使用 也是选择合适系统的客户端，下载安装，如果你用的Arch Linux系列，可以直接用命令安装：\nyay tailscale 安装完之后，和windows下不同的是，它没有一个UI，需要你在命令里进行登录。 首先，运行tailscale：\nsudo systemctl start tailscaled 然后登录：\nsudo tailscale login 会给你网址，点击这个网址，用你的账号登录即可。\n登录后使用命令查看目前在线的设备：\ntailscale status 找到群晖的ip地址，选中复制，粘贴到浏览器里，打开，是不是熟悉的群晖后台出现了？\n后续的一些优化 如果是你经常用的设备，你不想让这个设备的ip地址发生变化，可以进行一点小小的设置，如下图： 但让，tailscale还有一些高级的用法，比如在路由器里安装后，其他设备不用安装也能相互访问，这个有点折腾了，不在本文的范围，有兴趣的朋友可以去官方看相关教程。\n",
-  "wordCount" : "952",
+  "wordCount" : "32",
   "inLanguage": "zh",
   "datePublished": "2023-11-12T17:23:22+08:00",
   "dateModified": "2023-11-12T17:23:22+08:00",
@@ -138,7 +172,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -188,16 +222,6 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
@@ -205,11 +229,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       在群晖中使用tailscale实现内网穿透
     </h1>
-    <div class="post-meta"><span title='2023-11-12 17:23:22 +0800 CST'>2023-11-12</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2023-11-12 17:23:22 +0800 CST'>十一月 12, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
@@ -347,20 +371,12 @@
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

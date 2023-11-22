@@ -4,6 +4,11 @@
     <title>阿里云 on 图南博客</title>
     <link>https://iliu.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</link>
     <description>Recent content in 阿里云 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 03 Jan 2021 08:33:54 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
@@ -13,25 +18,15 @@
       <pubDate>Sun, 03 Jan 2021 08:33:54 +0000</pubDate>
       
       <guid>https://iliu.org/3545.html</guid>
-      <description>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。 首先，登录阿里云的后</description>
-    </item>
-    
-    <item>
-      <title>又犯了人云亦云的毛病</title>
-      <link>https://iliu.org/2526.html</link>
-      <pubDate>Fri, 19 Jul 2019 09:12:00 +0000</pubDate>
-      
-      <guid>https://iliu.org/2526.html</guid>
-      <description>从小接受的教育就是要实践出真知，别人的意见可以参考，但是不能完全照搬。不能像小马过河里的小马一样。 这不，今天差点又犯了人云亦云的毛病。 事情的</description>
-    </item>
-    
-    <item>
-      <title>备忘，使用阿里云ossfs备份网站</title>
-      <link>https://iliu.org/2513.html</link>
-      <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
-      
-      <guid>https://iliu.org/2513.html</guid>
-      <description>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心</description>
+      <description>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。
+首先，登录阿里云的后台，选择域名
+找到需要转出的域名，点后面的管理，在出来的页面的右侧，找到“域名转出”并点击，如下图
+阿里云首先会让你核对邮箱，因为转移密码是发到你的这个邮箱里的，如果邮箱正确的话，点下一步。会像你绑定的手机好发送一个验证码，输入验证码，点击下一步。转移密码会发到你的邮箱里。
+然后，注册登陆name.com,目前name已经支持中文了，在页面的左上角点击转移。
+把你需要转移的域名及发到邮箱的转移密码填到相应的位置，点击加入购物车。
+如果没有别的需求了，点击结算就行了。name支持支付宝，paypal以及信用卡支付。这里老刘推荐使用PayPal，而且老刘推荐购买海外的VPS时候也尽量使用paypal。因为PayPal支持交易申诉。特别对于一些国外的无良商家来说，这是一个很好用的功能。商家服务不好，且不退款，直接争议就行了。
+现在转移到name是7美元多一点，还送隐私保护，挺不错的，结算完成后，出现如下的界面说明已经转移成功。
+整个过程大概要5-7天，记得以前从godaddy转到阿里云的时候，是可以在godaddy确认的，确认后会立刻转移到新的域名商。但是阿里云没有这一个选项，只能等待默认生效为止。也别吐槽它们了，现在让转出的已经是进步了，记得很久以前转出的话还要开一堆的证明。</description>
     </item>
     
   </channel>

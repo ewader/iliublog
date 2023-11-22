@@ -4,6 +4,11 @@
     <title>联想笔记本 on 图南博客</title>
     <link>https://iliu.org/tags/%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%AC/</link>
     <description>Recent content in 联想笔记本 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 26 May 2021 07:30:38 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E8%81%94%E6%83%B3%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,15 @@
       <pubDate>Wed, 26 May 2021 07:30:38 +0000</pubDate>
       
       <guid>https://iliu.org/3757.html</guid>
-      <description>昨天用一副康耐特防蓝光镜片换了一台2012年的联想Z475 ，AMD A6的四核CPU，他自己又给加了4G的内存。也就是说4H8G，说实话电脑是</description>
+      <description>昨天用一副康耐特防蓝光镜片换了一台2012年的联想Z475 ，AMD A6的四核CPU，他自己又给加了4G的内存。也就是说4H8G，说实话电脑是有点老了，咸鱼挂的一般也就是卖个300来块钱，但是也没人买，毕竟10年前的东西了。我哥说收货价基本上200左右，虽然他加了一个4G的内存，但是拿来换一副镜片还是挺划算的，毕竟我那副镜片可是卖660元一副的。
+但是比我手里的另一台华硕的笔记本配置还是要高那么一丢丢的，那台基本上是给女儿玩呢，所以收上来这台后觉得可以改造一下给女儿玩，女儿最近迷上了写小说，据说已经创作了差不多1万来字了。给她弄一台配置“更好”一点的电脑也好，哈哈。
+在群里问了一下有没有装deepin的，群里的一个朋友建议老刘装MANJARO，对于老刘来说也不是第一次玩linux了，装啥都一样。既然推荐manjaro那就先装这个吧，毕竟全球下载排名第2的linux。可惜的是官网下载不了，国内中科大和清华的镜像里没有系统文件。那就算了，老天爷是让装deepin的。
+下载，安装，竟然出错了。在安装到5%的地方就不行了。感觉是硬盘的问题，引文原来装的是win7,但是可能是非法关机了，打开电脑的时候不能正确启动，一直再修复的那个页面。索性把原来华硕里的那台硬盘给交换一下。这下安装成功了。
+好多年没有用deepin，新版的系统还是很漂亮的。
+新版的deepinos的桌面
+常用的一些软件比如，wps，qq，微信等深度也都有优化，或者用wine的方式，或者本身有linux的版本，基本上来说，办公、娱乐是够用的了，只是一些游戏软件欠缺。
+本文就是在deepin os下书写
+经过这么多年的发展，感觉linux在桌面方面还有有进步的，就是生态方面还有待加强，这就是所有相关从业者需要努力的了吧。</description>
     </item>
     
   </channel>

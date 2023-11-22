@@ -4,6 +4,11 @@
     <title>主题 on 图南博客</title>
     <link>https://iliu.org/tags/%E4%B8%BB%E9%A2%98/</link>
     <description>Recent content in 主题 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 Mar 2022 02:38:21 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,11 @@
       <pubDate>Wed, 16 Mar 2022 02:38:21 +0000</pubDate>
       
       <guid>https://iliu.org/4079.html</guid>
-      <description>一个月前更换了Dragon主题，当时很多博友都表示有点不适合个人使用，我倒是感觉还行，最起码是把垃圾评论都给屏蔽了，唯一让我不太满意的就是对</description>
+      <description>一个月前更换了Dragon主题，当时很多博友都表示有点不适合个人使用，我倒是感觉还行，最起码是把垃圾评论都给屏蔽了，唯一让我不太满意的就是对内存的占用，真的是挺大的。
+我用的是荷兰Liteserver主机，配置是2h2g，这个主机上只放了两个wordpress网站，内存就已经完全占用了，刚开始没有装缓存插件，内存直接就爆了，又加了2g的虚拟内存也不顶事。目测可能是和两外一个网站的B2主题冲突导致的。后来装了个缓存插件，基本上内存在90%，但是能用了。前几天主题升级了，看了一遍升级的文档，还是蛮复杂的。正在这是看到了南余生在群里推荐的这个主题。
+看了一下老南的网站，绿油油挺好看的，很适合春天这个季节，布局也蛮好，于是就去Github上下了下来，简单调试了一下，就是目前这个样子了。
+看了一下vps 的内存占用，立马下来了，只有44%了。
+功能虽然少了点，但是对于写博客来说，已经完全满足了</description>
     </item>
     
     <item>
@@ -22,7 +31,9 @@
       <pubDate>Fri, 11 Feb 2022 00:24:05 +0000</pubDate>
       
       <guid>https://iliu.org/4060.html</guid>
-      <description>这几天被垃圾评论给盯上了，每天能收到10来个，很烦人。原来的主题虽然也是可以通过增加代码的方式来拦截一些非中文的垃圾评论，但是每次一升级主题</description>
+      <description>这几天被垃圾评论给盯上了，每天能收到10来个，很烦人。原来的主题虽然也是可以通过增加代码的方式来拦截一些非中文的垃圾评论，但是每次一升级主题又要重新设置，所以干脆用回Dragon主题。
+这个主题别的都好，就是感觉没有原来的主题流畅。功能很强大，虽然有很多功能目前对我来说用不到。
+为了省心，就这么用着吧</description>
     </item>
     
     <item>
@@ -31,16 +42,10 @@
       <pubDate>Wed, 11 Nov 2020 02:45:23 +0000</pubDate>
       
       <guid>https://iliu.org/3387.html</guid>
-      <description>关于自然养鱼 还是挺靠谱的，现在运行差不多一个月了吧，小鱼生活的很好，上面的一页莲也长得不错，用养鱼的水浇的花也长的很茂盛。就这么一直下去吧，</description>
-    </item>
-    
-    <item>
-      <title>提供WordPress 主题 Marcelle的汉化版本</title>
-      <link>https://iliu.org/304.html</link>
-      <pubDate>Sat, 26 Dec 2009 08:05:16 +0000</pubDate>
-      
-      <guid>https://iliu.org/304.html</guid>
-      <description>昨天发掘出 Marcelle这个主题，很快为他的那种简约而清爽的界面而吸引，打算使用这个主题，简单的汉化以后，觉得还不错，不过今天就又发现了个</description>
+      <description>关于自然养鱼 还是挺靠谱的，现在运行差不多一个月了吧，小鱼生活的很好，上面的一页莲也长得不错，用养鱼的水浇的花也长的很茂盛。就这么一直下去吧，偶尔看看鱼戏莲叶间还是挺不错的。
+当初买的这个房子户型朝南，因为和之前那个朝西的房子里面一模一样，导致每次进入到房子里都给我一个朝西的感觉。看来人的潜意识是个很奇怪很固执的东西。不过阳光很好，以前夏天的时候还不明显，现在一整天基本都能晒着太阳。嗯，越来越像老年生活靠拢了。
+又要做一次肠镜 不知不觉半年过去了，该复查身体了，总的情况还好，胆红素还是有点偏高，从化疗以来就是这样了，打打谷胱甘肽，胆红素正常了，等下次复查，又高了，加上还是有点脂肪肝，说明肝脏的代谢功能还是有点不正常，去年化疗的后遗症了，总体来说，锻炼了半年，让中到重度的脂肪肝减轻了一些。CT发现腹膜里有一个直径为9mm的淋巴结，大夫说这是正常的，不超过1cm都没啥问题。大便潜血阳性，去年春节的时候复查就是阳性，当时做了肠镜，在原来手术的吻合口那有点溃疡，估计还是这个原因造成的。大夫不放心，让在做个肠镜检查，加上本来一年就要做一次。算算时间也差不多了，那就做吧。
+关于主题 今天不但QQ再次收到作者的广告，邮件也受到了，哦，不对，是作者的活动通知。作者说，他以后会弄个开关，可以屏蔽。嗯，越来越像360了。</description>
     </item>
     
   </channel>

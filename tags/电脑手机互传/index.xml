@@ -4,6 +4,11 @@
     <title>电脑手机互传 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%94%B5%E8%84%91%E6%89%8B%E6%9C%BA%E4%BA%92%E4%BC%A0/</link>
     <description>Recent content in 电脑手机互传 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 15 Apr 2023 09:55:19 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%94%B5%E8%84%91%E6%89%8B%E6%9C%BA%E4%BA%92%E4%BC%A0/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <pubDate>Sat, 15 Apr 2023 09:55:19 +0000</pubDate>
       
       <guid>https://iliu.org/4362.html</guid>
-      <description>今天从电脑上下载了一个app，一般情况下，传到手机里要么用微信或者QQ，要么用群晖的drive同步，但是今天忽然发现edge浏览器自带的dr</description>
+      <description>今天从电脑上下载了一个app，一般情况下，传到手机里要么用微信或者QQ，要么用群晖的drive同步，但是今天忽然发现edge浏览器自带的drop小工具就可以轻松的实现，仔细看了一下，发现新版Edge浏览器侧边栏的小工具还是挺实用的。
+drop实现很手机之间的互传 在浏览器右侧的边栏里，有一个小飞机一样的图标，点开来，是一个类似对话框的页面，点击下面的➕号，把需要的文件发送即可。当然手机上也需要安装EDGE浏览器，这个文件应该是保存在了onedrive里，使用起来还是非常好用的。
+计算器等小工具 还是在右边栏，有一个红色的工具箱一样的图标，点击开来，里面有计算器、单位换算器，翻译工具等，单位换算器里面长度，质量、频率、角度、压强……等等可以说是应有尽有了。
+其他的小工具 比如Microsoft365，Outlook等等，这个侧边栏还可以自定义。之前都没有注意到这个侧边栏，发现一些小功能还是挺贴心的。</description>
     </item>
     
   </channel>

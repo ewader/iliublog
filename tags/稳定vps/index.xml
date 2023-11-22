@@ -4,6 +4,11 @@
     <title>稳定VPS on 图南博客</title>
     <link>https://iliu.org/tags/%E7%A8%B3%E5%AE%9Avps/</link>
     <description>Recent content in 稳定VPS on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 24 Dec 2021 07:41:31 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%A8%B3%E5%AE%9Avps/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,13 @@
       <pubDate>Fri, 24 Dec 2021 07:41:31 +0000</pubDate>
       
       <guid>https://iliu.org/3968.html</guid>
-      <description>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，</description>
+      <description>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，发现网络有点不稳定，有时候快，有时候慢，像今天下载速度一度只有32k了，正好在城南旧事的网站上看到推荐这个VPS，看了下2h2g的配置，一个月是5欧元，年付的话也有不少的优惠，网上查了下黑五的时候还出过5折的优惠码，可惜的是现在已经不能用了。抱着试试看的态度，先买了一个月的。
+实际体验下来还是不错，比Virmach速度快了不少，尽管ping值不是很低，但是状态一直还比较稳定。用17ce看了一下速度，竟然都是绿色的。
+下载速度也不错
+感觉还是不错的，先用上一个月试试，如果不错的话，可以考虑买长期的。
+据城南旧事所说，荷兰的这个VPS服务商成立与2007年，还是挺有实力的。而且空间的稳定性非常的不错。价格也不离谱。有兴趣的朋友可以看看。
+以下是我的AFF地址，觉得可以的，从我这走一单啊，哈哈
+荷兰LiteseverVPS</description>
     </item>
     
   </channel>

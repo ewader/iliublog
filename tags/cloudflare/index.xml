@@ -4,6 +4,11 @@
     <title>cloudFlare on 图南博客</title>
     <link>https://iliu.org/tags/cloudflare/</link>
     <description>Recent content in cloudFlare on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
@@ -13,16 +18,12 @@
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
       
       <guid>https://iliu.org/3520.html</guid>
-      <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
-    </item>
-    
-    <item>
-      <title>利用cloudFlare的边缘计算workers实现外链转内链跳转</title>
-      <link>https://iliu.org/2248.html</link>
-      <pubDate>Tue, 09 Jul 2019 01:20:11 +0000</pubDate>
-      
-      <guid>https://iliu.org/2248.html</guid>
-      <description>跋涉者曾经分享过一篇7b2主题外链跳转的文章，那篇文章实现的原理是在自己服务器里增加一个跳转的页面代码。 [zrz_insert_post id=1656] 不过今天看张戈大神的一篇文章Cl</description>
+      <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站一直用的lnmp，为啥博客就不能用用lamp呢？况且apache在稳定性以及对php的支持等方面都比nginx要好，nginx的优势是轻便和并发能力强。其实对小博客来说，基本没有啥区别。
+说折腾就折腾，编译安装apache，发现需要重新设置虚拟主机，设置的时候发现，不像nginx的时候，脚本提示把http301到https，什么www域名301到一级域名等，这些提示都没有。也没有设置伪静态的选项。网上查了一下，发现是几行代码就可以搞定的事情。
+设置301跳转 在apache里设置301跳转很简单，只需要在.htaccess里添加代码就好了，老刘主要用到两个，一个是http跳到https，一个是www跳到一级域名。感觉比nginx要简洁一些，代码如下：
+RewriteEngine On RewriteCond %{SERVER_PORT} 80 RewriteRule ^(.*)$ https://iliu.org/$1 &amp;#91;R,L] RewriteEngine On RewriteCond %{HTTP_HOST} !^iliu.org$ &amp;#91;NC] RewriteRule ^(.*)$ http://iliu.org/$1 &amp;#91;L,R=301] 设置后才发现，设置和不设置没有啥区别，老刘用的cf，应该是在cf里设置了301到443接口了，至于wordpress伪静态的问题，也是很容易，直接到wordpress的后台，保存一下固定链接样式就行了，保存后在根目录里自动生成了.htaccess。代码如下：
+# BEGIN WordPress # 在“BEGIN WordPress”与“END WordPress”之间的指令（行）是 # 动态生成的，只应被WordPress过滤器修改。 # 任何对标记之间的指令的修改都会被覆盖。 &amp;lt;IfModule mod_rewrite.c&amp;gt; RewriteEngine On RewriteRule .* - &amp;#91;E=HTTP_AUTHORIZATION:%{HTTP:Authorization}] RewriteBase / RewriteRule ^index\.php$ - &amp;#91;L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule . /index.php &amp;#91;L] &amp;lt;/IfModule&amp;gt; # END WordPress 使用cloudflare后获取用户真实IP 由于apache已经自带mod_remoteip模块，所以只需按如下操作即可
+#启用模块 vim /usr/local/apache/conf/httpd.conf Include conf/extra/httpd-remoteip.conf #添加如下内容 vim /usr/local/apache/conf/extra/httpd-remoteip.</description>
     </item>
     
   </channel>

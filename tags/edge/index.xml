@@ -4,6 +4,11 @@
     <title>EDGE on 图南博客</title>
     <link>https://iliu.org/tags/edge/</link>
     <description>Recent content in EDGE on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 26 May 2022 01:55:15 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/edge/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,10 @@
       <pubDate>Thu, 26 May 2022 01:55:15 +0000</pubDate>
       
       <guid>https://iliu.org/4120.html</guid>
-      <description>windows11已经抛弃了ie浏览器，但是有一些场合必须要使用，比如现在各大银行的u盾还不支持edge，有很多同学到处找IE这个软件，其实</description>
+      <description>windows11已经抛弃了ie浏览器，但是有一些场合必须要使用，比如现在各大银行的u盾还不支持edge，有很多同学到处找IE这个软件，其实大可不必。windows11目前只是暂时屏蔽了IE而已。点击“查找”，搜索“控制面板”
+在“控制面板”中点击“Internet选项”
+在弹出的页面，点击右上角的“？”
+奇迹是不是发生了？？</description>
     </item>
     
   </channel>

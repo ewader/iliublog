@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - 图南博客">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="Posts" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/posts/" />
+<meta property="og:url" content="https://iliu.org/posts/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -69,10 +71,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }
@@ -96,7 +98,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -146,61 +148,23 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>要钱还是不要钱？
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>昨天孩子的舅妈给媳妇说，某某哥去她家了，说想让我给他的女儿配副眼镜。钱该怎么算怎么算。这个某某哥是媳妇的姨表哥，和孩子的舅舅一样都是在春城打...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-10-13 00:56:02 +0000 +0000'>2020-10-13</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 要钱还是不要钱？" href="https://iliu.org/3306.html"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>nodecache开通了中国直连线路
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>在以前的文章（推荐一款国外CDN——Nodecache，注册即送1T流量）中介绍过nodecache这个CDN服务商，当时是注册送1T的流量...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-10-11 02:29:24 +0000 +0000'>2020-10-11</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to nodecache开通了中国直连线路" href="https://iliu.org/3283.html"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>一款可以设置Microsoft Defender的辅助软件
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>自从Windows 10推出以来，微软的Microsoft Defender已经可以作为一款合格的杀毒软件来使用了，但是微软为了平衡误杀和安全之...</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-10-10 07:53:31 +0000 +0000'>2020-10-10</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 一款可以设置Microsoft Defender的辅助软件" href="https://iliu.org/3279.html"></a>
-</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -208,9 +172,20 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>书，是一把钥匙，开启智慧的大门； 书，是一盏路灯，照亮前行的道路； 书，是一颗牵牛花，驱散心中的阴霾； 对我来说，书，是伴我成长的良师益友！ 迷上童...</p>
+    <p>书，是一把钥匙，开启智慧的大门；
+书，是一盏路灯，照亮前行的道路；
+书，是一颗牵牛花，驱散心中的阴霾；
+对我来说，书，是伴我成长的良师益友！
+迷上童话 六岁的时候，我带着好奇心闯入了那一片色彩鲜明的世界……
+小人鱼对我诉说她生前的心声，卖火柴的小女孩对我说着她的不幸，拇指姑娘邀请我去她家做客，皇帝新衣的皇帝，则使我皱起了眉头……
+我好像走进了大自然，体会了灰姑娘被欺负时的委屈，感受了白雪公主后母的恶毒…….这甜蜜的感觉，让我觉得，书如好友。、
+爱上诗歌 在我3年级的时候，学习了李白的《静夜思》，“床前明月光，疑是地上霜；举头望明月，低头思故乡”，使我体会到了人生的不易，我从此爱上了诗歌，可是功课占据了我大多数的时间，我只好充分利用课余的时间，看课外诗词。
+一点遗憾，《迢迢牵牛星》这首诗的作者没有能流传下来，这使我内心非常的失落‘于是，我只有接着读下面的实测，以便吧这点遗憾给忘掉。就连上厕所，晚上睡觉前都要看上一会。诗词，既让我了解了中华文化，又使我了解了许多知识。好书如师。
+痴醉名著 11岁那年，我接触了原版的名著《西游记》，这让我走火入魔。我如饥似渴的去读各类名著，每次妈妈都要吵我一顿——因为我不睡觉。看曹文轩的《山羊不吃天堂草》时，我从黄昏一直看到夕阳西下，泪流满面…….好书，如同泉水一样的甘甜。
+时光荏然，从识字以来，我浏览了很多书籍，这让知晓了不少古今中外的文化。书籍让我找到了正确的方向。
+书香，伴我成长，也让我的生活更美好！</p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-20 12:18:23 +0000 +0000'>2020-09-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;liuxiaoya</footer>
+  <footer class="entry-footer"><span title='2020-09-20 12:18:23 +0000 +0000'>九月 20, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
   <a class="entry-link" aria-label="post link to 书香伴我成长" href="https://iliu.org/3273.html"></a>
 </article>
 
@@ -220,9 +195,15 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>前端时间给女儿买了一套《书虫》系列和《疯狂校园》系列的英语读本。书虫还好，句子比较简单，有些单词就算不认识，根据上下文的关系以及后面的生词表...</p>
+    <p>前端时间给女儿买了一套《书虫》系列和《疯狂校园》系列的英语读本。书虫还好，句子比较简单，有些单词就算不认识，根据上下文的关系以及后面的生词表，阅读起来不算太费事。可是疯狂校园系列读起来就有点难度了。
+来回的翻字典耽误时间不说，还打断了阅读的连续性。那时候就有给女儿买一支词典笔的打算，但是看了一下基本上2代的要800大洋左右，又有些犹豫。前天，意外的把liu.gg的域名给卖了，小赚了一点意外之财，干脆把这个笔给女儿买了算了。
+天猫上查了一下，找了一个销量比较高的，价格相对优惠的下了单。随笔还给送了一个网易精品课的优惠码，不过注册了后看课程一般般，也就没有给女儿学。
+选了一个粉色的。我没有拍图片，网上找了几张图来替代
+包装是一个白色的盒子，上面是网易有道词典笔，设计的非常的简洁。
+嗯就是这样的一支笔。放在手里也不沉。刚发过来的时候系统的版本是1.22。然后提示升级，先升级到了1.33，然后再次提示升级，升级到了1.52，增加了一个和网易有道词典相互关联的设置。
+笔的外形就这样，关键是要看识别单词的能力。官方说的又230万的词量，实际使用起来识别率还是挺高的。特别是还支持整句扫描识别和跨行扫描。总体来说还是挺满意的！</p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-20 02:19:37 +0000 +0000'>2020-09-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-09-20 02:19:37 +0000 +0000'>九月 20, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 网易词典笔2.0简单开箱" href="https://iliu.org/3268.html"></a>
 </article>
 
@@ -232,9 +213,15 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>昨天晚上给女儿辅导完作业，顺手拿起手机看看群里的信息什么的。忽然发现有一封新邮件。点开一看，发现是西部数码发过来的： 尊敬的用户： 您发布的一口...</p>
+    <p>昨天晚上给女儿辅导完作业，顺手拿起手机看看群里的信息什么的。忽然发现有一封新邮件。点开一看，发现是西部数码发过来的：
+尊敬的用户：
+您发布的一口价域名已售出：liu.gg 共1个，合计：2000元。恭喜您!
+若不需要本类邮件提醒，可以在管理中心》帐号管理》设置中心 进行关闭。
+若使用中遇到任何问题，请联系我司客服或提交有问必答，非常感谢您对我司的长期支持。
+这时候才想起来，在决定用流金岁月这个域名之后，就把liu.gg挂到了西数的域名交易平台了。这一晃半年过去了。前几天还在寻思用这个域名再搞个什么网站玩玩。还没有下手呢，结果被买走了。
+其实买家花2000块钱买我这个域名真的不亏，当时西数做活动应该是80多块钱一年，顺便就续费了10年。现在域名续费的价格是200多。10年的话就2000多了。这也是我第一次卖域名吧，心中五味杂陈，既有一丝兴奋，又有一份不舍。期待买家能把这个域名用好吧！</p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-17 00:38:20 +0000 +0000'>2020-09-17</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-09-17 00:38:20 +0000 +0000'>九月 17, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 卖出去了一个域名" href="https://iliu.org/3264.html"></a>
 </article>
 
@@ -244,9 +231,9 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>白如雪，洁似梅 欲视昙，必有耐 开如白鹭般净洁 收如少女般含蓄 窗前花苞且难寻 开时既是枯萎始 若使花儿记心上 花开时分想真谛 其二 寂寞昙花深夜开 洁白无瑕人...</p>
+    <p> 白如雪，洁似梅 欲视昙，必有耐 开如白鹭般净洁 收如少女般含蓄 窗前花苞且难寻 开时既是枯萎始 若使花儿记心上 花开时分想真谛 其二 寂寞昙花深夜开 洁白无瑕人未见 一朝凋谢人不知 笑问此花何时开 白鹭一现不容看 就似昙华寿命短 幽香缕缕人难闻 淡淡清香胜桂兰 如若白鹭人易赏 琼花何苦晚间开 </p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-14 12:15:07 +0000 +0000'>2020-09-14</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
+  <footer class="entry-footer"><span title='2020-09-14 12:15:07 +0000 +0000'>九月 14, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
   <a class="entry-link" aria-label="post link to 咏昙" href="https://iliu.org/3262.html"></a>
 </article>
 
@@ -256,9 +243,17 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>大概10几天前，给阳台上的一些花花草草浇水的时候，发现昙花一片叶子上鼓出了一个米粒大小的花苞，那一刻，感觉这盆昙花还真是没有白白的费劲。 要说...</p>
+    <p>大概10几天前，给阳台上的一些花花草草浇水的时候，发现昙花一片叶子上鼓出了一个米粒大小的花苞，那一刻，感觉这盆昙花还真是没有白白的费劲。
+要说费劲，还真不是字面上的意思。三年前，去天水看望老爸老妈的时候，在一个长辈那里发现她养了很多盆的昙花，别说女儿了，就连我和媳妇都没有见到过真正昙花开花的样子。于是，问长辈要了一颗移栽回郑州，本来是打算直接带一整颗回来，当年就能开花。但是昙花这个东西长的还挺高大，枝条也柔软，加上回来的时候，长辈们送了好多的当地特产，后备箱里是实在装不下一盆花了。
+长辈阿姨说，昙花很好养活，直接剪一片叶子，回家插到花盆里就能活。于是就只带了一片叶子。回来后，小心的插到花盆里，结果没几天，还真发芽了，竟然还长出了一个花苞。可惜花苞没长多大的时候，被媳妇不小心给碰掉了。于是，看昙花开花的日子就一推再推，这一推就是三年。在去年的时候，还写过一篇文章，昙花怎么养才能开花？要说给我的感受，那就是：
+昙花好活不好养啊！
+好活是，随便弄个盆，浇点水，它就能生根发芽，不好养是因为，就是不开花，?
+今年的春天，专门把昙花从室内移到室外，由于昙花喜光怕晒，专门用一个纱巾给它搭了个凉棚。又卖来一些有机肥料。功夫花到了，花自然也就开了。也算是量变引起质变吧。
+从网上查了下，昙花开花前的特征。说花蕾上翘的当晚一般就开花了。上周五，我发现上翘了，兴致勃勃的给女儿说，晚上昙花就开了，结果惹得小丫头熬到快11点了，也没有开花的动静。周六，我又信之旦旦的说，今天晚上就要开花了，结果还是没开。昨天傍晚，照例看了一下，发现花苞已经微微的打开了。
+于是给女儿说，今天晚上，昙花一定开。女儿不屑的白了我一眼说，我不会相信你的。已经说开两天了，不还是没有开吗。我说，好饭不怕晚嘛，请拭目以待吧。本来还想给她打个赌，输了洗碗。后来把这个茬给忘了。唉！~~
+到了晚上8多点快9点的时候，昙花开了。专门把它从外面搬到屋里。昙花盛开后，有一点点淡淡的花香</p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-14 02:14:27 +0000 +0000'>2020-09-14</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-09-14 02:14:27 +0000 +0000'>九月 14, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 昙花开花了" href="https://iliu.org/3257.html"></a>
 </article>
 
@@ -268,9 +263,18 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>窗外雾蒙蒙，何似下雨？ 天灰阳消散，雷声大作。 丁香淋微雨，更加妩媚。 翠鸟停塘边，望眼欲穿。 雨中更愁苦，不展眉头舒。 历史何其悲，只愿不重复。 电与...</p>
+    <p>窗外雾蒙蒙，何似下雨？
+天灰阳消散，雷声大作。
+丁香淋微雨，更加妩媚。
+翠鸟停塘边，望眼欲穿。
+雨中更愁苦，不展眉头舒。
+历史何其悲，只愿不重复。
+电与雷惊心，雨与霜寒心。
+丁香结不完，更似人生题。
+若结从此无，生活淡无味。
+转眼天放晴，似乎从无雨。</p>
   </div>
-  <footer class="entry-footer"><span title='2020-09-07 12:06:35 +0000 +0000'>2020-09-07</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
+  <footer class="entry-footer"><span title='2020-09-07 12:06:35 +0000 +0000'>九月 7, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
   <a class="entry-link" aria-label="post link to 雨" href="https://iliu.org/3250.html"></a>
 </article>
 
@@ -280,10 +284,73 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>其实淘宝商家真的很难。再加上淘宝的机制，导致做淘宝真的不是一件容易的事情。 疫情期间，也再淘宝上开了店铺，说实话，淘宝的店铺开了好多次了，只是...</p>
+    <p>其实淘宝商家真的很难。再加上淘宝的机制，导致做淘宝真的不是一件容易的事情。
+疫情期间，也再淘宝上开了店铺，说实话，淘宝的店铺开了好多次了，只是开了又关，关了又开。因为没啥销量。这次，如果不是疫情，也不会开。不过这次比以前好点，这次直接用公司注册的企业店铺，应该是信誉高一些吧，陆陆续续一个月有那么三五个订单。主要是一些太阳镜，防蓝光眼镜什么的，不挣啥钱，就是一个热闹。
+卖的东西都是老刘精挑细选的，几十块钱的东西，你要说和几百块钱的去比，质量绝对比不过，但是这个价格绝对能对得起这个质量，为啥这样说呢，淘宝里的东西，我都没有备货，都是从厂家或者代理商那直接发货，所以，价格就是我的进货价加上运费后我在加上几块钱的利润，所以，性价比那真的没法得说，半年多来，虽然销量不多吧，没有一例退换货，全都是5分好评。但是常在河边走，咋能不湿鞋呢，这不就碰上了。
+前两天，一位辽宁什么镇的女孩，选择了一副红狼的偏光太阳镜，这个太阳镜是这两年比较流行的一个中端的一个牌子。质量确实不错，一般实体店卖200-300这个样子。
+对方收到货之后，在第六天的头上要求退货，理由是其他，其实大家都不是傻子，这是戴了5-6天了不喜欢了。由于眼镜不是包邮的，根据淘宝规则，非质量问题来回的运费都是要买家承担，所以，果断提出异议，要求对方更改价格。这时候，买家开始撒泼了，又是这副眼镜质量不行，比以前她买的太阳镜轻（草，这是啥逻辑，轻就代表质量不好，那纯钛镜架就应该分文不值啊）。然后，又说不是正品！让她打厂家的查询电话打，不打，反正你这就不是正品！说的我也烦了，果断拒绝退货。
+对方要求客服介入，这客服也就是和稀泥。一直鼓动不要和对方一般见识，以和为贵，运费又不多云云，退了不扣分等等。。。。不胜其烦，最后答应了连运费一起给退了。
+也就是啥都没弄成，多花了10块钱的运费，结果自己的库存还又多了一副！
+所以亲爱的朋友们，卖家真的也挺难的，买东西前考虑清楚了是不是真需要，真买了，能用就别退货了，这年头真是谁都不容易！</p>
   </div>
-  <footer class="entry-footer"><span title='2020-08-29 10:50:09 +0000 +0000'>2020-08-29</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-08-29 10:50:09 +0000 +0000'>八月 29, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 淘宝商家真的挺不容易" href="https://iliu.org/3245.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>从宝塔面板换成oneinstack踩的一个坑
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板，不成想，前几天出现了这么一个低级的bug，所以，思来想去，不能为了一颗树苗而放弃整片森林，为了安全，还是把宝塔面板换掉为妙。
+步骤很简单，无非是再宝塔里先把网站的文件夹打包，下载。然后备份数据文件下载。趁着这个机会，把服务器的系统也升级到centos8了。然后安装oneinstack，并编译环境，生成网站目录等等，都是基本的方法，不是本文重点要说的。我要说的是，这里面的坑。
+新环境做好后，把文件上传，解压，链接好数据库文件，浏览器一输入网站，我去！显示No input file specified错误，赶紧Google了一下，发现解决的方法五花八门，基本上都是东php.ini。想到自己刚才因为网站用的一个主题需要引用一个解密的插件，确实是改了php.ini。但是去掉改动的，依然是这个错误。于是怀疑是自己不经意间删掉了什么字符之类的。由于没有备份这个文件。所以，决定重新编译php。
+新弄的php还是显示No input file specified。确认了不是php的问题。为了排查，把自己的博客也上传，结果发现博客是好的。这时候忽然想起来，博客这个文件当时备份的时候，把宝塔生成的.user.ini这个为了防止跨站的文件删除了，而另一个网站的没有删。于是在网站源码里找到这个文件，删除之。问题迎刃而解了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-08-27 03:25:28 +0000 +0000'>八月 27, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 从宝塔面板换成oneinstack踩的一个坑" href="https://iliu.org/3240.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Kindle软件重大更新，这个玩法你一定要知道！
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天拿出来我的kindle，发现有系统更新的提示，对于我这种追求最新的人来说，更新那是必须的，那么本次更新后，系统会多了那些功能呢？
+最新的软件版本是什么？
+目前Kindle最新的软件版本是5.13.1
+该版本适用的阅读器型号为： Kindle Oasis （第10代），即 KO3 Kindle Oasis （第9代）， 即KO2 Kindle Oasis （第8代），即 KO1 Kindle Voyage Kindle 青春版（658元 入门款） Kindle (558元 入门款) Kindle Paperwhite（第10代），即KPW4 如何查看Kindle软件更新情况？
+打开你的Kindle，点击右上角【设置】»点击【设备选项】»【设备信息】，就可以查看你的Kindle的固件版本，以及最近更新的介绍。
+软件升级后，有哪些功能更新？ ** 搜****索
+** 更新了搜索体验，能让你更轻松浏览搜索结果，同时不会丢失正在阅读的页面。
+在读一本书的时候，可以在上方【搜索】栏输入你想查找的词语，点击搜索就可以查看这词在书中什么位置出现过，有什么内容。
+** 快速翻书导航
+** Kindle更新了翻书的体验，进度条上会用圆点显示最近阅读的页面，包括最近在其他设备上阅读的页面。
+快速翻书可以帮助你快速捕捉到一本书的中心思想，找到数字、名称和图表。你将加快识别段落中关键句子的速度，熟练的小伙伴可以在几秒钟内浏览并理解一整页内容。 ** 夜间模式
+** 进入【设置】-【辅助功能】中开启关闭【黑白调换】。让你在黑暗中能舒适阅读~ ** 功能设置位置更新
+** 你应该也已经注意到有些功能设置的位置有所变化，比如热门标注、生词提示、生字注音。这些功能现在都可以在读电子书的页面里，与字体、页边距等一起设置了。 ** Kindle朗读
+** *该功能目前仅适用于Kindle Oasis3, Kindle Paperwhite 4, 和Kindle青春版。 Kindle可以听书了！
+现在可以通过连接蓝牙耳机或音箱，收听Kindle电子书（注意是从z.cn 购买的中国出版社出版的简体中文电子书）。
+对于老刘来说，最喜欢的功能是前两个，以前总觉得kindle的搜索功能太弱了，这次更新后，貌似体验不错！ </p>
+  </div>
+  <footer class="entry-footer"><span title='2020-08-25 09:18:32 +0000 +0000'>八月 25, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to Kindle软件重大更新，这个玩法你一定要知道！" href="https://iliu.org/3235.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>提醒有孩子的家长，一定要抽空带孩子查查视功能
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>经历的疫情的这段网课的时间，孩子们都可以光明正大的拿着手机平板等用了。但是一连几个月，对孩子的视力的影响还是蛮大的。这段时间，老刘接触到好几个孩子，或多或少视功能有问题。
+查视功能并不是单纯的去看一下视力表，这是最初期的检测。查视功能包括要查视力，眼睛的调节情况，立体视情况，集合情况，有无斜视，融像功能是否正常等等。
+有些孩子的视力可能没有表现的那么差，裸眼单眼可能还是能达到0.8，但是视功能有些已经有了问题，这段时间老刘接待了5个孩子，平均年龄在7-11岁，裸眼视力都在0.8左右，但是眼的调节能力都很差，最差的一个孩子，眼的正向调节能力只有50度，正常的250度左右。</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-08-15 02:33:12 +0000 +0000'>八月 15, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 提醒有孩子的家长，一定要抽空带孩子查查视功能" href="https://iliu.org/3229.html"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -297,20 +364,12 @@
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -4,6 +4,11 @@
     <title>网站 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%BD%91%E7%AB%99/</link>
     <description>Recent content in 网站 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 14 Oct 2022 03:26:57 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,12 @@
       <pubDate>Fri, 14 Oct 2022 03:26:57 +0000</pubDate>
       
       <guid>https://iliu.org/4272.html</guid>
-      <description>前几天，接到WJ打来的电话，说是网站上有一个漏洞需要处理，问在不在办公室，在的话他到办公室和我详谈。 由于疫情被封在家中，如实告诉了他。后来加</description>
+      <description>前几天，接到WJ打来的电话，说是网站上有一个漏洞需要处理，问在不在办公室，在的话他到办公室和我详谈。
+由于疫情被封在家中，如实告诉了他。后来加了微信，发过来了一份他们系统扫描出来的漏洞。好家伙，还真不少嘞。又仔细一看，也就一个所谓的http host头攻击漏洞。百度上搜了一下，基本上都是绿盟科技的软件扫出来的，具体描述如下：
+按照网上的教程很容易的就把这个漏洞修复了。
+server { listen 8081; server_name ip1; if ($http_Host !~* ip1|ip1:4433|域名1|域名1:4433) { return 403; } ... } 第二天，他又联系我百度小程序是不是在用，我告知在用，并告知他漏洞已经修复。他又打电话过来，询问如何保证用户信息的安全。我告诉他，首先使用的是腾讯云的云服务器，腾讯方面已经作了诸多的安全防护措施，第二，我们又使用了网络防火墙等技术，防止注入。第三，使用ssl对数据的传输进行加密。
+他不置可否，然后说，你解封之后在联系我吧。见面了详谈，我就很疑惑，漏洞也修复了，还有什么可详谈的呢?咨询了一下，可能是想要让做等保，这个真做不起。反正也没啥流量，最关键的是，不想和他们打交道，直接关站了事。
+我把决定告诉了他，以前回复的很及时，还很客气的用敬语的您来和我对话，这次不理我了……</description>
     </item>
     
     <item>
@@ -22,7 +32,16 @@
       <pubDate>Sat, 28 May 2022 08:23:06 +0000</pubDate>
       
       <guid>https://iliu.org/4131.html</guid>
-      <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法</description>
+      <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法很多，可以备份到本地，可以备份的腾讯cos，阿里云等等。云储存也不贵，几十块钱甚至十几块可以用一年，唯一的缺点是这些云储存都收取上行流量费。也就是说，一旦你用到你的数据，想把数据下载到本地，是还要付出一些费用的。
+折腾群晖的时候，发现群晖的Active Back for Business这个套件可以自动的同步服务器上的文件，非常的方便，于是拿来备份网站，还是非常的方便的。
+安装Active Back for Business 群晖套件中心里，找到Active Back for Business，并安装。不多说。
+使用Active Back for Business备份网站 一、打开Active Back for Business套件，点击文件服务器。
+二、点击添加服务器。这里我们选择rsync服务器。然后下一步。
+三、填写服务器信息，并点击完成。
+四、选择备份模式，这里老刘选择的是增量备份，也可以选择多版本备份，这样就可以自动备份你设定的几个版本。
+五、选择你网站文件所在的文件夹，选择备份时间，即可。
+可能会遇到的问题 在填写服务器的时候，可能会提示服务器没有安装rsync，只需在服务器中安装这个服务即可。
+#Debian或者Ubuntu apt install rsync CentOs yum install rsync</description>
     </item>
     
     <item>
@@ -31,7 +50,8 @@
       <pubDate>Fri, 05 Nov 2021 04:05:56 +0000</pubDate>
       
       <guid>https://iliu.org/3934.html</guid>
-      <description>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，</description>
+      <description>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，这一年来放了一个小玩艺，也稳定的，王志勇大佬貌似一直都是用的这个。反正就是个博客呗，放那都行，反正也没有几个人看。
+用了10几分钟弄完了，其实感觉速度也还行。</description>
     </item>
     
     <item>
@@ -40,7 +60,12 @@
       <pubDate>Fri, 03 Sep 2021 03:05:41 +0000</pubDate>
       
       <guid>https://iliu.org/3856.html</guid>
-      <description>九月一日凌晨0点30分左右，手机收到腾讯云发来的短信： 【腾讯云】尊敬的腾讯云用户，您好！您的腾讯云账号（账号 ID：****\*，昵称：镜缘轩</description>
+      <description>九月一日凌晨0点30分左右，手机收到腾讯云发来的短信：
+【腾讯云】尊敬的腾讯云用户，您好！您的腾讯云账号（账号 ID：****\*，昵称：镜缘轩） 下的服务器： [jooj]，实例ID：**，地域：华北地区（北京），时间：2021-09-01 00:30:08，检测到存在未处理的木马文件：/tmp/php9a0u7f，您的服务器疑似被黑客入侵，可能造成严重损失，请即刻前往主机安全控制台（ ）查看详细信息。 由于当时已经熟睡，早上起床后才发现有了这个短信。
+赶紧登录上服务器，到tmp目录查找，并没有发现腾讯短信里提到的文件。然后又查看各种系统的日志，发现确实有不少扫描器之类的在扫描，但是都没有登录成功。
+网上查了一下相关的内容，发现也有不少用户收到过这个短信，但人家确实在报告的目录里找到木马文件了。所以也搞不懂具体的情况了。
+网站运行也良好，网站标题等也没有被修改，系统后台也没有可疑的进程。但是为了保险起见，还是备份了数据库，以及网站文件。
+重置系统，重新编译生产环境，从官网下载最新的程序包，把备份的网站文件只要里面的图片，其他的一概都不要了，希望是虚惊一场吧。</description>
     </item>
     
     <item>
@@ -49,25 +74,10 @@
       <pubDate>Thu, 15 Oct 2020 02:43:53 +0000</pubDate>
       
       <guid>https://iliu.org/3317.html</guid>
-      <description>最近好几位博友的博客都卖了，比如叶先生博客，诗梦博客，自然博客。网站能变现是一个好事。但是，如果有人问我，你的网站卖不卖的话，我的网站会不会</description>
-    </item>
-    
-    <item>
-      <title>再说说景安的服务</title>
-      <link>https://iliu.org/2697.html</link>
-      <pubDate>Sat, 07 Sep 2019 03:35:21 +0000</pubDate>
-      
-      <guid>https://iliu.org/2697.html</guid>
-      <description>自从上次看到景安欠薪的消息以后，虽然觉得很惋惜，但是也没有太放在心上，毕竟作为河南最大的IDC，还是再新三板上市的企业，不可能马上就挂的，况</description>
-    </item>
-    
-    <item>
-      <title>关于三个网站以后的定位</title>
-      <link>https://iliu.org/2634.html</link>
-      <pubDate>Fri, 30 Aug 2019 02:47:22 +0000</pubDate>
-      
-      <guid>https://iliu.org/2634.html</guid>
-      <description>目前跋涉者共维护了3个网站: 镜缘轩：网址：https://www.yanjingweb.cn。 可以说这个网站是一个跑偏了的网站，最开始的时候</description>
+      <description>最近好几位博友的博客都卖了，比如叶先生博客，诗梦博客，自然博客。网站能变现是一个好事。但是，如果有人问我，你的网站卖不卖的话，我的网站会不会出售呢？
+如果是那个眼镜网站的话，说实话会考虑一下，价格合适的话，应该是会出手的。但是如果是这个博客的话，真的不会卖的（当然，这个博客就那么三核桃俩枣的流量也没人买），上午又特地去上述的几个博客看了一下，更坚定了这个想法。毕竟博客是自己现在乃至以后能留下的回忆。
+昨天看到张波老师有想要折腾了，张老师一年不折腾个一次是不会罢休的，?。我默默的给眼镜网装了个Redis和又拍云的插件。
+貌似速度快了那么一丢丢！~</description>
     </item>
     
   </channel>

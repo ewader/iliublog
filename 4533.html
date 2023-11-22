@@ -7,12 +7,17 @@
 <meta name="robots" content="index, follow">
 <title>回归简单之笔记软件 | 图南博客</title>
 <meta name="keywords" content="anytype, Joplin, trilium, 思源笔记">
-<meta name="description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店">
+<meta name="description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店隔离，适逢博客群里大谈笔记软件之道，什么第二大脑，反链笔记，卡片笔记，弄的人心痒痒的，从那时候起，就开始折腾笔记软件的不归路。
+trilium 最初是从这个笔记软件折腾的，记得当时群里阿均、陈仓颉、老张们一致推荐。数据库存储数据，查询方便，支持反链…优点很多，缺点也不少，最大的缺点是学习曲线陡峭、没有移动客户端。这个软件一直用到了2023年的6月份。由于实际的需求，需要在移动端记录或者查看一下笔记，trilium就有点力不从心了。于是，又开始了折腾之旅。最终在joplin和思源笔记中选择了思源笔记。至于选择的原因，可以看我之前的一篇文章笔记软件从trilium到思源or Joplin？。
+思源笔记 思源笔记说实话还是可以的，基本功能是够了，开发者很勤奋，一周至少发布一个小版本，有时候甚至是两个。但是，事情往往过犹不及，版本的更新是一边修复bug一边又在制造bug。最重要是，开发者格局不大，总让人感觉一股小家子气。主要是表现对ducker版本的态度上。从6月份到十月份，短短4个月的时间，docker版本的部署方式代码至少改变了两次。关于这点，可以看我之前发的博客：思源笔记群晖正确的部署方法，这个是我7月份发的。最近新的版本，这个方法又不行了，又要加一些额外的命令行。论坛里还出现过要求docker收费的帖子，理由是docker用户只白嫖不做贡献。虽然被开发者否决了，但是无风不起浪。从开发者过一段时间就搞搞docker的部署方式来看，他就不想让你用docker版本，所以给你增加无谓的操作难度。
+anytype 在适用思源的这几个月里，经过陈仓颉的介绍，还适用了anytype这个笔记软件，这个软件更复杂，可以说颠覆了笔记的传统方式，局域网里各端能秒同步。界面也很漂亮，但是，现在还是不能作为主力的笔记来使用，特别是文章想插入外链，用这个软件就更不合适了，因为它的理念是万物都是type，所以外链也是type，于是它就把你的外链转成内链，给你专门生成一条笔记。所以，我们写文章，插入外链图片，引用外链地址，在粘贴到博客的时候就很不方便。暂时就观望吧，看能不能完善。
+joplin 转来转去，还是转回了joplin。这是经过我的思考后做出的决定：
+首先，我不需要什么第二大脑之类的软件，来辅助我记忆，事实上它能帮我记忆的很有限。 给予上面那一点，我对双链的需求就没有那么强烈，尽管joplin也能实现双链 我需要的是一款： 同步方便的笔记软件，各个端完善 收集材料要方便，支持网页剪藏 我需要的时候能方便的搜索出来我要的内容 需要稳定，不想再折腾 综上之后，我发现，joplin是最合适的了，从6月份试用到现在，群晖里的docker套件从来没有挂过，各个客户端齐全，开源，同步方便。
+目前的方案是：群晖里用docker部署joplin的同步服务服务器，使用Tailscale来进行各端的同步。当然这个方案还不够简单，比如Joplin可以直接使用onedrive进行同步，但是我认为，我目前的这个方案是综合数据安全和简单的最优化方案了，不接受反驳。">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/4533.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity=""
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -57,31 +62,45 @@
 
     </style>
 </noscript><meta property="og:title" content="回归简单之笔记软件" />
-<meta property="og:description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店" />
+<meta property="og:description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店隔离，适逢博客群里大谈笔记软件之道，什么第二大脑，反链笔记，卡片笔记，弄的人心痒痒的，从那时候起，就开始折腾笔记软件的不归路。
+trilium 最初是从这个笔记软件折腾的，记得当时群里阿均、陈仓颉、老张们一致推荐。数据库存储数据，查询方便，支持反链…优点很多，缺点也不少，最大的缺点是学习曲线陡峭、没有移动客户端。这个软件一直用到了2023年的6月份。由于实际的需求，需要在移动端记录或者查看一下笔记，trilium就有点力不从心了。于是，又开始了折腾之旅。最终在joplin和思源笔记中选择了思源笔记。至于选择的原因，可以看我之前的一篇文章笔记软件从trilium到思源or Joplin？。
+思源笔记 思源笔记说实话还是可以的，基本功能是够了，开发者很勤奋，一周至少发布一个小版本，有时候甚至是两个。但是，事情往往过犹不及，版本的更新是一边修复bug一边又在制造bug。最重要是，开发者格局不大，总让人感觉一股小家子气。主要是表现对ducker版本的态度上。从6月份到十月份，短短4个月的时间，docker版本的部署方式代码至少改变了两次。关于这点，可以看我之前发的博客：思源笔记群晖正确的部署方法，这个是我7月份发的。最近新的版本，这个方法又不行了，又要加一些额外的命令行。论坛里还出现过要求docker收费的帖子，理由是docker用户只白嫖不做贡献。虽然被开发者否决了，但是无风不起浪。从开发者过一段时间就搞搞docker的部署方式来看，他就不想让你用docker版本，所以给你增加无谓的操作难度。
+anytype 在适用思源的这几个月里，经过陈仓颉的介绍，还适用了anytype这个笔记软件，这个软件更复杂，可以说颠覆了笔记的传统方式，局域网里各端能秒同步。界面也很漂亮，但是，现在还是不能作为主力的笔记来使用，特别是文章想插入外链，用这个软件就更不合适了，因为它的理念是万物都是type，所以外链也是type，于是它就把你的外链转成内链，给你专门生成一条笔记。所以，我们写文章，插入外链图片，引用外链地址，在粘贴到博客的时候就很不方便。暂时就观望吧，看能不能完善。
+joplin 转来转去，还是转回了joplin。这是经过我的思考后做出的决定：
+首先，我不需要什么第二大脑之类的软件，来辅助我记忆，事实上它能帮我记忆的很有限。 给予上面那一点，我对双链的需求就没有那么强烈，尽管joplin也能实现双链 我需要的是一款： 同步方便的笔记软件，各个端完善 收集材料要方便，支持网页剪藏 我需要的时候能方便的搜索出来我要的内容 需要稳定，不想再折腾 综上之后，我发现，joplin是最合适的了，从6月份试用到现在，群晖里的docker套件从来没有挂过，各个客户端齐全，开源，同步方便。
+目前的方案是：群晖里用docker部署joplin的同步服务服务器，使用Tailscale来进行各端的同步。当然这个方案还不够简单，比如Joplin可以直接使用onedrive进行同步，但是我认为，我目前的这个方案是综合数据安全和简单的最优化方案了，不接受反驳。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/4533.html" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/4533.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-12T01:07:28+00:00" />
 <meta property="article:modified_time" content="2023-10-12T01:07:28+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="回归简单之笔记软件"/>
-<meta name="twitter:description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店"/>
+<meta name="twitter:description" content="早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店隔离，适逢博客群里大谈笔记软件之道，什么第二大脑，反链笔记，卡片笔记，弄的人心痒痒的，从那时候起，就开始折腾笔记软件的不归路。
+trilium 最初是从这个笔记软件折腾的，记得当时群里阿均、陈仓颉、老张们一致推荐。数据库存储数据，查询方便，支持反链…优点很多，缺点也不少，最大的缺点是学习曲线陡峭、没有移动客户端。这个软件一直用到了2023年的6月份。由于实际的需求，需要在移动端记录或者查看一下笔记，trilium就有点力不从心了。于是，又开始了折腾之旅。最终在joplin和思源笔记中选择了思源笔记。至于选择的原因，可以看我之前的一篇文章笔记软件从trilium到思源or Joplin？。
+思源笔记 思源笔记说实话还是可以的，基本功能是够了，开发者很勤奋，一周至少发布一个小版本，有时候甚至是两个。但是，事情往往过犹不及，版本的更新是一边修复bug一边又在制造bug。最重要是，开发者格局不大，总让人感觉一股小家子气。主要是表现对ducker版本的态度上。从6月份到十月份，短短4个月的时间，docker版本的部署方式代码至少改变了两次。关于这点，可以看我之前发的博客：思源笔记群晖正确的部署方法，这个是我7月份发的。最近新的版本，这个方法又不行了，又要加一些额外的命令行。论坛里还出现过要求docker收费的帖子，理由是docker用户只白嫖不做贡献。虽然被开发者否决了，但是无风不起浪。从开发者过一段时间就搞搞docker的部署方式来看，他就不想让你用docker版本，所以给你增加无谓的操作难度。
+anytype 在适用思源的这几个月里，经过陈仓颉的介绍，还适用了anytype这个笔记软件，这个软件更复杂，可以说颠覆了笔记的传统方式，局域网里各端能秒同步。界面也很漂亮，但是，现在还是不能作为主力的笔记来使用，特别是文章想插入外链，用这个软件就更不合适了，因为它的理念是万物都是type，所以外链也是type，于是它就把你的外链转成内链，给你专门生成一条笔记。所以，我们写文章，插入外链图片，引用外链地址，在粘贴到博客的时候就很不方便。暂时就观望吧，看能不能完善。
+joplin 转来转去，还是转回了joplin。这是经过我的思考后做出的决定：
+首先，我不需要什么第二大脑之类的软件，来辅助我记忆，事实上它能帮我记忆的很有限。 给予上面那一点，我对双链的需求就没有那么强烈，尽管joplin也能实现双链 我需要的是一款： 同步方便的笔记软件，各个端完善 收集材料要方便，支持网页剪藏 我需要的时候能方便的搜索出来我要的内容 需要稳定，不想再折腾 综上之后，我发现，joplin是最合适的了，从6月份试用到现在，群晖里的docker套件从来没有挂过，各个客户端齐全，开源，同步方便。
+目前的方案是：群晖里用docker部署joplin的同步服务服务器，使用Tailscale来进行各端的同步。当然这个方案还不够简单，比如Joplin可以直接使用onedrive进行同步，但是我认为，我目前的这个方案是综合数据安全和简单的最优化方案了，不接受反驳。"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "回归简单之笔记软件",
       "item": "https://iliu.org/4533.html"
     }
@@ -94,12 +113,12 @@
   "@type": "BlogPosting",
   "headline": "回归简单之笔记软件",
   "name": "回归简单之笔记软件",
-  "description": "早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店",
+  "description": "早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店隔离，适逢博客群里大谈笔记软件之道，什么第二大脑，反链笔记，卡片笔记，弄的人心痒痒的，从那时候起，就开始折腾笔记软件的不归路。\ntrilium 最初是从这个笔记软件折腾的，记得当时群里阿均、陈仓颉、老张们一致推荐。数据库存储数据，查询方便，支持反链…优点很多，缺点也不少，最大的缺点是学习曲线陡峭、没有移动客户端。这个软件一直用到了2023年的6月份。由于实际的需求，需要在移动端记录或者查看一下笔记，trilium就有点力不从心了。于是，又开始了折腾之旅。最终在joplin和思源笔记中选择了思源笔记。至于选择的原因，可以看我之前的一篇文章笔记软件从trilium到思源or Joplin？。\n思源笔记 思源笔记说实话还是可以的，基本功能是够了，开发者很勤奋，一周至少发布一个小版本，有时候甚至是两个。但是，事情往往过犹不及，版本的更新是一边修复bug一边又在制造bug。最重要是，开发者格局不大，总让人感觉一股小家子气。主要是表现对ducker版本的态度上。从6月份到十月份，短短4个月的时间，docker版本的部署方式代码至少改变了两次。关于这点，可以看我之前发的博客：思源笔记群晖正确的部署方法，这个是我7月份发的。最近新的版本，这个方法又不行了，又要加一些额外的命令行。论坛里还出现过要求docker收费的帖子，理由是docker用户只白嫖不做贡献。虽然被开发者否决了，但是无风不起浪。从开发者过一段时间就搞搞docker的部署方式来看，他就不想让你用docker版本，所以给你增加无谓的操作难度。\nanytype 在适用思源的这几个月里，经过陈仓颉的介绍，还适用了anytype这个笔记软件，这个软件更复杂，可以说颠覆了笔记的传统方式，局域网里各端能秒同步。界面也很漂亮，但是，现在还是不能作为主力的笔记来使用，特别是文章想插入外链，用这个软件就更不合适了，因为它的理念是万物都是type，所以外链也是type，于是它就把你的外链转成内链，给你专门生成一条笔记。所以，我们写文章，插入外链图片，引用外链地址，在粘贴到博客的时候就很不方便。暂时就观望吧，看能不能完善。\njoplin 转来转去，还是转回了joplin。这是经过我的思考后做出的决定：\n首先，我不需要什么第二大脑之类的软件，来辅助我记忆，事实上它能帮我记忆的很有限。 给予上面那一点，我对双链的需求就没有那么强烈，尽管joplin也能实现双链 我需要的是一款： 同步方便的笔记软件，各个端完善 收集材料要方便，支持网页剪藏 我需要的时候能方便的搜索出来我要的内容 需要稳定，不想再折腾 综上之后，我发现，joplin是最合适的了，从6月份试用到现在，群晖里的docker套件从来没有挂过，各个客户端齐全，开源，同步方便。\n目前的方案是：群晖里用docker部署joplin的同步服务服务器，使用Tailscale来进行各端的同步。当然这个方案还不够简单，比如Joplin可以直接使用onedrive进行同步，但是我认为，我目前的这个方案是综合数据安全和简单的最优化方案了，不接受反驳。",
   "keywords": [
     "anytype", "Joplin", "trilium", "思源笔记"
   ],
   "articleBody": "早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店隔离，适逢博客群里大谈笔记软件之道，什么第二大脑，反链笔记，卡片笔记，弄的人心痒痒的，从那时候起，就开始折腾笔记软件的不归路。\ntrilium 最初是从这个笔记软件折腾的，记得当时群里阿均、陈仓颉、老张们一致推荐。数据库存储数据，查询方便，支持反链…优点很多，缺点也不少，最大的缺点是学习曲线陡峭、没有移动客户端。这个软件一直用到了2023年的6月份。由于实际的需求，需要在移动端记录或者查看一下笔记，trilium就有点力不从心了。于是，又开始了折腾之旅。最终在joplin和思源笔记中选择了思源笔记。至于选择的原因，可以看我之前的一篇文章笔记软件从trilium到思源or Joplin？。\n思源笔记 思源笔记说实话还是可以的，基本功能是够了，开发者很勤奋，一周至少发布一个小版本，有时候甚至是两个。但是，事情往往过犹不及，版本的更新是一边修复bug一边又在制造bug。最重要是，开发者格局不大，总让人感觉一股小家子气。主要是表现对ducker版本的态度上。从6月份到十月份，短短4个月的时间，docker版本的部署方式代码至少改变了两次。关于这点，可以看我之前发的博客：思源笔记群晖正确的部署方法，这个是我7月份发的。最近新的版本，这个方法又不行了，又要加一些额外的命令行。论坛里还出现过要求docker收费的帖子，理由是docker用户只白嫖不做贡献。虽然被开发者否决了，但是无风不起浪。从开发者过一段时间就搞搞docker的部署方式来看，他就不想让你用docker版本，所以给你增加无谓的操作难度。\nanytype 在适用思源的这几个月里，经过陈仓颉的介绍，还适用了anytype这个笔记软件，这个软件更复杂，可以说颠覆了笔记的传统方式，局域网里各端能秒同步。界面也很漂亮，但是，现在还是不能作为主力的笔记来使用，特别是文章想插入外链，用这个软件就更不合适了，因为它的理念是万物都是type，所以外链也是type，于是它就把你的外链转成内链，给你专门生成一条笔记。所以，我们写文章，插入外链图片，引用外链地址，在粘贴到博客的时候就很不方便。暂时就观望吧，看能不能完善。\njoplin 转来转去，还是转回了joplin。这是经过我的思考后做出的决定：\n首先，我不需要什么第二大脑之类的软件，来辅助我记忆，事实上它能帮我记忆的很有限。 给予上面那一点，我对双链的需求就没有那么强烈，尽管joplin也能实现双链 我需要的是一款： 同步方便的笔记软件，各个端完善 收集材料要方便，支持网页剪藏 我需要的时候能方便的搜索出来我要的内容 需要稳定，不想再折腾 综上之后，我发现，joplin是最合适的了，从6月份试用到现在，群晖里的docker套件从来没有挂过，各个客户端齐全，开源，同步方便。\n目前的方案是：群晖里用docker部署joplin的同步服务服务器，使用Tailscale来进行各端的同步。当然这个方案还不够简单，比如Joplin可以直接使用onedrive进行同步，但是我认为，我目前的这个方案是综合数据安全和简单的最优化方案了，不接受反驳。\n",
-  "wordCount" : "1314",
+  "wordCount" : "19",
   "inLanguage": "zh",
   "datePublished": "2023-10-12T01:07:28Z",
   "dateModified": "2023-10-12T01:07:28Z",
@@ -138,7 +157,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -188,16 +207,6 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
@@ -205,11 +214,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       回归简单之笔记软件
     </h1>
-    <div class="post-meta"><span title='2023-10-12 01:07:28 +0000 +0000'>2023-10-12</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2023-10-12 01:07:28 +0000 +0000'>十月 12, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
@@ -339,20 +348,12 @@
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -10,7 +10,7 @@
 <meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/tags/wordpress/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="wordpress" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/wordpress/" />
+<meta property="og:url" content="https://iliu.org/tags/wordpress/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="wordpress"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -81,7 +83,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,23 +133,21 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     wordpress
+    <a href="/tags/wordpress/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -157,136 +157,25 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站...</p>
+    <p>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站一直用的lnmp，为啥博客就不能用用lamp呢？况且apache在稳定性以及对php的支持等方面都比nginx要好，nginx的优势是轻便和并发能力强。其实对小博客来说，基本没有啥区别。
+说折腾就折腾，编译安装apache，发现需要重新设置虚拟主机，设置的时候发现，不像nginx的时候，脚本提示把http301到https，什么www域名301到一级域名等，这些提示都没有。也没有设置伪静态的选项。网上查了一下，发现是几行代码就可以搞定的事情。
+设置301跳转 在apache里设置301跳转很简单，只需要在.htaccess里添加代码就好了，老刘主要用到两个，一个是http跳到https，一个是www跳到一级域名。感觉比nginx要简洁一些，代码如下：
+RewriteEngine On RewriteCond %{SERVER_PORT} 80 RewriteRule ^(.*)$ https://iliu.org/$1 [R,L] RewriteEngine On RewriteCond %{HTTP_HOST} !^iliu.org$ [NC] RewriteRule ^(.*)$ http://iliu.org/$1 [L,R=301] 设置后才发现，设置和不设置没有啥区别，老刘用的cf，应该是在cf里设置了301到443接口了，至于wordpress伪静态的问题，也是很容易，直接到wordpress的后台，保存一下固定链接样式就行了，保存后在根目录里自动生成了.htaccess。代码如下：
+# BEGIN WordPress # 在“BEGIN WordPress”与“END WordPress”之间的指令（行）是 # 动态生成的，只应被WordPress过滤器修改。 # 任何对标记之间的指令的修改都会被覆盖。 &lt;IfModule mod_rewrite.c&gt; RewriteEngine On RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}] RewriteBase / RewriteRule ^index\.php$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule . /index.php [L] &lt;/IfModule&gt; # END WordPress 使用cloudflare后获取用户真实IP 由于apache已经自带mod_remoteip模块，所以只需按如下操作即可
+#启用模块 vim /usr/local/apache/conf/httpd.conf Include conf/extra/httpd-remoteip.conf #添加如下内容 vim /usr/local/apache/conf/extra/httpd-remoteip....</p>
   </div>
-  <footer class="entry-footer"><span title='2020-12-30 07:35:59 +0000 +0000'>2020-12-30</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-12-30 07:35:59 +0000 +0000'>十二月 30, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 博客web端改用apache" href="https://iliu.org/3520.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>给7b2的主题加上评论回复功能
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>7b2主题默认是不会给评论者回复邮件的。也曾经问过作者，作者说如果实现这个的话，没几天邮箱就被封掉了，可能作者有作者的理由吧，但是不加的话，...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-07-25 00:54:22 +0000 +0000'>2019-07-25</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 给7b2的主题加上评论回复功能" href="https://iliu.org/2552.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>wordpress自动升级到5.2.2
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>今天打开邮箱，发现系统发的邮件。 嗨！您位于 https://iliu.org 的站点已被成功升级到WordPress 5.2.2。 您不需要再做什么。 要获取更多关于5.2.2版本...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-06-19 02:15:39 +0000 +0000'>2019-06-19</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to wordpress自动升级到5.2.2" href="https://iliu.org/1787.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>7b2主题添加百度是否收录及禁止非管理员访问后台
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>原来使用的是知更鸟的begin主题，和7b2的主题可以说是侧重点不同，不可否认的是7b2主题 在展示网页的方面和begin有一定的差距，比如b...</p>
-  </div>
-  <footer class="entry-footer"><span title='2019-05-25 07:00:29 +0000 +0000'>2019-05-25</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 7b2主题添加百度是否收录及禁止非管理员访问后台" href="https://iliu.org/1636.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>只需三步，让你的wordpress在godaddy免费空间上完美呈现
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>以前本站有一篇文章，说是解决godaddy免费空间广告条对wordpress后台的影响，当时是采用第三方软件来实现的，但是到底有没有一种方法...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-28 06:03:38 +0000 +0000'>2010-10-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 只需三步，让你的wordpress在godaddy免费空间上完美呈现" href="https://iliu.org/950.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>解决godaddy免费空间广告带来影响的方法
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>众所周知，godaddy免费空间带有一个很大的广告条，有广告也就罢了，不厚道的是通过增加的广告代码，使得很多源代码发生了错误，这是因为它的广...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-01-19 01:39:32 +0000 +0000'>2010-01-19</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 解决godaddy免费空间广告带来影响的方法" href="https://iliu.org/476.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>wordpress中文tag、中文分类找不到文章的解决方法
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>原来用的linux的主机，在设定固定连接后不存在中文tag、中文分类找不到文章，但自从换了godaddy的windows主机以后，由于iis...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-01-09 02:19:28 +0000 +0000'>2010-01-09</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to wordpress中文tag、中文分类找不到文章的解决方法" href="https://iliu.org/407.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>完美解决godaddy免费空间广告条对wordpress后台的影响
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>自从从godaddy搞了域名之后，一直对它提供的免费空间耿耿于怀，用也不是，不用又觉得可惜，难怪网上都说此空间是一个鸡肋。很多童鞋都把此空间...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-01-03 13:09:22 +0000 +0000'>2010-01-03</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 完美解决godaddy免费空间广告条对wordpress后台的影响" href="https://iliu.org/388.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>提供WordPress 主题 Marcelle的汉化版本
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>昨天发掘出 Marcelle这个主题，很快为他的那种简约而清爽的界面而吸引，打算使用这个主题，简单的汉化以后，觉得还不错，不过今天就又发现了个...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-12-26 08:05:16 +0000 +0000'>2009-12-26</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 提供WordPress 主题 Marcelle的汉化版本" href="https://iliu.org/304.html"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>如何增加WordPress上传文件类型
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>WordPress默认的上传文件类型只有图片、视频、音频、其他媒体。但是如果我们想分享一些其他的文件比如文档等怎么办呢？其实Wordpres...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-12-17 02:20:09 +0000 +0000'>2009-12-17</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
-  <a class="entry-link" aria-label="post link to 如何增加WordPress上传文件类型" href="https://iliu.org/196.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

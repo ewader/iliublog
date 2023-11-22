@@ -4,6 +4,11 @@
     <title>换域名 on 图南博客</title>
     <link>https://iliu.org/tags/%E6%8D%A2%E5%9F%9F%E5%90%8D/</link>
     <description>Recent content in 换域名 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 18 Dec 2020 03:31:30 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E6%8D%A2%E5%9F%9F%E5%90%8D/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,15 @@
       <pubDate>Fri, 18 Dec 2020 03:31:30 +0000</pubDate>
       
       <guid>https://iliu.org/3474.html</guid>
-      <description>昨天老刘深思熟虑一番，把域名换了。原因很多。换成这个域名后，如果不出意外的话，可能是一直用下去的域名了。意外的情况是忽然能捡到一个3位的域名</description>
+      <description>昨天老刘深思熟虑一番，把域名换了。原因很多。换成这个域名后，如果不出意外的话，可能是一直用下去的域名了。意外的情况是忽然能捡到一个3位的域名？对于老刘这种100元以上的域名都嫌贵的人来说，这种情况无限的小。
+之前老刘对liuday这个域名还是非常满意的，直到有一天，老刘在输入法里打这个域名的时候，出现的是“刘大爷”，看到这三个字的瞬间，老刘感觉liuday不香了。
+其实坚持这个博客，老刘还是有点私心的，尤其是看了10年前的一些记录，更坚定了把这个博客走下去，但是老刘也就匆匆那么几十年，女儿一天天的长大，可能再大一些的时候，创作的主力就是她了，所以，一个合适的域名是可以传给下一代的，所以，一个如花似玉的小姑娘，用一个“刘大爷”的域名总归是一件很滑稽的事情。
+前天和张波老师闲聊,说想把一些折腾的伪技术类的文章单独拿出来，另立一个网站。张老师说，那样可能各个网站都比较荒废。想想也是，本身手里一个镜缘轩的官网，包括在线商城什么的，还有一个关于眼镜行业(视光圈)的网站，再加上这个博客，还有平时的工作。虽然，镜缘轩官网更新的频次比较低，眼镜行业的网站基本上也不用太费心写文章，但是还是感觉有点顾此失彼了。如果再独立出来一个网站，确实心有余而力不足了。
+以后的网站规划如下：
+博客，写写自己身边日常的事情，后期可能闺女会发发她写的作文（前期都是老刘代发的），保留她以前青涩的文笔，也是挺有意思的一件事情把
+视光圈，会进行改版，前期主要以视光行业的培训资料为主，后期不限于眼镜行业的内容，会加上一些乱七八糟的东西，目前已经放到RN的vps。毕竟圈里也需要一些娱乐啊一些其他信息嘛
+镜缘轩，增加更新量，把原来发到视光圈的一些眼镜的知识，护眼爱眼的知识发到这个网站上来。
+就这三个网站了，不在折腾别的东西了。</description>
     </item>
     
     <item>
@@ -22,16 +35,11 @@
       <pubDate>Thu, 17 Dec 2020 10:17:17 +0000</pubDate>
       
       <guid>https://iliu.org/3470.html</guid>
-      <description>经过一番考虑，决定启用新域名 iliu.org 一是域名较短，二是本人对org情有独钟。这也将是老刘最后一次换域名了。 所以，麻烦有老刘友情链接的改下地址，（貌</description>
-    </item>
-    
-    <item>
-      <title>博客更换域名的公告</title>
-      <link>https://iliu.org/2879.html</link>
-      <pubDate>Wed, 27 Nov 2019 09:54:03 +0000</pubDate>
-      
-      <guid>https://iliu.org/2879.html</guid>
-      <description>申请了一个个性域名，很短的那种，加上胡记的胡总说越短越好，赶紧换，所以更换之。从即日起，跋涉者博客域名从ewader.com更换成www.l</description>
+      <description>经过一番考虑，决定启用新域名 iliu.org
+一是域名较短，二是本人对org情有独钟。这也将是老刘最后一次换域名了。
+所以，麻烦有老刘友情链接的改下地址，（貌似也没有几个）
+另外有订阅流金岁月RSS的大佬，麻烦也换下地址，原地址已经301跳转到新地址。
+原空间正在做系统，目前访问可能有些慢，见谅！</description>
     </item>
     
   </channel>

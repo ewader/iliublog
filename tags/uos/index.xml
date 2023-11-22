@@ -4,6 +4,11 @@
     <title>uos on 图南博客</title>
     <link>https://iliu.org/tags/uos/</link>
     <description>Recent content in uos on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 17 Jan 2022 00:24:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/uos/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,13 @@
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
       <guid>https://iliu.org/4036.html</guid>
-      <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
+      <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。
+manjaro之于ubuntu 以前在桌面上选择LINUX的时候首选是ubuntu,这个系统的优点是用户多，大的方面比较稳定，运行也比较流畅，很多软件都是以ubuntu的格式来开发的。在我的电脑上有一个很烦人的问题，就是不能保存电脑的亮度，调整完之后，下次一重新启动，亮度又是最大了。虽然通过代码可以改，但是改后还是有一丢小问题的，强迫症有点。另外就是安装软件的时候，软件中心启动的慢，有时候甚至安装的界面都出不来。基于这么几点，优点不太满意。
+manjaro之于deepin/uos deepin和uos算是国产系统里的佼佼者了，我遇到的问题是，deepin偶会卡死，毫无征兆的那种，忽然桌面一卡，整个都不能用了。UOS刚开始也有这毛病，最新版貌似解决了这个问题。另外就是蓝牙有问题，死活连不上鼠标。
+deepin系我最喜欢的是它的终端，设计的非常人性化，特别是连接远程服务器里面，我用过的终端里，深度终端是最好用的。
+在就是UOS的系统资源占用率有点高，比如你开上一个浏览器，然后什么都不动，基本CPU会在5-8%的占用，要是浏览点网页，还会更高，所以使用的时候，风扇就会呼呼的转。笔记本在不用电源的情况下，充满电只能有3个小时左右（manjaro基本上能用5个多小时），还是挺费电的。
+manjaro占用，开着edeg还有wine版的微信
+manjaro的缺点 默认没有中文输入法，需要自己安装。wps字体非常的模糊。软件商店没有deepin这种的直观。</description>
     </item>
     
     <item>
@@ -22,7 +33,17 @@
       <pubDate>Fri, 29 Oct 2021 01:22:00 +0000</pubDate>
       
       <guid>https://iliu.org/3927.html</guid>
-      <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后</description>
+      <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后，关机需要90秒的倒计时。从网上查了一下相关的信息，发现这个小毛病还是挺多人遇到的。虽然可以更改时间来较少，但是又可能造成系统的崩溃。
+Linuxmint倒是很流畅，一切都很满意。但是用了两天后发现了一个问题，不能使用微信，虽然在windows上，老刘也很少用微信，但是偶尔会用吧。加上近期媳妇申报副高要处理不少的文档，她都是用微信直接给我发过来，我要处理的话还得重启更换系统，非常的不方便。deepin吧，又时有卡桌面。后来想到了这个统信uos。批了一层皮的deepin os。本来没有报太大的希望，不过安装后却给了我不少的惊喜。
+一、安装方便
+比任何Linux系统安装的都方便，尽管别的现在也不复杂了。真不会安装的话，可以申请官方的一对一服务。甚至安装后，你windows桌面上的文件都给你复制过来了。
+二、系统流畅
+这个在固态硬盘下，估计都流畅，除了那个ubuntukelly吧，优化的真不错。上手也简单。
+三、软件不少
+应用商店里的软件不少，不管是通过wine也好，还是通过使用安卓也好，反正基本上解决了Linux下软件不足的问题，尽管有些是非原生的系统，不过使用频率也低。偶尔应应急还是可以的。
+四、不足之处
+当然系统也还存在不足，主要表现在应用商店里的软件版本大多数都比较低，有的都1年多没有更新了。别如老刘必须要用的keepassxc。官方都已经是2.6.6了，商店里的还是2.3.4。又没法像ubuntu一样可以用ppa安装软件。
+尽管如此，也是瑕不掩瑜，感兴趣的朋友真的可以试试这个系统了。另外，家庭版目前是公测，挺稳定了，可以分享他人使用而免费激活，也可以支付9.9激活，据说以后会涨价，也不知真假。</description>
     </item>
     
   </channel>

@@ -4,6 +4,11 @@
     <title>hugo on 图南博客</title>
     <link>https://iliu.org/tags/hugo/</link>
     <description>Recent content in hugo on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 04 Nov 2023 20:36:45 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,13 @@
       <pubDate>Sat, 04 Nov 2023 20:36:45 +0800</pubDate>
       
       <guid>https://iliu.org/hugo-papermod-modification/</guid>
-      <description>在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用Paper</description>
+      <description>在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用PaperMod主题的时候，也是遇到了一些问题，本文就遇到的问题作一个记录。目前，主题的代码高亮功能还是没有搞定，不过也是影响不大，先放一放也无所谓。
+首页不显示文章 把WordPress导出的md文件导入的Hugo的psots目录后，在使用代码创建新文件时候
+hugo new posts/***.md 发现新建的md文件，生成网页后不会在首页显示。但是在栏目里是会有的。后来的在@阿甘博客博客的提醒下，使用导出的md文件的文档属性标头，成功的显示了。但是，每次在生成文章md的时候，都需要手动的更改，不是太方便。后来，在看某篇文章的时候得到启发，修改archetypes/default.md,把默认的代码删除，改成：
+--- title: &amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#34; author: 老刘 type: post date: {{ .Date }} url: /optics-weekly-issue-8/ categories: - 齐物论 --- 然后，再创建md文件后，只需要修改一下url里的值就OK了。
+增加评论功能 这个主要是copy了阿甘博客的方法。 在artalk的官方文档中找到Artalk.css和Artalk.js文件的cdn地址然后下载到本地，在hugo项目根目录的/static文件夹下面新建一个叫 artalk的文件夹，然后把前述两个静态文件放进这个文件夹
+创建模板文件 /主题目录/layouts/partials/comment/artalk.html，文件内容如下：
+&amp;lt;link href=&amp;#34;/artalk/Artalk.css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;/artalk/Artalk.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;!-- Artalk --&amp;gt; &amp;lt;div id=&amp;#34;Comments&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; Artalk.init({ el: &amp;#39;#Comments&amp;#39;, pageKey: &amp;#39;{{ .Permalink }}&amp;#39;, pageTitle: &amp;#39;{{ .Title }}&amp;#39;, server: &amp;#39;{{ $.Site.Params.artalk.server }}&amp;#39;, site: &amp;#39;{{ $.Site.Params.artalk.site }}&amp;#39;, // .</description>
     </item>
     
   </channel>

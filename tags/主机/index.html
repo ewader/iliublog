@@ -10,7 +10,7 @@
 <meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/tags/%E4%B8%BB%E6%9C%BA/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -58,9 +58,11 @@
 </noscript><meta property="og:title" content="主机" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/%E4%B8%BB%E6%9C%BA/" />
+<meta property="og:url" content="https://iliu.org/tags/%E4%B8%BB%E6%9C%BA/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="主机"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -81,7 +83,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -131,23 +133,21 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     主机
+    <a href="/tags/%E4%B8%BB%E6%9C%BA/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -157,28 +157,27 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>前几天发现网站有点卡，特别是回复评论的时候，速度很慢。然后后台看了一下进程，发现WWW进程占用的CPU会一下一下的飙升，最高的时候达到了10...</p>
+    <p>前几天发现网站有点卡，特别是回复评论的时候，速度很慢。然后后台看了一下进程，发现WWW进程占用的CPU会一下一下的飙升，最高的时候达到了100%。但是根据流量的话，不可能是这样一个占用。这个博客也就日流量30IP左右，另外一个网站，日流量就是400-500之间。作为一台2核4g内存的vps,不可能达到这个资源占用水平。所以，打算重新整下生产环境。
+昨天下午正好有点时间，把两个网站进行了备份，这个博客还好，打包之后只有100多兆，另外一个网站打包后竟然有了1G多，唉。所有，能不折腾还是少折腾啊。
+下载完了之后，进到篱落的后台重新安装系统镜像，结果发现，centos8安装不上，其他的Ubuntu啊，debian啊等等也是安装不了。装来装去只有centos7.6能装进去，虽然说理想的系统是8，但是7.6也就凑合了。系统装好后，开始装oneinstack，结果发现，无法下载安装包，本地电脑打开是正常的，ping一下那个网址，也PING不通。不死心，安装lnmp吧，结果还是无法下载安装包，nmmp，都不行，我装宝塔总可以吧，我去，宝塔也装不了，?！~~~
+于是联系小张，这货不知道去哪pc去了?，到晚上才回复我，要了我的ip，后来说是宿主机坏了，需要更换。想着会花一段时间呢，于是开个腾讯港轻量应急，反正也可以随时退款。题外话，腾讯香港轻量晚上有点卡，其他时间倒是还可以。结果小张说给我换新的服务器。
+早上一大早就给搞好了，弄生产环境搞了半天，下午总算网站恢复正常了。
+总的来说，篱落的主机还是推荐使用的，和腾讯阿里等大厂相比稳定性虽然稍差一些，但是胜在价格便宜啊，象我这款人情价的2h4g的vps才300块钱，还要啥自行车啊。
+如果你想要找一款性价比不错的主机空间，不妨看看篱落吧，走我下面的链接，据说有优惠！
+https://my.liluohost.com/aff.php?aff=148</p>
   </div>
-  <footer class="entry-footer"><span title='2020-10-14 07:03:04 +0000 +0000'>2020-10-14</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-10-14 07:03:04 +0000 +0000'>十月 14, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 网站换了一台服务器" href="https://iliu.org/3309.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

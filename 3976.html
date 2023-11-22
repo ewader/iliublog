@@ -7,12 +7,23 @@
 <meta name="robots" content="index, follow">
 <title>ubuntu20.10升级编译安装ibus-libpinyin输入法 | 图南博客</title>
 <meta name="keywords" content="ibus, libpinyin, Linux, 拼音输入法, 编译">
-<meta name="description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li">
+<meta name="description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。
+ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。
+如上图，ibus-libpinyin已经有了云输入，非常的方便
+首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin
+第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：
+Build options:
+Version 1.20.2
+Install prefix /usr
+Use boost no
+Use opencc no
+Use libpinyin yes
+Build lua extension no
+Build stroke input mode yes">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/3976.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity=""
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.js" onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
@@ -57,31 +68,57 @@
 
     </style>
 </noscript><meta property="og:title" content="ubuntu20.10升级编译安装ibus-libpinyin输入法" />
-<meta property="og:description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li" />
+<meta property="og:description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。
+ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。
+如上图，ibus-libpinyin已经有了云输入，非常的方便
+首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin
+第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：
+Build options:
+Version 1.20.2
+Install prefix /usr
+Use boost no
+Use opencc no
+Use libpinyin yes
+Build lua extension no
+Build stroke input mode yes" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/3976.html" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/3976.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-25T05:47:41+00:00" />
 <meta property="article:modified_time" content="2021-12-25T05:47:41+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
 <meta name="twitter:title" content="ubuntu20.10升级编译安装ibus-libpinyin输入法"/>
-<meta name="twitter:description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li"/>
+<meta name="twitter:description" content="以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。
+ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。
+如上图，ibus-libpinyin已经有了云输入，非常的方便
+首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin
+第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：
+Build options:
+Version 1.20.2
+Install prefix /usr
+Use boost no
+Use opencc no
+Use libpinyin yes
+Build lua extension no
+Build stroke input mode yes"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
+  "itemListElement": [, 
     {
       "@type": "ListItem",
-      "position":  1 ,
+      "position":  2 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  3 ,
       "name": "ubuntu20.10升级编译安装ibus-libpinyin输入法",
       "item": "https://iliu.org/3976.html"
     }
@@ -94,12 +131,12 @@
   "@type": "BlogPosting",
   "headline": "ubuntu20.10升级编译安装ibus-libpinyin输入法",
   "name": "ubuntu20.10升级编译安装ibus-libpinyin输入法",
-  "description": "以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li",
+  "description": "以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。\nubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。\n如上图，ibus-libpinyin已经有了云输入，非常的方便\n首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin\n第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：\nBuild options:\nVersion 1.20.2\nInstall prefix /usr\nUse boost no\nUse opencc no\nUse libpinyin yes\nBuild lua extension no\nBuild stroke input mode yes",
   "keywords": [
     "ibus", "libpinyin", "Linux", "拼音输入法", "编译"
   ],
   "articleBody": "以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。\nubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。\n如上图，ibus-libpinyin已经有了云输入，非常的方便\n首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin\n第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：\nBuild options:\nVersion 1.20.2\nInstall prefix /usr\nUse boost no\nUse opencc no\nUse libpinyin yes\nBuild lua extension no\nBuild stroke input mode yes\nBuild cloud input mode ye\nBuild english input mode yes\n一般出错的化都是编译环境缺少一些组件，按照提示安装即可。\n最终编译安装后的结果\n",
-  "wordCount" : "544",
+  "wordCount" : "85",
   "inLanguage": "zh",
   "datePublished": "2021-12-25T05:47:41Z",
   "dateModified": "2021-12-25T05:47:41Z",
@@ -138,7 +175,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -188,16 +225,6 @@
                     <span>🔍搜索</span>
                 </a>
             </li>
-            <li>
-                <a href="https://iliu.org/about" title="🙋🏻‍♂️ 关于">
-                    <span>🙋🏻‍♂️ 关于</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://iliu.org/boyoupeijing" title="👓配镜">
-                    <span>👓配镜</span>
-                </a>
-            </li>
         </ul>
     </nav>
 </header>
@@ -205,11 +232,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       ubuntu20.10升级编译安装ibus-libpinyin输入法
     </h1>
-    <div class="post-meta"><span title='2021-12-25 05:47:41 +0000 +0000'>2021-12-25</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2021-12-25 05:47:41 +0000 +0000'>十二月 25, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
@@ -347,20 +374,12 @@ Build english input mode yes</p>
     </main>
     
 <footer class="footer">
-    <span>Copyright&copy;2009- 2023 <a href="https://iliu.org/">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-</br>
-
-<font color='#808695'>本站由 <a href="https://app.cloudcone.com/?ref=8581" rel="noopener noreferrer nofollow"
-        target="_blank">Cloudcone</a> 提供计算服务, 由 <a href="https://www.cloudflare.com/"
-        rel="noopener noreferrer nofollow" target="_blank">Cloudflare</a> 提供全站加速服务。</font>
-        
-    </a></br>
-    
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
