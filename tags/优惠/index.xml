@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>优惠 on 图南博客</title>
+    <link>https://iliu.org/tags/%E4%BC%98%E6%83%A0/</link>
+    <description>Recent content in 优惠 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 07 Nov 2022 06:58:25 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%BC%98%E6%83%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>改用cloudcone的VPS</title>
+      <link>https://iliu.org/4285.html</link>
+      <pubDate>Mon, 07 Nov 2022 06:58:25 +0000</pubDate>
+      
+      <guid>https://iliu.org/4285.html</guid>
+      <description>上个月，由于服务器到期加上注销备案，需要找一个便宜、稳定的香港vps，大厂的云又太贵，看双十一也没有打算作活动的意思。后来看老张说起硅云的云服务器，十年之约用户的福利，2C4G一年380块钱，看了一下网上的介绍，说什么的都有。
+PS，网上的评论还真不是空穴来风，妈的，我用了一个月，退款的时候扣了我130。说是按原价计费。套路真深！
+抱着试试看的态度，入手了一台，下面谈谈用了快一个月的感受。
+首先，VPS的系统都比较老，我常用的debian才是9.0的版本，而新版本是11了，于是，升级，从9升级到10,然后从10升级到11,用了大概1个小时。用oneinstack安装lnmp，用了大概40来分钟。把博客先迁了过来，打开速度还是不错的。硅云说的是用的cn2的线路，这点是加分项。但是它的硬盘和带宽真的是有点差。所以，无论是升级还是编译安装生产力系统都很慢。
+看博客运行的还不错，打算把另外一个网站，以及我的商城之类的都迁移过来，就当是个展示吧，在这里出了点问题，另一个网站的数据库有点大，大概30m左右，用phpmyadmin，死活就是导入不进来，刚开始是数据表里有个问题，解决了这个问题之后，导入总是显示503错误。没办法，不用软件导了，直接用终端在数据库里用source的方法来导入，发现导入的时候，速度非常的慢，有的表都要几十秒甚至1分钟才能导入，不过后来算是成功搞进去了。
+再来弄我的商城，安装的时候用的Mariadb10.5,商城竟然需要MYSQL5.7以上版本，按理说M也是达到了的，可能是商城程序的问题，没有兼容。那就换成Mysql好了，删除原来的Mariadb，编译安装mysql8.0,安装到中间，ssh断了，我以为是网络的问题，但是怎么重连都连不上。我觉得是我的问题，来回的升级系统，折腾数据库。那就重装系统吧。结果，等了1一个小时也没有装好。
+赶紧联系客服，客服说2个小时解决。我问是什么问题，他说是硬盘的问题。看来，和我无关。这还没有咋折腾呢，硬盘就挂了，折腾了这么多的服务器，还从来没有玩坏过硬盘类。
+这时候，对这个服务器就有点不满意了，然后就是备份的问题，我的备份方案是备份到本地NAS，结果是一言难尽，2m的小水管，备份是太慢了。
+后来看MJJ以及城南旧事的推荐，说cloudcone也可以，看了看双11有活动，于是入手了一台，硅云已经申请退款了。
+CloudCone 介绍 CloudCone 成立于 2017 年，美国注册公司 (怀俄明州 2017-000753144)。主营美国洛杉矶 MultaCom 机房的云服务器 / VPS、独立服务器、电子邮件托管等业务。VPS 基于 KVM 虚拟，采用自行研发的控制面板。其所在的 MultaCom 机房采用动态路由网络，会根据不同网络状态调整线路，很多地区的电信网络会走 CN2 线路，因此延迟和稳定性在非高峰时段都较为优秀。同时该主机商提供了按秒计费、随删随用、定期备份服务。支持支付宝、Paypal、信用卡等方式付款。
+CloudCone 官网 主要有两个，其中一个被墙，提供了国内用户专用域名。
+官网地址：https://cloudcone.com （被墙，需代理） 官方镜像：https://cloudcone.com.cn （正常访问） CloudCone 最新优惠活动 据我了解，CloudCone 经常会有优惠活动，集中在黑色星期五、情人节、复活节、农历新年、周年纪念等时间，可以在官网的 Hello 界面查看最新的优惠信息。我也会在这个页面不定期更新。
+CloudCone 六周年限量促销 VPS 美国西海岸洛杉矶 MultaCom 机房，千兆宽带，1个 IPv4 地址，3个 IPv6 地址，基于 KVM 虚拟，纯 SSD RAID 10 存储。
+CPU 内存 硬盘（SSD） 流量 带宽 价格 购买地址 2核 1G 30G 1T 1Gbps $18.71/年 点击购买 2核 2G 60G 2T 1Gbps $33.</description>
+    </item>
+    
+  </channel>
+</rss>

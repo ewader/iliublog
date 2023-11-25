@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>debian on 图南博客</title>
+    <link>https://iliu.org/tags/debian/</link>
+    <description>Recent content in debian on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VPS服务器系统的选择</title>
+      <link>https://iliu.org/4126.html</link>
+      <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
+      
+      <guid>https://iliu.org/4126.html</guid>
+      <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同时，要对个人的要求也随之更高。玩VPS首先遇到的就是系统的选择问题。
+Windows系统 大多数的站长第一次选择系统的时候都是喜欢用windows系统，毕竟熟悉，上手快。但是Windows服务器系统先天上占用资源比较大，系统不稳定，导致获得不了良好的用户体验。同样1H1G配置的vps，运行最新版本的debian11，然后装个博客系统，是一点问题都没有，但是你要是想要运行Windows服务器，只能选择低版本的了。所以，用了一段时间后，自然就淘汰不用了。
+Linux系统 Linux系统是开源系统，受到所有开发者的共同监督，已经是非常成熟的服务器系统，并且拥有着一套完整的权限机制，安全性与稳定性都很高。只是上手有点门槛。不过，随着各种面板技术的发展，目前这个已经不是什么问题。那么Linux系统那么多，到底选择哪种呢？
+centos 这个系统在国内可以说是服务器的首选。可惜去年官方已经不在继续维护这个系统了，目前最高的版本是centos8.0，目前官方已经不再维护，centos7.6由于用的人更多，目前还在过度的时间内，但是也时日无多了。所以，用这个系统的童鞋，还是换成别的系统吧。老刘曾用过腾讯云里腾讯自己以centos8为蓝本开发的系统，体验起来还是可以的。如果真是centos的铁粉，不妨可以试试腾讯的这个系统。
+debain 这个也是老牌的服务器系统了。作为一个具有悠久历史的社区维护的操作系统。生命力还是没有问题的。据王志勇大佬的测试，使用Debian系统的php要比其他的系统来说，速度更快。老刘感觉，这个快可能更多的是测试的结果，实际体验下来，感觉相差不大。Debian系统稳定，软件丰富。自从centos宣布停止维护后，老刘已经把所有的VPS的系统都换成Debian了。
+另外一个让老刘喜欢用Debian的原因是，Debian11的防火墙使用起来非常的简单，而别的系统大多是用的iptables。比如我们要放行一个端口，Debian只需用如下的命令：
+ufw allow 666 而iptables写法就很复杂了：
+iptables -I INPUT -p tcp --dport 8000 -j ACCEPT Ubuntu 是基于Debian二次开发的产物，在Linux桌面操作系统中，Ubuntu绝对是老大的存在。很多公司开发的软件，都是基于Ubuntu来开发的。服务器版也还可以，不过老刘还是习惯了使用Debian。
+至于其他的小众操作系统，使用的人少，遇到问题找答案都不容易，不用也罢</description>
+    </item>
+    
+    <item>
+      <title>Django部署在debian11服务器</title>
+      <link>https://iliu.org/4029.html</link>
+      <pubDate>Fri, 14 Jan 2022 09:34:09 +0000</pubDate>
+      
+      <guid>https://iliu.org/4029.html</guid>
+      <description>Python加Django开发网页程序真的很方便，连我这个菜鸟看看教程之类的也能写出来程序。本地测试完了之后，想在服务器上跑跑看，结果发现，要发布到服务器端，可是比PHP程序要麻烦的多，从昨天下午就开始看相关的教程，后来在宝塔面板下部署成功了，但是我不想用宝塔面板，于是继续折腾的道路，经过一天的折腾，重装了好几次测试的服务器，终于算是部署成功了，虽然只是一个测试的项目，但是总算又迈出去了一步不是。项目采用nginx+uwsgi+django。服务器端采用的是debian11。
+在服务器安装python3 由于debian11本身带有3.9.2版本的，所以，这里就不安装了。直接在data文件夹里建立一个虚拟目录。
+python3 -m venv env 然后进入虚拟环境 source env/bin/activate 安装环境 可以用本地服务器的导出的requirements.txt，命令是： pip freeze &amp;gt; requirements.txt #在本地虚拟环境使用 切换到服务器端，上传这个文件到data目录下 pip install -r requirements.txt #这样就可以在建立起和你的本地一样的环境 pip install uwsgi#虚拟环境里装了后，需要在真实环境再运行一次 上传本地的项目到data
+在与manage.py同级目录下建立一个新文件。uwsgi.ini
+#添加配置选择 &amp;#91;uwsgi] #配置和nginx连接的socket连接 socket=127.0.0.1:8997 #配置项目路径，项目的所在目录 chdir=/data/wwwroot/mysite/ #配置wsgi接口模块文件路径,也就是wsgi.py这个文件所在的目录 wsgi-file=myblog/wsgi.py #配置启动的进程数 processes=4 #配置每个进程的线程数 threads=2 #配置启动管理主进程 master=True #配置存放主进程的进程号文件 pidfile=uwsgi.pid #配置dump日志记录 daemonize=uwsgi.log home=/data/env/ 安装nginx 由于使用习惯了oneinstack,这里继续用这个面板安装，只需安装nginx即可，可去官网看安装方法，安装完成后，./vhost建立虚拟主机。虚拟主机的目录定位到你放置项目的位置。然后在usr/local/nginx/conf/vhost/下编辑你创建的这个主机的conf。加入以下的语句。
+location / { include uwsgi_params; uwsgi_pass 127.0.0.1:8997; #端口要和uwsgi里配置的一样 uwsgi_param UWSGI_SCRIPT myblog.wsgi; #wsgi.py所在的目录名+.wsgi uwsgi_param UWSGI_CHDIR /data/wwwroot/**/; #项目路径 } location /static/ { alias /data/wwwroot/**/static/; #静态资源路径 } 启动nginx和uwsgi service nginx restart 进项目目录，虚拟环境下 uwsgi --ini uwsgi.</description>
+    </item>
+    
+  </channel>
+</rss>

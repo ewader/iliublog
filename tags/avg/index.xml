@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>avg on 图南博客</title>
+    <link>https://iliu.org/tags/avg/</link>
+    <description>Recent content in avg on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Aug 2021 09:59:10 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/avg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cccleaner变流氓了</title>
+      <link>https://iliu.org/3844.html</link>
+      <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
+      
+      <guid>https://iliu.org/3844.html</guid>
+      <description>老刘的笔记本电脑自从去年1月份买回来之后，一直也没怎么管过它，最近发现C盘的可用空间已经变的非常的小了，当时给分配了80G，现在只剩下不到10g了，所以想清理一下电脑内的垃圾。
+首先用系统自带的磁盘清理，差不都清理出去3g左右的垃圾。觉得还能有进一步的空间。国产的诸如360之类的本来就敬而远之，想到以前用的cccleaner这个软件还不错，虽然PRO版功能更全，但是清理一下电脑用免费版已经足够了。
+怕下错了软件，还专门去的cccleaner的官网。安装的时候，有一个界面有AVG的广告，但是没有看到说要安装之类的，想着免费版展示一下广告也在所难免，也就没有在意。一路next下去，很顺利的安装好了。
+接下来清理了一下体统，发现可清理的东西也没有多少了。随便清理了一下。也就没在管了。客厅去喝了一杯茶，回来发现给安装上了一个杀毒软件——avg免费版。10几年前也用过这个软件，和AVAST，Avira合称杀毒软件中的3A。但是我用微软自带的软件也就足够用了。所以，准备卸载掉。
+结果，AVG也很流氓了，竟然没法卸载。常规的方法无效。网上搜了一下卸载方法，发现AVG官方在以前有一个卸载工具，但是AVG的官网竟然打不开。
+正在这个时候，老刘又发现浏览器竟然也被搞了，首页换成了一个导航的网站。也不知道是cccleaner搞的还是AVG搞的，反正就是他俩。心中一阵腻歪。
+也不在去网上找方法了，考虑到快用两年了，直接恢复系统好了。
+网上查了一下，这货是有前科的。2017年9月，该软件还被发现感染恶意软件Floxif。</description>
+    </item>
+    
+  </channel>
+</rss>

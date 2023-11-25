@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>联通宽带 on 图南博客</title>
+    <link>https://iliu.org/tags/%E8%81%94%E9%80%9A%E5%AE%BD%E5%B8%A6/</link>
+    <description>Recent content in 联通宽带 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Aug 2020 04:13:00 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E8%81%94%E9%80%9A%E5%AE%BD%E5%B8%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>可惜了的中国联通</title>
+      <link>https://iliu.org/3225.html</link>
+      <pubDate>Tue, 11 Aug 2020 04:13:00 +0000</pubDate>
+      
+      <guid>https://iliu.org/3225.html</guid>
+      <description>前一段时间想给店里的宽带换成联通的，毕竟房间里已经走了联通的线路，不用再从外面接线，另外就是联通还可能有一些公网的IP可以用，然后自己的NAS黑群晖就能排上用场了，结果被告知写字楼里要使用每年几千块的商务宽带，当时还写了一篇文章来说这件事。详见《 收拾的差不多了，顺便鄙视一下联通》。
+今天看了一篇文章，才发现原来是联通的一个骚操作导致自己宽带的市场被友商所一步一步的蚕食，最后由于资源的限制，不得不出此下策以便更好的维护它的核心客户。
+这个骚操作就是，再移动、电信等都以手机号和宽带绑定等融合为主的时候，低价策略狂扫市场的时候，联通不知道脑子抽了什么筋，全力影响推荐副卡，以便占据消费者的第二个卡槽，为此，放弃大量中低端用户群并将主要精力放在维护其核心宽带客户上面。结果，费了好到的人力物力财力，结果发现，消费者并不买账，副卡平均的寿命只有5个月。再回过头来发现，副卡没做好，宽带用户也没了。
+特别是移动，推出的捆绑措施优惠的力度相当的大，当下，越来越多的家庭会选择“全家用”，融合套餐的地位会越来越高，如果你移动网没做好，宽带用户也会趋减，同样你宽带没做好，移动网的用户也会逐渐转移出去。
+真是可惜了，当初手里拿着网通的宽带用户，南电信，北联通，还把不良资产CDMA甩给了电信，3g时代还拿着最好的技术WCDMA。结果这么多的好牌，被自己打的稀烂。现在不但宽带用户被移动超越了，移动用户还被电信超越了！
+白白把自己的用户拱手相让，唉，你要是能发展壮大还真的是怪事了！</description>
+    </item>
+    
+  </channel>
+</rss>

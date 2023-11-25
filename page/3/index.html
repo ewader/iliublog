@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>樊登读书也不太靠谱
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前几天搞了一些樊登读书的音频，有一些书听着还好，但是也有一些书明显感觉不对劲，典型的一本书叫《谷物大脑》，这是一本关于健康饮食和营养学的书籍，作者戴维·珀尔马特。书中主要探讨碳水化合物、糖分和麸质对人类健康的影响，并提出了以谷物为基础的饮食方式对大脑健康的危害。
+作者主张用高脂肪、高胆固醇的饮食来替代含有麸质的谷物，并举了一个以前高脂肪饮食虽然比较虚但是基本健康，改变饮食结构后几个月患了癌症的例子。这典型的以个例来证明自己观点的正确，相反，我们能举出来一堆高脂肪饮食不健康的例子，比他的例子还要多的多。
+樊登是很推崇这本书的，甚至还出了一个减肥食谱，早上鸡蛋吃饱，午饭牛肉吃饱，晚饭黄瓜吃饱，10天后你的体重会哗哗的降低。
+这只是其一，另外听了部分《中国八大诗人》的书。里面讲到陶渊明，后来说陶渊明是中国的泰戈尔，还很自豪的样子，我咋听着这么别扭呢，这不就和说爷爷长相和孙子一样吗？
+后来想想，他做这个读书的节目，其实和后来的直播卖货从本质上来说是一样的。还是自己慢慢的找书看吧。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-14 00:04:35 +0000 +0000'>九月 14, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 樊登读书也不太靠谱" href="https://iliu.org/4499.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>视光周刊（第1期）：农业革命可能是史上最大的骗局
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这里记录每周值得分享的视光内容，周五在图南博客1和光学视界公众号发布。
+投稿请在本站或光学视界公众号留言，或发邮件至：ewader@qq.com2
+封面图 研究人员给一只鸟戴上了特别设计的太阳镜。
+xxx
+科学家在死去的海雀标本中发现，大西洋海鹦的喙在光照后会发光。为了研究活体生物而又不会伤害到鸟的眼睛，科学家设计出来一种特殊的太阳镜，以保护鸟类的眼睛免受紫外线光源的伤害。
+本周读书 农业的产生是人类历史上的一次巨大的革命，这场革命被称为农业革命或者新石器革命。人们普遍认为农业革命为人类提供了稳定的食物来源，使人类走向了文明社会。
+renleijiangshi
+但是现代发现的很多证据表明，事实上可能不会这么简单。事实上没有任何证据表明人类越来越聪明。
+农业革命所带来的非但不是轻松生活的新时代，反而让农民过着比采集者更辛苦、更不满足的生活。狩猎采集者的生活其实更为丰富多变，也比较少会碰上饥饿和疾病的威胁。确实，农业革命让人类的食物总量增加，但量的增加并不代表吃得更好、过得更悠闲，反而只是造成人口爆炸，而且产生一群养尊处优、娇生惯养的精英分子。普遍来说，农民的工作要比采集者更辛苦，而且到头来的饮食还要更糟。农业革命可说是史上最大的一桩骗局。这不是我的观点，这是一本名字叫《人类简史，从动物到上帝》书中的观点。书的作者是尤瓦尔·赫拉利，1976年生于以色列，牛津大学历史学博士，青年怪才、全球瞩目的新锐历史学家。 这本区别于传统历史书的书，关注的是人类整体的演变，它会让你脑海里一些零散的历史知识忽然就构成了一副完整的画面，这是难能可贵的读书体验，有一种和人类一同走过几万年的感觉。如果有闲暇，不放读一读这本书，开卷有益嘛。
+视光动态 1、重新定义保护角膜的免疫细胞3
+墨尔本大学的研究人员使用一种新的成像技术，发现保护角膜的免疫细胞是T细胞，而不是以前认为的树突状（或朗格汉斯）细胞。
+laura-downie-paper
+由Laura Downie副教授、Holly Chinnery博士和Scott Mueller教授领导的研究小组使用了一种非侵入性成像方法，他们称之为“功能性体内共聚焦显微镜”（Fun-IVCM），观察T细胞快速移动并与角膜最外层的其他细胞和神经相互作用。
+该项成果目前发表于《美国国家科学院院刊》上。
+2、新冠病毒与眼表疾病虽然ACE2受体在人体细胞中的存在，但并没有直接的证据表明COVID-19可以感染眼睛并引起干眼症状。目前的文献主要集中在COVID-19对呼吸系统的影响，以及病毒如何利用ACE2受体进入并感染肺部细胞。
+新冠病毒对眼睛的影响
+Nasiri 等人对超过 38 项研究（涉及 8,219 名患者）进行的一项荟萃分析发现，大约 11% 的患者在感染 Covid 后报告了眼部症状。其中，16%报告干眼症和异物感。还报告 2 了眼睛发红和瘙痒。各种研究表明，许多人在感染后持续出现疲劳、嗅觉丧失、老年、慢性疲劳和呼吸系统问题等神经系统症状。涉及该病毒的嗜神经作用的研究正在进行中，但其对中枢神经系统的影响是有据可查 3,4,5 的。
+要进一步的研究来确定COVID-19是否会直接或间接地导致眼部疾病。在此之前，对于疑似因COVID-19而导致的眼部不适，应进行全面的眼科检查，评估和诊断，并且治疗也应根据具体的病症进行。
+精选视光文章 角膜曲率高和低，哪一种更容易近视？ 角膜曲率高是否更容易近视，研究结论并不一致。一些研究认为高角膜曲率是近视的危险因素之一，但也有研究认为近视度数高或低的人在角膜曲率上没有明显差别。
+角膜曲率
+此外，角膜曲率是个体差异很大的，有些人天生角膜曲率偏高，但不一定会近视。关于近视的风险因素，除了角膜曲率外，还需要考虑遗传背景、用眼习惯、户外活动、教育强度等多种因素。因此，不能只根据角膜曲率高就过早地进行医疗干预。
+对于未来的健康风险，关键在于眼轴增速。眼轴增长速度过快可能会导致近视的发生和发展，而角膜曲率低、天生眼轴长的孩子一旦眼轴增长快起来，变成近视后可能会度数不高但眼轴却很“可观”，轻易就超过26mm。因此，需要定期检查，必要时采取手段控制眼轴增长速度，以预防近视的发生和发展。
+综上所述，角膜曲率高并不一定更容易近视，但是需要综合考虑多种因素来评估近视风险。对于未来的健康风险，关键在于眼轴增速。需要定期检查并及时采取措施控制眼轴增长速度。
+罗荃聊眼睛公众号
+退轴，到底是“再来一瓶”还是“谢谢惠顾”？ 退轴”是指眼轴缩短的现象，即近视度数降低导致眼球前后轴长度减少。在近视防控领域，眼轴的增长控制是至关重要的。一般来说，如果能够有效地控制眼轴增长，就可以减少近视的发生和发展。
+眼轴回退
+然而，根据所引用的文献和资料，可以得出以下结论：
+1. “退轴”现象是真实存在的，但它是小概率事件。虽然有许多孩子在使用某些近视防控产品或方法后出现了眼轴回退，但绝大多数情况下这种回退是暂时的，停用产品后眼轴会回到初始值。 2. 没有任何硬核的临床研究证据证明停用近视防控产品后可以永久保持眼轴的回退甚至治愈近视。 3. 年龄较大（一般11岁以上）和近视度数较浅（150度以下）的孩子在使用近视防控产品后更容易出现眼轴永久回退。 4. 重复低强度红光防控近视的创始人之一何明光教授的研究发现，使用哺光仪后有40%的孩子在第一个月内出现了退轴超过0.05mm的可喜现象，但随着使用时间的延长，到12个月的时候退轴超过0.05mm的孩子数量降到了21.85%，而眼轴回退超过0.2mm的只有5.88%。这说明即使在使用近视防控方案的基础上，仍有至少一半的退轴会“弹回去”。 因此，虽然“退轴”现象确实存在，但是眼科医生并不将其作为常规近视防控目标。近视防控的目标是延缓眼轴的增长速度，而不是追求眼轴的回退。对于已经近视的孩子，白天的户外活动仍然具有防控作用。家长和孩子应该采取科学的方法来控制近视的发展，如保持良好的用眼习惯、增加户外活动时间等。同时，对于已经出现的“退轴”现象，也不应过于乐观，因为绝大多数情况下这种回退是暂时的。
+详情请参见眼科杨羿的公众号
+怎么判断你配戴的眼镜是合格的？ 判断眼镜是否合格可以从以下几个方面综合考虑：
+1. 镜片的质量：优质的镜片表面应该是无瑕的，无结点、无脱膜、无污渍。镜片的光学性能也很重要，包括透光性能、成像质量等。手持镜片于眼前，从镜片中观察远方景物，若景物清晰，无变形，亮度无明显差异，且缓慢移动时也无跳跃，则说明镜片的透光性能较好。 2. 镜架的质量：镜架的材质也是判断眼镜是否合格的一个重要因素。总的来说分金属类和塑料两大类，金属类分钛材质和合金材料，不锈钢材质；塑胶类分厚重的板材、轻薄的TR材质、ULTEAM材料及其他塑胶制眼镜。 3. 镜架的工艺细节：鼻托、铰链声音、桩头是否浑然一体、光洁度、电镀外表感觉、LOGO是雕刻还是丝印等细节都可以直观感受到镜架的优劣与否。 综上所述，判断眼镜是否合格需要综合考虑多个方面，包括镜片的质量、镜架的质量以及镜架的工艺细节等因素。如果条件允许的话，建议到专业的机构利用专业的设备进行检测，以保证眼睛的健康。
+详情请参见南京眼镜行业协会公众号...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-09 01:10:07 +0000 +0000'>九月 9, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 视光周刊（第1期）：农业革命可能是史上最大的骗局" href="https://iliu.org/4493.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>口琴的记忆
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>小时候，家里穷，能吃饱穿暖已经是幸事了，哪有多余的钱玩乐器啊，就算有乐器也没地方去学习去，当时我们一个乡就一个音乐老师，会弹奏脚踏的风琴，每次上课都让学生去抬到教室。但是小孩也没有不喜欢这些乐器的，笛子倒是常见，但是我吹不响。后来，哥哥攒了好久，攒了几块钱买了一个口琴，那是我人生中的第一件乐器。
+那个口琴，陪伴我度过了很多无聊的时光。无聊的就瞎吹，也不懂得谱子，只是凭着感觉，慢慢的，我也能吹出几个曲子，比如《国歌》、《渴望》、《红梅颂》之类的。后来买了一本流行音乐歌词书，就照着书瞎吹。因为不识谱，会唱的能吹出来，没听过的歌也不会吹。虽然吹的不咋的，自己还是挺开心的。
+后来，上了高中，住了校，再后来，去了大学，生活的变化让我逐渐离开了那把口琴。一转眼，30来年过去了，口琴的记忆早已被时间的尘埃所淹没。
+前两天，群里@1900提到了口琴这个事情，不知道咋回事，一下子就get到我的某个点，PDD花了27块钱，买了一把。
+回来试吹了一下，基本功还在。断断续续的也还能吹。最惊讶的就是我女儿和我媳妇了，特别是我女儿，像发现新大陆似的，满眼的崇拜。😄
+打算最近没事的时候再练练，熟悉的琴声，总让我想起那无忧无虑的童年，那个不太富裕却很温馨的家，以及那时候和哥哥相爱相杀的那些日子……</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-04 08:17:14 +0000 +0000'>九月 4, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 口琴的记忆" href="https://iliu.org/4489.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>蒲松龄笔下的《罗刹海市》在什么地方?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近刀郎出了一首新歌，名字就叫《罗刹海市》。民间有很多的解读，比如，马户是谁，又鸟是谁等等。那么蒲松龄笔下的《罗刹海市》到底是一个什么样的情况呢？最近看《学习强国》，可能也是与时俱进吧，就看到了如下的文字：
+“尝闻祖父言：西去二万六千里，有中国，其人民形象率诡异。但耳食之，今始信。”……问：“此名何国？”曰：“大罗刹国”。蒲松龄笔下的“大罗刹国”，其人皆奇丑，并以丑恶为美，以靡靡之音为乐…… 关于“海市”，蒲松龄在原文中通过一问一答这样描述：“问：‘海市何地？’曰：‘海中市，四海鲛人，集货珠宝。四方十二国，均来贸易。’” 学习强国</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-28 09:33:11 +0000 +0000'>八月 28, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 蒲松龄笔下的《罗刹海市》在什么地方?" href="https://iliu.org/4486.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>每个生命都是来历劫的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>庄子里提到，“方生方死，方死方生”。又说到，“天地一指也”，还说到“万物与我为一”等等，都在说明世上万物都是同一个“玩意”，之所以形成了不同的东西，只是“吹万”不同而已，那我们来这方世界的目的是什么？很有可能都是来历劫的。
+吹万，是庄子发明的一个词。大概的意思是：无论是大风、小风、风发出的各种声音，本质还是风，之所以有不同的风，只是因为风吹万窍不同而已。引申到万物包括人，本质都是一样的，只不过装在了不同的形体里面。 佛家把我们这个世界称之为“婆娑世界”，意思是不完美的世界，有缺憾的世界。这个世界存在的意义可能就是让各个因为“吹万”不同的个体在这个世界完善自身用的。毕竟在一个不完美的、有缺憾的世界，生活、经历可能更容易“悟道”吧。
+普通的人，无法感受到自己是来这个世界历劫的，于是把这个世界看到很重，钩心斗角、患得患失，这可能本身就是一种历练，毕竟每一个“物”所需要体验的历练都不相同。可能只有当我们这个肉体死去的时候，才能明白，死后的世界才是真正的世界，可惜的是没法向还活在这个世界的人来传递信息，也可能不允许传递，毕竟这个世界是一个历练的世界。如果都知道了，肉体死后的世界才是真正的世界，谁还愿意待着这个污浊的时空里呢，这就失去了历练的本意。
+可是有一些人，天生比较接近于“道”，这些人就是我们所说的圣人，比如老子、孔子、庄子、释迦摩尼等等。他们经过“修炼”明白了前因后果，因此才能说出，“方生方死”、“生，寄也；死，归也”等一些看似是废话的实话，只是人们无法相信而已。只能留下一些典籍，期望后人能经过学习，明白这个世界的真相。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-27 01:14:51 +0000 +0000'>八月 27, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 每个生命都是来历劫的" href="https://iliu.org/4483.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>疲劳战题海战是没用的
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>女儿目前上的这个初中在是我当年力主下去的，当时可选择的有好几个学校，后来看别的那几个学校抓的都比女儿这个学校严格，表现为作业多，考试多等等。据说有些作业都要写到12点多，而女儿的作业一般在学校都写完了。
+这样的情况，我是比较满意的，我认为，一般满身疲惫的孩子是学不好的，但是家里的领导有不同的看法。今天女儿放学回来说了一句，唉，某某中暑假的期末考试还没有我们学校好呢。验证了我的想法，题不在多，而在于精，休息好的孩子学起来更容易。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-25 10:13:07 +0000 +0000'>八月 25, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 疲劳战题海战是没用的" href="https://iliu.org/4479.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>慎用数码型镜片
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>现在很多品牌都有数码型镜片（也称为防疲劳镜片），其原理是在镜片的下半部分增加50-75的下加光，这样看近的时候，眼睛就可以少付出50-75度的调节力了。
+具有正常调节力的朋友不要用这个种镜片，会导致调节力的丧失，从而引起视功能的失调。另外尤其是有外斜的朋友，更不能用。具体能不能用这种镜片，需要视功能检查后才能确定，不要觉得防疲劳就无脑的上。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-22 01:18:56 +0000 +0000'>八月 22, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 慎用数码型镜片" href="https://iliu.org/4475.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>山东6日游（三）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>山东之行已经到了尾声，前一天晚上和朋友一家在所住民宿的二楼露台上喝酒聊天。一同回顾了这些年带着孩子游览各地的经历，说的正嗨，服务员提醒说有人投诉我们，其实我们已经很小声了。算了，被打扰了兴致，各回各家睡觉去。
+一晚上没有睡太好，早上4点多就醒了，赖了一会床，到了5点，昨天晚上和朋友约定的是6点出发去火炬八街。给他们打了个电话，他们又要求7点去。反正也都起来了，就去海边转了一圈。好多当地的人在海边钓鱼、钓螃蟹。他们的收获很丰。有个阿姨，钓了一大袋子的大螃蟹。
+威海火炬八街 一个网红打卡的地方，不明白如何就火起来了，7点多点赶到，已经有很多人了。一位大爷边往回走边说到，什么地方吗，啥都没有，都是人。
+![](https://s2.l22.org/2023/08/37772df56e328ef-scaled.jpg 在火炬八街打卡照了几张照片，给女儿买了两个用茉莉花编制的手环，买了一个玉米棒和一个鸡蛋汉堡。就赶往威海公园。
+威海公园 临海的一个公园，人很多，都是冲着那个大相框去的。20块钱买了两个鸡蛋灌饼。威海的鸡蛋灌饼有当地的特色，多加了一根面肠还有一小把豆腐皮，味道还不错。 人多，天热，阴凉的地方少。朋友一家在我后面到了后就没停车，直接开往郑州了，本来还计划去悦海公园的，也不去了，那里有个灯塔。也没啥意思。既然这样就出发回家吧。
+我家的车当天限号，在路上行驶了11个小时，历程900多公里，终于在晚上21:04分出了收费站，完美错开了限号。
+山东之行，至此落下帷幕。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-21 01:04:12 +0000 +0000'>八月 21, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 山东6日游（三）" href="https://iliu.org/4463.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>盒马鲜生的生意经
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天去盒马鲜生逛，本意是给女儿买一些女孩子的用品，结果里面没有卖的，就顺便买了些排骨之类的。挑了半天，选了一盒价格签是¥10.8元的排骨，结账的时候，发现是¥18.8元。于是，我又回到那个排骨的陈列架，仔细的看了一下价格签。发现原来是10.8元170g。
+这算不算是另外一种的价格欺诈？</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-20 05:11:46 +0000 +0000'>八月 20, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 盒马鲜生的生意经" href="https://iliu.org/4461.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>博客做了一些调整
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>修整了一下博客的目录，现在整个博客只有4个目录，大部分都取自《庄子》。目录的含意我在关于页面也说了。另外开场白就当时我的说说吧，不想要在加个memos了。做做减法，越简单越好。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-19 08:45:29 +0000 +0000'>八月 19, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 博客做了一些调整" href="https://iliu.org/4459.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/2/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/4/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>上线了个l22网址导航
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>l22.org买都以后，一直处于吃灰的状态，一直在考虑做个什么，最起码让它在互联网上露个面。前一段想做个中国诗词展示的网站，但是收集这个诗词是一个麻烦事，找了下也没有合适的源码。最近在研究urlos的面板，经过这两天的试用，感觉还是可以的。恰好上面有一个导航的应用，直接拿来用了。之所以，弄个导航，是因为就这个最不用费心的维护。博友们如有需求，可以打开l22.org，提交网址，老刘会定期的去后台审核的。
+博客的折腾告一段落了 从前天开始，博友们可能都会间断性的打不开我的博客吧，原因是多方面的，一是我装urlos面板，二是我装完面板后，vps挂了。我也不知道，为啥这么不经折腾，挂了后，重新装系统，换了几个镜像都不行，最后选了个Ubuntu20总算启动了起来，和大厂比，稳定性还是有点差距。日子就这么凑合着过吧。
+以后也不会再怎么折腾了，写写文字是正事，其他都是浮云。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-23 10:48:54 +0000 +0000'>一月 23, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 上线了个l22网址导航" href="https://iliu.org/3619.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>室内门锁换锁芯
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>工作室厕所的门锁，自从买了这个房子以来，都不好用，把手那的弹簧非常的软，以至于关门的时候，把手就把门锁压得缩回去了。这两头没事，就想修修，给弄带劲。
+首先，拆门锁
+在门的背后，先把1处的四个门把手的螺丝给拧掉，这时候上面的把手就可以抽出来了。下面的那个带反锁功能的锁芯现在还拿不掉，不着急，把2处的那个螺丝拧下来就可以了。
+就是这个，拧掉那个螺丝后，这个锁芯一抽就出来了
+接下来，把2附近的那两个固定门锁的螺丝钉拧下来，这个时候，门锁就可以拿下来了。
+二，测量门锁的尺寸
+需要测量如下几个尺寸：
+测完之后，去某宝，或者五金店去找，一般宝上的比较全，找个尺寸相差不大的即可，老刘第一次找的给发过来一个175的，不能用，后来又找了一家，发过来的正合适。大概25块钱左右。
+新的门锁到了之后，装上即可。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-22 08:04:19 +0000 +0000'>一月 22, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 室内门锁换锁芯" href="https://iliu.org/3608.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>试用urlos
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>老刘一直用的是oneinstack这个命令行面板，其实也够用了。但是后来弄了一个在线商城，这个开发者基本上是以宝塔的环境来开发的，安装教程等等都是用的宝塔面板。自己试着用oneinstack来安装，会报很多的错误，特别是客服这一块，它使用了长链接等。而官方出的命令安装教程简直没法看，按教程根本搞不成。所以，只能用着免费版的宝塔，看了眼收费的，又太贵。
+昨天刚好看到缙哥哥又在推这个面板，现在涨价到20了，最早双11的时候才11.11，双12的时候12.12.现在20来快了，他推这个面板倒不是这个面板有多好用，他甚至都没有怎么用过，他推这个面板是因为据说有30%的aff。而看到我那个商城的官方也有urlos的一键安装包。所以，就买个授权吧。反正也不贵不是。留着，省的以后像宝塔似的千把块，买了心疼。
+买了后，就用博客来先试试手，你还别说，这个面板和宝塔真的是没有一点点的相似性。不过，官方的文档还行，按照文档进行操作还是可以成功的。这里怎么安装，怎么弄网站就不说了，官方都有，只说说体会。
+urlos的优点：
+优点不少，最大的优点是，每个网站都是一个容器。运行环境都是独立的。相互之间不会收到影响。比如你有两个网站，主题软件进行了加密，需要设置机密的模块，这个时候用传统的方法就不是很好解决，但是用这个面板就很容易，毕竟一个容器就是一个系统。
+说说缺点吧，
+首先，没有宝塔方便。第二，定制性不强，因为容器都是设置好的，想个性化的进行设置，不太好弄。第三，有点占用资源。
+安装后，网站运行一段时间的资源占用
+最后，这个面板大概占用200m的内存，好在关闭不影响使用
+下面是关了面板的占用，大概是250来兆
+安装wordpress后的一点设置 安装环境后，把wordpress上传，数据库上传，整个设置好以后，还需要一点权限的设置，否则wordpress没法更新，每个在线安装插件等。
+首先进入容器
+docker exec -it 容器名 bash chmod -R 755 /data/www chmod -R 755 /data/www/wp-content chown -R nobody:nogroup /data/www 设置完后，退出容器
+exit 老刘经过两天的摸索，发现这个面板还是有一定的意思的。通过这个面板还可以自建CDN给海外的网站加速，有空老刘打算用这个香港的主机给美国的主机加加速。
+最后 总之，这个面板还是有可取之处的。目前官方在做活动，20块钱，终身的授权码，有兴趣的同学可以屯一屯。
+可以走老刘的连接啊，urlos活动页面。据说有30%的返佣。你买一套，老刘会挣6块钱，哈！~</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-21 09:10:01 +0000 +0000'>一月 21, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 试用urlos" href="https://iliu.org/3597.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>我就纪念一下下，过不了两头应该就掉了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天发现我原来的域名liuday.com显示权4了，应该是沾了流金岁月的光。不过，我相信过不了几天就掉了，毕竟都301到新域名了，另外还有小半个月应该都是404的状态。我就纪念一下下。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-14 06:38:01 +0000 +0000'>一月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 我就纪念一下下，过不了两头应该就掉了" href="https://iliu.org/3569.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>捡漏注册了个l22.org的域名
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前两天的时候，登陆name.com查看域名有没有转移过去，忽然发现这个网站有一个最近删除域名的链接。好奇之下点开看了一下，发现有很多，好在有一个可以下载的表格。于是下载了当时最新的1.6号删除的域名，随意的浏览的起来。本来也没有抱着一定能注册想法。
+忽然看到了l22.org这个域名，当时我还以为是122.org呢，由于name的org域名比较贵，于是来到腾讯查了下，发现122.org没法注册啊，再仔细一看，尼玛原来是l22。不过也是挺开心的了，一直想注册一个3位数的看起来比较顺眼的org或者net域名，com就不想了。就像和老麦说的那样，超过100的域名去喊张老师。
+昨天查了一下这个域名的信息，阿里云的whois更新的很慢，发现这个域名再2002年的时候已经被注册了，显示的到期日是2021年7月份才到期，不知道咋回事还剩下半年呢，域名怎么会掉呢？
+又看了下l22.com标价8.8万美元，有出8.8万人民币的我也就出了，?，梦想还是有的，万一实现了呢。
+打算把这个域名利用起来，不过不知道弄个什么网站好玩</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-10 09:05:27 +0000 +0000'>一月 10, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 捡漏注册了个l22.org的域名" href="https://iliu.org/3561.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>今天是真冷
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2021年1月07日，小寒后的第二天，入冬以来最冷的一天。最低温度-11度，最高温度-2度。
+印象中好几年都没有这么冷的天了，有时候就算晚上冷些，白天气温也是在零上的。追寻记忆，这么冷的天貌似还是2008年的冬天遇到过。
+为啥老刘还记得2008年的事，是因为那天天很冷，西北风呼呼的，我去菜市场买菜，到楼下看到水表井在往外冒水，结了厚厚的一层冰。于是，回来后我给自来水公司打了个抢修电话。
+再然后，半夜2点左右，我被一个电话吵醒了，迷迷糊糊的接了电话，告诉我水管修好了，尼玛!~</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-07 08:46:11 +0000 +0000'>一月 7, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 今天是真冷" href="https://iliu.org/3558.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>水管被挖断了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>早上起床，照例拿着杯子来到水龙头前接水刷牙，可是水龙头拧开了，水却没有流出来。事先也没有收到任何停水得通知，心想可能天气太冷，把某个地方得水管冻裂了。当然，早餐也就牛奶加面包草草得对付了两口。
+然而，去上班得路上却看到，原来水管不是被冻裂了，而是被挖断了。
+说起家门口得这段路，老刘就来气，一个仅仅两车道得小路，这两年来就没有消停过，天天被围栏围着。可谓是你方唱把他登场，各个部门轮流着来整。
+最早得时候是管道公司，要执行电缆入地，开挖，弄了几个月，刚把围栏拆掉，供电公司得来了，电线入地，围上，挖，又几个月过去了，刚把围栏拆了，老旧小区改造，继续围上，继续挖。原来的路台是水泥的，换，换成大理石的，别问我为啥要从浙江不远千里的把大理石运过来，问就是自己查查我们的市的一号首长是从哪调过来的。
+右图为原来的路台，左图是新的大理石路台 这次改造动静更大，所有的路面全用挖土机挖开了，看起来是要大干一场的样子，结果设计的方案被居民到信访局上诉了，草草收场，只是地底下买了好多不再用的水管子。
+据说，现在人行道的这个位置原本设计的是花园，为了浇水，下面埋了好几根管子，然后居民一投诉，不在弄花园了，但是钱花出去了，和没改造之前一个鸟样。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-06 06:39:31 +0000 +0000'>一月 6, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 水管被挖断了" href="https://iliu.org/3551.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>把域名从阿里云转出到name.com的方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。
+首先，登录阿里云的后台，选择域名
+找到需要转出的域名，点后面的管理，在出来的页面的右侧，找到“域名转出”并点击，如下图
+阿里云首先会让你核对邮箱，因为转移密码是发到你的这个邮箱里的，如果邮箱正确的话，点下一步。会像你绑定的手机好发送一个验证码，输入验证码，点击下一步。转移密码会发到你的邮箱里。
+然后，注册登陆name.com,目前name已经支持中文了，在页面的左上角点击转移。
+把你需要转移的域名及发到邮箱的转移密码填到相应的位置，点击加入购物车。
+如果没有别的需求了，点击结算就行了。name支持支付宝，paypal以及信用卡支付。这里老刘推荐使用PayPal，而且老刘推荐购买海外的VPS时候也尽量使用paypal。因为PayPal支持交易申诉。特别对于一些国外的无良商家来说，这是一个很好用的功能。商家服务不好，且不退款，直接争议就行了。
+现在转移到name是7美元多一点，还送隐私保护，挺不错的，结算完成后，出现如下的界面说明已经转移成功。
+整个过程大概要5-7天，记得以前从godaddy转到阿里云的时候，是可以在godaddy确认的，确认后会立刻转移到新的域名商。但是阿里云没有这一个选项，只能等待默认生效为止。也别吐槽它们了，现在让转出的已经是进步了，记得很久以前转出的话还要开一堆的证明。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-03 08:33:54 +0000 +0000'>一月 3, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 把域名从阿里云转出到name.com的方法" href="https://iliu.org/3545.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>我到嫦娥家做客
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>夜深了，然而书房的灯光却没有熄灭。洁白的灯光下，是一个疲倦不堪的少女，她手里拿着本
+英语书，心思却不在背课文上，而是撇向那轮明月……
+这女孩就是我，那天我9点到家，吃完饭又背英语单词，现在已经十点二十九分了，我拖着
+疲惫身体爬上床，脑子里还想着月球的事。我眼睛合上了……..
+等我再次睁开眼睛的时候，我发现自己躺在一片翠色欲流、一碧千里的草地上。前面那棵 桂花树上发出的幽香，让我陶醉其中。一只小兔子摘走了旁边的蘑菇，一只小松鼠对我眨了眨 眼睛，一匹羚羊在清泉旁饮水……其环境鸟语花香，一片祥和。 我站起身来，朝不远处的那座华丽的宫殿走去。不等我推门，大门就开了，从里面走出一位仙气飘飘的女子。身穿轻纱，头戴宝珠，手里还抱着一只兔子，她笑着，温柔的说：“地球上的贵客，快请进吧！”我楞了一下，心里想： “这是嫦娥吧？！难道我来到了月球？！”随后，我迈腿走了进去。 嫦娥姐姐亲切地说：“更衣室在那边，你先换套衣服吧。”我想起来，我还穿着睡衣呢，于是
+羞涩地说了声谢谢，飞快的跑进那个房间。
+我出来的时候，换上了一件淡紫色的礼服，还用心挽了挽头发，之后，我落落大方的朝主厅
+走去。
+嫦娥姐姐不在，我便四周参观了起来，突然我看到了一直毛如玉石般的小兔子。啊，这是玉兔
+呀，它正在捣药呢，听见我的脚步声，它抬起头来眨了两下眼睛，似乎在向我问好，我抚
+它的脊背，它一副很享受的样子哩。
+这时候，嫦娥姐姐进来了，端给我一杯桂花汁，我唱了一口，太好喝了。这桂花汁，闻起来
+一缕幽香，喝起来甜而清爽。真是太美味了。嫦娥姐姐说，桂花汁是用甘泉的水加上桂花酿
+成的，是顶级的饮品，主要是用来消暑解渴。这时，我才反应过来，这时候的月球的温度真高啊。
+我放下杯子，问嫦娥姐姐：“那些糕点是什么啊？”“啊，那是桂花糕，你尝尝，比人间的
+要美味多了！”我挑了一块兔子形状的，塞进了嘴里，咬了一块。天那！软糯香甜，极致美味！
+我突发奇想，咬一口桂花糕，再喝一口桂花汁……哇塞！不仅甜糯，还多了一分凉意，在嘴里形成
+了无法用言语描述的美味，简直绝无仅有。
+吃饱喝足了，嫦娥姐姐略带遗憾的对我说：“很抱歉，小贵宾，地球上已经是7点了，你该
+回去了。”我恋恋不舍的走出了广寒宫，忽然一脚踏空了….
+睁开眼睛，我还躺在床上，心里却还在回味着月球上的风光……...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-02 03:35:25 +0000 +0000'>一月 2, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
+  <a class="entry-link" aria-label="post link to 我到嫦娥家做客" href="https://iliu.org/3536.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>别了，2020年
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>[][1] 今天是2020年12月31日，博客圈流行总结一年的情况。老刘也来凑个热闹。
+2020年是平凡的一年，在这一年里，所有的事情也都在按部就班的发生。老刘一家，夫妇和睦，父慈女孝。女儿的学习成绩一直稳定在班级前列，虽然成绩偶有波动，但还算好吧。媳妇那边经历疫情，差点前往支援武汉，虽然最终没有过去。目前在准备明年的副高考试，因此，2020年老刘承担了大部分的家务，希望明年媳妇的考试一切顺利。
+工作方面一直如是，不温不火。真太火了，老刘这小身板估计也吃不消。不过，明年还是要想想办法，开辟一些新的阵地。移动互联网下，原来的阵地丢失了不少了。对了，还买了一套40多平的公寓，作为店铺。省了2万多元的房租。
+身体方面，入院复查了3次，肠镜做了2次，除了胆红素稍高、大便潜血有点阳性，结肠的吻合口还有点溃疡之外，别的一切正常。而且最近的一次肠镜显示，溃疡的程度已经比年初大大减轻了。一切都在向好的方面发展。
+展望2021年，希望明年
+父母家人身体健康，店里的生意更好一些，今年检查的这些小毛病明年都能恢复正常。女儿能进入一所理想的初中，媳妇的考试顺利通过。就这些吧！</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-12-31 06:49:43 +0000 +0000'>十二月 31, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 别了，2020年" href="https://iliu.org/3533.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/21/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/23/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>新的一波新冠疫情来临
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天下午，在群里看到说郑州市2院有了一个本土阳性。后来又有消息说是假阳性，在后来又说是确诊了2例子。今天早上收到了1号令，划出了几个封控区，管控区等，感觉离我还很远。
+早上媳妇送女儿正常上学，我八点多也去上班，刚到工作室不久，在群里看到社区的人员发的通知：
+桐柏路以西，西三环以东，汝河路以北，中原路以南划为管控区，区内只进不出。遗憾的是，家和工作室都是在管控区里了。于是就担心女儿中午怎么吃饭。看群里说，小区已经是不让出来了。赶紧从工作室出来，好在万达写字楼还能正常出入，想去买点菜之类的，结果路边的便利店也没啥了，买了两包挂面和一包火腿肠。
+来学校门口等女儿放学，出来后带她随便吃了点东西，匆匆又给她送回了学校，返回万达的途中，看到一些路口已经开始了封控。走到中原万达附近，发现，周边已经用警戒带围住了，怕被封在了写字楼里，还是不进去了，直接回家吧。
+现在，窗外开始下雪，媳妇又开启了全民核算检测的旅程，女儿还在学校，不知如何去接。每次疫情，辛苦的都是医务人员、社区工作者以及普通的群众。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-04 07:15:32 +0000 +0000'>一月 4, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 新的一波新冠疫情来临" href="https://iliu.org/4008.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>收到支付宝芭芭农场发来的水果
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天中午收到快递打来的电话，由于不在家，让放到了快递柜里。晚上回来的时候又个忘记了，好在放的是菜鸟，要是放丰巢又该收费了。
+中午给哪了出来，小箱子不大，包装的还比较不错。
+打开箱子，里面要的是赣南脐橙，个头不是很大，但是看起来是天然的，没有上过腊
+记得是2020年的6-7月份的时候，支付宝推出来这个玩意，虽然打着助农的旗号，其实就是支付宝增加和软件的互动，通过看广告，养小鸡等等获取肥料，然后种出来水果。刚开始一度比较上心，后来升级越来越难，也就是处于半放置的状态，偶尔上去搞一下。
+今年年初的时候，还有20%多的进度就可以拿到水果了，看到合种能提高进度，于是把我媳妇也加里进来，本想是加快进度，完事之后就不搞了，结果发现，把别人加进来之后就是一箱变两箱，进度又往后拖了好多，又解散队伍，结果直接就扣除很多经验值，本来还差20%多，经过一番折腾，变成还要30%多。干脆就不搞了。
+前几天发现，支付宝和淘宝合起来弄，可以送大量的肥料，于是基本上用了3天，把剩余的30%左右的肥料给补齐了。本来种的是芒果，说现在这个季节没有，让支付1分钱，换成其他的。
+再也不种了…..</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-03 08:11:20 +0000 +0000'>一月 3, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 收到支付宝芭芭农场发来的水果" href="https://iliu.org/4004.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>2022,新年快乐
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>没有年终总结的日子，也是挺惬意的。
+2021年没怎么感觉呢，就过完了，希望朋友们一切安好
+2022年，万象更新，愿亲友们身体健康，一切顺利，祝愿国家国泰民安，繁荣昌盛！</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-01 02:05:10 +0000 +0000'>一月 1, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 2022,新年快乐" href="https://iliu.org/4002.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>没有公网IP也能玩转群晖DDNS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我们知道，玩群晖，没有公网IP，可玩性就下降很多，虽然可以用QuickConnect，但是速度还是不太理想。其他的内网穿透啊，zerotier等等都有不方便之处。老刘也曾记下折腾这些东西的过程。有兴趣的可以参考。
+今天老刘说的是DDNS，这个是需要公网IP的，而我们一说公网IP，其实都是说的IPV4的ip地址，这个目前全球都稀缺，移动是不用想了，联通和电信个别地方还能申请到。老刘一直用的是移动的宽带，以前用zerotier，后来就用qc来凑合着用。
+这两天由于keepassxc的版本在uos非常的低，由于环境的原因也更新不到最新的版本，想在群晖上部署Bitwarden。所以，又动了ddns的心思，想到目前各大运营商IPV6已经普及了，而这个都是公网的IP，所以，理论上用ddns加IPV6是完全没有问题的。网上查了一下，也有很多的教程。正准备按教程操作的时候，发现根本就不必那么麻烦。
+下面正文 进入群晖，打开控制面板，点击外部访问，点击DDNS。
+选择使用SYNOLOGY的服务，主机名称填写一个你心意的名称，IPV4选择手动，如果你有公网的ip也可以选择自动。IPV6点击自动设置，最后点击确定。
+用你申请的这个域名，浏览器打开试试吧。进入到熟悉的页面了吧！
+一个坑 老刘由于一直没有找的心仪的路有，店里一直用一个廉价的小米4a千兆版的路由。设置完上面的一切后，本地打开域名是能正常访问的，但是用手机使用流量却访问不了这个域名，显示连接被拒绝。感觉应该是路由器的防火墙的问题。可是在小米路由器里找不到设置防火墙的地方。可能这个防火墙默认的是拒绝入站的访问吧
+从家里拿来竞斗云的那个路由器，设置的一下防火墙，顺利搞定。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-30 02:47:58 +0000 +0000'>十二月 30, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 没有公网IP也能玩转群晖DDNS" href="https://iliu.org/3997.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>生活中的二三事
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>奇葩的历史老师 昨天接女儿放学，她很不高兴的说，历史作业不合格。问，为啥啊，错的太多了吗？回答：不是，是错的太少了。
+原来历史老师怕学生直接抄答案，于是规定，凡是没有错误的作业一律不合格。?。女儿为了避免踩坑，还故意选了一个错误的答案，结果就错了一题，不合格。而错了3-4题的，获得了优秀作业，?。
+火腿肠为啥那么贵？ 去超市购买一些物品，想起家中的火腿肠没有了，这个每次做炒饭的时候放一些，然后看了一下价格，双汇王中王750g的要28块钱一包。于是，默默的走开了。
+现在猪肉也才十来块一斤，这掺了很多淀粉的火腿肠竟然比猪肉还贵，找谁说理去呢？
+独生子女奖励费年审 下午去社区提交独生子女奖励费的年审材料，无非是人去一趟，把你的资料从2021年的一个表上，复制粘贴到另外一个表格上，就这么一点点的事情，还得让人专门去跑一趟。
+为了一年300多块钱的奖励费，确切的说是一年240元，也是蛮拼的。说话，现在生的小孩已经享受不到则个待遇了，这么一想，感觉跑这么一趟也挺值的。
+关于企业转型 周一，女儿的英语班召开了一次钉钉上的家长会，唠唠叨叨一个多小时，几句话就能说完，无非是现在太难了，转非盈利更难，只好不干了，转型到带着孩子阅读，开了一家阅读馆。巴拉巴拉阅读多么重要。至于之前的学费，可以选择线上和退费。
+我再想，我这个工作室在越来越不景气的今天，该怎么转型？我的未来在哪里？</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-29 09:11:22 +0000 +0000'>十二月 29, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 生活中的二三事" href="https://iliu.org/3995.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>水浒中的社会与人生
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>用两天的时间读完了这本书。书是在多看里的找的电子书，刚开始是无聊一看，后来觉得还是蛮有意思的。
+本书是由中山大学中文系的教授刘烈茂所著，从社会和人生的角度分析里水浒中诸多人物的方方面面。如果你是一个水浒迷，这本书一定要看一看。
+老刘看水浒传还是在初中的时候，记得当时是哥哥买回来了一套《古本水浒传》，这套路和市面上流行的书不同的是，后40回没有诏安，没有征辽，没有打方腊，当然英雄们也都还活着。后来高中的时候有大概的看了下后40回。虽然很多情节都是耳熟能详，但是和看三国等一样的是，很多细节的东西都不会详细去看，尤其里面的诗词。看了这本书后，才知道开篇的一首诗里，竟然是把所有水浒好汉的外号都编了进去。
+《林冲容忍的极限》一篇中，刘烈茂从林冲的社会地位和性格入手，一步步揭示林冲是如何被逼上梁山的。
+林冲的社会地位和优厚自足的生活决定他不会轻易走上反抗的道路。他为了保住自己的饭碗和社会地位，在高衙内等人的迫害下选择一再忍让。可人的忍耐是有限度的。高衙内调戏妻子，他忍了；被高俅陷害刺配沧州，他也忍了。他甚至天真地认为只要一纸休书把妻子休了就可彼此相安。可他哪里知道树欲静而风不止，高俅等人不置他于死地不会善罢甘休。于是，迫害一再升级。野猪林阴谋未果，草料场大火紧跟又来。林冲退无可退，忍无可忍。终于在沉默中爆发，杀了陆谦等人，顶着风雪连夜投奔梁山。
+林冲的思想转变，在施耐庵的一步步有意安排下，写得极为自然，合情合理，经得起推敲。透过林冲的故事，我们看到社会现实对于个人命运的影响有多深远。《水浒传》之所以取得成功，其对社会现实的描写具有了一般作品所不具有的深度，也是原因之一。
+另外作者还会从流传出来的其他故事里，比较人物的特点，比如《大宋宣和轶事》。
+在《宋公明不是历史上的宋江》一文中，刘烈茂比较了《水浒传》中的宋江和历史上的宋江，无论是生平事迹、性格特征，还是精神风貌，两都都有极大的不同。
+历史人物宋江根本没有上过梁山，更不用说建立起义根据地了；领导起义倒是确有其事，活动地域也相当广泛；宋江也没有征过方腊、田虎、王庆等人，更无征辽事迹；其行动表面与小说中的不同；结局众说不一。
+这位教授还写过关于聊斋的一些研究，翻了一下，感觉写的也是不错的。已经列入老刘看的书单了</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-27 13:23:01 +0000 +0000'>十二月 27, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 水浒中的社会与人生" href="https://iliu.org/3990.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>ubuntu20.10升级编译安装ibus-libpinyin输入法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。
+ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。
+如上图，ibus-libpinyin已经有了云输入，非常的方便
+首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin
+第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：
+Build options:
+Version 1.20.2
+Install prefix /usr
+Use boost no
+Use opencc no
+Use libpinyin yes
+Build lua extension no
+Build stroke input mode yes...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-25 05:47:41 +0000 +0000'>十二月 25, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to ubuntu20.10升级编译安装ibus-libpinyin输入法" href="https://iliu.org/3976.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>试用荷兰的liteserverVPS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，发现网络有点不稳定，有时候快，有时候慢，像今天下载速度一度只有32k了，正好在城南旧事的网站上看到推荐这个VPS，看了下2h2g的配置，一个月是5欧元，年付的话也有不少的优惠，网上查了下黑五的时候还出过5折的优惠码，可惜的是现在已经不能用了。抱着试试看的态度，先买了一个月的。
+实际体验下来还是不错，比Virmach速度快了不少，尽管ping值不是很低，但是状态一直还比较稳定。用17ce看了一下速度，竟然都是绿色的。
+下载速度也不错
+感觉还是不错的，先用上一个月试试，如果不错的话，可以考虑买长期的。
+据城南旧事所说，荷兰的这个VPS服务商成立与2007年，还是挺有实力的。而且空间的稳定性非常的不错。价格也不离谱。有兴趣的朋友可以看看。
+以下是我的AFF地址，觉得可以的，从我这走一单啊，哈哈
+荷兰LiteseverVPS</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-24 07:41:31 +0000 +0000'>十二月 24, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 试用荷兰的liteserverVPS" href="https://iliu.org/3968.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>推荐一款免费开源的RSS软件-Quiterss
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss程序自己设立一个服务器。老刘目前也是在甲骨文的免费小鸡上用着tinyrss。这段时间在折腾PYTHON，在ubuntu上折腾。偶然发现了这个程序，体验了一下，感觉还是很不错的，推荐给大家。
+QuiteRSS。它是一款免费开源且跨平台的 RSS 阅读器客户端软件，支持 Windows、Mac、Linux 系统，界面并不算华丽，但是该有的功能都有了，比如：支持 RSS 内容的中文关键字搜索，支持标签归类功能，可以对文章加上星号或标签来收藏整理，标记未读已读，支持 OPML 导入导出、可以文件夹整理 Feed、内置浏览器 (可设置使用外部默认浏览器打开)、支持多标签页等，基本上能满足一切 RSS 的阅读需求。
+Quiterss支持windows、MACOS、LINUX，在ubuntu、win7、win10等都可以完美的应用，对于windows版本，官方推出的还有绿色版，可以说非常的全面了，唯一让老刘感觉不爽是无法在各个设备之间同步，要是以后通过网盘之类的在不同设备之间同步，那就非常的完美了。
+安装方法： win下和mac下都很简单，直接下载安装即可。这里专门说说Linux下的方法
+Arch Linux pacman -S quiterss Fedora yum install quiterss Ubuntu 可以直接在应用商店里搜索下载，也可以：
+sudo add-apt-repository ppa:quiterss/quitersssudo apt-get updatesudo apt-get install quiterss </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-23 01:48:37 +0000 +0000'>十二月 23, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 推荐一款免费开源的RSS软件-Quiterss" href="https://iliu.org/3958.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>每次的经历，都是一种成长
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天女儿中午放学回来，感觉不太开心，问了下原因，还是因为排座位的事情，说着说着，甚至委屈的哭了起来，这是因为座位的问题，第二次流泪了。
+目前女儿班里排座位的规则是按照小组内计分牌的数量多少来挑选座位，两周重新调整座位。数量多的优先选。计分牌根据优秀作业，课堂表现等获得，被批评或者作业不合格要扣计分牌。
+女儿所在的小组这两次都是排名第三，也就是第三个来选择座位。女儿的同桌眼睛近视，但是家里不愿意给她配眼镜，所以小组只能选择前面的位置，排到第三就只能选第一排。这样问题就来了：
+第一排靠边的位置是最差的位置，反光，看不到PPT的内容。第一次的时候，组内没有什么规则，被人抢去了相对好的座位，只有边。由于女儿的计分牌最多，却坐到了最差的位置，让她很不开心，回来委屈的哭了一场。我和媳妇就开导劝说，然后给她说一些解决这些问题的方案，比如，组内打乱固定的同桌，按计分牌的多少来挑选位置，（其实这是这个规则下最公平的方案，谁的贡献大，谁优先挑选最好的位置）但是有别的女孩不愿意，最后只好退而求其次，以两名同桌的计分牌之和来排名挑选，但是，为了公平，不能连续两次都坐边上。
+昨天又排座位，女儿还是小组内最多的，可是同桌却不给力，是组内最少的，这样一平均，又靠边坐，根据规则不能连续两次靠边，组内的其他成员又想反悔。女儿的同桌因为是她的原因导致要坐前排，并且计分牌又少，不愿意出头，女儿一个人又说不过其他四个，所以，回来气的哭。
+我们又是一通开导，但是，问题不解决也不行阿，最后给女儿说，看看班主任有没有什么好的办法，让女儿去和班主任沟通，在目前这种排位的规则下出现计分牌最多却只能坐全班最差的座位该怎么解决。
+晚上去接女儿放学，问她事情解决了没有？女儿说,解决了。说还是小组内解决的，具体是怎么沟通的，没有细说。
+孩子一天天的大了，遇到的问题也会越来越多，作为i家长的，只有及时的关注并且给出一些建议。以后的路还很漫长，遇到的很多事情也不是排个座位这样的小事。所以，让孩子多经历些事情还是有好处的，每一次的经历，都是一种成长。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-22 09:06:06 +0000 +0000'>十二月 22, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 每次的经历，都是一种成长" href="https://iliu.org/3956.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/12/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/14/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

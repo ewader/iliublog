@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全性 on 图南博客</title>
+    <link>https://iliu.org/tags/%E5%AE%89%E5%85%A8%E6%80%A7/</link>
+    <description>Recent content in 安全性 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 May 2023 07:11:31 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%AE%89%E5%85%A8%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅谈群晖安全性方面的设置</title>
+      <link>https://iliu.org/4375.html</link>
+      <pubDate>Mon, 15 May 2023 07:11:31 +0000</pubDate>
+      
+      <guid>https://iliu.org/4375.html</guid>
+      <description>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。
+无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。
+安全性设置 如下图，该选择打勾的都给他打上。
+账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。
+群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。
+开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。
+具体的规则如下：
+上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。</description>
+    </item>
+    
+  </channel>
+</rss>

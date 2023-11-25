@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>算法 on 图南博客</title>
+    <link>https://iliu.org/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 26 Sep 2021 07:11:19 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>被百度劲风算法搞了</title>
+      <link>https://iliu.org/3911.html</link>
+      <pubDate>Sun, 26 Sep 2021 07:11:19 +0000</pubDate>
+      
+      <guid>https://iliu.org/3911.html</guid>
+      <description>最近几天发现从网站上来咨询老刘的客户少了，以前多的时候有4-5个，少的时候也有1-2个来咨询一些问题，有些成交了，有些没有成交。但是最近一段时间，加老刘微信的人数直线下降，这几天来甚至都没有人了。打开百度统计发现日IP只有几十个了，然后用站长工具查了一下发现，关键字全都被搞没了。我去！怪不得呢。
+网站基本上都是原创的，即便不是也都是从国外的网站上翻译过来的，质量还是很高的，前一段时间甚至都是秒收的。百思不得其解之后，看到了百度更新的所谓的“劲风算法”。
+页面内容与站点本身所属领域不符，或站点无专注领域，多为采集拼凑内容。 这还要从郑州8月份的这个疫情说起，疫情期间在家没事，忽然觉得不如把所有的网站都集中到一个域名上。用不同的二级域名，这样，一是可以省却一笔服务器的费用，而是备案的域名可以使用国内的服务器，速度快，还能使用CDN。于是不声不响的把iliu.org301到了blog.jooj.vip。实际的体验什么的确实不错。
+估计博客转过来之后，由于文章的范围比较杂，和原来眼镜的领域不符。导致把所有的关键词都给K了。受不了，这算法真是个傻蛋。该K的不K，不该K的乱k。
+没办法，只好不用二级域名了呗，真是赔了夫人又折兵！
+看了一下也不是孤立，原来老张的博客，收录了2w多，现在也只有两千多了</description>
+    </item>
+    
+  </channel>
+</rss>

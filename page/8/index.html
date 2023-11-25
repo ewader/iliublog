@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>加碘盐，低钠盐，谁TM真没素质
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天晚上，准备下班。领导打来电话说让买一袋不加碘的盐。我说，整个郑州你也找不到几家敢卖这个的。因为之前我也看到过关于说食用加碘盐会导致甲状腺出问题，后来了解了一下，都是一些网络大V带节奏的言论。事实上，河南60%以上的地区都是缺碘的地区，郑州也包含在内，所以，不让卖不加碘的盐就显而易见了。
+仔细想想，这个事就很简单，食盐不加碘又不是一个复杂的事情，甚至比加碘还要简单。所以，不存在什么加碘盐卖不完等什么利益相关的事情，所以，卖加碘盐就是因为，你这里需要这个盐，仅此而已。
+低钠盐是把一部分的氯化钠换成了氯化钾，降低了钠离子，所以，有高血压，冠心病等心脑血管疾病的人，不妨吃这种盐。
+晚上睡到半夜，被一阵汽车喇叭声吵醒。看了看手机，3点多一点。真他妈没素质，大半夜的摁啥喇叭啊，想玩买个喇叭回家里使劲摁也没人说你</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-19 07:03:14 +0000 +0000'>九月 19, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 加碘盐，低钠盐，谁TM真没素质" href="https://iliu.org/4257.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>中秋，回家，车出毛病，堵一路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>由于疫情的影响，又一年没有回家了。不是这边管控就是那边管控，加上媳妇和女儿都被单位和学校管的死死的。这个中秋，总算不那么严格了，就报备了一下回去了。
+回去的时候很顺利，一切都完美，车的空调也很好用，就快到家的时候，发现空调的制冷又不好了。反正快到家了，就给关了。
+晚上，吃的的铁锅炖兔子，很好吃。女儿吵着要露营，于是就在院子里，支起了帐篷。别说，睡帐篷也不错，还没有蚊子。晚上的月亮很圆，很亮。
+回来的路上刚开始也还好，上了告诉车跑起来后，空调也制冷了。可惜没走多远就遇到了大堵车。走走停停，然后车辆就报警发动机过热了。好在就在最右侧的车道，直接上了应急车道，后面放上了三脚架，打开前面的引擎盖散热，由于不懂得怎么操作，还把车熄火了，后来从网上看 是不建议熄火的，说是巴拉巴拉的一堆理论，反正就是对发动机不好吧。现在后悔也没地了不是，一切向前看。
+给4s店打电话，人家直接说，你报警让拖车拖下去吧，然后又给上次给我们修车的那个熟人打电话，他说是没有关空调引起了，散散热，看看还报警不了，如果不报了，就开回来再检查哪出了问题，等到路畅通的时候，打火启动，发现正常了。
+然后开了40来公里，又遇到了大堵车。中间还夹杂着因为变道导致的其他事故。真的很烦这些在堵车的时候，变来变去的人。200km的路程，走5个小时。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-12 03:47:29 +0000 +0000'>九月 12, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 中秋，回家，车出毛病，堵一路" href="https://iliu.org/4249.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>修车
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前段时间用车的时候，忽然发现空调不好使了。大热的天，没有凉风。不过跑了一会又正常了。昨天没有什么生意，于是带着女儿和媳妇到植物园耍了一会，空调还是不正常，能启动，但是不制冷。
+从植物园回来后，去到家附近的兔师傅，那里的人说，可能是缺氟了，不过他们那既不能检测也不能充氟，只能给空调的过滤器滤芯给换换。我换你个大头鬼。果断离开，他们告诉我，可以去找个小店充充，大概100多块钱。感觉专业性什么的还是不如途虎。
+就想去上次保养车的途虎，这是媳妇说，女儿的干妈的一个朋友是干修车的。问了她一下地址，离我家也不远，不到2km里，直接就过去了。
+到了后，师傅先看了下空调滤芯，4月份刚冲干净的滤芯，又有点脏了，上面还沾了一些虫子的尸体之类的东西。问换不换，那就换吧。然后，又用水枪把散热器冲洗了一下。试了一下，制冷还是不行，这才给测是不是缺氟了。
+发现缺的还不少，一连加了三罐才完事。效果是立竿见影的好。又让给把车洗了一下。我想着这弄这么多，咋地也得2-300块钱吧，以前4S店光换一个滤芯都75呢，后来途虎好像给便宜了25块钱，还得加人工费。
+结果老板就收了100块钱。
+现在很多人都怕商家杀熟而不原因去熟人那买东西。记得抖音上关于杀熟的一个段子，点击量非常的高。其实，大多数的视情况下，熟人还是很靠谱的。你省钱了，他赚钱了，两全其美的事情。以后车的保养，也打算找他弄了.</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-05 08:05:40 +0000 +0000'>九月 5, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 修车" href="https://iliu.org/4242.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>给店里的柜台调整了一下位置
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>当初搬下来的时候，由于房子比原来小了20多个平方，就想能把柜台都放进去，没有考虑空间的利用等问题。最后，还有一个高柜和一节柜台实在是放不进去了，然后拆吧拆吧给扔了。
+这一晃的时间，就是两年过去了，期间也懒得去调整。今年暑假，女儿和我来店里的时间较多，给她找地方午睡的时候，发现问题来了，房间内剩余的空间，都没法放下一个爬行垫，甚至需要折两下才行。
+再就发现，柜台的利用率还是挺低的，除了外面的两个柜台，里面的基本上都没有原因进去看，所以，就有了把柜台进行调整的想法。扔掉一个基本上用不上的高柜，把原来摆在中间的低柜都放到边上，这样等于把原来分割成几个小部分的空间都集中到一起来，瞬间感觉宽敞了很多。 一切都比较满意，除了我的脚。拆高柜，往下放倒的时候，砸到了自己的脚上。瞬间人不好了。
+幸亏也没有砸实，只是从脚面滑落了下去，不然可能连走路都成问题了。强烈安利一个治疗跌打损伤的的药膏，雪山金罗汉。涂上效果确实不错。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-24 09:47:01 +0000 +0000'>八月 24, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 给店里的柜台调整了一下位置" href="https://iliu.org/4232.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>河南为什么简称豫？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天送闺女去课外班，路上闺女问我，为啥河南简称豫？
+我听了有点抓瞎，忽然想起小时候，学过一篇课文，叫《黄河像》，于是给闺女说，可能是以前在黄河中下游这个区域有众多的大象吧，其实黄河象这个化石出土在甘肃。但是河南这个区域，古时候有象也是真的，在洛阳，也出土过大象的化石。但是是不是很多，就不清楚了，就算很多，别的地方应该也有象，为啥不叫豫呢？
+后来，我查了一下相关资料，发现也确实有说因为河南地区大象众多的。在《吕氏春秋》中就有“商人服象”的描述。而在安阳殷墟被发掘的过程中，还发现了刻有“其来象三”和“葵亥青象”的甲骨文，不仅如此，在郑州、安阳其他地方都发现过大象的骨头和剑齿象的化石。可以证明：在三千年前，河南曾经有大量的大象生存过，但我上面也说了，大家都有象，为啥就河南叫豫？
+不过另外一个说法，我感觉更为靠谱。
+据史料记载，大禹治水时，将天下分为了九州，而将他的首都阳城所在的地方称为豫州。在古时候，“凡大皆称豫”，在《尔雅》中也说过：“豫，乐也，厌也，安也，舒也”。所以，“豫”在以前表示的意思很尊贵。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-17 09:58:10 +0000 +0000'>八月 17, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 河南为什么简称豫？" href="https://iliu.org/4229.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>加入51la的优站计划
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>看到好几个站长都在推这个，正好对百度统计也有点不想用了，就试一试51la的统计吧。目前用了大概有一个月的时间，和百度统计比较了一下：
+统计出来的流量比百度的多 我一个站，百度常年的流量差不多200&#43;左右的IP，到了51la这边，每天基本上在300&#43;左右，并且最近还在增加。看了下昨天的IP，399.也不知道是正好流量增加了，还是百度统计压流量了，还是51la虚报了。反正IP数增加了，也是一件很开心的事情。
+关键字统计不准 51la目前只能统计到bing的关键字，其他的基本上统计不到。其实百度基本上就统计自己家的。
+顺便加入了51la的优站计划 主要是，用它的统计，参加这个计划，给钱。它上面说，加入后审核一周，等待期一周，基本上两周的时间，我申请了，基本上等了一个月，才通过了。一周估计也就几块钱。聊胜于无吧。
+最后，放一个我的51laaff，需要注册的，点一下注册啊。
+【51LA网站统计V6】新人注册立得5元现金收益～现在加入“优站计划”，还有额外收益赚取，点击链接了解详情 https://invite.51.la/1OnR3T1uy?target=V6</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-16 08:50:32 +0000 +0000'>八月 16, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 加入51la的优站计划" href="https://iliu.org/4226.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>关闭支付宝蚂蚁新村
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>支付宝有个小游戏，叫蚂蚁新村，里面是一个农家小院，刚开始是茅草房，后来随着收入的增多，慢慢扩建，变成小别墅。期间可以把收入捐赠出去，每捐助一次，可以帮助一个人学习一样技能致富。
+支付宝从蚂蚁森林开始，把小游戏和公益结合起来，做的是有声有色。至于为什么要把蚂蚁新村关闭，是因为最近升级了。
+原来就是一个农家院，慢慢扩建。吸引我的是，既能满足一下我不能回老家建房的乡愁，又能帮助别人学习技能。但是，升级之后，场景多了，直接给个小岛，我想回我原来的农家乐，不让回去，说已经完成了，尼玛，我就想经营我的农家乐啊，我不想去小岛重新开荒啊。
+所以，毫不犹豫的，关闭了，再见。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-10 00:49:32 +0000 +0000'>八月 10, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 关闭支付宝蚂蚁新村" href="https://iliu.org/4222.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>遭遇七两秤
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这是前几天的事情了。
+某天晚上，因为天热不想做饭，和妻与女儿去街边随便垫吧点东西。回来的路上，妻看到路边卖的桃子还不错，遂挑了几个，小贩称完后要了18元。我注意到桃子堆里纸牌上写的是3元一斤。
+掂在手里，感觉没有那么重，回来称重只有 **2.2千克** 。
+一直都听说街边小贩缺斤短两，但是也一直没有注意。几年前过年的时候和一个卖水果的亲戚闲聊，他自己吹嘘，最多给8两，一般都是给6-7两。
+顾客去超市，几次漏扫东西都能刑拘，这小贩缺斤短两的性质不差不多吗？为啥就没人管呢？</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-09 00:09:42 +0000 +0000'>八月 9, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 遭遇七两秤" href="https://iliu.org/4220.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>这几天是真热
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>明天立秋，算是夏天的尾巴了，但是这天是真热啊。连着一周，高温38℃，低温30℃左右，难道这就是传说中的秋老虎？
+今年这天气，连北极都穿短袖了，真是太不正常了。感觉很多从前传下来的关于气候的谚语也都不准了。记得小时母亲常说：
+交了7月节，夜冷白天热；交了8月节，中午热一会，交了9月节，一天都不热；交了10月节，下雨就下雪
+当然都是按阴历算的
+但是现在的气候明显是不同了，从天气预报上来看，感觉要往后拖半个月的时间才能差不多相符。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-06 02:24:58 +0000 +0000'>八月 6, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 这几天是真热" href="https://iliu.org/4217.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>一个对小孩磨牙比较有效中药方子
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近一段时间天热，家里如果开俩个空调的话，那电费噌噌的往上涨，所以，这段时间都让女儿睡我们屋里她小时候睡的小床。就发现女儿睡觉不太安稳，牙齿磨的嘎支支的响。
+前几天带她去医院看了一下，医生开了点中药，吃了这么几天之后，感觉效果确实不错，磨牙的现象少了很多，虽然偶尔还会磨一下，但是一是时间短，二是也很轻。
+处方如下：
+白芍颗粒，甘草颗粒，威灵仙颗粒，炒牵牛子颗粒，槟榔颗粒，炒鸡内金颗粒 现在这种颗粒剂也很方便了，应该都是浓缩的，一副药就是一小包，回家用开水一冲就可以了。不像以前要弄一大包草药，回家还得熬。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-04 01:05:24 +0000 +0000'>八月 4, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 一个对小孩磨牙比较有效中药方子" href="https://iliu.org/4215.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/7/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/9/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

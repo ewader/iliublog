@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>远看有多远，闭目养神能不能恢复视疲劳？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>随着视光知识的普及，很多家长都意识到让孩子看远的重要性，但是多远的距离称之为远呢？这个远是视光学意义上的远，也就是5米开外，就可以称之为远。
+还有一些家长询问，白天孩子都在学校，晚上回来写作业也要好几个小时，这时候该怎么看远，在黑夜里望远有没有作用？
+这是一个好问题，我们说，黑夜里由于看不到目标，眼睛是没有焦距的，所以虽然你看向远处，但是眼睛的调节并没有放松，也就是说黑夜里往远处看是起不到放松眼睛的目的的。那么该怎么办？
+一个很简单的办法，看家里5米或者3米开外的物体即可。无论家里的空间有多拥挤，3米的距离总是有的。那么3米效果好不好呢，效果还是好的。据研究表明，眼睛看5米之处的物体会有25度的调节，而看3米处的东西有33度的调节，8度的调节是一个很小的可以忽略不计的度数。学习之余，看看3米之外的物体放松一下眼睛，对预防和控制近视度数加深是很有好处的。
+那么，闭目养神对恢复眼睛疲劳有没有作用？
+作用不大，因为闭目后，眼睛就没有了放松调节这一个动作，因此，看远处和闭目同样的时间，望远对恢复眼睛的疲劳更有作用。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-21 07:13:13 +0000 +0000'>十二月 21, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 远看有多远，闭目养神能不能恢复视疲劳？" href="https://iliu.org/3955.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>ubuntu20.04开机亮度最大的解决方法及输入法设置
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直都没有修复。不过网上也有很多的教程，试用了一下，有些有用，有些没用，直到扒到了一个很老的文章，上面记载的一个很简单的方法，却解决了这样一个问题。
+别的不说，直接上代码，照着做就行了：
+sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，替换为以下GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet acpi_osi=Linux cpi_backlight=vendor&#34;sudo update-grub 最后一步一定要做。另外GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;可能是会多出几个单词，不影响不影响，就是这一行。 然后说说ubunut的输入法
+以前（十年前吧）的时候，linux下的输入法很难用，现在主流的输入法也都有了，比如搜狗，百度，讯飞等等。最近看了一下，发现已经不需要额外在安装其他的输入法了，用系统自带的中文输入法已经很好用了。
+系统自带的输入法是ibuslibpinyin，只需要简单的设置一下，就非常好用了。
+第一步：常规设置，如下图，根据个人的习惯来吧，老刘喜欢候选词以词频方式展示。
+第二步：拼音模式，勾选“启用云输入”
+第三步：用户词典，勾选全部
+第四步：重启
+至此，输入法使用起来基本上和在win10的微软拼音方便程度差不多了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-20 09:20:38 +0000 +0000'>十二月 20, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to ubuntu20.04开机亮度最大的解决方法及输入法设置" href="https://iliu.org/3951.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>退出了房子维权群
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天，退出了那个房子的维权群，因为我发现这个群里面的有些人已经变成神经病了。正所谓，道不同不相为谋，早退早心静。
+其实这段时间，早就有退出的心思了，只是一时没有下定决心。
+群里的有些人心态已经炸了，只要有人发布一条关于开发商的信息，马上就有人怀疑是内奸。前几天，有人发了一条信息说，收到开发商发的短信，让去选装修方案。然后另一个说，他没收到，又一个说，没有收到。然后这个收到短信的就被怀疑是内奸了，是开发商派来扰乱他们维权的。
+又人刷抖音，刷出来了开发商老板的女儿，发到群里，有人说了一句，这个还是别发吧，祸不及家人。然后，就一堆的人讽刺，阴声怪期，最后，又来个“内奸”。
+今天之所以退出，是因为一个所谓的维权积极分子，这几天一直在攻击回迁户，“你们回迁户就光贪图那边过渡费，没脑子，不去找政府要房子真是不可理喻。”“回迁户们，赶紧去堵政府门口吧”。“2012年拆迁，你们竟然这么有耐心等10年，真是可怜之人必有可恨之处！”……..
+之前还和他理论几句，后来发现，他就是一个疯狗一样。除了一遍一遍的转发别人的发言刷屏之外，也就这点嘴炮了。上次去维权，派出所的一说要抓人，这货跑的比兔子还快，电动车都不要了。
+算了，眼不见心静，该退就退了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-18 14:27:59 +0000 +0000'>十二月 18, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 退出了房子维权群" href="https://iliu.org/3950.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>一个相声听众对德云社的点评
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>首先声明，就是前一段比较消沉的时候，看了些德云社的一些专场视频，根据自己的感受，点评一下，纯属个人意见，也不是单独某个人的粉丝。如果冒犯了你的偶像，请谅解。
+德云社这个相声团体可能是目前宇宙中最火的相声团体了。人老郭确实也有两把刷子，有想法，有能力，还会炒作，所以想不火都难。这个很火的团体，其演员的专业水平还是参差不齐的，根据个人听的观感，说一说相声水平的高低。
+排名最顶尖的当然是郭德纲和于谦了，他们的利害在于已经不需要卖弄专业的技能，与家常聊天中娓娓道来，一些包袱的设计，单拿出来感觉没啥，放到他那个情景里面，就是会因人发笑，逗乐观众与润物细无声之处，这是难能可贵的。
+然后就是岳云鹏、孙越、栾云平和高峰他们，节奏和对现场的掌控很强，和郭德纲相比而言，某些地方还是能感觉出来使用技巧的痕迹。
+第三个档次的当说是张鹤伦、郭麒麟、烧饼这几个，看的出来都是下过苦工的。特别是郭麒麟，如果不是去发展影视和综艺，好好弄相声，感觉以后的成就不会比他爹差。烧饼是被他的嗓子耽误了….
+第四档次是孟鹤堂，张云雷等，张云雷的小曲唱的确实好听，但是相声的功力还是不如前面那些位，别看是云字科的，恰逢看到他说的《对春联》这个传统的段子，这个段子岳云鹏也说过，有兴趣朋友可以都听一下，一比较就出来了，张差的不是一点。
+往下有点水平的就是属于九子科的他的一些徒弟了，都有一些毛病，不过有点名气了，多钻研还是有很大提升空间的。
+至于目前比较的火的秦霄贤，这是老郭推出来吸引年龄小的女粉丝的战略，具体说相声水平，可能还不如一些资深的票友。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-16 01:20:44 +0000 +0000'>十二月 16, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 一个相声听众对德云社的点评" href="https://iliu.org/3949.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>python开发web程序，最好还是在Linux下
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。
+写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。
+隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。
+后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-14 12:57:17 +0000 +0000'>十二月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to python开发web程序，最好还是在Linux下" href="https://iliu.org/3947.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>linuxmint高分屏设置
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近一直使用Linuxmint，如果不是一些必备的软件在Linux下没有，甚至都可以把Windows10卸载了，不过没有办法，有些软件还必须在win下使用。
+现在很多笔记本都是1920*1080的分辨率，这就导致字体有些小，在win10下默认是显示125%，Linuxmint下虽然也是可以设置成125%，但是总感觉有些不协调。
+网上还有一些教程是调大字体显示。但是无论怎么调，总感觉有些违和，看网页不舒服。后来发现其实Linuxmint在高分屏的支持方面已经比较完美了，可能是笔记本的屏幕太小导致字体小。
+后来发现只需要在系统设置，辅助功能里把大文本打开，现在的效果就非常棒。感觉字体小的朋友，可以试一试。浏览网页效果是非常的满意。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-13 06:09:18 +0000 +0000'>十二月 13, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to linuxmint高分屏设置" href="https://iliu.org/3944.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>无题
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>二十来天没有更新博客了，主要的原因还是出在了自己的身上。
+不知道是怎么回事，这段时间有点消沉，干什么都感觉提不起精神。所以博客也就荒了起来，好在经过这段时间的调整，那个乐观、开朗的老刘又回来了。
+在不写博客的这段时间里发生了很多的事情：
+比如，梅西第七次获得金球奖，尽管老刘觉得今年的金球奖更应该给莱万多夫斯基。但是谁让梅西的名气更大呢，不过还是觉得把这个奖项给梅西还是有点过分了。
+比如，曼联的主帅又更换了，索尔斯克亚还是有点嫩，终于还是被球员给做掉了，现在的球员能量也真的挺大，不喜欢哪个教练了，直接就输球，直到把你输下课为止。职业道德呢？
+再比如，某美容美发的老总的秘书在公众号发的彩虹屁文章，看了真是大开眼界。
+还比如，南通的某地把城管的权力以2000多万的价格外包给了某公司，导致十几个彪形大汉围着一个老头抢人家的甘蔗。
+又比如，更重要的事情，老刘把这个博客所在的vps续费了
+嗯，就这么多吧。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-07 12:44:37 +0000 +0000'>十二月 7, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 无题" href="https://iliu.org/3943.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>眼镜店会员查询系统初步完成
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
+前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
+说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
+1、后台添加客户资料，验光配镜的数据等
+2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
+至此基本的功能已经实现。后面就是完善细节以及美化一下了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-14 13:45:40 +0000 +0000'>十一月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 眼镜店会员查询系统初步完成" href="https://iliu.org/3939.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>收到郑州政务平台发的做核算检测的短信
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天正打算睡觉，忽然发现手机上有一条未读短信，点开一看，冷汗下来了：
+【郑州政务短信平台】市民朋友们:由于近期您的活动轨迹与新冠肺炎感染者重合，疑似曾经近距离接触，为了您和家人健康及社会安全，请您72小时内主动进行两次核酸检测，两次检测需间隔24小时，检测结果向居住地所在社区报备，并根据需要配合落实相关疫情防控措施。如果未按规定进行核酸检测，个人健康码将变更为红色。
+前往检测途中，请您全程做好个人防护，佩戴口罩，避免乘坐公共交通工具。检测结果明确前请居家等待。
+如您已经身处封控、管控区域内，或者已经在医学观察、健康监测，请继续落实原有措施。
+众志成城，共抗疫情！感谢您的理解和配合！【郑州市疫情防控指挥部办公室】
+搞的一晚上也没有睡好，半夜里还做了一个梦，梦到昨天全民核酸检测的结果出来了，我竟然是阳性。把自己个生生的吓醒了，然后就一直似睡非睡的直到天亮。
+快天亮的时候，查了下郑好办，发现有一条信息：
+然后查了下昨天的核算检测结果，发现已经出来了，是阴性。看来梦中的一切确实是反的！
+感觉这大数据真的太操蛋了，从10月15日到现在，我的生活就是三点一线，家–中原万达-—孩子学校门口。和公布的病例的轨迹没有一丢丢的重合之处，为啥还会发这个操蛋的短信！</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-09 01:15:09 +0000 +0000'>十一月 9, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 收到郑州政务平台发的做核算检测的短信" href="https://iliu.org/3937.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>转到virmach
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，这一年来放了一个小玩艺，也稳定的，王志勇大佬貌似一直都是用的这个。反正就是个博客呗，放那都行，反正也没有几个人看。
+用了10几分钟弄完了，其实感觉速度也还行。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-05 04:05:56 +0000 +0000'>十一月 5, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 转到virmach" href="https://iliu.org/3934.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/13/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/15/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

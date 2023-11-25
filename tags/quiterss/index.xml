@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>QuiteRSS on 图南博客</title>
+    <link>https://iliu.org/tags/quiterss/</link>
+    <description>Recent content in QuiteRSS on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/quiterss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>推荐一款免费开源的RSS软件-Quiterss</title>
+      <link>https://iliu.org/3958.html</link>
+      <pubDate>Thu, 23 Dec 2021 01:48:37 +0000</pubDate>
+      
+      <guid>https://iliu.org/3958.html</guid>
+      <description>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss程序自己设立一个服务器。老刘目前也是在甲骨文的免费小鸡上用着tinyrss。这段时间在折腾PYTHON，在ubuntu上折腾。偶然发现了这个程序，体验了一下，感觉还是很不错的，推荐给大家。
+QuiteRSS。它是一款免费开源且跨平台的 RSS 阅读器客户端软件，支持 Windows、Mac、Linux 系统，界面并不算华丽，但是该有的功能都有了，比如：支持 RSS 内容的中文关键字搜索，支持标签归类功能，可以对文章加上星号或标签来收藏整理，标记未读已读，支持 OPML 导入导出、可以文件夹整理 Feed、内置浏览器 (可设置使用外部默认浏览器打开)、支持多标签页等，基本上能满足一切 RSS 的阅读需求。
+Quiterss支持windows、MACOS、LINUX，在ubuntu、win7、win10等都可以完美的应用，对于windows版本，官方推出的还有绿色版，可以说非常的全面了，唯一让老刘感觉不爽是无法在各个设备之间同步，要是以后通过网盘之类的在不同设备之间同步，那就非常的完美了。
+安装方法： win下和mac下都很简单，直接下载安装即可。这里专门说说Linux下的方法
+Arch Linux pacman -S quiterss Fedora yum install quiterss Ubuntu 可以直接在应用商店里搜索下载，也可以：
+sudo add-apt-repository ppa:quiterss/quitersssudo apt-get updatesudo apt-get install quiterss </description>
+    </item>
+    
+  </channel>
+</rss>

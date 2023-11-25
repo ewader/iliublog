@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/index.xml">
+<link rel="alternate" type="application/json" href="https://iliu.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://iliu.org",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://iliu.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>陆续把一些基础服务转到nas上
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前几天RSS不太正常访问了，这个RSS服务一直建立在甲骨文的一个免费小鸡上面。一直也挺稳定的，貌似是容器还是什么出了点问题，就访问不了。而且用ssh客户端连接也连不上，但是能ping通，登录到后台，重新启动后，症状消失，但是时间不长又访问不了，所以，打算重新生成一个新的实例。
+结果弄了之后，换了几个IP，都是能ping通，但是ssh连接不上，后来有一个IP好不容易连上了，一会的工夫，又掉了。不知道咋回事，安全网络了也都放行了。网上搜了一下，发现也有问类似问题的。
+所以，索性把RSS也安装的NAS上算了。装的过程略。结果完美
+加上之前放到NAS上的笔记程序Trilium，现在把一些基础的东西都放回到NAS了。
+下午看到挖站否的技术帖子，把博客套上了一层cf的皮，速度还是蛮快的。特别是移动，ping只有46，貌似是直连了。其实之前也用过其他的API来实现可以直接把域名解析到某个IP上，后来引文种种原因不原因用别人的服务，现在cf自己推出了一个服务，可以实现解析域名到某个IP上了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-02 12:33:43 +0000 +0000'>八月 2, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 陆续把一些基础服务转到nas上" href="https://iliu.org/4211.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>街头
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天在街头等红绿灯，忽然感觉少了点什么，后来想了一想，原来是少了拿着小旗的交通协管员。忽然意识到，很长时间里没有看到过他们了，印象中，从疫情发生以后，好像街头就少了他们的身影。按理说，没有她们了，交通应该会乱一些，但事实上并没有。
+又路过一个小路口，前方绿灯，从左边冲出来一个骑电动车的女子，赶紧刹车，人家嗖的一下过去了，我只能冲着她的背影嘟囔了一声。正打算前行，绿灯已经变成了红灯。
+我想来没有闯红灯的习惯，一是不安全，另外就是给别人也找麻烦，而我是一个最不愿意给别人找麻烦的人。除非是空旷的没有一个人影。
+只能右边咣当一声，放眼望去，原来是一个老头逆行左转，撞在了一个正常行驶的小伙的电动车上，老头抬头看了一眼交通灯，扬长而去。小伙急得大喊，你把我车撞碎了不修车啊。老头听说又掉头回来，两个人开始摆起了龙门阵。绿灯亮了，我继续前行。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-29 07:21:42 +0000 +0000'>七月 29, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 街头" href="https://iliu.org/4208.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>黄河，真的很黄
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前几天下雨，天气挺凉快，妻说很久没有带妞出去放放风了，计划着出去逛逛。她想到了10几年前去黄河边上吃的地锅鸡，念念不忘。那就去黄河好了，感受一下黄河母亲的伟大。
+由于刚下过大雨，还是有点担心安全的问题，还是去官方弄得公园比较好一些。约了一个她的同事一家，兴冲冲而去。
+结果到那边一看，汛期，所有的公园都关闭了，所有通往黄河岸边的路都有人把守。于是，路边随便找了一个小树林，爬行垫铺好，吊床挂好。对孩子们来说，只要出来玩，都是极好的。
+来的这个公园就是花园口附近，没错，就是当年老蒋为了挡着日本鬼子而炸开的地方。中午去花园口那找了一家地锅鸡，味道还行吧。
+出来后，有当地的村民开的旅游车，问去不去黄河边。大人来回10块，小孩不收费。拉着我们来到了一个被扒开的围栏口，进到下面，终于是近距离的接触到了黄河。
+河水非常的浑浊，这应该是还清了不少，前几天还看到因为水质好，山东给河南了不少钱 有村民搞得摩托艇拉客，大人60，小孩30，其实就是过去转一圈，来回5分钟左右 这个是路边的一个景点，是习大大来视察花园口，远眺黄河的地方</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-25 01:56:53 +0000 +0000'>七月 25, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 黄河，真的很黄" href="https://iliu.org/4168.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>知人者智，自知者明
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>作为一个伪球迷，最近关注了一下足球世界转会情况，真是精彩纷呈，不亚于娱乐圈。
+首先是巴萨的德容，曼联一直想要他，巴萨也想把他出售，以便腾出来空间注册今年新签的人。甚至两个队都谈好了多钱卖，结果，巴萨有个骚操作导致一直进行不下去。前两年巴萨没钱，就给德容说，这两年钱不够，咱签个协议，你先拿少点，少拿的钱，后面给你加上。这到了加工资的时候了，巴萨不想加，所以想把他卖了。德容一想，不对啊，卖我可以，你得把前面的工资给补上，于是就说，那我不走。巴萨又想，曼联你不是求贤若渴嘛，不如这一千多万英镑你给他算了，曼联说，你是不是看我傻。于是，僵到这里了。就看谁先让步了。
+大爷的，巴萨也是豪门呢，真是欺负老实人。
+还有一群自以为是的，看不清自己实力的球员
+尤文图斯的迪巴拉，当时尤文找他续约，开出了千万以上的年薪，结果人家嫌少，想要更多。不续约，满以为合同到期了，追求的人排长队，随便弄个高薪，赢取白富美，人生赢家。结果没有球队在意，最后没办法，300万年薪去了罗马，不然咋弄，总不能不干活啊。类似的还有曼联的林加德，当时有的队想签他，要1000多万的签字费，要20万英镑的周薪，结果人家不要了，眼看着没人要，最近听说8万把自己卖了。
+最离谱的是C罗，嫌现在的球队没欧冠踢，没冠军拿，觉得以自己的江湖地位，说自己要离开，那不是豪门排队来请吗，结果风是放出去了，经纪人也联系这个联系那个，有欧冠资格的队都快联系遍了，还是没人要，你都不想想，你以前是牛逼，但是你现在都38岁了，跑也跑不动，拿的工资还高，还不愿意当替补，谁敢要你啊。新赛季大概率还是得留下了。这就尴尬了，他不在的这些日子，一帮小将那是生龙活虎。估计新赛季开始了，也没有啥好日子过。职业生涯的末年了，作为俱乐部的名宿，传帮带了解一下，带带新人，让自己在俱乐部名声更好一点，它不香吗？
+老子说，知人者智，自知者明，永远别把自己想的那么重要，这个世界离开了谁，地球也不会停下来，放平心态，不好高骛远，过适合自己的生活，你会少很多烦恼。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-22 00:57:29 +0000 +0000'>七月 22, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 知人者智，自知者明" href="https://iliu.org/4165.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>被拼多多忽悠了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前两天发现女儿的镜架有点掉漆了，正好还有一副新的同型号的镜架，打算给她换一换，可能是我的螺丝刀有点老了，加上螺丝拧的有点紧，螺丝拧花了也没有拧下来。
+网上找了找，有一个专门拆眼镜断丝，滑丝的工具，淘宝要110&#43;，闲鱼找了找，有一个卖二手的25，可惜已经被买走了，拼多多上找了以下，发现能便宜10块钱左右。10块也是钱，能省一点是一点，决定多多上买。
+拍完了之后，弹出个页面，说我这单可以免52块钱，点了进去，发现是要开通多多支付，绑定银行卡就行。想着绑定就绑定呗，反正我银行卡里也没钱，于是绑。绑完了感觉有点不对，我52块钱呢？找来找去，在余额了发现有5毛钱。
+前两天，媳妇在京东上购物还遇到说返200，我还给媳妇说，你冷静，这都是这些公司的套路，结果，自己还是进了坑里。
+看来，还是修养不到家。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-07-05 08:47:48 +0000 +0000'>七月 5, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 被拼多多忽悠了" href="https://iliu.org/4161.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>你以为给我一个二维码，我就会扫吗？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>下午忽然有一个人加我微信，出于职业的敏感，我觉得她（他）不是做广告的，就是骗人的。但是，又怕再次闹出把粉丝当骗子的乌龙。所以，还是通过了。
+过了一会，这个人给我发了一个活动的截图，并且问，是你们的店在做这个活动吗？图片是一个投票的图片，说是2022年中原区首届“金牌眼镜店”什么玩意的。店名是我的店名，活动肯定是假的。
+我回复她（他），店是我们的，活动不是我们的，也每兴趣参与。她（他）再也不理我了。
+那么他的目的是什么呢？
+获取我的个人信息？
+或者是二维码链接的是恶意网站。
+不敢瞎扫，反正不是什么好玩意。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-06-30 09:04:37 +0000 +0000'>六月 30, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 你以为给我一个二维码，我就会扫吗？" href="https://iliu.org/4157.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>群晖安装trilium笔记web端不刷新的处理方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最初装上trilium上之后，发现web端新建笔记或者删除笔记等都不会刷新。也和中文博客群里的少君等人讨论过，也没有得出过什么结论，毕竟环境不同嘛，当时貌似也就我一个人遇到了这种情况。后来发现是网络有错误，是websocket链接错误。但是作为小白，也没有解决的办法。
+后来张波老师也遇到了，原来用域名反代访问就会出现这个问题。群里的大神给出了NGINX下的解决方案，可是我用的群晖啊，没有nginx肿么办？
+其实，用群晖的反代更简单 打开群晖反代的设置界面，点击自定义标题，点新增，点websocket。保存，即可。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-06-26 03:50:24 +0000 +0000'>六月 26, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 群晖安装trilium笔记web端不刷新的处理方法" href="https://iliu.org/4154.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>自制酸梅汤
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前几天晚上，和女儿老婆一起在滨河公园里散步。路边有卖酸梅汤的，5元一杯，女儿要喝，遂买了一杯，喝后，勾兑感很浓，大概率是是用酸梅粉勾兑出来的，就有了自己熬制酸梅汤的打算。
+酸梅汤在中国已经有了上千年的历史了，在商周时期， 就有了用梅子做饮料的记载，可谓是最早的酸梅汤了。红楼梦里也有贾宝玉挨打后，要喝酸梅汤的故事。
+日斜戏散归何处，宴乐居同六和局。
+三大钱儿买甜花，切糕鬼腿闹喳喳，
+清晨一碗甜浆粥，才吃茶汤又面茶
+凉果糕炸糖耳朵，吊炉烧饼艾窝窝，
+叉子火烧刚卖得，又听硬面叫饽饽
+烧麦馄饨列满盘，新添挂粉好汤圆，
+爆肚油肝香灌肠，木须黄菜片儿汤。 铜碗声声街里唤，一瓯冰水和梅汤 …… 酸梅汤的原料必须包含的有乌梅、山楂、陈皮、甘草。在此配方的基础上，又为了口感，增加了桂花、薄荷、桑葚，玫瑰茄、冰糖等。
+老刘这次采用的配方就是后来这个加强版的。去中药店卖了上述的药材，开搞。
+冰箱里冰镇了一下，喝起来还真是很爽口的。
+附，酸梅汤配方
+乌梅15克 山楂15g 陈皮5g 薄荷5g 玫瑰茄10g 甘草5g 桑葚5g 冰糖30g </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-06-24 07:59:26 +0000 +0000'>六月 24, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 自制酸梅汤" href="https://iliu.org/4151.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>关于笔记软件的选择
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近，中文博客圈群里兴起了一股笔记软件的热潮，其实也不是最近，而是一直都有断断续续的讨论。只不过老刘一直以来都是用的群晖note，对我来说，网页剪辑一下要用到的网页内容，各种客户端都很齐全，觉得是够用的了。直到….
+上个月隔离的时候，碰到张波老师安装Trilium这个软件，于是我也试用了一下，被这个笔记的功能所吸引，于是再群晖上部署，试用，又折腾了其他的一些笔记软件。最后来说一说这些笔记软件的特点，只是自己使用的体会，不牵涉到教程，不到之处，敬请海涵。
+群晖Synology note 这款软件是老刘用了好几年的笔记软件了。其有点是，和**群晖NAS无缝结合**（这是废话），客户端齐全，同步方便。日程之类很完善，有网页剪辑的插件，能一键把需要的网页保存到笔记软件中。
+不足之处：
+不支持双链 不支持Markdown语法 导入导出不方便
+我觉得这是这个软件目前最大的软肋。如果群晖能把这两个问题解决好，特别是前两个问题，我觉得，我就可以一直把这个软件用下去。 Trilium 这是一款很由个人开发的一款笔记软件，功能非常的强大。支持客户端，支持部署在服务器上在线使用。
+因为功能强大，导致使用复杂，简单的记笔记倒是无妨，想用到一些更方便优秀的功能就需要学习成本了，而这一点恰恰是很少的。网上的教程大多都是如何部署的，讲怎么使用的很少很少。老刘折腾了好久，连标签的用法都没有搞定，可能也确实是太小白了。
+另外，Trilium的数据是保存在Sqlite里，正如群里柏均所说，数据库在储存元数据的时候具有天然的优势，特别是数据多的时候,比如ob等以小文件存储的软件可能会卡，但是数据库存储，这方面的担心就会很小。
+另外一点是Trilium对markdown语法的支持不全，这让熟悉使用MD语法的人会有点不方便。学习成本高，移动端支持垃圾，可能也正式给予此，使用的人应该都是大牛吧，能自己解决大部分的问题。教程少，导致普通用户少。
+思源笔记 思源笔记也是用数据库来保存数据，我装上后，体验起来有点卡，另外就是第三方同步不方便，如果一定要用第三方同步的话，需要在使用的时候关闭第三方软件的同步，使用完毕后，在同步数据。
+所以，一是卡，二是同步不方便，直接让老刘没有继续用下去的欲望了。
+Obsidian和logseq 我把这两个软件放到了一起说，因为他两个很同类，甚至还可以相互打开对方的数据。只不过有被污染的风险。因为本质上，这两个软件就是一款阅读器编辑器。
+obsidian
+优点 支持mardown 支持双链，两个软件，OB应该是把链接放到了各自的文件上，LQ是在此基础上又建立了一套索引。 导入导出方便 支持第三方的同步 缺点 每个笔记都会保存成一个文件，这样就很乱 当文件太多的时候，可能会卡，特别是笔记里图片很多的时候，这一点图片用外链来解决应该不错 Logseq对文章的输出不友好，它的设计理念是以“块”为单位，写文章的话，每一段文章就是一个“块”，也就是MD里的无序列表，所以这个软件比较适合做笔记使用，不适合写文章。 写道最后 其实个笔记软件发展到现在，功能方面都能满足基本的需求，没有比较追求All in one的模式，毕竟每个软件都用独到的地方。
+就比如我来说，我目前用群晖note来管理日程，因为这个软件的移动端做的很不错。写文章我用Obsidian,因为它更适合。读书、记笔记，一些零散的想法，我都扔到Logseq里，因为这是它最擅长的。至于Trilium，打算暂时放弃。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-06-23 02:35:24 +0000 +0000'>六月 23, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 关于笔记软件的选择" href="https://iliu.org/4145.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>遇事更应冷静思考
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>这两天，被全网关注得莫过于郑州的“120”事件了。大家关注这类事件，是因为不管120也好，110也罢，都和每个人的生命财产息息相关。这些电话，是每个人情愿一生都不用拨打的，一拨打就能马上立刻能响应的电话。所以，关注度高也就不足为奇了。
+今天看到处罚的结果出来了，从接线员到主管急救系统的卫健委的领导都收到不同程度的处分。但是很多网友还是不买账，认为处罚的太轻了，极端的网友甚至要以过失杀人罪来处罚接线员。有没有水军在这里带节凑不好说，我来说说我的理解。
+首先，这个问题更应该是从机制上来看 我不了解急救系统的工作流程以及他们的系统是什么样的。大概率是如果没有具体的地址，接线员不能随意派车的，所以这就有后来接线员11次拨打患者的电话，以及加患者的微信等操作。但是，科技如此发达的现在，连赋黄码红码都这么精准的大数据，想要定位一个人大概位置，应该不是一个困难的问题。假如说，120急救系统的系统能定位到患者的位置，那么接线员还会为是龙子湖校区和明伦校区而纠结吗？
+要知道，拨打120的不光有年轻人，还有老人，（就算是年轻人，比如这位20岁的少女），也因为种种原因可能无法准确说出自己的位置大有人在，以前是没条件，现在有条件了，为啥就不能升级一下系统？路台能从水泥换成大理石，核酸小屋一夜之间开遍全郑州，随便从这些手缝里漏出来点钱，升级一下系统，就是绰绰有余的了吧。
+其次，接线员群体的问题 因为成本的原因，现在很多服务号码都外包，或者是AI，连很多骚扰电话都是AI的。郑州的120接线员是不是有外包，这个不了解，不敢说，从网上查了一些，有很多城市120是有外包的。从录音和事后接线员的处理方法来看，接线员对业务流程不熟练，遇到问题只会机械的回拨电话，而没有去发挥自己的主观能动性。从接线员的处理方式上来看，这个群体收到的关注，在系统内还是不高的。
+因为，不就是个接电话的嘛，接患者的电话，记录地址，在地址就近找医院的120急救中心派车。就这么简单的事情。所以，对接线员如何管理的，一年有多少次的应急培训，接线员资格是什么，是如何招聘来的？接线员有没有事业编制？
+总而言之 看待问题要冷静，孔子说要“慎终追远”，南怀瑾老师认为，这句话应该理解为，与其对事情的结果念念不休，不如好好的考虑一下这件事情发生的原因。很多人要让接线员承担刑事责任，这个根本就是无稽之谈，真要较真，接线员那一句，不知道你的具体地址，没法派车，在体制上还真挑不出来什么毛病。但愿彭同学的这件事情，真的是非常的惋惜，但惋惜之余，也希望这件事情能给中国的急救系统敲一敲警钟，更能改进一下某种不合理的机制。别让第二条生命，仅仅是因为冷冰冰的教条而离开这个世界。</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-06-07 02:01:50 +0000 +0000'>六月 7, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 遇事更应冷静思考" href="https://iliu.org/4141.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/page/8/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/page/10/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

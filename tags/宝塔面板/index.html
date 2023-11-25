@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>宝塔面板 | 图南博客</title>
+<meta name="keywords" content="">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="宝塔面板" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="宝塔面板"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span>🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+  <h1>
+    宝塔面板
+    <a href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>打造一个安全的宝塔面板服务器环境
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>很多人都戏称宝塔面板为bug塔面板，特别是前几天出现的phpmyadmin事件，似乎更进一步的坐实了bug塔bug的地位，但是平信而论，经过这么多年的发展，宝塔面板在配置服务器方面还是很方便的，而里面一些小插件也是非常的好用，所以，对于这个面板老刘是非常的纠结，喜欢他的简单和好用的插件，纠结它的稳定性。毕竟老刘是吃过这方面的亏的，早点5.x的时代，有一次，什么都没动，网站也正常打开，面板却挂了….
+闲话少说了，思前想后，还是决定用它吧，多备份，万一挂了，恢复起来也快。既然决定要用这个一个有着安全漏洞前科的面板，把它打造的相对安全一些是一件迫在眉睫的事情了。老刘是在以下几个方面做的，有需要的朋友可以参考。
+第一，面板的设置 这个好多的教程都有提到，比如别名，安全入口名字、默认目录，默认端口 面板用户及密码，都需要一一更改，由于比较简单，这里就不一一进行说明了。
+第二步，加装防火墙 宝塔官方有waf的防火墙，但是是收费的。所有，这里老刘强烈建议搭建使用nginx作为网站服务器的web框架而不是使用阿帕奇。这是因为使用nginx后，有个叫叫明国三年一场雨大佬开发的Nginx免费防火墙，目前已经更新到了4.5的版本，由于没有用过官方的防火墙，老刘认为这个免费的对一般的网站已经完全够用了。
+使用防火墙的默认设置已经足矣，当然你也可以打开里面的设置项，把所有的开关都打开，但是这样会造成一些正常的动作被误报，因此建议直接使用默认设置即可。如果网站使用了CDN加速，可以在网站设置里选择开启CDN选项，这样就不会误报你的CDN的IP了。
+第三步，对常见挂马的实时查杀 这个也是老刘纠结宝塔的原因之一，就是因为宝塔里的这款插件，openrasp管理器插件，OpenRASP 是百度安全推出的一款 免费、开源 的应用运行时自我保护产品，对一句话木马的查杀相当不错。项目的介绍可以在这里了解。
+宝塔软件列表里搜索openrasp，点击安装，安装后开启即可，目前支持到php7.3,首次安装的时间可能有点长，耐心等待即可。
+第四步 安装fail2ban 这个是放爆破扫描端口的的，宝塔的这个设置的比较简单，安装后可以参考老刘的另一篇文章进行详细的设置《lnmp一键开启waf及使用 Fail2Ban防护》。然后，把所有用不到的端口删除。</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-10-17 03:50:44 +0000 +0000'>十月 17, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 打造一个安全的宝塔面板服务器环境" href="https://iliu.org/3326.html"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>从宝塔面板换成oneinstack踩的一个坑
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板，不成想，前几天出现了这么一个低级的bug，所以，思来想去，不能为了一颗树苗而放弃整片森林，为了安全，还是把宝塔面板换掉为妙。
+步骤很简单，无非是再宝塔里先把网站的文件夹打包，下载。然后备份数据文件下载。趁着这个机会，把服务器的系统也升级到centos8了。然后安装oneinstack，并编译环境，生成网站目录等等，都是基本的方法，不是本文重点要说的。我要说的是，这里面的坑。
+新环境做好后，把文件上传，解压，链接好数据库文件，浏览器一输入网站，我去！显示No input file specified错误，赶紧Google了一下，发现解决的方法五花八门，基本上都是东php.ini。想到自己刚才因为网站用的一个主题需要引用一个解密的插件，确实是改了php.ini。但是去掉改动的，依然是这个错误。于是怀疑是自己不经意间删掉了什么字符之类的。由于没有备份这个文件。所以，决定重新编译php。
+新弄的php还是显示No input file specified。确认了不是php的问题。为了排查，把自己的博客也上传，结果发现博客是好的。这时候忽然想起来，博客这个文件当时备份的时候，把宝塔生成的.user.ini这个为了防止跨站的文件删除了，而另一个网站的没有删。于是在网站源码里找到这个文件，删除之。问题迎刃而解了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-08-27 03:25:28 +0000 +0000'>八月 27, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 从宝塔面板换成oneinstack踩的一个坑" href="https://iliu.org/3240.html"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>亮度最大 on 图南博客</title>
+    <link>https://iliu.org/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/</link>
+    <description>Recent content in 亮度最大 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Dec 2021 09:20:38 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%BA%AE%E5%BA%A6%E6%9C%80%E5%A4%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ubuntu20.04开机亮度最大的解决方法及输入法设置</title>
+      <link>https://iliu.org/3951.html</link>
+      <pubDate>Mon, 20 Dec 2021 09:20:38 +0000</pubDate>
+      
+      <guid>https://iliu.org/3951.html</guid>
+      <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直都没有修复。不过网上也有很多的教程，试用了一下，有些有用，有些没用，直到扒到了一个很老的文章，上面记载的一个很简单的方法，却解决了这样一个问题。
+别的不说，直接上代码，照着做就行了：
+sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，替换为以下GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet acpi_osi=Linux cpi_backlight=vendor&#34;sudo update-grub 最后一步一定要做。另外GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;可能是会多出几个单词，不影响不影响，就是这一行。 然后说说ubunut的输入法
+以前（十年前吧）的时候，linux下的输入法很难用，现在主流的输入法也都有了，比如搜狗，百度，讯飞等等。最近看了一下，发现已经不需要额外在安装其他的输入法了，用系统自带的中文输入法已经很好用了。
+系统自带的输入法是ibuslibpinyin，只需要简单的设置一下，就非常好用了。
+第一步：常规设置，如下图，根据个人的习惯来吧，老刘喜欢候选词以词频方式展示。
+第二步：拼音模式，勾选“启用云输入”
+第三步：用户词典，勾选全部
+第四步：重启
+至此，输入法使用起来基本上和在win10的微软拼音方便程度差不多了。</description>
+    </item>
+    
+  </channel>
+</rss>

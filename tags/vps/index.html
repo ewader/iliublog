@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>VPS | 图南博客</title>
+<meta name="keywords" content="">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/tags/vps/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/tags/vps/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="VPS" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/tags/vps/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="VPS"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span>🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+  <h1>
+    VPS
+    <a href="/tags/vps/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>VPS服务器系统的选择
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同时，要对个人的要求也随之更高。玩VPS首先遇到的就是系统的选择问题。
+Windows系统 大多数的站长第一次选择系统的时候都是喜欢用windows系统，毕竟熟悉，上手快。但是Windows服务器系统先天上占用资源比较大，系统不稳定，导致获得不了良好的用户体验。同样1H1G配置的vps，运行最新版本的debian11，然后装个博客系统，是一点问题都没有，但是你要是想要运行Windows服务器，只能选择低版本的了。所以，用了一段时间后，自然就淘汰不用了。
+Linux系统 Linux系统是开源系统，受到所有开发者的共同监督，已经是非常成熟的服务器系统，并且拥有着一套完整的权限机制，安全性与稳定性都很高。只是上手有点门槛。不过，随着各种面板技术的发展，目前这个已经不是什么问题。那么Linux系统那么多，到底选择哪种呢？
+centos 这个系统在国内可以说是服务器的首选。可惜去年官方已经不在继续维护这个系统了，目前最高的版本是centos8.0，目前官方已经不再维护，centos7.6由于用的人更多，目前还在过度的时间内，但是也时日无多了。所以，用这个系统的童鞋，还是换成别的系统吧。老刘曾用过腾讯云里腾讯自己以centos8为蓝本开发的系统，体验起来还是可以的。如果真是centos的铁粉，不妨可以试试腾讯的这个系统。
+debain 这个也是老牌的服务器系统了。作为一个具有悠久历史的社区维护的操作系统。生命力还是没有问题的。据王志勇大佬的测试，使用Debian系统的php要比其他的系统来说，速度更快。老刘感觉，这个快可能更多的是测试的结果，实际体验下来，感觉相差不大。Debian系统稳定，软件丰富。自从centos宣布停止维护后，老刘已经把所有的VPS的系统都换成Debian了。
+另外一个让老刘喜欢用Debian的原因是，Debian11的防火墙使用起来非常的简单，而别的系统大多是用的iptables。比如我们要放行一个端口，Debian只需用如下的命令：
+ufw allow 666 而iptables写法就很复杂了：
+iptables -I INPUT -p tcp --dport 8000 -j ACCEPT Ubuntu 是基于Debian二次开发的产物，在Linux桌面操作系统中，Ubuntu绝对是老大的存在。很多公司开发的软件，都是基于Ubuntu来开发的。服务器版也还可以，不过老刘还是习惯了使用Debian。
+至于其他的小众操作系统，使用的人少，遇到问题找答案都不容易，不用也罢</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-05-27 07:29:40 +0000 +0000'>五月 27, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to VPS服务器系统的选择" href="https://iliu.org/4126.html"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>试用荷兰的liteserverVPS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，发现网络有点不稳定，有时候快，有时候慢，像今天下载速度一度只有32k了，正好在城南旧事的网站上看到推荐这个VPS，看了下2h2g的配置，一个月是5欧元，年付的话也有不少的优惠，网上查了下黑五的时候还出过5折的优惠码，可惜的是现在已经不能用了。抱着试试看的态度，先买了一个月的。
+实际体验下来还是不错，比Virmach速度快了不少，尽管ping值不是很低，但是状态一直还比较稳定。用17ce看了一下速度，竟然都是绿色的。
+下载速度也不错
+感觉还是不错的，先用上一个月试试，如果不错的话，可以考虑买长期的。
+据城南旧事所说，荷兰的这个VPS服务商成立与2007年，还是挺有实力的。而且空间的稳定性非常的不错。价格也不离谱。有兴趣的朋友可以看看。
+以下是我的AFF地址，觉得可以的，从我这走一单啊，哈哈
+荷兰LiteseverVPS</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-24 07:41:31 +0000 +0000'>十二月 24, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 试用荷兰的liteserverVPS" href="https://iliu.org/3968.html"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>RSS终于又搞好了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前两天买的出去的东西过期了，看了下今年的价格基本上小80一年了，去年才60，感觉再买一年实在是划不来。正好去年的时候买的一台RN的VPS，自己一直是用来搞RSS，看到张老师搞的出圈的东西还是挺稳定的，于是也想自己弄一弄。
+结果没有经验，只用了一天，VPS的IP被ban了。
+昨天看张老师白嫖甲骨文的VPS成功了，前几天自己也弄过，但是信用卡验证环节一直不对，所以就作罢了。昨天看张老师成功了，自己也就有了这个想法，结果一次性成功了。那就用甲骨文的这个东西搭建RSS吧。
+有人可能要问，如何成功的。我的经验是，注册的时候姓名之类的一定要用拼音，因为邮箱验证的时候会转码，中文的都变成乱码了。第二，就是信用卡的信息一定要用中文，和你的信用卡的银行信息要一致。这样申请是没有问题的。
+甲骨文可以搞两个免费的VPS，最大4H22G的配置，但是这个只有ARM的CPU才能使用，而ARM的资源奇缺，很多人挂着脚本在撸，导致一致申请不到，最后不得已弄了两个2H1G的机型，ADM的CPU，性能还行。
+申请后就把RSS搬过去了。这次直接用docker装的tiny tiny RSS。另外说明一下，甲骨文的VPS用宝塔安装nginx还有docker都不正常，不能正常的运行，后来在命令行下根据出错的提示，总算是搞好了。
+用DOCKER就是方便，傻瓜式的装法，装完啥都不用设置，和以前ghost装电脑系统一样。看看甲骨文到底能坚持多久，稳定的话就可以把博客搬过去了！</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-06-06 07:21:33 +0000 +0000'>六月 6, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to RSS终于又搞好了" href="https://iliu.org/3769.html"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

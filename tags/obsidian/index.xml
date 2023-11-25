@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>obsidian on 图南博客</title>
+    <link>https://iliu.org/tags/obsidian/</link>
+    <description>Recent content in obsidian on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 23 Jun 2022 02:35:24 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于笔记软件的选择</title>
+      <link>https://iliu.org/4145.html</link>
+      <pubDate>Thu, 23 Jun 2022 02:35:24 +0000</pubDate>
+      
+      <guid>https://iliu.org/4145.html</guid>
+      <description>最近，中文博客圈群里兴起了一股笔记软件的热潮，其实也不是最近，而是一直都有断断续续的讨论。只不过老刘一直以来都是用的群晖note，对我来说，网页剪辑一下要用到的网页内容，各种客户端都很齐全，觉得是够用的了。直到….
+上个月隔离的时候，碰到张波老师安装Trilium这个软件，于是我也试用了一下，被这个笔记的功能所吸引，于是再群晖上部署，试用，又折腾了其他的一些笔记软件。最后来说一说这些笔记软件的特点，只是自己使用的体会，不牵涉到教程，不到之处，敬请海涵。
+群晖Synology note 这款软件是老刘用了好几年的笔记软件了。其有点是，和**群晖NAS无缝结合**（这是废话），客户端齐全，同步方便。日程之类很完善，有网页剪辑的插件，能一键把需要的网页保存到笔记软件中。
+不足之处：
+不支持双链 不支持Markdown语法 导入导出不方便
+我觉得这是这个软件目前最大的软肋。如果群晖能把这两个问题解决好，特别是前两个问题，我觉得，我就可以一直把这个软件用下去。 Trilium 这是一款很由个人开发的一款笔记软件，功能非常的强大。支持客户端，支持部署在服务器上在线使用。
+因为功能强大，导致使用复杂，简单的记笔记倒是无妨，想用到一些更方便优秀的功能就需要学习成本了，而这一点恰恰是很少的。网上的教程大多都是如何部署的，讲怎么使用的很少很少。老刘折腾了好久，连标签的用法都没有搞定，可能也确实是太小白了。
+另外，Trilium的数据是保存在Sqlite里，正如群里柏均所说，数据库在储存元数据的时候具有天然的优势，特别是数据多的时候,比如ob等以小文件存储的软件可能会卡，但是数据库存储，这方面的担心就会很小。
+另外一点是Trilium对markdown语法的支持不全，这让熟悉使用MD语法的人会有点不方便。学习成本高，移动端支持垃圾，可能也正式给予此，使用的人应该都是大牛吧，能自己解决大部分的问题。教程少，导致普通用户少。
+思源笔记 思源笔记也是用数据库来保存数据，我装上后，体验起来有点卡，另外就是第三方同步不方便，如果一定要用第三方同步的话，需要在使用的时候关闭第三方软件的同步，使用完毕后，在同步数据。
+所以，一是卡，二是同步不方便，直接让老刘没有继续用下去的欲望了。
+Obsidian和logseq 我把这两个软件放到了一起说，因为他两个很同类，甚至还可以相互打开对方的数据。只不过有被污染的风险。因为本质上，这两个软件就是一款阅读器编辑器。
+obsidian
+优点 支持mardown 支持双链，两个软件，OB应该是把链接放到了各自的文件上，LQ是在此基础上又建立了一套索引。 导入导出方便 支持第三方的同步 缺点 每个笔记都会保存成一个文件，这样就很乱 当文件太多的时候，可能会卡，特别是笔记里图片很多的时候，这一点图片用外链来解决应该不错 Logseq对文章的输出不友好，它的设计理念是以“块”为单位，写文章的话，每一段文章就是一个“块”，也就是MD里的无序列表，所以这个软件比较适合做笔记使用，不适合写文章。 写道最后 其实个笔记软件发展到现在，功能方面都能满足基本的需求，没有比较追求All in one的模式，毕竟每个软件都用独到的地方。
+就比如我来说，我目前用群晖note来管理日程，因为这个软件的移动端做的很不错。写文章我用Obsidian,因为它更适合。读书、记笔记，一些零散的想法，我都扔到Logseq里，因为这是它最擅长的。至于Trilium，打算暂时放弃。</description>
+    </item>
+    
+  </channel>
+</rss>

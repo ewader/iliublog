@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Posts | 图南博客</title>
+<meta name="keywords" content="">
+<meta name="description" content="Posts - 图南博客">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://iliu.org/posts/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://iliu.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://iliu.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://iliu.org/img/favicon.png">
+<link rel="mask-icon" href="https://iliu.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://iliu.org/posts/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Posts" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iliu.org/posts/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://iliu.org/posts/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://iliu.org/" title="🏠主页">
+                    <span>🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://iliu.org/link" title="🔗邻居">
+                    <span>🔗邻居</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a></div>
+  <h1>
+    Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>最终还是用回了Linux mint
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>安装统信uos后，一度用着挺不的，各方面都很满意，于是花了9.9激活了，结果激活后没多久就感觉不好了。原因是和deepin的毛病一样，莫名其妙的，桌面卡死，闪屏，或者直接黑屏了。
+幸亏遇到的时候，都是在用浏览器看一些网页的时候，真要是我在写程序的时候给我来这么一出，不得郁闷死。
+说实话，uos真的挺满意的，各方面做的真都不错，可惜稳定性是个硬伤。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-01 01:56:20 +0000 +0000'>十一月 1, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 最终还是用回了Linux mint" href="https://iliu.org/3932.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>用input和字典初步实现我的一点小想法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。
+通过上面8章的学习，基本上有了实现我那个小项目的想法。今天根据前八章的知识，初步用input函数，实现了用特殊关键字的查询。继续加油。
+kehu = {&#39;张明&#39;:{&#39;右眼度数&#39;:&#39;-1.25&#39;,&#39;左眼度数&#39;:&#39;-2.00&#39;,&#39;瞳距&#39;:&#39;60mm&#39;,&#39;镜架&#39;:&#39;纯钛&#39;,&#39;镜片&#39;:&#39;康耐特&#39;,&#39;价格&#39;:&#39;￥450&#39;,&#39;手机号码&#39;:&#39;13027511600&#39;,},}xingming = input(&#34;请输入你的姓名：&#34;)shoujihaoma = input(&#34;请输入你的手机号码：&#34;)for name , info in kehu.items():if name == xingming and info[&#39;手机号码&#39;] == shoujihaoma:right = f&#34;{info[&#39;右眼度数&#39;]}&#34;lift = f&#34;{info[&#39;左眼度数&#39;]}&#34;tongju = f&#34;{info[&#39;瞳距&#39;]}&#34;jingjia = f&#34;{info[&#39;镜架&#39;]}&#34;jingpian = f&#34;{info[&#39;镜片&#39;]}&#34;jiage = f&#34;{info[&#39;价格&#39;]}&#34;print(&#34;验光单&#34;)print(f&#34;姓名：{name}&#34;)print(f&#34;右眼度数:{right} 左眼度数：{lift}&#34;)print(f&#34;瞳距：{tongju} &#34;)else:print(&#34;您输入的资料不正确，请重新输入&#34;)虽然简单，确实独立写出来的，应该是一大步吧。
+学好了，用python自己做个博客，哈哈哈</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-30 04:28:51 +0000 +0000'>十月 30, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 用input和字典初步实现我的一点小想法" href="https://iliu.org/3929.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>试用统信uos家庭版
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后，关机需要90秒的倒计时。从网上查了一下相关的信息，发现这个小毛病还是挺多人遇到的。虽然可以更改时间来较少，但是又可能造成系统的崩溃。
+Linuxmint倒是很流畅，一切都很满意。但是用了两天后发现了一个问题，不能使用微信，虽然在windows上，老刘也很少用微信，但是偶尔会用吧。加上近期媳妇申报副高要处理不少的文档，她都是用微信直接给我发过来，我要处理的话还得重启更换系统，非常的不方便。deepin吧，又时有卡桌面。后来想到了这个统信uos。批了一层皮的deepin os。本来没有报太大的希望，不过安装后却给了我不少的惊喜。
+一、安装方便
+比任何Linux系统安装的都方便，尽管别的现在也不复杂了。真不会安装的话，可以申请官方的一对一服务。甚至安装后，你windows桌面上的文件都给你复制过来了。
+二、系统流畅
+这个在固态硬盘下，估计都流畅，除了那个ubuntukelly吧，优化的真不错。上手也简单。
+三、软件不少
+应用商店里的软件不少，不管是通过wine也好，还是通过使用安卓也好，反正基本上解决了Linux下软件不足的问题，尽管有些是非原生的系统，不过使用频率也低。偶尔应应急还是可以的。
+四、不足之处
+当然系统也还存在不足，主要表现在应用商店里的软件版本大多数都比较低，有的都1年多没有更新了。别如老刘必须要用的keepassxc。官方都已经是2.6.6了，商店里的还是2.3.4。又没法像ubuntu一样可以用ppa安装软件。
+尽管如此，也是瑕不掩瑜，感兴趣的朋友真的可以试试这个系统了。另外，家庭版目前是公测，挺稳定了，可以分享他人使用而免费激活，也可以支付9.9激活，据说以后会涨价，也不知真假。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-29 01:22:00 +0000 +0000'>十月 29, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 试用统信uos家庭版" href="https://iliu.org/3927.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>几种Linux系统安装之后的体验
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，只要几个页面就能完成。实现的功能是，1、后台可以添加客户资料。2、前台通过用户名和手机号码可以查询各自的详情。
+曾经和一个搞开发的朋友聊起过这个玩意，他嫌太简单，让我自己弄。可惜我一直静不下心来做。
+要说编程老刘还算是有一丢丢的基础吧。毕竟在大学也是学过True Basic 以及C语言和VB的人。尽管当时学的也不咋地，就是混个学分。现在也早已经把知识还给了我的老师。
+看了一下Python的教程，感觉是我的菜。比当年学的那些个语言要简单的多了。基本上就是写英语句子呗。所以，下定决心系统的学习一下，争取能把我那个小玩意给弄出来。于是，有了这个折腾安装Linux的经历。
+深度deepin os 首先考虑的就是深度deepin的这个系统。毕竟在国内的名气更大，各方面也挺完善。安装上用了不到一天，卸载了。主要是因为：
+第一，桌面偶有卡住的现象。发生在我使用Chrome的时候，整个卡住了，就鼠标能动，别的动动不了，也点不动别的东西。最后强制关机。
+第二，上面那个原因可能还是小概率的事件。最主要的原因是老刘需要使用群晖的drive这个软件。以便同步我的keepassxc。可惜的是，安装上之后，打不开这个软件。在深度的论坛上发布了相关的帖子，也没有啥回音。只好弃之。
+Linuxmint 这个一款排名也比较靠前的系统，以Ubuntu为母本开发出来的。系统运行非常的流畅。尽管存在中文化不足的毛病，但是通过网上的一些教程，还是解决了这个问题。群晖的那个软件也可以使用。让老刘最终放弃的原因是总感觉用这个系统后，看着费眼。所以作为备选的系统，在测试一下别的。
+Ubuntukelly 优麒麟系统，也是以Ubuntu为母本开发的，中文化很好。界面和Windows 10的界面基本上90%的相似。上手没难度。更难能可贵的是，这个系统可以直接运行安卓的软件。
+使用了半天，最终还是放弃了。原因是卡顿，不丝滑。特别是使用wps编辑文档的时候，是真的卡，别的程序倒是还好。不知道这么卡顿，国内的很多部门是咋用的。
+Ubuntu原版 本来就打算装回Linuxmint算了，最后觉得吧，都试了这么些了，不如装装原版的试试吧。结果出乎老刘的意料。系统运行的非常流畅，中文化很好（尽管没有农历的日期之类的，不过应该也是可以安装的），最重要的是浏览网页几乎和win下没有两样了。
+最终决定，就用原版的Ubuntu系统了。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-25 01:18:46 +0000 +0000'>十月 25, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 几种Linux系统安装之后的体验" href="https://iliu.org/3925.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>哈喽顺风车事情的后续
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>上一篇说了，乘客因为不愿意走那么100来米的小路，而老刘还在找工地边的一条小路的时候，乘客取消了订单，并把责任推到我这里。虽然系统提示减次数减低信用分，实际也没见减少，但是看到这个提示还是很不爽的，也不打算惯着她，直接在软件里投诉了这件事情。
+很快，系统给了回复，不是我的责任，判定对方有责，提示把她划到重点监控人群，降低分数等等。
+然后，过了一会，又收到一个短信，显示，对方又投诉了我，说我迟到，然后警告我以后要注意。显然对方要反咬一口。
+继续针对这点投诉，因为记录很明确，第一，我是早到了20多分钟，第二，她所谓的小路很小，周边是乱糟糟的工地，第三，迟到的定义是晚于约定的时间10分钟，而对方取消的时间是15点34，我只有15点40以后才算是迟到。各方面的证据都说明，不是我的问题，客服连情况都不看就说我迟到了。所以，这次直接投诉的是这个客服。
+旁晚，收到高级一点的客服的电话，电话里告知，责任在对方，我没有责任，不扣的分数，我问为啥你们的客服就不看证据，随随便便的就判责任，谁投诉谁有理吗？对方表示，这个就是一个通知，说明有人在投诉，仅此而已。
+我觉得就是在忽悠我。对于这个平台来说，车主和乘客都不愿意得罪。和个稀泥，糊弄过去就过去了，毕竟还得薅这两方的羊毛呢。
+其实，以后也不打算再跑这个玩意了，扣不扣分也无所谓，就是想要一个说法吧。较真了一下。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-18 09:09:43 +0000 +0000'>十月 18, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 哈喽顺风车事情的后续" href="https://iliu.org/3923.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>跑顺风车遇到的那些事（一）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>2021年10月15日，小雨，寒潮蓝色预警，明天最低气温4摄氏度左右。
+今天去新郑龙湖办点事，刚开始还觉得挺幸运的。
+走的时候家附近刚好有两位要去龙湖，离我只有几百米。接上他们之后，很顺利的到达了目的地。两位都是郑州某高校的老师，素质还是挺高的。办完事之后，又看了下刚好有个3点半要回郑州的单子，尽管我要是接这个单子还需要等待将近2小时，想来回去也没事，决定接了。
+由于需要等待，听说龙湖湿地公园比较好玩，真好给孩子打打前站。到了那地方之后，感觉也不过如此，一个大园子，里面有条水沟，沟的对面有几个人在钓鱼。不过空气很新鲜，再里面随便逛了一下。
+3点出发去接那个回郑州的乘客，起点是龙湖某中学，由于到处都是基建，导航导的的路已经不在了。她说有一条小路通往门口，路口有个小红牌，结果我开车转了两圈也没有看到，让她出来到大路上，她说有一段路程，我只能在别的路口调头，正在找呢，她把订单取消了，还把责任推给我。果断进行了投诉。后来我在地图上仔细的找，发现她说的那一段路程大概只有100米左右。
+真TMD作！</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-15 09:03:12 +0000 +0000'>十月 15, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 跑顺风车遇到的那些事（一）" href="https://iliu.org/3921.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>体验一把顺风车车主
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>过了国庆后，明显感觉生意大不如前了，基本上都是熟客，一般都是约在周末，周一到周五就很闲。所以，就想搞个别的兼职一下。看到车天天放那，媳妇说要不你跑跑滴滴吧，顺便溜溜车，看看大郑州的美丽风景。
+于是，注册哈喽出行，审核的倒是很快。今天一上午跑了两单，75km，收入63块左右。其中还有初次哈喽给的20块钱的奖励。也就是说两单差不多43元。油费差不多37元，也就是说正常的话一上午只能赚5块钱作用，真的顺风了。
+从网上的一些攻略来看，想跑顺风车赚钱，室内基本上没啥希望，城际还可以，用多个平台，找到一个来回人都挺多的路线，尽量拉满4个人。这样才可能赚到钱。
+驾驶证期满换证 驾驶证到11月份就满5年了，不知不觉间，已经成为了一个老司机了。5年来，行车2万多公里。并且保持住了0事故。可能和自己性子谨慎有关吧。这点一定要保持下去。
+昨天在群里咨询里下老司机如何换证，说直接去就行。结果跑到郑州市交警二大队，发现已经搬走了，去了一个中原区行政服务中心。按照墙上的通知里的预约方法，约到下午去办理。实际办理很快，体检、自助照相、窗口人脸识别，另一个窗口领证。半个小时左右，全都搞定了。还是挺方便的。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-12 09:53:20 +0000 +0000'>十月 12, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 体验一把顺风车车主" href="https://iliu.org/3920.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>百度打不开了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正在忙，忽然收到女儿打来的电话，是家里的老佛爷用电脑，百度打不开。
+我第一个反应，是不是没有连上网，问了之后说，微信登录正常。
+特意视频看了一下，网络是好着的。
+问她是怎么打开百度的，说直接输入百度，回车，是空白页
+我就明白是怎么回事了。肯定是梯子坏了
+edge设置的默认搜索是bing，懒得改，梯子一坏，bing打不开了
+教她输入百度的域名，输了两次才输对
+所以，以前的hao123能火是很有道理的。上网输域名的人毕竟是很少数的一拨人。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-10 09:14:53 +0000 +0000'>十月 10, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 百度打不开了" href="https://iliu.org/3918.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>跳绳对我来说已经是剧烈运动了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>国庆7天，1号到3号女儿唯一的课外班竟然还顶风安排上课。不过也没有办法，对于初中的孩子来说，周一到周五那是不可能有时间去课外班上课的。所以，学校也只能冒着风险安排在节假日和周末。其实挺想举报一波的。
+看天气预报4号开始又要下雨了，郑州是要变成江南的节奏吗？这些开发商又有接口不室外作业了，这两天也燥热的不行，温度都达到32度了。如果老高看到这是不是会说我凡尔赛呢，想想老高那里还是37度，瞬间不感觉那么热了，?
+1号2号忙了两天，3号没有人预约，老刘也就偷了下懒，早上睡了个懒觉，睡醒之后带着家里的大小领导去户外转了一圈，由于女儿下午还有课，不能去太远，就带着跳绳和羽毛球就近找了一个地方，让女儿练习跳绳，毕竟中考是要靠这个的，每分钟要求172个，女儿现在基本上1分钟可以跳130多个，还得努力锻炼。女儿跳完了后，媳妇也接着跳了一会，1分钟90来个。
+这时候女儿怂恿老刘也试试，1分钟跳了80个，跳的时候还没有感觉，跳完了，感觉非常的不好，心脏跳的很厉害，赶紧慢走了一会，还是不行，头开始有点晕了，找了个地方坐了下来，缓了半个多小时才缓过来，有一瞬间，自己还在想，不跳绳给跳猝死了吧。
+看来，以后也之适合八段锦和太极拳了，抽空把太极拳学学。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-10-03 07:07:26 +0000 +0000'>十月 3, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 跳绳对我来说已经是剧烈运动了" href="https://iliu.org/3916.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>维权群众生相
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>家里的房子2012年年底，由于在郑州地铁十号线的规划红线内而被拆迁，房子原来是中国通信建设第四工程局的家属院。中间也不知道怎么弄的，他们内部的人成立一个房地产公司，和中原区政府一起开发这块地。结果这一等就是9年过去了。
+目前房子已经封顶两年了，由于疫情等的原因，交房的日期是一拖再拖。我们这些回迁户还行，每月的过渡费还算能正常的给，那些在这里买房的人是受不了啦，交着房租，交着银行的按揭贷款，房子却住不上。于是他们时不时的去维权一下。
+前几天，被一名业主也给拉进了一个维权群。原来几十个人，后来陆陆续续被拉进来了有200多人。通过他们的发言显现出了一群众生相。
+恨铁不成钢型 以群主为代表的，经常去维权的人为代表。他们真的是斗士。恨不得群里每一个人都能去，对于不去的业主那真是恨铁不成钢。对不积极响应的每每发出讽刺之语，甚至以踢出群相逼迫。平时以有功之臣自居，觉得开发商的每一点进展都是他们维权的结果。
+沉默不语型 群里的大多数人都是这个类型吧，平时也没什么言语，不参与群里的的话题讨论，更不会到现场维权。听且任之。
+嘴炮型 这种类型的人最是讨厌，平时夸夸其谈，指点江山，这也懂，那也明白，对人家维权去的人取得的一些成果，形成的文件什么的指手画脚。真让他出马了，马上就销声匿迹了。
+纠结型 姑且这么说吧，以老刘为代表，老刘一方面希望早日能回到自己的家，盼望着赶紧交房。另一方面，目前住的地方离孩子的学校很近，孩子上下学都很方便。目前租房有补助，要是交房的话，租房就需要自己去租，不租房家就离学校有点远。但是前一方面还是占着上风的。所以，老刘属于平时不怎么发言，他们去维权，有时间了就去凑个人头。
+最后，没有谁对与错，只是可能自己的立场不同，沉默不语的人也可能是因为职业或者其他的原因不方便说话，最近加入进来的一个业主其实说的挺好，无论如何，任何时候，不打击自己人，这是斗争的艺术。</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-09-27 02:23:06 +0000 +0000'>九月 27, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 维权群众生相" href="https://iliu.org/3913.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://iliu.org/posts/page/14/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://iliu.org/posts/page/16/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

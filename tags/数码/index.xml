@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数码 on 图南博客</title>
+    <link>https://iliu.org/tags/%E6%95%B0%E7%A0%81/</link>
+    <description>Recent content in 数码 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://iliu.org/papermod-cover.png</url>
+      <link>https://iliu.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 24 Mar 2021 01:46:06 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E6%95%B0%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何禁止浏览器读取手机号码？</title>
+      <link>https://iliu.org/3714.html</link>
+      <pubDate>Wed, 24 Mar 2021 01:46:06 +0000</pubDate>
+      
+      <guid>https://iliu.org/3714.html</guid>
+      <description>昨天一位朋友问老刘，如何才能禁止浏览器读取手机号码的问题，据朋友所说，遇到了一个细思极恐的事情。原来，朋友前两天在网上查找过关于***的产品，然后昨天收到一个甜妹纸的电话：
+甜姐儿问朋友是不是需要×××？
+朋友说不需要了，谢谢。
+她不死心，说你最近不是在找×××吗？
+朋友奇道：你怎么知道我在看×××的？
+她说：系统显示你最近浏览了×××网，后台有推送你的号码给我的。
+朋友的心里一万个羊驼跑过
+我问朋友，是不是登陆那种不可描述的网站了，他说不是，只是想了解某个产品，于是网上搜了一下，浏览了一圈，也不知道具体看了哪个网站了。于是，朋友问老刘标题上的问题。
+老刘用的是荣耀手机，看了一下经常用的夸克浏览器，发现已经允许的权限中有电话这个权限，点开看了一下，发现不是读取手机电话号码的，也没有读取通讯录。并且朋友的问题应该是浏览器读取了他的手机号码。应该来说，夸克在这一块做的还是不错的。
+由于朋友的事件已经没法还原，所以就建议朋友删除他手机上乱起八糟的软件，使用夸克来试一试。目前，国内这种APP需要过多权限的问题非常的泛滥，虽然前几天国家也出台了APP的管理办法，但是真的有多大的用处还是未知数，所以只能建议朋友从正规的渠道安装app。
+小伙伴们有没有其他的建议呢？</description>
+    </item>
+    
+  </channel>
+</rss>
