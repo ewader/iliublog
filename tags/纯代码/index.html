@@ -58,11 +58,9 @@
 </noscript><meta property="og:title" content="纯代码" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+<meta property="og:url" content="https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="纯代码"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -83,7 +81,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -142,17 +140,9 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     纯代码
-    <a href="/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
   </h1>
 </header>
 
@@ -162,26 +152,15 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp服务器插件已经在商店里找不到了。其实，这也没什么，直接用代码的方式部署也是可以的。
-SSH连接到VPS之后运行如下命令查看处理器架构，根据架构下载不同版本的frp
-arch 查看结果，如果是“X86_64“即可选择”amd64”，
-运行如下命令，根据架构不同，选择相应版本并进行下载，然后登陆frp的官网地址，现在最新的应该是0.34.1，所以，运行如下的命令：
-wget https://github.com/fatedier/frp/releases/download/v0.34.1/frp_0.34.1_linux_amd64.tar.gz 然后解压，给文件换一个名字，进入frp目录
-tar -zxvf frp_0.34.1_linux_amd64.tar.gz cp -r frp_0.34.1_linux_amd64 frp cd frp 修改frps.ini文件
-vim frps.ini 格式如下：
-[common] bind_port = 7000 dashboard_port = 7500 token = *******（根据情况自己设置） dashboard_user = 自己设置 dashboard_pwd = 自己设置 vhost_http_port = 10080 vhost_https_port = 10443 编辑完成后保存（vim保存如果不会请自行搜索）。
-之后我们就可以运行frps的服务端了。
-使用命令：
-./frps -c frps.ini 如果输出如下文字，说明服务器配置成功
-2019/01/12 15:22:39 [I] [service.go:130] frps tcp listen on 0.0.0.0:7000 2019/01/12 15:22:39 [I] [service.go:172] http service listen on 0.0.0.0:10080 2019/01/12 15:22:39 [I] [service....</p>
+    <p>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp...</p>
   </div>
-  <footer class="entry-footer"><span title='2020-10-18 07:27:04 +0000 +0000'>十月 18, 2020</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2020-10-18 07:27:04 +0000 +0000'>2020-10-18</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 纯代码设置frp服务器" href="https://iliu.org/3340.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

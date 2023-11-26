@@ -7,13 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Django设置使用MySql的时候遇到的一些坑 | 图南博客</title>
 <meta name="keywords" content="django, mysql">
-<meta name="description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他更专业的数据库。本文，就来说说，在设置使用mysql的时候，遇到的一些问题及解决的方法。
-项目里设置引用Mysql 在setting.py里,把原来使用sqllit的语句删除或者注释掉，添加如下代码
-DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;, # 数据库引擎 &#39;NAME&#39;: &#39;&#39;, # 数据库名，先前创建的 &#39;USER&#39;: &#39;&#39;, # 用户名，可以自己创建用户 &#39;PASSWORD&#39;: &#39;&#39;, # 密码 &#39;HOST&#39;: &#39;127.0.0.1&#39;, # mysql服务所在的主机ip &#39;PORT&#39;: &#39;3306&#39;, # mysql服务端口 } } 安装Python访问MySQL的模块
-Django官方已经不建议使用pymysql库了，而是改用mysqlclient，直接pip安装即可。
-pip install mysqlclient 在debian11上安装的时候，显示OSError: mysql_config not found的错误，查询得知，需要安装libmysqlclient-dev，但是用apt install libmysqlclient-dev的时候，安装不成功，提示是另一个分支，建议安装libmariadb-dev。所以安装这个即可。
-apt install libmariadb-dev 出错：error: command ‘x86_64-linux-gnu-gcc’ failed: No such file or directory
-sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev ">
+<meta name="description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/4298.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -62,45 +56,31 @@ sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 l
 
     </style>
 </noscript><meta property="og:title" content="Django设置使用MySql的时候遇到的一些坑" />
-<meta property="og:description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他更专业的数据库。本文，就来说说，在设置使用mysql的时候，遇到的一些问题及解决的方法。
-项目里设置引用Mysql 在setting.py里,把原来使用sqllit的语句删除或者注释掉，添加如下代码
-DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;, # 数据库引擎 &#39;NAME&#39;: &#39;&#39;, # 数据库名，先前创建的 &#39;USER&#39;: &#39;&#39;, # 用户名，可以自己创建用户 &#39;PASSWORD&#39;: &#39;&#39;, # 密码 &#39;HOST&#39;: &#39;127.0.0.1&#39;, # mysql服务所在的主机ip &#39;PORT&#39;: &#39;3306&#39;, # mysql服务端口 } } 安装Python访问MySQL的模块
-Django官方已经不建议使用pymysql库了，而是改用mysqlclient，直接pip安装即可。
-pip install mysqlclient 在debian11上安装的时候，显示OSError: mysql_config not found的错误，查询得知，需要安装libmysqlclient-dev，但是用apt install libmysqlclient-dev的时候，安装不成功，提示是另一个分支，建议安装libmariadb-dev。所以安装这个即可。
-apt install libmariadb-dev 出错：error: command ‘x86_64-linux-gnu-gcc’ failed: No such file or directory
-sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev " />
+<meta property="og:description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/4298.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/4298.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-18T00:17:14+00:00" />
 <meta property="article:modified_time" content="2022-11-18T00:17:14+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Django设置使用MySql的时候遇到的一些坑"/>
-<meta name="twitter:description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他更专业的数据库。本文，就来说说，在设置使用mysql的时候，遇到的一些问题及解决的方法。
-项目里设置引用Mysql 在setting.py里,把原来使用sqllit的语句删除或者注释掉，添加如下代码
-DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;, # 数据库引擎 &#39;NAME&#39;: &#39;&#39;, # 数据库名，先前创建的 &#39;USER&#39;: &#39;&#39;, # 用户名，可以自己创建用户 &#39;PASSWORD&#39;: &#39;&#39;, # 密码 &#39;HOST&#39;: &#39;127.0.0.1&#39;, # mysql服务所在的主机ip &#39;PORT&#39;: &#39;3306&#39;, # mysql服务端口 } } 安装Python访问MySQL的模块
-Django官方已经不建议使用pymysql库了，而是改用mysqlclient，直接pip安装即可。
-pip install mysqlclient 在debian11上安装的时候，显示OSError: mysql_config not found的错误，查询得知，需要安装libmysqlclient-dev，但是用apt install libmysqlclient-dev的时候，安装不成功，提示是另一个分支，建议安装libmariadb-dev。所以安装这个即可。
-apt install libmariadb-dev 出错：error: command ‘x86_64-linux-gnu-gcc’ failed: No such file or directory
-sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev "/>
+<meta name="twitter:description" content="Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "Django设置使用MySql的时候遇到的一些坑",
       "item": "https://iliu.org/4298.html"
     }
@@ -113,12 +93,12 @@ sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 l
   "@type": "BlogPosting",
   "headline": "Django设置使用MySql的时候遇到的一些坑",
   "name": "Django设置使用MySql的时候遇到的一些坑",
-  "description": "Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他更专业的数据库。本文，就来说说，在设置使用mysql的时候，遇到的一些问题及解决的方法。\n项目里设置引用Mysql 在setting.py里,把原来使用sqllit的语句删除或者注释掉，添加如下代码\nDATABASES = { 'default': { 'ENGINE': 'django.db.backends.mysql', # 数据库引擎 'NAME': '', # 数据库名，先前创建的 'USER': '', # 用户名，可以自己创建用户 'PASSWORD': '', # 密码 'HOST': '127.0.0.1', # mysql服务所在的主机ip 'PORT': '3306', # mysql服务端口 } } 安装Python访问MySQL的模块\nDjango官方已经不建议使用pymysql库了，而是改用mysqlclient，直接pip安装即可。\npip install mysqlclient 在debian11上安装的时候，显示OSError: mysql_config not found的错误，查询得知，需要安装libmysqlclient-dev，但是用apt install libmysqlclient-dev的时候，安装不成功，提示是另一个分支，建议安装libmariadb-dev。所以安装这个即可。\napt install libmariadb-dev 出错：error: command ‘x86_64-linux-gnu-gcc’ failed: No such file or directory\nsudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev ",
+  "description": "Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他",
   "keywords": [
     "django", "mysql"
   ],
   "articleBody": "Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他更专业的数据库。本文，就来说说，在设置使用mysql的时候，遇到的一些问题及解决的方法。\n项目里设置引用Mysql 在setting.py里,把原来使用sqllit的语句删除或者注释掉，添加如下代码\nDATABASES = { 'default': { 'ENGINE': 'django.db.backends.mysql', # 数据库引擎 'NAME': '', # 数据库名，先前创建的 'USER': '', # 用户名，可以自己创建用户 'PASSWORD': '', # 密码 'HOST': '127.0.0.1', # mysql服务所在的主机ip 'PORT': '3306', # mysql服务端口 } } 安装Python访问MySQL的模块\nDjango官方已经不建议使用pymysql库了，而是改用mysqlclient，直接pip安装即可。\npip install mysqlclient 在debian11上安装的时候，显示OSError: mysql_config not found的错误，查询得知，需要安装libmysqlclient-dev，但是用apt install libmysqlclient-dev的时候，安装不成功，提示是另一个分支，建议安装libmariadb-dev。所以安装这个即可。\napt install libmariadb-dev 出错：error: command ‘x86_64-linux-gnu-gcc’ failed: No such file or directory\nsudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev zlib1g-dev ",
-  "wordCount" : "68",
+  "wordCount" : "505",
   "inLanguage": "zh",
   "datePublished": "2022-11-18T00:17:14Z",
   "dateModified": "2022-11-18T00:17:14Z",
@@ -157,7 +137,7 @@ sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 l
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -219,15 +199,15 @@ sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 l
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       Django设置使用MySql的时候遇到的一些坑
     </h1>
-    <div class="post-meta"><span title='2022-11-18 00:17:14 +0000 +0000'>十一月 18, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2022-11-18 00:17:14 +0000 +0000'>2022-11-18</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">目录</span>
         </summary>
@@ -343,7 +323,7 @@ sudo apt-get install build-essential python3-dev libssl-dev libffi-dev libxml2 l
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

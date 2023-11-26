@@ -4,11 +4,6 @@
     <title>oneinstack on 图南博客</title>
     <link>https://iliu.org/tags/oneinstack/</link>
     <description>Recent content in oneinstack on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 27 Aug 2020 03:25:28 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/oneinstack/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +13,7 @@
       <pubDate>Thu, 27 Aug 2020 03:25:28 +0000</pubDate>
       
       <guid>https://iliu.org/3240.html</guid>
-      <description>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板，不成想，前几天出现了这么一个低级的bug，所以，思来想去，不能为了一颗树苗而放弃整片森林，为了安全，还是把宝塔面板换掉为妙。
-步骤很简单，无非是再宝塔里先把网站的文件夹打包，下载。然后备份数据文件下载。趁着这个机会，把服务器的系统也升级到centos8了。然后安装oneinstack，并编译环境，生成网站目录等等，都是基本的方法，不是本文重点要说的。我要说的是，这里面的坑。
-新环境做好后，把文件上传，解压，链接好数据库文件，浏览器一输入网站，我去！显示No input file specified错误，赶紧Google了一下，发现解决的方法五花八门，基本上都是东php.ini。想到自己刚才因为网站用的一个主题需要引用一个解密的插件，确实是改了php.ini。但是去掉改动的，依然是这个错误。于是怀疑是自己不经意间删掉了什么字符之类的。由于没有备份这个文件。所以，决定重新编译php。
-新弄的php还是显示No input file specified。确认了不是php的问题。为了排查，把自己的博客也上传，结果发现博客是好的。这时候忽然想起来，博客这个文件当时备份的时候，把宝塔生成的.user.ini这个为了防止跨站的文件删除了，而另一个网站的没有删。于是在网站源码里找到这个文件，删除之。问题迎刃而解了。</description>
+      <description>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板</description>
     </item>
     
   </channel>

@@ -4,11 +4,6 @@
     <title>入侵 on 图南博客</title>
     <link>https://iliu.org/tags/%E5%85%A5%E4%BE%B5/</link>
     <description>Recent content in 入侵 on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 03 Sep 2021 03:05:41 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%85%A5%E4%BE%B5/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +13,7 @@
       <pubDate>Fri, 03 Sep 2021 03:05:41 +0000</pubDate>
       
       <guid>https://iliu.org/3856.html</guid>
-      <description>九月一日凌晨0点30分左右，手机收到腾讯云发来的短信：
-【腾讯云】尊敬的腾讯云用户，您好！您的腾讯云账号（账号 ID：****\*，昵称：镜缘轩） 下的服务器： [jooj]，实例ID：**，地域：华北地区（北京），时间：2021-09-01 00:30:08，检测到存在未处理的木马文件：/tmp/php9a0u7f，您的服务器疑似被黑客入侵，可能造成严重损失，请即刻前往主机安全控制台（ ）查看详细信息。 由于当时已经熟睡，早上起床后才发现有了这个短信。
-赶紧登录上服务器，到tmp目录查找，并没有发现腾讯短信里提到的文件。然后又查看各种系统的日志，发现确实有不少扫描器之类的在扫描，但是都没有登录成功。
-网上查了一下相关的内容，发现也有不少用户收到过这个短信，但人家确实在报告的目录里找到木马文件了。所以也搞不懂具体的情况了。
-网站运行也良好，网站标题等也没有被修改，系统后台也没有可疑的进程。但是为了保险起见，还是备份了数据库，以及网站文件。
-重置系统，重新编译生产环境，从官网下载最新的程序包，把备份的网站文件只要里面的图片，其他的一概都不要了，希望是虚惊一场吧。</description>
+      <description>九月一日凌晨0点30分左右，手机收到腾讯云发来的短信： 【腾讯云】尊敬的腾讯云用户，您好！您的腾讯云账号（账号 ID：****\*，昵称：镜缘轩</description>
     </item>
     
   </channel>

@@ -4,11 +4,6 @@
     <title>小狼毫 on 图南博客</title>
     <link>https://iliu.org/tags/%E5%B0%8F%E7%8B%BC%E6%AF%AB/</link>
     <description>Recent content in 小狼毫 on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 14 Apr 2023 04:24:52 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%B0%8F%E7%8B%BC%E6%AF%AB/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +13,7 @@
       <pubDate>Fri, 14 Apr 2023 04:24:52 +0000</pubDate>
       
       <guid>https://iliu.org/4357.html</guid>
-      <description>自从用到win10以来，就开始懒得安装输入法了，毕竟微软拼音已经可以胜任很多的输入了。不过微软输入法有一点不太能容忍的bug是，偶尔会卡系统，不过也没有太放在心上。
-今天漂了一眼博客群，然后就看到博友推荐小狼毫输入法，我就不声不响的安装了一下，目前来看，基本是可以满足我的需求。直接安装使用了，高级的使用方法也没有去可以的学习。
-启用雾凇拼音的方法 雾凇拼音是小狼毫框架下优化的一个词库吧，听群里大佬介绍说很不错，打算用上，可是对如何使用真是一头的雾水，最初把下载来的文件放进了小狼毫的data文件夹下，结果选择雾凇拼音之后，中文输入是空白的。
-后来研究了半天，发现实现的方法是如此简单，右键点击输入法的图标，选择用户文件夹，然后在GitHub的仓库地址：GitHub – iDvel/rime-ice: Rime 配置：雾凇拼音 | 长期维护的简体词库下载词库，下载后解压到刚才那个用户文件夹中。
-还是右键点输入法图标，选择输入法设定，选择雾凇拼音即可
-顺便吐槽一下相关部门开发的软件，真的堪比病毒。上午收到短信，意思是该申报下一年的工资了，于是抽屉里翻出了社保用的UKEY，到官网下载驱动程序，只见卡巴斯基是一连串的报警，而且还删除了好几个和驱动无关的程序。
-以为驱动就这么废了，结果重启后，驱动是正常了，原来是软件里夹带了很多的私活，这就是现状！想想河南有多少企业，每个企业至少一个电脑要安装这个破玩意。</description>
+      <description>自从用到win10以来，就开始懒得安装输入法了，毕竟微软拼音已经可以胜任很多的输入了。不过微软输入法有一点不太能容忍的bug是，偶尔会卡系统</description>
     </item>
     
   </channel>

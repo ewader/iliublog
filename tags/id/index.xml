@@ -4,11 +4,6 @@
     <title>id on 图南博客</title>
     <link>https://iliu.org/tags/id/</link>
     <description>Recent content in id on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 20 Oct 2020 07:24:11 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/id/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +13,7 @@
       <pubDate>Tue, 20 Oct 2020 07:24:11 +0000</pubDate>
       
       <guid>https://iliu.org/3350.html</guid>
-      <description>都说苹果的系统很人性化，安全性好，巴拉巴拉的。但是今天的一件小事让我觉得有点言过其实了。
-事情是这样子的，女儿的IPAD登录的是我的id号，由于云空间满了，天天冒出来一个红疙瘩，于是我就打算取消登录。但是呢，我忘记密码了。于是想重设密码，结果在ipad上重设，需要输入开机密码，这个密码是我女儿设的，我登录都是用指纹。而现在她处于上课的时间，没法联系她，于是，我就打算在网页上重新设置密码。
-结果网页上手机号验证之后，还是要在IPAD上设置，转了一圈又回来了。倒是有一个不在本机设置的选择，选择了之后也24小时的验证时间。我算是服了！~</description>
+      <description>都说苹果的系统很人性化，安全性好，巴拉巴拉的。但是今天的一件小事让我觉得有点言过其实了。 事情是这样子的，女儿的IPAD登录的是我的id号，由</description>
     </item>
     
   </channel>

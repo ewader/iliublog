@@ -7,17 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>如何使用git并把代码提交到GitHub | 图南博客</title>
 <meta name="keywords" content="git, Linux">
-<meta name="description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。
-git的用法 设置用户名 因为git可以用来团队协助方面，设置用户名的目的是为了让别人知道，你是谁，这个程序的bug是谁提交的😰。
-git config --global user.name &#34;xxxx&#34; git config --global user.email &#34;xxxx@qq.com&#34; 设置本地仓库 选择你项目的文件夹，在里面打开终端，运行如下命令：
-git init 在每次修改完程序后，运行如下命令提交：
-git add . git commit -m &#34;简短的说明，本次提交了什么&#34; 设置远程仓库 很多时候我们还要把代码提交到GitHub上去，当然你也可以创建自己的远程git服务器，这里不涉及。
-首先，用ssh生成公钥 ssh-keygen -t rsa -C &#34;****@qq.com&#34; 一般会在~/.ssh/这个文件夹里，生成两个文件，打开后缀为pub的那个文件。
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCh9zv7aD0IQAen8wC5slQPlE9H2Jjh6Z8v7YShZGXaFxq2Hd/e5v0KTLDHuL0DSItsbQGVMiLuJhPE3f1ypxAruj14Frak4&#43;U5WZhV6xTSeQVwIWd8QyMBaYNjv7s49nb&#43;tz9NAYrzu8ZNT8&#43;2s1vUXCI5K6vPNMTax0KrAjmqOZ0sbcSzmz57LVpJqadc9Svuh84X65LH2XuzfNudzmrMIK3uu5GoFosqY4Y&#43;tu3ssvmeUKWfFRM14Gab0I6funZZh5EdRv2/ltkEdzIRl01FQTAyo5rnzaY4jPhCR5ANd1smzo&#43;h4KvqIK3uux96Hs= ****@qq.com 然后把copy这个文件的内容，打开GitHub网站，登录自己的账户，在设置里找到ssh那个选项，提交进去可以了。
-连接远程代码仓库提交代码 git remote add origin git@github.com:GitHub用户名/我的项目.git 然后，提交代码到自己的项目里：
-git push -u origin main 以后的提交可以不用-u这个参数了。
-把远程仓库的代码下载到本地 git pull 远程Pull的时候出现错误 这是我的另一个项目在pull的时候催化下的错误。在从远程pull的时候出现了，error: Your local changes to the following files would be overwritten by merge:这个错误提示，提示的是数据库文件，是因为因为网站访问的原因，导致本地数据库和远程的数据库文件不一致。其实后期是不会用到这个数据库文件的。因此，丢弃本地的修改
-git checkout .">
+<meta name="description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/how-to-use-git/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -66,53 +56,31 @@ git checkout .">
 
     </style>
 </noscript><meta property="og:title" content="如何使用git并把代码提交到GitHub" />
-<meta property="og:description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。
-git的用法 设置用户名 因为git可以用来团队协助方面，设置用户名的目的是为了让别人知道，你是谁，这个程序的bug是谁提交的😰。
-git config --global user.name &#34;xxxx&#34; git config --global user.email &#34;xxxx@qq.com&#34; 设置本地仓库 选择你项目的文件夹，在里面打开终端，运行如下命令：
-git init 在每次修改完程序后，运行如下命令提交：
-git add . git commit -m &#34;简短的说明，本次提交了什么&#34; 设置远程仓库 很多时候我们还要把代码提交到GitHub上去，当然你也可以创建自己的远程git服务器，这里不涉及。
-首先，用ssh生成公钥 ssh-keygen -t rsa -C &#34;****@qq.com&#34; 一般会在~/.ssh/这个文件夹里，生成两个文件，打开后缀为pub的那个文件。
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCh9zv7aD0IQAen8wC5slQPlE9H2Jjh6Z8v7YShZGXaFxq2Hd/e5v0KTLDHuL0DSItsbQGVMiLuJhPE3f1ypxAruj14Frak4&#43;U5WZhV6xTSeQVwIWd8QyMBaYNjv7s49nb&#43;tz9NAYrzu8ZNT8&#43;2s1vUXCI5K6vPNMTax0KrAjmqOZ0sbcSzmz57LVpJqadc9Svuh84X65LH2XuzfNudzmrMIK3uu5GoFosqY4Y&#43;tu3ssvmeUKWfFRM14Gab0I6funZZh5EdRv2/ltkEdzIRl01FQTAyo5rnzaY4jPhCR5ANd1smzo&#43;h4KvqIK3uux96Hs= ****@qq.com 然后把copy这个文件的内容，打开GitHub网站，登录自己的账户，在设置里找到ssh那个选项，提交进去可以了。
-连接远程代码仓库提交代码 git remote add origin git@github.com:GitHub用户名/我的项目.git 然后，提交代码到自己的项目里：
-git push -u origin main 以后的提交可以不用-u这个参数了。
-把远程仓库的代码下载到本地 git pull 远程Pull的时候出现错误 这是我的另一个项目在pull的时候催化下的错误。在从远程pull的时候出现了，error: Your local changes to the following files would be overwritten by merge:这个错误提示，提示的是数据库文件，是因为因为网站访问的原因，导致本地数据库和远程的数据库文件不一致。其实后期是不会用到这个数据库文件的。因此，丢弃本地的修改
-git checkout ." />
+<meta property="og:description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/how-to-use-git/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/how-to-use-git/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-05T17:08:14+08:00" />
 <meta property="article:modified_time" content="2023-11-05T17:08:14+08:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何使用git并把代码提交到GitHub"/>
-<meta name="twitter:description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。
-git的用法 设置用户名 因为git可以用来团队协助方面，设置用户名的目的是为了让别人知道，你是谁，这个程序的bug是谁提交的😰。
-git config --global user.name &#34;xxxx&#34; git config --global user.email &#34;xxxx@qq.com&#34; 设置本地仓库 选择你项目的文件夹，在里面打开终端，运行如下命令：
-git init 在每次修改完程序后，运行如下命令提交：
-git add . git commit -m &#34;简短的说明，本次提交了什么&#34; 设置远程仓库 很多时候我们还要把代码提交到GitHub上去，当然你也可以创建自己的远程git服务器，这里不涉及。
-首先，用ssh生成公钥 ssh-keygen -t rsa -C &#34;****@qq.com&#34; 一般会在~/.ssh/这个文件夹里，生成两个文件，打开后缀为pub的那个文件。
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCh9zv7aD0IQAen8wC5slQPlE9H2Jjh6Z8v7YShZGXaFxq2Hd/e5v0KTLDHuL0DSItsbQGVMiLuJhPE3f1ypxAruj14Frak4&#43;U5WZhV6xTSeQVwIWd8QyMBaYNjv7s49nb&#43;tz9NAYrzu8ZNT8&#43;2s1vUXCI5K6vPNMTax0KrAjmqOZ0sbcSzmz57LVpJqadc9Svuh84X65LH2XuzfNudzmrMIK3uu5GoFosqY4Y&#43;tu3ssvmeUKWfFRM14Gab0I6funZZh5EdRv2/ltkEdzIRl01FQTAyo5rnzaY4jPhCR5ANd1smzo&#43;h4KvqIK3uux96Hs= ****@qq.com 然后把copy这个文件的内容，打开GitHub网站，登录自己的账户，在设置里找到ssh那个选项，提交进去可以了。
-连接远程代码仓库提交代码 git remote add origin git@github.com:GitHub用户名/我的项目.git 然后，提交代码到自己的项目里：
-git push -u origin main 以后的提交可以不用-u这个参数了。
-把远程仓库的代码下载到本地 git pull 远程Pull的时候出现错误 这是我的另一个项目在pull的时候催化下的错误。在从远程pull的时候出现了，error: Your local changes to the following files would be overwritten by merge:这个错误提示，提示的是数据库文件，是因为因为网站访问的原因，导致本地数据库和远程的数据库文件不一致。其实后期是不会用到这个数据库文件的。因此，丢弃本地的修改
-git checkout ."/>
+<meta name="twitter:description" content="这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "如何使用git并把代码提交到GitHub",
       "item": "https://iliu.org/how-to-use-git/"
     }
@@ -125,12 +93,12 @@ git checkout ."/>
   "@type": "BlogPosting",
   "headline": "如何使用git并把代码提交到GitHub",
   "name": "如何使用git并把代码提交到GitHub",
-  "description": "这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。\ngit的用法 设置用户名 因为git可以用来团队协助方面，设置用户名的目的是为了让别人知道，你是谁，这个程序的bug是谁提交的😰。\ngit config --global user.name \u0026#34;xxxx\u0026#34; git config --global user.email \u0026#34;xxxx@qq.com\u0026#34; 设置本地仓库 选择你项目的文件夹，在里面打开终端，运行如下命令：\ngit init 在每次修改完程序后，运行如下命令提交：\ngit add . git commit -m \u0026#34;简短的说明，本次提交了什么\u0026#34; 设置远程仓库 很多时候我们还要把代码提交到GitHub上去，当然你也可以创建自己的远程git服务器，这里不涉及。\n首先，用ssh生成公钥 ssh-keygen -t rsa -C \u0026#34;****@qq.com\u0026#34; 一般会在~/.ssh/这个文件夹里，生成两个文件，打开后缀为pub的那个文件。\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCh9zv7aD0IQAen8wC5slQPlE9H2Jjh6Z8v7YShZGXaFxq2Hd/e5v0KTLDHuL0DSItsbQGVMiLuJhPE3f1ypxAruj14Frak4+U5WZhV6xTSeQVwIWd8QyMBaYNjv7s49nb+tz9NAYrzu8ZNT8+2s1vUXCI5K6vPNMTax0KrAjmqOZ0sbcSzmz57LVpJqadc9Svuh84X65LH2XuzfNudzmrMIK3uu5GoFosqY4Y+tu3ssvmeUKWfFRM14Gab0I6funZZh5EdRv2/ltkEdzIRl01FQTAyo5rnzaY4jPhCR5ANd1smzo+h4KvqIK3uux96Hs= ****@qq.com 然后把copy这个文件的内容，打开GitHub网站，登录自己的账户，在设置里找到ssh那个选项，提交进去可以了。\n连接远程代码仓库提交代码 git remote add origin git@github.com:GitHub用户名/我的项目.git 然后，提交代码到自己的项目里：\ngit push -u origin main 以后的提交可以不用-u这个参数了。\n把远程仓库的代码下载到本地 git pull 远程Pull的时候出现错误 这是我的另一个项目在pull的时候催化下的错误。在从远程pull的时候出现了，error: Your local changes to the following files would be overwritten by merge:这个错误提示，提示的是数据库文件，是因为因为网站访问的原因，导致本地数据库和远程的数据库文件不一致。其实后期是不会用到这个数据库文件的。因此，丢弃本地的修改\ngit checkout .",
+  "description": "这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用",
   "keywords": [
     "git", "Linux"
   ],
   "articleBody": "这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。\ngit的用法 设置用户名 因为git可以用来团队协助方面，设置用户名的目的是为了让别人知道，你是谁，这个程序的bug是谁提交的😰。\ngit config --global user.name \"xxxx\" git config --global user.email \"xxxx@qq.com\" 设置本地仓库 选择你项目的文件夹，在里面打开终端，运行如下命令：\ngit init 在每次修改完程序后，运行如下命令提交：\ngit add . git commit -m \"简短的说明，本次提交了什么\" 设置远程仓库 很多时候我们还要把代码提交到GitHub上去，当然你也可以创建自己的远程git服务器，这里不涉及。\n首先，用ssh生成公钥 ssh-keygen -t rsa -C \"****@qq.com\" 一般会在~/.ssh/这个文件夹里，生成两个文件，打开后缀为pub的那个文件。\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCh9zv7aD0IQAen8wC5slQPlE9H2Jjh6Z8v7YShZGXaFxq2Hd/e5v0KTLDHuL0DSItsbQGVMiLuJhPE3f1ypxAruj14Frak4+U5WZhV6xTSeQVwIWd8QyMBaYNjv7s49nb+tz9NAYrzu8ZNT8+2s1vUXCI5K6vPNMTax0KrAjmqOZ0sbcSzmz57LVpJqadc9Svuh84X65LH2XuzfNudzmrMIK3uu5GoFosqY4Y+tu3ssvmeUKWfFRM14Gab0I6funZZh5EdRv2/ltkEdzIRl01FQTAyo5rnzaY4jPhCR5ANd1smzo+h4KvqIK3uux96Hs= ****@qq.com 然后把copy这个文件的内容，打开GitHub网站，登录自己的账户，在设置里找到ssh那个选项，提交进去可以了。\n连接远程代码仓库提交代码 git remote add origin git@github.com:GitHub用户名/我的项目.git 然后，提交代码到自己的项目里：\ngit push -u origin main 以后的提交可以不用-u这个参数了。\n把远程仓库的代码下载到本地 git pull 远程Pull的时候出现错误 这是我的另一个项目在pull的时候催化下的错误。在从远程pull的时候出现了，error: Your local changes to the following files would be overwritten by merge:这个错误提示，提示的是数据库文件，是因为因为网站访问的原因，导致本地数据库和远程的数据库文件不一致。其实后期是不会用到这个数据库文件的。因此，丢弃本地的修改\ngit checkout . ",
-  "wordCount" : "72",
+  "wordCount" : "645",
   "inLanguage": "zh",
   "datePublished": "2023-11-05T17:08:14+08:00",
   "dateModified": "2023-11-05T17:08:14+08:00",
@@ -169,7 +137,7 @@ git checkout ."/>
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -231,15 +199,15 @@ git checkout ."/>
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       如何使用git并把代码提交到GitHub
     </h1>
-    <div class="post-meta"><span title='2023-11-05 17:08:14 +0800 CST'>十一月 5, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2023-11-05 17:08:14 +0800 CST'>2023-11-05</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">目录</span>
         </summary>
@@ -384,7 +352,7 @@ git checkout ."/>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

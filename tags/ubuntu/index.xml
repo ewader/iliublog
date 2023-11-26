@@ -4,11 +4,6 @@
     <title>ubuntu on 图南博客</title>
     <link>https://iliu.org/tags/ubuntu/</link>
     <description>Recent content in ubuntu on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
@@ -18,15 +13,7 @@
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
       <guid>https://iliu.org/4126.html</guid>
-      <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同时，要对个人的要求也随之更高。玩VPS首先遇到的就是系统的选择问题。
-Windows系统 大多数的站长第一次选择系统的时候都是喜欢用windows系统，毕竟熟悉，上手快。但是Windows服务器系统先天上占用资源比较大，系统不稳定，导致获得不了良好的用户体验。同样1H1G配置的vps，运行最新版本的debian11，然后装个博客系统，是一点问题都没有，但是你要是想要运行Windows服务器，只能选择低版本的了。所以，用了一段时间后，自然就淘汰不用了。
-Linux系统 Linux系统是开源系统，受到所有开发者的共同监督，已经是非常成熟的服务器系统，并且拥有着一套完整的权限机制，安全性与稳定性都很高。只是上手有点门槛。不过，随着各种面板技术的发展，目前这个已经不是什么问题。那么Linux系统那么多，到底选择哪种呢？
-centos 这个系统在国内可以说是服务器的首选。可惜去年官方已经不在继续维护这个系统了，目前最高的版本是centos8.0，目前官方已经不再维护，centos7.6由于用的人更多，目前还在过度的时间内，但是也时日无多了。所以，用这个系统的童鞋，还是换成别的系统吧。老刘曾用过腾讯云里腾讯自己以centos8为蓝本开发的系统，体验起来还是可以的。如果真是centos的铁粉，不妨可以试试腾讯的这个系统。
-debain 这个也是老牌的服务器系统了。作为一个具有悠久历史的社区维护的操作系统。生命力还是没有问题的。据王志勇大佬的测试，使用Debian系统的php要比其他的系统来说，速度更快。老刘感觉，这个快可能更多的是测试的结果，实际体验下来，感觉相差不大。Debian系统稳定，软件丰富。自从centos宣布停止维护后，老刘已经把所有的VPS的系统都换成Debian了。
-另外一个让老刘喜欢用Debian的原因是，Debian11的防火墙使用起来非常的简单，而别的系统大多是用的iptables。比如我们要放行一个端口，Debian只需用如下的命令：
-ufw allow 666 而iptables写法就很复杂了：
-iptables -I INPUT -p tcp --dport 8000 -j ACCEPT Ubuntu 是基于Debian二次开发的产物，在Linux桌面操作系统中，Ubuntu绝对是老大的存在。很多公司开发的软件，都是基于Ubuntu来开发的。服务器版也还可以，不过老刘还是习惯了使用Debian。
-至于其他的小众操作系统，使用的人少，遇到问题找答案都不容易，不用也罢</description>
+      <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
     
     <item>
@@ -35,13 +22,7 @@ iptables -I INPUT -p tcp --dport 8000 -j ACCEPT Ubuntu 是基于Debian二次开�
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
       <guid>https://iliu.org/4036.html</guid>
-      <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。
-manjaro之于ubuntu 以前在桌面上选择LINUX的时候首选是ubuntu,这个系统的优点是用户多，大的方面比较稳定，运行也比较流畅，很多软件都是以ubuntu的格式来开发的。在我的电脑上有一个很烦人的问题，就是不能保存电脑的亮度，调整完之后，下次一重新启动，亮度又是最大了。虽然通过代码可以改，但是改后还是有一丢小问题的，强迫症有点。另外就是安装软件的时候，软件中心启动的慢，有时候甚至安装的界面都出不来。基于这么几点，优点不太满意。
-manjaro之于deepin/uos deepin和uos算是国产系统里的佼佼者了，我遇到的问题是，deepin偶会卡死，毫无征兆的那种，忽然桌面一卡，整个都不能用了。UOS刚开始也有这毛病，最新版貌似解决了这个问题。另外就是蓝牙有问题，死活连不上鼠标。
-deepin系我最喜欢的是它的终端，设计的非常人性化，特别是连接远程服务器里面，我用过的终端里，深度终端是最好用的。
-在就是UOS的系统资源占用率有点高，比如你开上一个浏览器，然后什么都不动，基本CPU会在5-8%的占用，要是浏览点网页，还会更高，所以使用的时候，风扇就会呼呼的转。笔记本在不用电源的情况下，充满电只能有3个小时左右（manjaro基本上能用5个多小时），还是挺费电的。
-manjaro占用，开着edeg还有wine版的微信
-manjaro的缺点 默认没有中文输入法，需要自己安装。wps字体非常的模糊。软件商店没有deepin这种的直观。</description>
+      <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
     
     <item>
@@ -50,16 +31,7 @@ manjaro的缺点 默认没有中文输入法，需要自己安装。wps字体非
       <pubDate>Mon, 20 Dec 2021 09:20:38 +0000</pubDate>
       
       <guid>https://iliu.org/3951.html</guid>
-      <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直都没有修复。不过网上也有很多的教程，试用了一下，有些有用，有些没用，直到扒到了一个很老的文章，上面记载的一个很简单的方法，却解决了这样一个问题。
-别的不说，直接上代码，照着做就行了：
-sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，替换为以下GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet acpi_osi=Linux cpi_backlight=vendor&#34;sudo update-grub 最后一步一定要做。另外GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;可能是会多出几个单词，不影响不影响，就是这一行。 然后说说ubunut的输入法
-以前（十年前吧）的时候，linux下的输入法很难用，现在主流的输入法也都有了，比如搜狗，百度，讯飞等等。最近看了一下，发现已经不需要额外在安装其他的输入法了，用系统自带的中文输入法已经很好用了。
-系统自带的输入法是ibuslibpinyin，只需要简单的设置一下，就非常好用了。
-第一步：常规设置，如下图，根据个人的习惯来吧，老刘喜欢候选词以词频方式展示。
-第二步：拼音模式，勾选“启用云输入”
-第三步：用户词典，勾选全部
-第四步：重启
-至此，输入法使用起来基本上和在win10的微软拼音方便程度差不多了。</description>
+      <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直</description>
     </item>
     
   </channel>

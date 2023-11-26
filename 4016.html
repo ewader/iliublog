@@ -7,11 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>manjaro安装配置fcitx5输入法 | 图南博客</title>
 <meta name="keywords" content="fcitx5, Linux, mangaro, 输入法">
-<meta name="description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。
-kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。
-以下是安装流程 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块 sudo nano /etc/environment GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus 然后注销一下系统，输入法的图标就已经出来了。
-然后安装词库 sudo pacman -S fcitx5-pinyin-zhwiki #安装中文维基百科词库 sudo pacman -S fcitx5-pinyin-moegirl #安装二刺螈萌娘百科词库 一点坑 安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。
-最后说一下 这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。">
+<meta name="description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/4016.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -60,41 +56,31 @@ kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来�
 
     </style>
 </noscript><meta property="og:title" content="manjaro安装配置fcitx5输入法" />
-<meta property="og:description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。
-kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。
-以下是安装流程 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块 sudo nano /etc/environment GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus 然后注销一下系统，输入法的图标就已经出来了。
-然后安装词库 sudo pacman -S fcitx5-pinyin-zhwiki #安装中文维基百科词库 sudo pacman -S fcitx5-pinyin-moegirl #安装二刺螈萌娘百科词库 一点坑 安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。
-最后说一下 这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。" />
+<meta property="og:description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/4016.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/4016.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-06T09:38:19+00:00" />
 <meta property="article:modified_time" content="2022-01-06T09:38:19+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="manjaro安装配置fcitx5输入法"/>
-<meta name="twitter:description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。
-kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。
-以下是安装流程 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块 sudo nano /etc/environment GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus 然后注销一下系统，输入法的图标就已经出来了。
-然后安装词库 sudo pacman -S fcitx5-pinyin-zhwiki #安装中文维基百科词库 sudo pacman -S fcitx5-pinyin-moegirl #安装二刺螈萌娘百科词库 一点坑 安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。
-最后说一下 这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。"/>
+<meta name="twitter:description" content="网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "manjaro安装配置fcitx5输入法",
       "item": "https://iliu.org/4016.html"
     }
@@ -107,12 +93,12 @@ kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来�
   "@type": "BlogPosting",
   "headline": "manjaro安装配置fcitx5输入法",
   "name": "manjaro安装配置fcitx5输入法",
-  "description": "网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。\nkde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。\n以下是安装流程 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块 sudo nano /etc/environment GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus 然后注销一下系统，输入法的图标就已经出来了。\n然后安装词库 sudo pacman -S fcitx5-pinyin-zhwiki #安装中文维基百科词库 sudo pacman -S fcitx5-pinyin-moegirl #安装二刺螈萌娘百科词库 一点坑 安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。\n最后说一下 这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。",
+  "description": "网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这",
   "keywords": [
     "fcitx5", "Linux", "mangaro", "输入法"
   ],
   "articleBody": "网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这个系统。\nkde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来说不如debian系的方便。也可能是我用习惯了的缘故吧。记得张波老师在群里问过manjaro如何安装输入法的问题，特意安装了最新的fcitx5输入法。\n以下是安装流程 sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-qt fcitx5-gtk #安装 Fcitx5主体、配置工具、输入法引擎及中文输入法模块 sudo nano /etc/environment GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx SDL_IM_MODULE=fcitx GLFW_IM_MODULE=ibus 然后注销一下系统，输入法的图标就已经出来了。\n然后安装词库 sudo pacman -S fcitx5-pinyin-zhwiki #安装中文维基百科词库 sudo pacman -S fcitx5-pinyin-moegirl #安装二刺螈萌娘百科词库 一点坑 安装完成后，切换到中文输入法状态，显示拼音不可用，老刘找了很多教程也没有发现有用的，后来更新了一下系统，输入法正常使用了。如果，你也正受到这个问题的影响，不妨更新一下系统试试。\n最后说一下 这个系统真的使用不习惯，新手不建议使用，目前强烈推荐使用uos家庭版。经过最近一段时间的试用，最新版电脑死机的问题已经修复了，安装简单，并且软件丰富，连原生的Linux版本的微信都是绑定了uos系统。可见国家对这个系统的支持。\n",
-  "wordCount" : "36",
+  "wordCount" : "497",
   "inLanguage": "zh",
   "datePublished": "2022-01-06T09:38:19Z",
   "dateModified": "2022-01-06T09:38:19Z",
@@ -151,7 +137,7 @@ kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来�
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -213,15 +199,15 @@ kde的界面很漂亮，运行也流畅，但就是没使用习惯，总体来�
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       manjaro安装配置fcitx5输入法
     </h1>
-    <div class="post-meta"><span title='2022-01-06 09:38:19 +0000 +0000'>一月 6, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2022-01-06 09:38:19 +0000 +0000'>2022-01-06</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">目录</span>
         </summary>
@@ -349,7 +335,7 @@ sudo pacman -S fcitx5-pinyin-moegirl
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

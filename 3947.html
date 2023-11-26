@@ -7,10 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>python开发web程序，最好还是在Linux下 | 图南博客</title>
 <meta name="keywords" content="Linux, python, windows, 开发, 选择">
-<meta name="description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。
-写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。
-隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。
-后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。">
+<meta name="description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/3947.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -59,39 +56,31 @@
 
     </style>
 </noscript><meta property="og:title" content="python开发web程序，最好还是在Linux下" />
-<meta property="og:description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。
-写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。
-隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。
-后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。" />
+<meta property="og:description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/3947.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/3947.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-14T12:57:17+00:00" />
 <meta property="article:modified_time" content="2021-12-14T12:57:17+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="python开发web程序，最好还是在Linux下"/>
-<meta name="twitter:description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。
-写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。
-隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。
-后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。"/>
+<meta name="twitter:description" content="看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "python开发web程序，最好还是在Linux下",
       "item": "https://iliu.org/3947.html"
     }
@@ -104,12 +93,12 @@
   "@type": "BlogPosting",
   "headline": "python开发web程序，最好还是在Linux下",
   "name": "python开发web程序，最好还是在Linux下",
-  "description": "看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。\n写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。\n隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。\n后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。",
+  "description": "看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。",
   "keywords": [
     "Linux", "python", "windows", "开发", "选择"
   ],
   "articleBody": "看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。\n写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。\n隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。\n后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。\n",
-  "wordCount" : "4",
+  "wordCount" : "458",
   "inLanguage": "zh",
   "datePublished": "2021-12-14T12:57:17Z",
   "dateModified": "2021-12-14T12:57:17Z",
@@ -148,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -210,11 +199,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       python开发web程序，最好还是在Linux下
     </h1>
-    <div class="post-meta"><span title='2021-12-14 12:57:17 +0000 +0000'>十二月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2021-12-14 12:57:17 +0000 +0000'>2021-12-14</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> 
@@ -308,7 +297,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

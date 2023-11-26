@@ -7,12 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>眼镜店会员查询系统初步完成 | 图南博客</title>
 <meta name="keywords" content="会员查询, 眼镜店">
-<meta name="description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
-前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
-说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
-1、后台添加客户资料，验光配镜的数据等
-2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
-至此基本的功能已经实现。后面就是完善细节以及美化一下了。">
+<meta name="description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/3939.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -61,43 +56,31 @@
 
     </style>
 </noscript><meta property="og:title" content="眼镜店会员查询系统初步完成" />
-<meta property="og:description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
-前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
-说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
-1、后台添加客户资料，验光配镜的数据等
-2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
-至此基本的功能已经实现。后面就是完善细节以及美化一下了。" />
+<meta property="og:description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/3939.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/3939.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-11-14T13:45:40+00:00" />
 <meta property="article:modified_time" content="2021-11-14T13:45:40+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="眼镜店会员查询系统初步完成"/>
-<meta name="twitter:description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
-前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
-说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
-1、后台添加客户资料，验光配镜的数据等
-2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
-至此基本的功能已经实现。后面就是完善细节以及美化一下了。"/>
+<meta name="twitter:description" content="一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "眼镜店会员查询系统初步完成",
       "item": "https://iliu.org/3939.html"
     }
@@ -110,12 +93,12 @@
   "@type": "BlogPosting",
   "headline": "眼镜店会员查询系统初步完成",
   "name": "眼镜店会员查询系统初步完成",
-  "description": "一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。\n前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。\n说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：\n1、后台添加客户资料，验光配镜的数据等\n2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。\n至此基本的功能已经实现。后面就是完善细节以及美化一下了。",
+  "description": "一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其",
   "keywords": [
     "会员查询", "眼镜店"
   ],
   "articleBody": "一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。\n前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。\n说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：\n1、后台添加客户资料，验光配镜的数据等\n2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。\n至此基本的功能已经实现。后面就是完善细节以及美化一下了。\n",
-  "wordCount" : "6",
+  "wordCount" : "453",
   "inLanguage": "zh",
   "datePublished": "2021-11-14T13:45:40Z",
   "dateModified": "2021-11-14T13:45:40Z",
@@ -154,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -216,11 +199,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       眼镜店会员查询系统初步完成
     </h1>
-    <div class="post-meta"><span title='2021-11-14 13:45:40 +0000 +0000'>十一月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2021-11-14 13:45:40 +0000 +0000'>2021-11-14</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> 
@@ -314,7 +297,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

@@ -7,14 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>浅谈群晖安全性方面的设置 | 图南博客</title>
 <meta name="keywords" content="安全性, 群晖, 设置, 防火墙">
-<meta name="description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。
-无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。
-安全性设置 如下图，该选择打勾的都给他打上。
-账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。
-群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。
-开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。
-具体的规则如下：
-上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。">
+<meta name="description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/4375.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -63,47 +56,31 @@
 
     </style>
 </noscript><meta property="og:title" content="浅谈群晖安全性方面的设置" />
-<meta property="og:description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。
-无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。
-安全性设置 如下图，该选择打勾的都给他打上。
-账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。
-群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。
-开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。
-具体的规则如下：
-上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。" />
+<meta property="og:description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/4375.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/4375.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-15T07:11:31+00:00" />
 <meta property="article:modified_time" content="2023-05-15T07:11:31+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="浅谈群晖安全性方面的设置"/>
-<meta name="twitter:description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。
-无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。
-安全性设置 如下图，该选择打勾的都给他打上。
-账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。
-群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。
-开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。
-具体的规则如下：
-上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。"/>
+<meta name="twitter:description" content="我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "浅谈群晖安全性方面的设置",
       "item": "https://iliu.org/4375.html"
     }
@@ -116,12 +93,12 @@
   "@type": "BlogPosting",
   "headline": "浅谈群晖安全性方面的设置",
   "name": "浅谈群晖安全性方面的设置",
-  "description": "我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。\n无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。\n安全性设置 如下图，该选择打勾的都给他打上。\n账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。\n群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。\n开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。\n具体的规则如下：\n上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。",
+  "description": "我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖",
   "keywords": [
     "安全性", "群晖", "设置", "防火墙"
   ],
   "articleBody": "我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖里的东西，这就需要我们把群晖暴露在公网之中。\n无论你是使用ddns，或者frp、zerotier内网穿透技术，只要是你把群晖暴露在公网上，那就要做好承担被网络上成千上万个扫描器扫描到的风险。扫描到不可怕，重要的扫描到也让它没有办法才行。这样，设置群晖的安全性设置就很必要了。\n安全性设置 如下图，该选择打勾的都给他打上。\n账户的安全性设置 建议对管理员账户强制开启双重验证，并下载synology secure signin这个app，选择code验证，这个无论手机是否在线，输入synology secure signin生成的code都是可以验证的。登录的时候在经常使用的电脑上点击记住设备，下次登录就不用再输入code了。为了安全，这一点点的不方便还是值得的。\n群晖防火墙的设置 开启群晖的防火墙还是很有必要的，开启并编辑规则后，可以把屏蔽国外ip的访问，这样安全性就提高了一大块，毕竟扫描器绝大部分都是国外的ip。\n开启防火墙，并启用防火墙通知，这样，有ip被封锁后，群晖会发邮件来提醒你。\n具体的规则如下：\n上述规则的解读，第一条规则是允许你局域网所在的ip段的访问，包括所有的协议和端口，如果用的有docker的话就加上第二条规则，让docker的ip也能自由的和主机进行通信。第三条是允许国内的ip访问，毕竟你需要在不同的地方来访问你的群晖，这个就不要限制了，第四条是我自己的一台境外的服务器，我用来做frp穿透用，也设置允许了。最后一条是拒绝除了上面的ip之外所有ip的访问。\n",
-  "wordCount" : "15",
+  "wordCount" : "692",
   "inLanguage": "zh",
   "datePublished": "2023-05-15T07:11:31Z",
   "dateModified": "2023-05-15T07:11:31Z",
@@ -160,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -222,15 +199,15 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       浅谈群晖安全性方面的设置
     </h1>
-    <div class="post-meta"><span title='2023-05-15 07:11:31 +0000 +0000'>五月 15, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2023-05-15 07:11:31 +0000 +0000'>2023-05-15</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">目录</span>
         </summary>
@@ -346,7 +323,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

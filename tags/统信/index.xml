@@ -4,11 +4,6 @@
     <title>统信 on 图南博客</title>
     <link>https://iliu.org/tags/%E7%BB%9F%E4%BF%A1/</link>
     <description>Recent content in 统信 on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 29 Oct 2021 01:22:00 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BB%9F%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
@@ -18,17 +13,7 @@
       <pubDate>Fri, 29 Oct 2021 01:22:00 +0000</pubDate>
       
       <guid>https://iliu.org/3927.html</guid>
-      <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后，关机需要90秒的倒计时。从网上查了一下相关的信息，发现这个小毛病还是挺多人遇到的。虽然可以更改时间来较少，但是又可能造成系统的崩溃。
-Linuxmint倒是很流畅，一切都很满意。但是用了两天后发现了一个问题，不能使用微信，虽然在windows上，老刘也很少用微信，但是偶尔会用吧。加上近期媳妇申报副高要处理不少的文档，她都是用微信直接给我发过来，我要处理的话还得重启更换系统，非常的不方便。deepin吧，又时有卡桌面。后来想到了这个统信uos。批了一层皮的deepin os。本来没有报太大的希望，不过安装后却给了我不少的惊喜。
-一、安装方便
-比任何Linux系统安装的都方便，尽管别的现在也不复杂了。真不会安装的话，可以申请官方的一对一服务。甚至安装后，你windows桌面上的文件都给你复制过来了。
-二、系统流畅
-这个在固态硬盘下，估计都流畅，除了那个ubuntukelly吧，优化的真不错。上手也简单。
-三、软件不少
-应用商店里的软件不少，不管是通过wine也好，还是通过使用安卓也好，反正基本上解决了Linux下软件不足的问题，尽管有些是非原生的系统，不过使用频率也低。偶尔应应急还是可以的。
-四、不足之处
-当然系统也还存在不足，主要表现在应用商店里的软件版本大多数都比较低，有的都1年多没有更新了。别如老刘必须要用的keepassxc。官方都已经是2.6.6了，商店里的还是2.3.4。又没法像ubuntu一样可以用ppa安装软件。
-尽管如此，也是瑕不掩瑜，感兴趣的朋友真的可以试试这个系统了。另外，家庭版目前是公测，挺稳定了，可以分享他人使用而免费激活，也可以支付9.9激活，据说以后会涨价，也不知真假。</description>
+      <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后</description>
     </item>
     
   </channel>

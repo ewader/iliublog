@@ -4,11 +4,6 @@
     <title>cdn on 图南博客</title>
     <link>https://iliu.org/tags/cdn/</link>
     <description>Recent content in cdn on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 21 Dec 2020 07:15:11 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +13,7 @@
       <pubDate>Mon, 21 Dec 2020 07:15:11 +0000</pubDate>
       
       <guid>https://iliu.org/3486.html</guid>
-      <description>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的是centos8，可惜这个系统明年官方就不再支持了，所以，长痛不如短痛，早晚都要换系统，不如早换。于是先把博客也迁到了这个rn的空间里。顺便又给加了个CF的套，加上之后，加的时候是扫了几个本地延迟最低的IP，直接分联通、移动、电信把这几个ip分别解析了。经过这么几天的试用，老刘觉得加了CF的速度还算差强人意。准备一直用下去。
-但是加了CDN后，有一个问题，那就是不管日志里还是wordpress后台的评论里的IP都是cf的IP，无法获取用户的真实IP，这对管理网站有点麻烦，比如受到攻击或者想封一些发垃圾邮件IP的地址的时候，就没有办法。老刘记得以前看过这方面的文章。于是找了一下，把经过记录下来。
-阿帕奇老刘好久没有用过了，这里只说nginx的方面，从网上的教程来看，可以分成两种。老刘把两种方法的说说
-一、利用ngx_http_realip_module模块获取用户真实IP 由于老刘用的是oneinstack一键安装包，所以之说这个方法，lnmp一键安装包也可以用类似的方面来搞定。宝塔面板的话，就很简单，装那款免费的防火墙，里面就是cdn的设置，设置完了之后就OK了，不得不说还是可视化面板方便。好了，闲话少说，正式开始。
-首先通过nginx -V我们发现默认编译的nginx并不会安装ngx_http_realip_module模块，我们需要重新编译nginx使其载入这个功能模块。
-这里我们直接利用oneinstack的升级脚本来完成，这样做，一是很简单，二是一般不会出错，很适合初学者使用，第三，就是以后你升级nginx的话，也能一劳永逸。
-#增量添加参数到${nginx_configure_args}后面 vim /root/oneinstack/include/upgrade_web.sh #在${nginx_configure_args}后面增加--with-http_realip_module即可 #大致位于升级脚本的第57行 保存并退出，执行oneinstack的升级脚本/root/oneinstack/upgrade.sh进行nginx升级编译即可。
-最后执行nginx -V查看最终编译后的结果。
-Nginx设置set_real_ip_from 编译好了ngx_http_realip_module，现在我们只需要在Nginx配置文件中添加set_real_ip_from代码到nginx.conf文件的http段落里面，老刘用的cf的，用期待的CDN类似，只有知道IP段可以了。示例如下：
-set_real_ip_from 103.21.244.0/22; set_real_ip_from 103.22.200.0/22; set_real_ip_from 103.31.4.0/22; set_real_ip_from 104.16.0.0/12; set_real_ip_from 108.162.192.0/18; set_real_ip_from 131.0.72.0/22; set_real_ip_from 141.101.64.0/18; set_real_ip_from 162.158.0.0/15; set_real_ip_from 172.64.0.0/13; set_real_ip_from 173.245.48.0/20; set_real_ip_from 188.114.96.0/20; set_real_ip_from 190.93.240.0/20; set_real_ip_from 197.234.240.0/22; set_real_ip_from 198.41.128.0/17; set_real_ip_from 199.27.128.0/21; set_real_ip_from 2400:cb00::/32; set_real_ip_from 2606:4700::/32; set_real_ip_from 2803:f800::/32; set_real_ip_from 2405:b500::/32; set_real_ip_from 2405:8100::/32; set_real_ip_from 2c0f:f248::/32; set_real_ip_from 2a06:98c0::/29; real_ip_header X-Forwarded-For; real_ip_recursive on; 配置完成后，使用nginx -t检查配置文件是否存在格式问题。如果没有报错执行service nginx reload重载nginx服务即可。</description>
+      <description>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的</description>
     </item>
     
     <item>
@@ -36,14 +22,7 @@ set_real_ip_from 103.21.244.0/22; set_real_ip_from 103.22.200.0/22; set_real_ip_
       <pubDate>Sun, 11 Oct 2020 02:29:24 +0000</pubDate>
       
       <guid>https://iliu.org/3283.html</guid>
-      <description>在以前的文章（推荐一款国外CDN——Nodecache，注册即送1T流量）中介绍过nodecache这个CDN服务商，当时是注册送1T的流量，后来由于觉得其速度有点慢，有时候又不稳定，所以就一直没有，后来通过这篇文字，陆续有了写aff送的流量，差不多一个月9G的样子，要说用在我这个小博客上市绰绰有余了，但是由于怕跑路就一直也没有用。
-今天闲着没事，翻看自己以前的文字，发现了自己的这篇文章，于是，怀旧的登录上去看看，结果这个CDN服务商居然还没有跑路，哈哈！看了一下，里面的设置基本上和上海云盾的类似，有些还借鉴了又拍云的设置方式。又看了一下发现居然增加了中国直连线路。于是，我可耻的心动了。设置了一番，发现没有想想的那么美好，中国直连线路不是中国线路。
-设置成中国直连线路后的ping值 大概170左右，查了一下这个IP，是美国加利福尼亚的IP。不过实际用起来感觉还是挺流畅的。除了ping的值有点高以外。
-于是切换成亚太IP后 ping值降到了60，但是不稳定，有超时的现象。
-里面的设置还是挺丰富的，支持防护CC以及waf防火墙 有兴趣的朋友可以试试看 目前也运行了一年多的时间了吧，估计不会跑路了，作为日常使用一下下还是可以的，谁让没有备案不能用国内的CDN呢！凑合着用吧，比裸奔心理安慰一些些！
-注册地址： 可以走一下我的AFF,让我多一些些流量。?
-https://console-api.nodecache.com/f?aff=4BLOd3
-貌似不再送流量了…..</description>
+      <description>在以前的文章（推荐一款国外CDN——Nodecache，注册即送1T流量）中介绍过nodecache这个CDN服务商，当时是注册送1T的流量</description>
     </item>
     
   </channel>

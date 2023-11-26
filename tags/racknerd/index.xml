@@ -4,11 +4,6 @@
     <title>RackNerd on 图南博客</title>
     <link>https://iliu.org/tags/racknerd/</link>
     <description>Recent content in RackNerd on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 15 Nov 2022 07:47:39 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/racknerd/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +13,7 @@
       <pubDate>Tue, 15 Nov 2022 07:47:39 +0000</pubDate>
       
       <guid>https://iliu.org/4292.html</guid>
-      <description>今年各大IDC的活动都不如往年，RackNerd也不例外，作为活动狂魔，双11活动刚结束，这不，又来了黑五的活动。
-768 MB KVM VPS 1 vCPU Core 10 GB Pure SSD Storage 768 MB RAM 1000 GB Monthly Transfer 1Gbps Network Port Full Root Admin Access 1 Dedicated IPv4 Address KVM / SolusVM Control Panel Available in: SJC, DFW, ORD, BUF, EWR, ATL ONLY $10.28/YEAR! 下单 1.5GB KVM VPS 1 vCPU Core 30 GB Pure SSD Storage 1.5 GB RAM 3000 GB Monthly Transfer 1Gbps Network Port Full Root Admin Access 1 Dedicated IPv4 Address KVM / SolusVM Control Panel Available in: LAX, SJC, DFW, ORD, BUF, EWR, ATL ONLY $16.</description>
+      <description>今年各大IDC的活动都不如往年，RackNerd也不例外，作为活动狂魔，双11活动刚结束，这不，又来了黑五的活动。 768 MB KVM VPS 1 vCPU Core 10 GB Pure SSD Storage 768</description>
     </item>
     
     <item>
@@ -28,22 +22,7 @@
       <pubDate>Fri, 04 Jun 2021 02:30:17 +0000</pubDate>
       
       <guid>https://iliu.org/3766.html</guid>
-      <description>前几天老刘总结了下RackNerd的使用情况，总体来说还是不错的，可惜的是，老刘刚弄了个梯子，第二天就被封了，期待过几天给解封吧。详情见：《RackNerd使用情况小结》
-有博友看了后表示价格有点贵，这不，今天老刘打开邮箱，发现它的6.18活动已经出来了，看了一下还是一贯的低价路线。
-[6.18 SALE – 2021] 1.8 GB KVM VPS Special
-2x vCPU Cores
-18 GB Pure SSD RAID-10 Storage
-1.8 GB RAM
-5000GB Monthly Premium Bandwidth
-1Gbps Public Network Port
-Full Root Admin Access
-1 Dedicated IPv4 Address
-KVM / SolusVM Control Panel – Reboot, Reinstall, Manage rDNS, &amp;amp; much more
-Multiple Locations Available
-**JUST $17.88/YEAR – WOW!!
-ORDER: 地址
-**
-[6.18 SALE – 2021] 2.8 GB KVM VPS Special</description>
+      <description>前几天老刘总结了下RackNerd的使用情况，总体来说还是不错的，可惜的是，老刘刚弄了个梯子，第二天就被封了，期待过几天给解封吧。详情见：《</description>
     </item>
     
     <item>
@@ -52,13 +31,7 @@ ORDER: 地址
       <pubDate>Fri, 21 May 2021 06:51:01 +0000</pubDate>
       
       <guid>https://iliu.org/3749.html</guid>
-      <description>RackNerd的vps相当的便宜，像老刘这款2h2g的一年不到20美元。有很多人说RackNerd是跑路的四大金刚创办的，到底是不是也没有人有确切的证据。当时买的时候也是心有忐忑，从这半年的使用情况来看，这个RackNerd的VPS如果不跑路的情况下，还是非常稳定的，是一款很不错的便宜VPS。
-买了这个VPS后，由于不能确定到底是不是稳定，所以，并没有花太多的心思再这个空间上，只是把自己的RSS订阅放在了这个VPS上，也就是rss.iliu.org这个网站。半年来，这个网站从来没有掉过链子。
-从上图可以看出，从2021年1月16日做完系统以后，到今天，服务器已经连续运行了4个多月，老刘能正常的阅读各位博友的博文，这个VPS可谓是功不可没。相比较machine的那台VPS，RN的这台简直让我没什么话说，可能用的时候也有限，但是这四个月来连偶尔的抽风都没有。
-machine那台同样配置的VPS，也不知道是系统的原因还是怎么，总会时不时的杀mysql的进程。
-试着再用用，如果一直这么稳定的话，等篱落的到期都想把博客搬过去了…..
-如果你也想了解一下这款VPS，可以走走我的aff，
-RN便宜VPS</description>
+      <description>RackNerd的vps相当的便宜，像老刘这款2h2g的一年不到20美元。有很多人说RackNerd是跑路的四大金刚创办的，到底是不是也没有</description>
     </item>
     
   </channel>

@@ -58,11 +58,9 @@
 </noscript><meta property="og:title" content="lnmp" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/tags/lnmp/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+<meta property="og:url" content="https://iliu.org/tags/lnmp/" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="lnmp"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -83,7 +81,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -142,17 +140,9 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/tags/">Tags</a></div>
   <h1>
     lnmp
-    <a href="/tags/lnmp/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
   </h1>
 </header>
 
@@ -162,18 +152,15 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>前几天在安装CRMEB商城的时候，由于不想再用宝塔了，先是选择oneinstack,但是会有一些问题，比如，用www用户无法在终端运行php等。后来就使用军哥开发的lnmp。却又碰到了一个问题，那就是所有的文件夹，在设置玩读写权限后，依然之后public这个文件夹有读写的权限。这就很郁闷了，难道最终还必须上宝塔？
-网上搜了一些教程，都是解决不了问题的。后来还是在lnmp.org的网站上找到了答案，感觉应该是设置了防跨站引起的，但是当时我已经把 .user.ini给删除了，看了那篇文章后才发现，光删除文件还不够，还需要在nginx的配置中进行设置。不过一个最简单的方法是，lnmp的开发者已经想到了这个问题，可以用lnmp自带的小工具脚本来解决。
-解决方法： 打开终端软件，连上服务器。
-cd lnmp1.9 cd tools ./remove_open_basedir_restriction.sh 结束，再安装，权限一点问题都没有了。</p>
+    <p>前几天在安装CRMEB商城的时候，由于不想再用宝塔了，先是选择oneinstack,但是会有一些问题，比如，用www用户无法在终端运行php...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-04-06 09:42:54 +0000 +0000'>四月 6, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2023-04-06 09:42:54 +0000 +0000'>2023-04-06</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 用lnmp安装thinkphp类的程序，文件夹没有权限" href="https://iliu.org/4344.html"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

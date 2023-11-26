@@ -4,11 +4,6 @@
     <title>会员查询 on 图南博客</title>
     <link>https://iliu.org/tags/%E4%BC%9A%E5%91%98%E6%9F%A5%E8%AF%A2/</link>
     <description>Recent content in 会员查询 on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 14 Nov 2021 13:45:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%BC%9A%E5%91%98%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +13,7 @@
       <pubDate>Sun, 14 Nov 2021 13:45:40 +0000</pubDate>
       
       <guid>https://iliu.org/3939.html</guid>
-      <description>一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其实还是钱的问题，要的高了伤感情，要少了值不当。特别是有了公众号之后，这个想法尤其强烈。因为自己用的进销存软件是单机的，客户没法自助查询，我本人如果不在店里的话，也没办法查询到客户的资料，非常的不方便。如果有这么一个查询系统的话，直接挂到公众号上，顾客自己都可以查询，并且还能给公众号引流，一举两得的事情。
-前段时间张波老师说打算锻炼锻炼大脑，学学Python，我一想这都多少年了，也学学Python，自己把这个软件弄出来好了。
-说起来容易做起来还是难的，用了2周时间熟悉Python的语法和函数，这又十来天过去了，终于算是基本上搞出来了。目前已经实现的功能：
-1、后台添加客户资料，验光配镜的数据等
-2、前台根据客户姓名和手机号码的完全匹配，查询出客户的具体信息。至于为啥要手机号和姓名完全匹配，是因为害怕重名的存在。
-至此基本的功能已经实现。后面就是完善细节以及美化一下了。</description>
+      <description>一直以来，都想弄一个会员查询系统，最好是针对眼镜店的，但是这个玩意吧，会弄的不愿意弄，想弄的不会。也曾经问过一个朋友，他嫌简单，不愿意弄，其</description>
     </item>
     
   </channel>

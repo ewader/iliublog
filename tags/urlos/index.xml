@@ -4,11 +4,6 @@
     <title>urlos on 图南博客</title>
     <link>https://iliu.org/tags/urlos/</link>
     <description>Recent content in urlos on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 21 Jan 2021 09:10:01 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/urlos/index.xml" rel="self" type="application/rss+xml" />
@@ -18,22 +13,7 @@
       <pubDate>Thu, 21 Jan 2021 09:10:01 +0000</pubDate>
       
       <guid>https://iliu.org/3597.html</guid>
-      <description>老刘一直用的是oneinstack这个命令行面板，其实也够用了。但是后来弄了一个在线商城，这个开发者基本上是以宝塔的环境来开发的，安装教程等等都是用的宝塔面板。自己试着用oneinstack来安装，会报很多的错误，特别是客服这一块，它使用了长链接等。而官方出的命令安装教程简直没法看，按教程根本搞不成。所以，只能用着免费版的宝塔，看了眼收费的，又太贵。
-昨天刚好看到缙哥哥又在推这个面板，现在涨价到20了，最早双11的时候才11.11，双12的时候12.12.现在20来快了，他推这个面板倒不是这个面板有多好用，他甚至都没有怎么用过，他推这个面板是因为据说有30%的aff。而看到我那个商城的官方也有urlos的一键安装包。所以，就买个授权吧。反正也不贵不是。留着，省的以后像宝塔似的千把块，买了心疼。
-买了后，就用博客来先试试手，你还别说，这个面板和宝塔真的是没有一点点的相似性。不过，官方的文档还行，按照文档进行操作还是可以成功的。这里怎么安装，怎么弄网站就不说了，官方都有，只说说体会。
-urlos的优点：
-优点不少，最大的优点是，每个网站都是一个容器。运行环境都是独立的。相互之间不会收到影响。比如你有两个网站，主题软件进行了加密，需要设置机密的模块，这个时候用传统的方法就不是很好解决，但是用这个面板就很容易，毕竟一个容器就是一个系统。
-说说缺点吧，
-首先，没有宝塔方便。第二，定制性不强，因为容器都是设置好的，想个性化的进行设置，不太好弄。第三，有点占用资源。
-安装后，网站运行一段时间的资源占用
-最后，这个面板大概占用200m的内存，好在关闭不影响使用
-下面是关了面板的占用，大概是250来兆
-安装wordpress后的一点设置 安装环境后，把wordpress上传，数据库上传，整个设置好以后，还需要一点权限的设置，否则wordpress没法更新，每个在线安装插件等。
-首先进入容器
-docker exec -it 容器名 bash chmod -R 755 /data/www chmod -R 755 /data/www/wp-content chown -R nobody:nogroup /data/www 设置完后，退出容器
-exit 老刘经过两天的摸索，发现这个面板还是有一定的意思的。通过这个面板还可以自建CDN给海外的网站加速，有空老刘打算用这个香港的主机给美国的主机加加速。
-最后 总之，这个面板还是有可取之处的。目前官方在做活动，20块钱，终身的授权码，有兴趣的同学可以屯一屯。
-可以走老刘的连接啊，urlos活动页面。据说有30%的返佣。你买一套，老刘会挣6块钱，哈！~</description>
+      <description>老刘一直用的是oneinstack这个命令行面板，其实也够用了。但是后来弄了一个在线商城，这个开发者基本上是以宝塔的环境来开发的，安装教程等</description>
     </item>
     
   </channel>

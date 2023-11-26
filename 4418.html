@@ -7,12 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>思源笔记群晖正确的部署方法 | 图南博客</title>
 <meta name="keywords" content="Docker, 思源笔记, 群晖">
-<meta name="description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。
-事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！
-成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。
-经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。
-第一，在运行命令那处填写：​ &lt;s&gt;-workspace /siyuan/workspace/&lt;/s&gt; 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} &lt;span class=&#34;hljs-regexp&#34;&gt;/Home/&lt;/span&gt;siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。
-这样就可以运行起来了。">
+<meta name="description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/4418.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -61,43 +56,31 @@
 
     </style>
 </noscript><meta property="og:title" content="思源笔记群晖正确的部署方法" />
-<meta property="og:description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。
-事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！
-成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。
-经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。
-第一，在运行命令那处填写：​ &lt;s&gt;-workspace /siyuan/workspace/&lt;/s&gt; 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} &lt;span class=&#34;hljs-regexp&#34;&gt;/Home/&lt;/span&gt;siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。
-这样就可以运行起来了。" />
+<meta property="og:description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/4418.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/4418.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-01T05:08:24+00:00" />
 <meta property="article:modified_time" content="2023-07-01T05:08:24+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="思源笔记群晖正确的部署方法"/>
-<meta name="twitter:description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。
-事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！
-成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。
-经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。
-第一，在运行命令那处填写：​ &lt;s&gt;-workspace /siyuan/workspace/&lt;/s&gt; 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} &lt;span class=&#34;hljs-regexp&#34;&gt;/Home/&lt;/span&gt;siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。
-这样就可以运行起来了。"/>
+<meta name="twitter:description" content="最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "思源笔记群晖正确的部署方法",
       "item": "https://iliu.org/4418.html"
     }
@@ -110,12 +93,12 @@
   "@type": "BlogPosting",
   "headline": "思源笔记群晖正确的部署方法",
   "name": "思源笔记群晖正确的部署方法",
-  "description": "最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！ 成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。 经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。 第一，在运行命令那处填写：​ \u0026lt;s\u003e-workspace /siyuan/workspace/\u0026lt;/s\u003e 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} \u0026lt;span class=\"hljs-regexp\"\u003e/Home/\u0026lt;/span\u003esiyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。 这样就可以运行起来了。",
+  "description": "最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级",
   "keywords": [
     "Docker", "思源笔记", "群晖"
   ],
   "articleBody": "最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。\n事情的起因 思源笔记的升级是相当频繁，可是我却发现，每次 docker 升级后，数据都没有保存下来，只能从备份的数据里重新导入，找了一下原因，发现是映射的文件夹里面没有数据，于是就重新安装，发现按照网上的教程，安装后 跑不起来。经过一番摸索，总算是搞定了！\n成功部署的方法 关于如何在群晖上设置Docker等基础的教程，老刘就不再重复制造数据垃圾了，既然你能找到我这里，说明你也已经查了很多的资料了，部署的方法都大同小异，只需要注意以下两点就可以了。\n经过博友@老麦的反馈，直接在Container Manager上操作的话，第一步可以不做，直接用第二步即可。详细看下面老麦的评论。\n第一，在运行命令那处填写：​ -workspace /siyuan/workspace/ 经过老刘的测试，最新版的思源，只能用上面的这句命令，用别的任何命令，群晖的Docker都会重复重启。​ 第二，储存空间设置 {#第二储存空间设置} /Home/siyuan 以前的教程都是把群晖本地的文件夹映射到Docker的siyuan目录，现在看了是不正确的，这个目录如果填写不正确，思源的Docker可以正常启动，但是升级后，数据都会全部删除，因为没有正确的映射到本地文件夹。\n这样就可以运行起来了。\n",
-  "wordCount" : "22",
+  "wordCount" : "540",
   "inLanguage": "zh",
   "datePublished": "2023-07-01T05:08:24Z",
   "dateModified": "2023-07-01T05:08:24Z",
@@ -154,7 +137,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -216,15 +199,15 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       思源笔记群晖正确的部署方法
     </h1>
-    <div class="post-meta"><span title='2023-07-01 05:08:24 +0000 +0000'>七月 1, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2023-07-01 05:08:24 +0000 +0000'>2023-07-01</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> <div class="toc">
-    <details >
+    <details  open>
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">目录</span>
         </summary>
@@ -348,7 +331,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

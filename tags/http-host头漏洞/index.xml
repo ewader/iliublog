@@ -4,11 +4,6 @@
     <title>http host头漏洞 on 图南博客</title>
     <link>https://iliu.org/tags/http-host%E5%A4%B4%E6%BC%8F%E6%B4%9E/</link>
     <description>Recent content in http host头漏洞 on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 14 Oct 2022 03:26:57 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/http-host%E5%A4%B4%E6%BC%8F%E6%B4%9E/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +13,7 @@
       <pubDate>Fri, 14 Oct 2022 03:26:57 +0000</pubDate>
       
       <guid>https://iliu.org/4272.html</guid>
-      <description>前几天，接到WJ打来的电话，说是网站上有一个漏洞需要处理，问在不在办公室，在的话他到办公室和我详谈。
-由于疫情被封在家中，如实告诉了他。后来加了微信，发过来了一份他们系统扫描出来的漏洞。好家伙，还真不少嘞。又仔细一看，也就一个所谓的http host头攻击漏洞。百度上搜了一下，基本上都是绿盟科技的软件扫出来的，具体描述如下：
-按照网上的教程很容易的就把这个漏洞修复了。
-server { listen 8081; server_name ip1; if ($http_Host !~* ip1|ip1:4433|域名1|域名1:4433) { return 403; } ... } 第二天，他又联系我百度小程序是不是在用，我告知在用，并告知他漏洞已经修复。他又打电话过来，询问如何保证用户信息的安全。我告诉他，首先使用的是腾讯云的云服务器，腾讯方面已经作了诸多的安全防护措施，第二，我们又使用了网络防火墙等技术，防止注入。第三，使用ssl对数据的传输进行加密。
-他不置可否，然后说，你解封之后在联系我吧。见面了详谈，我就很疑惑，漏洞也修复了，还有什么可详谈的呢?咨询了一下，可能是想要让做等保，这个真做不起。反正也没啥流量，最关键的是，不想和他们打交道，直接关站了事。
-我把决定告诉了他，以前回复的很及时，还很客气的用敬语的您来和我对话，这次不理我了……</description>
+      <description>前几天，接到WJ打来的电话，说是网站上有一个漏洞需要处理，问在不在办公室，在的话他到办公室和我详谈。 由于疫情被封在家中，如实告诉了他。后来加</description>
     </item>
     
   </channel>

@@ -58,11 +58,9 @@
 </noscript><meta property="og:title" content="齐物论" />
 <meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/>
+<meta property="og:url" content="https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="齐物论"/>
 <meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
 
@@ -83,7 +81,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -142,17 +140,9 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/categories/">Categories</a></div>
   <h1>
     齐物论
-    <a href="/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
   </h1>
 </header>
 
@@ -162,21 +152,9 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-libpinyin，开始的时候觉得这个输入法的词库比较小，用起来很不方便，但是后来发现这个输入法加入新的云输入引擎后，使用体验大幅上升，并且再加上额外的词库的话，用起来已经是非常方便了。
-ubuntu20.10自带的是1.20.0的版本，这个版本已经有了云输入引擎，但是不能把云输入引擎里的词自动添加到用户的本地词库里，而最新版已经解决了这个问题。要升级输入法，只能编译安装，Linux的不方便之处就在于此。
-如上图，ibus-libpinyin已经有了云输入，非常的方便
-首先，下载ibus-libpinyin输入法源码 源码地址是：https://github.com/libpinyin/ibus-libpinyin
-第二步，安装编译环境 sudo apt install libibus-1.0-dev sudo apt install sqlite3 sudo apt install libsqlite3-dev sudo apt install libpinyin13-dev sudo apt install libgtk-3-dev sudo apt install libjson-glib-dev sudo apt install libsoup2.4-dev sudo apt install gnome-common checkinstall 第三步，编译输入法 ./autogen.sh --prefix=/usr/ --enable-cloud-input-mode make sudo make install 至此，安装结束。在编译的第一步骤中，如果编译成功的化，应该出现以下的文字：
-Build options:
-Version 1.20.2
-Install prefix /usr
-Use boost no
-Use opencc no
-Use libpinyin yes
-Build lua extension no
-Build stroke input mode yes...</p>
+    <p>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-25 05:47:41 +0000 +0000'>十二月 25, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-25 05:47:41 +0000 +0000'>2021-12-25</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to ubuntu20.10升级编译安装ibus-libpinyin输入法" href="https://iliu.org/3976.html"></a>
 </article>
 
@@ -186,15 +164,9 @@ Build stroke input mode yes...</p>
     </h2>
   </header>
   <div class="entry-content">
-    <p>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，发现网络有点不稳定，有时候快，有时候慢，像今天下载速度一度只有32k了，正好在城南旧事的网站上看到推荐这个VPS，看了下2h2g的配置，一个月是5欧元，年付的话也有不少的优惠，网上查了下黑五的时候还出过5折的优惠码，可惜的是现在已经不能用了。抱着试试看的态度，先买了一个月的。
-实际体验下来还是不错，比Virmach速度快了不少，尽管ping值不是很低，但是状态一直还比较稳定。用17ce看了一下速度，竟然都是绿色的。
-下载速度也不错
-感觉还是不错的，先用上一个月试试，如果不错的话，可以考虑买长期的。
-据城南旧事所说，荷兰的这个VPS服务商成立与2007年，还是挺有实力的。而且空间的稳定性非常的不错。价格也不离谱。有兴趣的朋友可以看看。
-以下是我的AFF地址，觉得可以的，从我这走一单啊，哈哈
-荷兰LiteseverVPS</p>
+    <p>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-24 07:41:31 +0000 +0000'>十二月 24, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-24 07:41:31 +0000 +0000'>2021-12-24</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 试用荷兰的liteserverVPS" href="https://iliu.org/3968.html"></a>
 </article>
 
@@ -204,14 +176,9 @@ Build stroke input mode yes...</p>
     </h2>
   </header>
   <div class="entry-content">
-    <p>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss程序自己设立一个服务器。老刘目前也是在甲骨文的免费小鸡上用着tinyrss。这段时间在折腾PYTHON，在ubuntu上折腾。偶然发现了这个程序，体验了一下，感觉还是很不错的，推荐给大家。
-QuiteRSS。它是一款免费开源且跨平台的 RSS 阅读器客户端软件，支持 Windows、Mac、Linux 系统，界面并不算华丽，但是该有的功能都有了，比如：支持 RSS 内容的中文关键字搜索，支持标签归类功能，可以对文章加上星号或标签来收藏整理，标记未读已读，支持 OPML 导入导出、可以文件夹整理 Feed、内置浏览器 (可设置使用外部默认浏览器打开)、支持多标签页等，基本上能满足一切 RSS 的阅读需求。
-Quiterss支持windows、MACOS、LINUX，在ubuntu、win7、win10等都可以完美的应用，对于windows版本，官方推出的还有绿色版，可以说非常的全面了，唯一让老刘感觉不爽是无法在各个设备之间同步，要是以后通过网盘之类的在不同设备之间同步，那就非常的完美了。
-安装方法： win下和mac下都很简单，直接下载安装即可。这里专门说说Linux下的方法
-Arch Linux pacman -S quiterss Fedora yum install quiterss Ubuntu 可以直接在应用商店里搜索下载，也可以：
-sudo add-apt-repository ppa:quiterss/quitersssudo apt-get updatesudo apt-get install quiterss </p>
+    <p>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-23 01:48:37 +0000 +0000'>十二月 23, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-23 01:48:37 +0000 +0000'>2021-12-23</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 推荐一款免费开源的RSS软件-Quiterss" href="https://iliu.org/3958.html"></a>
 </article>
 
@@ -221,18 +188,9 @@ sudo add-apt-repository ppa:quiterss/quitersssudo apt-get updatesudo apt-get i
     </h2>
   </header>
   <div class="entry-content">
-    <p>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直都没有修复。不过网上也有很多的教程，试用了一下，有些有用，有些没用，直到扒到了一个很老的文章，上面记载的一个很简单的方法，却解决了这样一个问题。
-别的不说，直接上代码，照着做就行了：
-sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，替换为以下GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet acpi_osi=Linux cpi_backlight=vendor&#34;sudo update-grub 最后一步一定要做。另外GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;可能是会多出几个单词，不影响不影响，就是这一行。 然后说说ubunut的输入法
-以前（十年前吧）的时候，linux下的输入法很难用，现在主流的输入法也都有了，比如搜狗，百度，讯飞等等。最近看了一下，发现已经不需要额外在安装其他的输入法了，用系统自带的中文输入法已经很好用了。
-系统自带的输入法是ibuslibpinyin，只需要简单的设置一下，就非常好用了。
-第一步：常规设置，如下图，根据个人的习惯来吧，老刘喜欢候选词以词频方式展示。
-第二步：拼音模式，勾选“启用云输入”
-第三步：用户词典，勾选全部
-第四步：重启
-至此，输入法使用起来基本上和在win10的微软拼音方便程度差不多了。</p>
+    <p>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-20 09:20:38 +0000 +0000'>十二月 20, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-20 09:20:38 +0000 +0000'>2021-12-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to ubuntu20.04开机亮度最大的解决方法及输入法设置" href="https://iliu.org/3951.html"></a>
 </article>
 
@@ -242,12 +200,9 @@ sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，�
     </h2>
   </header>
   <div class="entry-content">
-    <p>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。前两天由于要在windows下用电脑，用完之后懒得重启，由于win10里也配置好了python的开发环境，所以就在win下写了一些代码。
-写完之后，浏览器打开显示404错误，小心的查代码，也找不到错误的地方，明明有这个网页的模板，就是显示404，折腾了1个多小时。也每发现错误之处。后来实在是烦躁，干脆不搞了。
-隔了一天，进入ubuntu，浏览器打开，还是显示404，这点没错，说明程序确实有问题，但是浏览器里给出了错误出在那一个文件，那一行。看了一下是把模板里的一个路由users写成了user了，然后就找不到user这个页面。就是这么点错误，在win下就是不给你详细的出错信息。
-后来看了一下windows的文档，在里面也明确的说，开发python的web程序，建议使用linux。所以，新手朋友如果想学python，不妨先熟悉一下LINUX。其实也是蛮简单的。磨刀不误砍柴工。</p>
+    <p>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-14 12:57:17 +0000 +0000'>十二月 14, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-14 12:57:17 +0000 +0000'>2021-12-14</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to python开发web程序，最好还是在Linux下" href="https://iliu.org/3947.html"></a>
 </article>
 
@@ -257,12 +212,9 @@ sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，�
     </h2>
   </header>
   <div class="entry-content">
-    <p>最近一直使用Linuxmint，如果不是一些必备的软件在Linux下没有，甚至都可以把Windows10卸载了，不过没有办法，有些软件还必须在win下使用。
-现在很多笔记本都是1920*1080的分辨率，这就导致字体有些小，在win10下默认是显示125%，Linuxmint下虽然也是可以设置成125%，但是总感觉有些不协调。
-网上还有一些教程是调大字体显示。但是无论怎么调，总感觉有些违和，看网页不舒服。后来发现其实Linuxmint在高分屏的支持方面已经比较完美了，可能是笔记本的屏幕太小导致字体小。
-后来发现只需要在系统设置，辅助功能里把大文本打开，现在的效果就非常棒。感觉字体小的朋友，可以试一试。浏览网页效果是非常的满意。</p>
+    <p>最近一直使用Linuxmint，如果不是一些必备的软件在Linux下没有，甚至都可以把Windows10卸载了，不过没有办法，有些软件还必须...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-12-13 06:09:18 +0000 +0000'>十二月 13, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-12-13 06:09:18 +0000 +0000'>2021-12-13</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to linuxmint高分屏设置" href="https://iliu.org/3944.html"></a>
 </article>
 
@@ -272,10 +224,9 @@ sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，�
     </h2>
   </header>
   <div class="entry-content">
-    <p>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，这一年来放了一个小玩艺，也稳定的，王志勇大佬貌似一直都是用的这个。反正就是个博客呗，放那都行，反正也没有几个人看。
-用了10几分钟弄完了，其实感觉速度也还行。</p>
+    <p>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-11-05 04:05:56 +0000 +0000'>十一月 5, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-11-05 04:05:56 +0000 +0000'>2021-11-05</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 转到virmach" href="https://iliu.org/3934.html"></a>
 </article>
 
@@ -285,12 +236,9 @@ sudo gedit /etc/default/grub#将GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet&#34;，�
     </h2>
   </header>
   <div class="entry-content">
-    <p>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。
-通过上面8章的学习，基本上有了实现我那个小项目的想法。今天根据前八章的知识，初步用input函数，实现了用特殊关键字的查询。继续加油。
-kehu = {&#39;张明&#39;:{&#39;右眼度数&#39;:&#39;-1.25&#39;,&#39;左眼度数&#39;:&#39;-2.00&#39;,&#39;瞳距&#39;:&#39;60mm&#39;,&#39;镜架&#39;:&#39;纯钛&#39;,&#39;镜片&#39;:&#39;康耐特&#39;,&#39;价格&#39;:&#39;￥450&#39;,&#39;手机号码&#39;:&#39;13027511600&#39;,},}xingming = input(&#34;请输入你的姓名：&#34;)shoujihaoma = input(&#34;请输入你的手机号码：&#34;)for name , info in kehu.items():if name == xingming and info[&#39;手机号码&#39;] == shoujihaoma:right = f&#34;{info[&#39;右眼度数&#39;]}&#34;lift = f&#34;{info[&#39;左眼度数&#39;]}&#34;tongju = f&#34;{info[&#39;瞳距&#39;]}&#34;jingjia = f&#34;{info[&#39;镜架&#39;]}&#34;jingpian = f&#34;{info[&#39;镜片&#39;]}&#34;jiage = f&#34;{info[&#39;价格&#39;]}&#34;print(&#34;验光单&#34;)print(f&#34;姓名：{name}&#34;)print(f&#34;右眼度数:{right} 左眼度数：{lift}&#34;)print(f&#34;瞳距：{tongju} &#34;)else:print(&#34;您输入的资料不正确，请重新输入&#34;)虽然简单，确实独立写出来的，应该是一大步吧。
-学好了，用python自己做个博客，哈哈哈</p>
+    <p>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。 通过上面8...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-10-30 04:28:51 +0000 +0000'>十月 30, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-10-30 04:28:51 +0000 +0000'>2021-10-30</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 用input和字典初步实现我的一点小想法" href="https://iliu.org/3929.html"></a>
 </article>
 
@@ -300,19 +248,9 @@ kehu = {&#39;张明&#39;:{&#39;右眼度数&#39;:&#39;-1.25&#39;,&#39;左眼�
     </h2>
   </header>
   <div class="entry-content">
-    <p>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后，关机需要90秒的倒计时。从网上查了一下相关的信息，发现这个小毛病还是挺多人遇到的。虽然可以更改时间来较少，但是又可能造成系统的崩溃。
-Linuxmint倒是很流畅，一切都很满意。但是用了两天后发现了一个问题，不能使用微信，虽然在windows上，老刘也很少用微信，但是偶尔会用吧。加上近期媳妇申报副高要处理不少的文档，她都是用微信直接给我发过来，我要处理的话还得重启更换系统，非常的不方便。deepin吧，又时有卡桌面。后来想到了这个统信uos。批了一层皮的deepin os。本来没有报太大的希望，不过安装后却给了我不少的惊喜。
-一、安装方便
-比任何Linux系统安装的都方便，尽管别的现在也不复杂了。真不会安装的话，可以申请官方的一对一服务。甚至安装后，你windows桌面上的文件都给你复制过来了。
-二、系统流畅
-这个在固态硬盘下，估计都流畅，除了那个ubuntukelly吧，优化的真不错。上手也简单。
-三、软件不少
-应用商店里的软件不少，不管是通过wine也好，还是通过使用安卓也好，反正基本上解决了Linux下软件不足的问题，尽管有些是非原生的系统，不过使用频率也低。偶尔应应急还是可以的。
-四、不足之处
-当然系统也还存在不足，主要表现在应用商店里的软件版本大多数都比较低，有的都1年多没有更新了。别如老刘必须要用的keepassxc。官方都已经是2.6.6了，商店里的还是2.3.4。又没法像ubuntu一样可以用ppa安装软件。
-尽管如此，也是瑕不掩瑜，感兴趣的朋友真的可以试试这个系统了。另外，家庭版目前是公测，挺稳定了，可以分享他人使用而免费激活，也可以支付9.9激活，据说以后会涨价，也不知真假。</p>
+    <p>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-10-29 01:22:00 +0000 +0000'>十月 29, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-10-29 01:22:00 +0000 +0000'>2021-10-29</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 试用统信uos家庭版" href="https://iliu.org/3927.html"></a>
 </article>
 
@@ -322,20 +260,9 @@ Linuxmint倒是很流畅，一切都很满意。但是用了两天后发现了�
     </h2>
   </header>
   <div class="entry-content">
-    <p>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，只要几个页面就能完成。实现的功能是，1、后台可以添加客户资料。2、前台通过用户名和手机号码可以查询各自的详情。
-曾经和一个搞开发的朋友聊起过这个玩意，他嫌太简单，让我自己弄。可惜我一直静不下心来做。
-要说编程老刘还算是有一丢丢的基础吧。毕竟在大学也是学过True Basic 以及C语言和VB的人。尽管当时学的也不咋地，就是混个学分。现在也早已经把知识还给了我的老师。
-看了一下Python的教程，感觉是我的菜。比当年学的那些个语言要简单的多了。基本上就是写英语句子呗。所以，下定决心系统的学习一下，争取能把我那个小玩意给弄出来。于是，有了这个折腾安装Linux的经历。
-深度deepin os 首先考虑的就是深度deepin的这个系统。毕竟在国内的名气更大，各方面也挺完善。安装上用了不到一天，卸载了。主要是因为：
-第一，桌面偶有卡住的现象。发生在我使用Chrome的时候，整个卡住了，就鼠标能动，别的动动不了，也点不动别的东西。最后强制关机。
-第二，上面那个原因可能还是小概率的事件。最主要的原因是老刘需要使用群晖的drive这个软件。以便同步我的keepassxc。可惜的是，安装上之后，打不开这个软件。在深度的论坛上发布了相关的帖子，也没有啥回音。只好弃之。
-Linuxmint 这个一款排名也比较靠前的系统，以Ubuntu为母本开发出来的。系统运行非常的流畅。尽管存在中文化不足的毛病，但是通过网上的一些教程，还是解决了这个问题。群晖的那个软件也可以使用。让老刘最终放弃的原因是总感觉用这个系统后，看着费眼。所以作为备选的系统，在测试一下别的。
-Ubuntukelly 优麒麟系统，也是以Ubuntu为母本开发的，中文化很好。界面和Windows 10的界面基本上90%的相似。上手没难度。更难能可贵的是，这个系统可以直接运行安卓的软件。
-使用了半天，最终还是放弃了。原因是卡顿，不丝滑。特别是使用wps编辑文档的时候，是真的卡，别的程序倒是还好。不知道这么卡顿，国内的很多部门是咋用的。
-Ubuntu原版 本来就打算装回Linuxmint算了，最后觉得吧，都试了这么些了，不如装装原版的试试吧。结果出乎老刘的意料。系统运行的非常流畅，中文化很好（尽管没有农历的日期之类的，不过应该也是可以安装的），最重要的是浏览网页几乎和win下没有两样了。
-最终决定，就用原版的Ubuntu系统了。</p>
+    <p>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，...</p>
   </div>
-  <footer class="entry-footer"><span title='2021-10-25 01:18:46 +0000 +0000'>十月 25, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <footer class="entry-footer"><span title='2021-10-25 01:18:46 +0000 +0000'>2021-10-25</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
   <a class="entry-link" aria-label="post link to 几种Linux系统安装之后的体验" href="https://iliu.org/3925.html"></a>
 </article>
 <footer class="page-footer">
@@ -350,7 +277,7 @@ Ubuntu原版 本来就打算装回Linuxmint算了，最后觉得吧，都试了�
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

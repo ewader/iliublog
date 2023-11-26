@@ -4,11 +4,6 @@
     <title>腾讯cdn on 图南博客</title>
     <link>https://iliu.org/tags/%E8%85%BE%E8%AE%AFcdn/</link>
     <description>Recent content in 腾讯cdn on 图南博客</description>
-    <image>
-      <title>图南博客</title>
-      <url>https://iliu.org/papermod-cover.png</url>
-      <link>https://iliu.org/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 24 Jul 2020 09:35:42 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E8%85%BE%E8%AE%AFcdn/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +13,7 @@
       <pubDate>Fri, 24 Jul 2020 09:35:42 +0000</pubDate>
       
       <guid>https://iliu.org/3217.html</guid>
-      <description>2018年的时候，申请了腾讯的COS，CDN等，因为那时候cos有免费50g的额度，CDN每月10g的免费流量，COS倒是一直用着，cdn因为当时是景安的服务器，用上腾讯的cdn后，奇卡无比。找客服，发工单说是正常的。没有办法，只好放弃。
-一直闲置到现在，镜缘轩这个网站也一直使用的是云盾的cdn，这几天又忍不住了折腾镜缘轩官网，当时这个就是一个PC+微信小程序的商城，说实话，现在商城的PC端流量少的可怜，商城的销量基本都是小程序贡献的。所以，打算给改版一下，采用企业博客+微信小程序的模式。
-新版的小程序的程序的附件是存到cos上的，看了cos的介绍，发现只免费6个月了，于是还购买了存储包和下行流量包，然后查询了一下，发现2018年注册的是具有永久免费50g的额度的，于是发工单把这些又退掉了。
-又看了看CDN，觉得不用有点可惜了，加上服务器也是腾讯家的，索性把cdn也从云盾转过来好了，结果发现腾讯自家的产品组合的一起，下过好的不得了，速度真是刚刚的。</description>
+      <description>2018年的时候，申请了腾讯的COS，CDN等，因为那时候cos有免费50g的额度，CDN每月10g的免费流量，COS倒是一直用着，cdn因</description>
     </item>
     
   </channel>

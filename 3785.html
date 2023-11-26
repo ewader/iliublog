@@ -7,26 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>crmeb商城后台标题修改方法 | 图南博客</title>
 <meta name="keywords" content="crmeb, 后台, 商城, 标题">
-<meta name="description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。
-今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。
-首先，修改两处文件
-一处在view/admin/src/config/index.js
-另一处在/view/admin/src/router/routes.js
-使用notepad&#43;&#43;打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。
-第二步，打包
-因为用的是H5，所以需要用Nodejs。
-安装Nodejs，官方地址
-文件目录：
-后台文件目录： view / admin/
-打包教程：
-1.本地安装 Nodejs（已安装可以跳过）
-2.进入 命令行，具体方法如下
-windows 系统用户进入 view/admin文件夹后，按住shift &#43; 鼠标右击，点击[在此处打开 Powershell窗口]
-命令行输入npm install或者 npm i
-回车。
-等待安装完成。
-然后
-npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。">
+<meta name="description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://iliu.org/3785.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -75,71 +56,31 @@ npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的�
 
     </style>
 </noscript><meta property="og:title" content="crmeb商城后台标题修改方法" />
-<meta property="og:description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。
-今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。
-首先，修改两处文件
-一处在view/admin/src/config/index.js
-另一处在/view/admin/src/router/routes.js
-使用notepad&#43;&#43;打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。
-第二步，打包
-因为用的是H5，所以需要用Nodejs。
-安装Nodejs，官方地址
-文件目录：
-后台文件目录： view / admin/
-打包教程：
-1.本地安装 Nodejs（已安装可以跳过）
-2.进入 命令行，具体方法如下
-windows 系统用户进入 view/admin文件夹后，按住shift &#43; 鼠标右击，点击[在此处打开 Powershell窗口]
-命令行输入npm install或者 npm i
-回车。
-等待安装完成。
-然后
-npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。" />
+<meta property="og:description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://iliu.org/3785.html" /><meta property="og:image" content="https://iliu.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://iliu.org/3785.html" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-22T07:45:38+00:00" />
 <meta property="article:modified_time" content="2021-06-22T07:45:38+00:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://iliu.org/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="crmeb商城后台标题修改方法"/>
-<meta name="twitter:description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。
-今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。
-首先，修改两处文件
-一处在view/admin/src/config/index.js
-另一处在/view/admin/src/router/routes.js
-使用notepad&#43;&#43;打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。
-第二步，打包
-因为用的是H5，所以需要用Nodejs。
-安装Nodejs，官方地址
-文件目录：
-后台文件目录： view / admin/
-打包教程：
-1.本地安装 Nodejs（已安装可以跳过）
-2.进入 命令行，具体方法如下
-windows 系统用户进入 view/admin文件夹后，按住shift &#43; 鼠标右击，点击[在此处打开 Powershell窗口]
-命令行输入npm install或者 npm i
-回车。
-等待安装完成。
-然后
-npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。"/>
+<meta name="twitter:description" content="crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一"/>
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [, 
+  "itemListElement": [
     {
       "@type": "ListItem",
-      "position":  2 ,
+      "position":  1 ,
       "name": "Posts",
       "item": "https://iliu.org/posts/"
     }, 
     {
       "@type": "ListItem",
-      "position":  3 ,
+      "position":  2 ,
       "name": "crmeb商城后台标题修改方法",
       "item": "https://iliu.org/3785.html"
     }
@@ -152,12 +93,12 @@ npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的�
   "@type": "BlogPosting",
   "headline": "crmeb商城后台标题修改方法",
   "name": "crmeb商城后台标题修改方法",
-  "description": "crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。\n今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。\n首先，修改两处文件\n一处在view/admin/src/config/index.js\n另一处在/view/admin/src/router/routes.js\n使用notepad++打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。\n第二步，打包\n因为用的是H5，所以需要用Nodejs。\n安装Nodejs，官方地址\n文件目录：\n后台文件目录： view / admin/\n打包教程：\n1.本地安装 Nodejs（已安装可以跳过）\n2.进入 命令行，具体方法如下\nwindows 系统用户进入 view/admin文件夹后，按住shift + 鼠标右击，点击[在此处打开 Powershell窗口]\n命令行输入npm install或者 npm i\n回车。\n等待安装完成。\n然后\nnpm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。",
+  "description": "crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一",
   "keywords": [
     "crmeb", "后台", "商城", "标题"
   ],
   "articleBody": "crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一升级，这些玩意又出来了。特别是网页标题的部分，真是让人烦不胜烦。前台使用的uni-app很多人都比较熟悉，标题在哪修改还好说，后台标题虽然问题不大，但是看着怎么都不舒服。\n今天下午没事，又看到了这摊臭狗屎，于是就想把它搞掉。最后终于找出来了方法。\n首先，修改两处文件\n一处在view/admin/src/config/index.js\n另一处在/view/admin/src/router/routes.js\n使用notepad++打开，把里面的CRMEB字样替换成你商城的标题，比如老刘的是镜缘轩眼镜商城。\n第二步，打包\n因为用的是H5，所以需要用Nodejs。\n安装Nodejs，官方地址\n文件目录：\n后台文件目录： view / admin/\n打包教程：\n1.本地安装 Nodejs（已安装可以跳过）\n2.进入 命令行，具体方法如下\nwindows 系统用户进入 view/admin文件夹后，按住shift + 鼠标右击，点击[在此处打开 Powershell窗口]\n命令行输入npm install或者 npm i\n回车。\n等待安装完成。\n然后\nnpm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的文件即可。\n",
-  "wordCount" : "37",
+  "wordCount" : "532",
   "inLanguage": "zh",
   "datePublished": "2021-06-22T07:45:38Z",
   "dateModified": "2021-06-22T07:45:38Z",
@@ -196,7 +137,7 @@ npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的�
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://iliu.org" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <a href="https://iliu.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -258,11 +199,11 @@ npm run build 打包完成后，把dist 文件夹里的文件覆盖后台里的�
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://iliu.org">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://iliu.org/">主页</a>&nbsp;»&nbsp;<a href="https://iliu.org/posts/">Posts</a></div>
     <h1 class="post-title">
       crmeb商城后台标题修改方法
     </h1>
-    <div class="post-meta"><span title='2021-06-22 07:45:38 +0000 +0000'>六月 22, 2021</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘
+    <div class="post-meta"><span title='2021-06-22 07:45:38 +0000 +0000'>2021-06-22</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
 </div>
   </header> 
@@ -372,7 +313,7 @@ windows 系统用户进入 view/admin文件夹后，按住shift + 鼠标右击�
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://iliu.org">图南博客</a></span>
+    <span>&copy; 2023 <a href="https://iliu.org/">图南博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
