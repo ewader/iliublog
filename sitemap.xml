@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://iliu.org/categories/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/posts/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/tags/%E5%85%BB%E7%94%9F/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
+    <loc>https://iliu.org/Miscellaneous-Notes-1/</loc>
+    <lastmod>2023-11-26T14:36:42+08:00</lastmod>
+  </url><url>
     <loc>https://iliu.org/gongyi/</loc>
     <lastmod>2023-11-24T16:28:51+08:00</lastmod>
   </url><url>
@@ -10,15 +34,6 @@
   </url><url>
     <loc>https://iliu.org/about/</loc>
     <lastmod>2023-11-22T22:02:46+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/categories/</loc>
-    <lastmod>2023-11-20T14:55:49+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/posts/</loc>
-    <lastmod>2023-11-20T14:55:49+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/tags/</loc>
-    <lastmod>2023-11-20T14:55:49+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/categories/%E5%BE%B7%E5%85%85%E7%AC%A6/</loc>
     <lastmod>2023-11-20T14:55:49+08:00</lastmod>
@@ -30,9 +45,6 @@
     <lastmod>2023-11-20T14:55:49+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/%E7%94%9F%E7%97%85/</loc>
-    <lastmod>2023-11-20T14:55:49+08:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/</loc>
     <lastmod>2023-11-20T14:55:49+08:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/%E9%98%B3%E6%B0%94/</loc>
@@ -132,9 +144,6 @@
     <lastmod>2023-10-13T06:35:26+00:00</lastmod>
   </url><url>
     <loc>https://iliu.org/tags/%E9%9D%92%E5%85%89%E7%9C%BC/</loc>
-    <lastmod>2023-10-13T06:35:26+00:00</lastmod>
-  </url><url>
-    <loc>https://iliu.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
     <lastmod>2023-10-13T06:35:26+00:00</lastmod>
   </url><url>
     <loc>https://iliu.org/4538.html</loc>
