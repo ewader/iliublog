@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tag on 图南博客</title>
+    <link>https://iliu.org/tags/tag/</link>
+    <description>Recent content in tag on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 28 Nov 2023 18:03:50 +0800</lastBuildDate><atom:link href="https://iliu.org/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>有用还是无用？</title>
+      <link>https://iliu.org/useful-or-not/</link>
+      <pubDate>Tue, 28 Nov 2023 18:03:50 +0800</pubDate>
+      
+      <guid>https://iliu.org/useful-or-not/</guid>
+      <description>如何做一个无用之用的人，才是人生的智慧</description>
+    </item>
+    
+  </channel>
+</rss>
