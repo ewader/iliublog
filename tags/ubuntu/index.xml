@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ubuntu on 图南博客</title>
-    <link>https://iliu.org/tags/ubuntu/</link>
+    <link>https://tunan.org/tags/ubuntu/</link>
     <description>Recent content in ubuntu on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS服务器系统的选择</title>
-      <link>https://iliu.org/4126.html</link>
+      <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4126.html</guid>
+      <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
     
     <item>
       <title>正式使用Manjaro系统</title>
-      <link>https://iliu.org/4036.html</link>
+      <link>https://tunan.org/4036.html</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4036.html</guid>
+      <guid>https://tunan.org/4036.html</guid>
       <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
     
     <item>
       <title>ubuntu20.04开机亮度最大的解决方法及输入法设置</title>
-      <link>https://iliu.org/3951.html</link>
+      <link>https://tunan.org/3951.html</link>
       <pubDate>Mon, 20 Dec 2021 09:20:38 +0000</pubDate>
       
-      <guid>https://iliu.org/3951.html</guid>
+      <guid>https://tunan.org/3951.html</guid>
       <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直</description>
     </item>
     

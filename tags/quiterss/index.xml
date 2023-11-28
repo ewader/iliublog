@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>QuiteRSS on 图南博客</title>
-    <link>https://iliu.org/tags/quiterss/</link>
+    <link>https://tunan.org/tags/quiterss/</link>
     <description>Recent content in QuiteRSS on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/quiterss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/quiterss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐一款免费开源的RSS软件-Quiterss</title>
-      <link>https://iliu.org/3958.html</link>
+      <link>https://tunan.org/3958.html</link>
       <pubDate>Thu, 23 Dec 2021 01:48:37 +0000</pubDate>
       
-      <guid>https://iliu.org/3958.html</guid>
+      <guid>https://tunan.org/3958.html</guid>
       <description>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss</description>
     </item>
     

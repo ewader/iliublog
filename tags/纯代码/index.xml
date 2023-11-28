@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>纯代码 on 图南博客</title>
-    <link>https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/</link>
+    <link>https://tunan.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/</link>
     <description>Recent content in 纯代码 on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Oct 2020 07:27:04 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 07:27:04 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%BA%AF%E4%BB%A3%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>纯代码设置frp服务器</title>
-      <link>https://iliu.org/3340.html</link>
+      <link>https://tunan.org/3340.html</link>
       <pubDate>Sun, 18 Oct 2020 07:27:04 +0000</pubDate>
       
-      <guid>https://iliu.org/3340.html</guid>
+      <guid>https://tunan.org/3340.html</guid>
       <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp</description>
     </item>
     

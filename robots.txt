@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://iliu.org/sitemap.xml
+Sitemap: https://tunan.org/sitemap.xml

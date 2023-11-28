@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>VPS on 图南博客</title>
-    <link>https://iliu.org/tags/vps/</link>
+    <link>https://tunan.org/tags/vps/</link>
     <description>Recent content in VPS on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS服务器系统的选择</title>
-      <link>https://iliu.org/4126.html</link>
+      <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4126.html</guid>
+      <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
     
     <item>
       <title>试用荷兰的liteserverVPS</title>
-      <link>https://iliu.org/3968.html</link>
+      <link>https://tunan.org/3968.html</link>
       <pubDate>Fri, 24 Dec 2021 07:41:31 +0000</pubDate>
       
-      <guid>https://iliu.org/3968.html</guid>
+      <guid>https://tunan.org/3968.html</guid>
       <description>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，</description>
     </item>
     
     <item>
       <title>RSS终于又搞好了</title>
-      <link>https://iliu.org/3769.html</link>
+      <link>https://tunan.org/3769.html</link>
       <pubDate>Sun, 06 Jun 2021 07:21:33 +0000</pubDate>
       
-      <guid>https://iliu.org/3769.html</guid>
+      <guid>https://tunan.org/3769.html</guid>
       <description>前两天买的出去的东西过期了，看了下今年的价格基本上小80一年了，去年才60，感觉再买一年实在是划不来。正好去年的时候买的一台RN的VPS，自</description>
     </item>
     

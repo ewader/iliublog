@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>anytype on 图南博客</title>
-    <link>https://iliu.org/tags/anytype/</link>
+    <link>https://tunan.org/tags/anytype/</link>
     <description>Recent content in anytype on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Oct 2023 01:07:28 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/anytype/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 01:07:28 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/anytype/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>回归简单之笔记软件</title>
-      <link>https://iliu.org/4533.html</link>
+      <link>https://tunan.org/4533.html</link>
       <pubDate>Thu, 12 Oct 2023 01:07:28 +0000</pubDate>
       
-      <guid>https://iliu.org/4533.html</guid>
+      <guid>https://tunan.org/4533.html</guid>
       <description>早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>中国直连线路 on 图南博客</title>
-    <link>https://iliu.org/tags/%E4%B8%AD%E5%9B%BD%E7%9B%B4%E8%BF%9E%E7%BA%BF%E8%B7%AF/</link>
+    <link>https://tunan.org/tags/%E4%B8%AD%E5%9B%BD%E7%9B%B4%E8%BF%9E%E7%BA%BF%E8%B7%AF/</link>
     <description>Recent content in 中国直连线路 on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Oct 2020 02:29:24 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E4%B8%AD%E5%9B%BD%E7%9B%B4%E8%BF%9E%E7%BA%BF%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2020 02:29:24 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%B8%AD%E5%9B%BD%E7%9B%B4%E8%BF%9E%E7%BA%BF%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nodecache开通了中国直连线路</title>
-      <link>https://iliu.org/3283.html</link>
+      <link>https://tunan.org/3283.html</link>
       <pubDate>Sun, 11 Oct 2020 02:29:24 +0000</pubDate>
       
-      <guid>https://iliu.org/3283.html</guid>
+      <guid>https://tunan.org/3283.html</guid>
       <description>在以前的文章（推荐一款国外CDN——Nodecache，注册即送1T流量）中介绍过nodecache这个CDN服务商，当时是注册送1T的流量</description>
     </item>
     

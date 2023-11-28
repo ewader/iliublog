@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>黑群晖 on 图南博客</title>
-    <link>https://iliu.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/</link>
+    <link>https://tunan.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/</link>
     <description>Recent content in 黑群晖 on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jun 2020 10:02:22 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jun 2020 10:02:22 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%BB%91%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NAS算是有点用处了</title>
-      <link>https://iliu.org/3179.html</link>
+      <link>https://tunan.org/3179.html</link>
       <pubDate>Thu, 04 Jun 2020 10:02:22 +0000</pubDate>
       
-      <guid>https://iliu.org/3179.html</guid>
+      <guid>https://tunan.org/3179.html</guid>
       <description>去年的看老张弄NAS，也跟风弄了一个黑群晖，不过弄来之后就基本上处于闲置的状态。想不到用来做什么。存个图片，备份个文件，完事之后就关机，不然</description>
     </item>
     

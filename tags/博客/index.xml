@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>博客 on 图南博客</title>
-    <link>https://iliu.org/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <link>https://tunan.org/tags/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 May 2023 09:18:15 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 May 2023 09:18:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>朋友们，博客改名加换域名了！</title>
-      <link>https://iliu.org/4399.html</link>
+      <link>https://tunan.org/4399.html</link>
       <pubDate>Sun, 21 May 2023 09:18:15 +0000</pubDate>
       
-      <guid>https://iliu.org/4399.html</guid>
+      <guid>https://tunan.org/4399.html</guid>
       <description>流金岁月换域名，换博客名了 最近读《庄子》，对绝云气、负青天、然后图南的大鹏很是羡慕，遂改博客名为图南博客，域名为https://tunan.</description>
     </item>
     
     <item>
       <title>重新弄了下博客环境</title>
-      <link>https://iliu.org/3746.html</link>
+      <link>https://tunan.org/3746.html</link>
       <pubDate>Thu, 20 May 2021 09:30:37 +0000</pubDate>
       
-      <guid>https://iliu.org/3746.html</guid>
+      <guid>https://tunan.org/3746.html</guid>
       <description>最近一段时间发现博客回复的时候一直显示提交中，不会跳转到评论成功的页面，以前也遇到过这种问题，基本上重启vps解决，但是这次貌似重启了也作用</description>
     </item>
     

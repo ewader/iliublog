@@ -2,827 +2,827 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>齐物论 on 图南博客</title>
-    <link>https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</link>
+    <link>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</link>
     <description>Recent content in 齐物论 on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Nov 2023 17:46:57 +0800</lastBuildDate><atom:link href="https://iliu.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 17:46:57 +0800</lastBuildDate><atom:link href="https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>初冬时节话镜片防雾</title>
-      <link>https://iliu.org/Talk-about-lens-anti-fog-in-early-winter/</link>
+      <link>https://tunan.org/Talk-about-lens-anti-fog-in-early-winter/</link>
       <pubDate>Mon, 13 Nov 2023 17:46:57 +0800</pubDate>
       
-      <guid>https://iliu.org/Talk-about-lens-anti-fog-in-early-winter/</guid>
+      <guid>https://tunan.org/Talk-about-lens-anti-fog-in-early-winter/</guid>
       <description>又到了冬天了，你那里飘雪花了吗？来暖气了吗？ 冬天对眼镜佩戴者来说，最烦人的莫过于镜片起雾了。特别是从外面回到家，或者戴口罩的时候。其实现在树</description>
     </item>
     
     <item>
       <title>在群晖中使用tailscale实现内网穿透</title>
-      <link>https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/</link>
+      <link>https://tunan.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/</link>
       <pubDate>Sun, 12 Nov 2023 17:23:22 +0800</pubDate>
       
-      <guid>https://iliu.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/</guid>
+      <guid>https://tunan.org/Using-tailscale-to-achieve-intranet-penetration-in-Synology/</guid>
       <description>在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比</description>
     </item>
     
     <item>
       <title>视光周刊（第十期）：维生素B和眼睛健康</title>
-      <link>https://iliu.org/optics-weekly-issue-10/</link>
+      <link>https://tunan.org/optics-weekly-issue-10/</link>
       <pubDate>Fri, 10 Nov 2023 18:42:36 +0800</pubDate>
       
-      <guid>https://iliu.org/optics-weekly-issue-10/</guid>
+      <guid>https://tunan.org/optics-weekly-issue-10/</guid>
       <description>这里记录每周值得分享的视光内容。周五在光学视界公众号和图南博客发布。本周的主要内容包括：角膜塑形镜的安全性，近视人年老了会不会老花，高度近视</description>
     </item>
     
     <item>
       <title>EndeavourOS安装之后的几件事</title>
-      <link>https://iliu.org/A-few-things-after-installing-EndeavourOS/</link>
+      <link>https://tunan.org/A-few-things-after-installing-EndeavourOS/</link>
       <pubDate>Wed, 08 Nov 2023 18:27:29 +0800</pubDate>
       
-      <guid>https://iliu.org/A-few-things-after-installing-EndeavourOS/</guid>
+      <guid>https://tunan.org/A-few-things-after-installing-EndeavourOS/</guid>
       <description>很多追求新，追求精简的Linux系统的使用者，往往都会推荐Arch Linux，这个系统特点是精简，精简到什么都需要你来搞定，所以也让很多人望</description>
     </item>
     
     <item>
       <title>佩戴角膜塑形镜可引起角膜的这些变化</title>
-      <link>https://iliu.org/Changes-in-the-cornea-after-using-orthokeratology/</link>
+      <link>https://tunan.org/Changes-in-the-cornea-after-using-orthokeratology/</link>
       <pubDate>Tue, 07 Nov 2023 17:19:56 +0800</pubDate>
       
-      <guid>https://iliu.org/Changes-in-the-cornea-after-using-orthokeratology/</guid>
+      <guid>https://tunan.org/Changes-in-the-cornea-after-using-orthokeratology/</guid>
       <description>角膜塑形镜是目前非常流行的一种控制近视的一种手段，从研究的效果来看是目前有效率最高的一种。但是现在各种媒体、医院、各网红眼科医生们却大都默默</description>
     </item>
     
     <item>
       <title>如何使用git并把代码提交到GitHub</title>
-      <link>https://iliu.org/how-to-use-git/</link>
+      <link>https://tunan.org/how-to-use-git/</link>
       <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
       
-      <guid>https://iliu.org/how-to-use-git/</guid>
+      <guid>https://tunan.org/how-to-use-git/</guid>
       <description>这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用</description>
     </item>
     
     <item>
       <title>Hugo-papermod主题的优化记录</title>
-      <link>https://iliu.org/hugo-papermod-modification/</link>
+      <link>https://tunan.org/hugo-papermod-modification/</link>
       <pubDate>Sat, 04 Nov 2023 20:36:45 +0800</pubDate>
       
-      <guid>https://iliu.org/hugo-papermod-modification/</guid>
+      <guid>https://tunan.org/hugo-papermod-modification/</guid>
       <description>在上一篇文章中曾经说到把博客从WordPress转到了Hugo，经过这几天的使用，发现还是很不错的，用起来也比较方便。但是，在使用Paper</description>
     </item>
     
     <item>
       <title>视光周刊（第9期）：年轻的时候近视，年老不花眼？</title>
-      <link>https://iliu.org/optics-weekly-issue-9/</link>
+      <link>https://tunan.org/optics-weekly-issue-9/</link>
       <pubDate>Fri, 03 Nov 2023 15:19:25 +0800</pubDate>
       
-      <guid>https://iliu.org/optics-weekly-issue-9/</guid>
+      <guid>https://tunan.org/optics-weekly-issue-9/</guid>
       <description>这里记录每周值得分享的视光内容。周五在光学视界公众号和图南博客发布。本周的主要内容包括：角膜塑形镜的安全性，近视人年老了会不会老花，高度近视</description>
     </item>
     
     <item>
       <title>从WordPress转到Hugo</title>
-      <link>https://iliu.org/frome-wordpress-to-hugo/</link>
+      <link>https://tunan.org/frome-wordpress-to-hugo/</link>
       <pubDate>Wed, 01 Nov 2023 00:24:17 +0000</pubDate>
       
-      <guid>https://iliu.org/frome-wordpress-to-hugo/</guid>
+      <guid>https://tunan.org/frome-wordpress-to-hugo/</guid>
       <description>在cloudcone上买的VPS马上就要到期了，由于去年买的是黑五预售，比正经黑五的机子要贵20来块钱，而且配置还要低一些。所以，续费是不能</description>
     </item>
     
     <item>
       <title>视光周刊（第5期）：多大浓度的阿托品对防控近视更好？</title>
-      <link>https://iliu.org/4523.html</link>
+      <link>https://tunan.org/4523.html</link>
       <pubDate>Fri, 06 Oct 2023 07:27:39 +0000</pubDate>
       
-      <guid>https://iliu.org/4523.html</guid>
+      <guid>https://tunan.org/4523.html</guid>
       <description>这里记录每周值得分享的视光内容。周五在本人个人博客1和光学视界公众号发布。感谢镜缘轩[2]转载。 投稿可在博客注册用户后在线投稿，或发邮件至：</description>
     </item>
     
     <item>
       <title>视光周刊（第4期）配眼镜到底是为了什么？</title>
-      <link>https://iliu.org/4516.html</link>
+      <link>https://tunan.org/4516.html</link>
       <pubDate>Fri, 29 Sep 2023 12:44:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4516.html</guid>
+      <guid>https://tunan.org/4516.html</guid>
       <description>这里记录每周值得分享的视光内容。周五在本人个人博客和光学视界公众号发布。感谢镜缘轩转载。 投稿可在博客注册用户后在线投稿，或发邮件至：ewad</description>
     </item>
     
     <item>
       <title>视光周刊（第3期）：快要发现外星人了？</title>
-      <link>https://iliu.org/4513.html</link>
+      <link>https://tunan.org/4513.html</link>
       <pubDate>Fri, 22 Sep 2023 01:26:29 +0000</pubDate>
       
-      <guid>https://iliu.org/4513.html</guid>
+      <guid>https://tunan.org/4513.html</guid>
       <description>这里记录每周值得分享的视光内容。周五在本人个人博客图南博客和光学视界公众号发布。 投稿请留言，或发邮件至：ewader@qq.com 封面图 (Image Credit:</description>
     </item>
     
     <item>
       <title>视光周刊（第2期）:谷物是伤害身体的罪魁祸首？</title>
-      <link>https://iliu.org/4504.html</link>
+      <link>https://tunan.org/4504.html</link>
       <pubDate>Fri, 15 Sep 2023 03:42:18 +0000</pubDate>
       
-      <guid>https://iliu.org/4504.html</guid>
+      <guid>https://tunan.org/4504.html</guid>
       <description>这里记录每周值得分享的视光内容，标题来自本周读书的内容。周五在本人个人博客图南博客1和光学视界公众号发布。 投稿请在图南博客2或光学视界公众号</description>
     </item>
     
     <item>
       <title>网页版文明2游戏攻略</title>
-      <link>https://iliu.org/4419.html</link>
+      <link>https://tunan.org/4419.html</link>
       <pubDate>Tue, 04 Jul 2023 08:15:11 +0000</pubDate>
       
-      <guid>https://iliu.org/4419.html</guid>
+      <guid>https://tunan.org/4419.html</guid>
       <description>这几天在玩老张开的网页版的游戏文明2,目前玩到了文艺复兴年代，中间也经历过一些坑，所以写这么一个不是攻略的攻略。 建议刚开始玩的时候选择和平模</description>
     </item>
     
     <item>
       <title>思源笔记群晖正确的部署方法</title>
-      <link>https://iliu.org/4418.html</link>
+      <link>https://tunan.org/4418.html</link>
       <pubDate>Sat, 01 Jul 2023 05:08:24 +0000</pubDate>
       
-      <guid>https://iliu.org/4418.html</guid>
+      <guid>https://tunan.org/4418.html</guid>
       <description>最近一直在选择一款适合自己的笔记软件，最后确定在思源笔记和 Joplin 这两个上面，打算都长期试用一下，比较一下哪个更适合自己。 事情的起因 思源笔记的升级</description>
     </item>
     
     <item>
       <title>笔记软件从trilium到思源or Joplin？</title>
-      <link>https://iliu.org/4412.html</link>
+      <link>https://tunan.org/4412.html</link>
       <pubDate>Thu, 08 Jun 2023 09:25:44 +0000</pubDate>
       
-      <guid>https://iliu.org/4412.html</guid>
+      <guid>https://tunan.org/4412.html</guid>
       <description>前因 从去年开始使用trilium以来，一直对这个笔记软件很满意，虽然有时候也会遇到一些小问题，比如默认的编辑器有时候打中文的时候，会出现多一</description>
     </item>
     
     <item>
       <title>浅谈群晖安全性方面的设置</title>
-      <link>https://iliu.org/4375.html</link>
+      <link>https://tunan.org/4375.html</link>
       <pubDate>Mon, 15 May 2023 07:11:31 +0000</pubDate>
       
-      <guid>https://iliu.org/4375.html</guid>
+      <guid>https://tunan.org/4375.html</guid>
       <description>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖</description>
     </item>
     
     <item>
       <title>那些年,我折腾过的杀毒软件</title>
-      <link>https://iliu.org/4365.html</link>
+      <link>https://tunan.org/4365.html</link>
       <pubDate>Wed, 19 Apr 2023 01:29:27 +0000</pubDate>
       
-      <guid>https://iliu.org/4365.html</guid>
+      <guid>https://tunan.org/4365.html</guid>
       <description>现在电脑虽然普及，但是随着微软系统内置杀毒软件，以及PC的使用率下降等原因，导致杀毒软件的行业也不在如以前繁荣，很多知名的杀毒软件，要么慢慢</description>
     </item>
     
     <item>
       <title>edge浏览器里几个实用的小功能</title>
-      <link>https://iliu.org/4362.html</link>
+      <link>https://tunan.org/4362.html</link>
       <pubDate>Sat, 15 Apr 2023 09:55:19 +0000</pubDate>
       
-      <guid>https://iliu.org/4362.html</guid>
+      <guid>https://tunan.org/4362.html</guid>
       <description>今天从电脑上下载了一个app，一般情况下，传到手机里要么用微信或者QQ，要么用群晖的drive同步，但是今天忽然发现edge浏览器自带的dr</description>
     </item>
     
     <item>
       <title>开始试用小狼毫输入法</title>
-      <link>https://iliu.org/4357.html</link>
+      <link>https://tunan.org/4357.html</link>
       <pubDate>Fri, 14 Apr 2023 04:24:52 +0000</pubDate>
       
-      <guid>https://iliu.org/4357.html</guid>
+      <guid>https://tunan.org/4357.html</guid>
       <description>自从用到win10以来，就开始懒得安装输入法了，毕竟微软拼音已经可以胜任很多的输入了。不过微软输入法有一点不太能容忍的bug是，偶尔会卡系统</description>
     </item>
     
     <item>
       <title>用lnmp安装thinkphp类的程序，文件夹没有权限</title>
-      <link>https://iliu.org/4344.html</link>
+      <link>https://tunan.org/4344.html</link>
       <pubDate>Thu, 06 Apr 2023 09:42:54 +0000</pubDate>
       
-      <guid>https://iliu.org/4344.html</guid>
+      <guid>https://tunan.org/4344.html</guid>
       <description>前几天在安装CRMEB商城的时候，由于不想再用宝塔了，先是选择oneinstack,但是会有一些问题，比如，用www用户无法在终端运行php</description>
     </item>
     
     <item>
       <title>Django设置使用MySql的时候遇到的一些坑</title>
-      <link>https://iliu.org/4298.html</link>
+      <link>https://tunan.org/4298.html</link>
       <pubDate>Fri, 18 Nov 2022 00:17:14 +0000</pubDate>
       
-      <guid>https://iliu.org/4298.html</guid>
+      <guid>https://tunan.org/4298.html</guid>
       <description>Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他</description>
     </item>
     
     <item>
       <title>manjaro的gnome版本升级到43.1了</title>
-      <link>https://iliu.org/4295.html</link>
+      <link>https://tunan.org/4295.html</link>
       <pubDate>Wed, 16 Nov 2022 01:40:50 +0000</pubDate>
       
-      <guid>https://iliu.org/4295.html</guid>
+      <guid>https://tunan.org/4295.html</guid>
       <description>都说使用manjaro最频繁使用的就是命令是 sudo pacman -Syyu 这不，照例这么运行了一下，提示有更新，好家伙下载了1g多，不过更新替换后，系统反而小了1m</description>
     </item>
     
     <item>
       <title>RackNerd的2022年黑五活动</title>
-      <link>https://iliu.org/4292.html</link>
+      <link>https://tunan.org/4292.html</link>
       <pubDate>Tue, 15 Nov 2022 07:47:39 +0000</pubDate>
       
-      <guid>https://iliu.org/4292.html</guid>
+      <guid>https://tunan.org/4292.html</guid>
       <description>今年各大IDC的活动都不如往年，RackNerd也不例外，作为活动狂魔，双11活动刚结束，这不，又来了黑五的活动。 768 MB KVM VPS 1 vCPU Core 10 GB Pure SSD Storage 768</description>
     </item>
     
     <item>
       <title>改用cloudcone的VPS</title>
-      <link>https://iliu.org/4285.html</link>
+      <link>https://tunan.org/4285.html</link>
       <pubDate>Mon, 07 Nov 2022 06:58:25 +0000</pubDate>
       
-      <guid>https://iliu.org/4285.html</guid>
+      <guid>https://tunan.org/4285.html</guid>
       <description>上个月，由于服务器到期加上注销备案，需要找一个便宜、稳定的香港vps，大厂的云又太贵，看双十一也没有打算作活动的意思。后来看老张说起硅云的云</description>
     </item>
     
     <item>
       <title>河南为什么简称豫？</title>
-      <link>https://iliu.org/4229.html</link>
+      <link>https://tunan.org/4229.html</link>
       <pubDate>Wed, 17 Aug 2022 09:58:10 +0000</pubDate>
       
-      <guid>https://iliu.org/4229.html</guid>
+      <guid>https://tunan.org/4229.html</guid>
       <description>昨天送闺女去课外班，路上闺女问我，为啥河南简称豫？ 我听了有点抓瞎，忽然想起小时候，学过一篇课文，叫《黄河像》，于是给闺女说，可能是以前在黄河</description>
     </item>
     
     <item>
       <title>加入51la的优站计划</title>
-      <link>https://iliu.org/4226.html</link>
+      <link>https://tunan.org/4226.html</link>
       <pubDate>Tue, 16 Aug 2022 08:50:32 +0000</pubDate>
       
-      <guid>https://iliu.org/4226.html</guid>
+      <guid>https://tunan.org/4226.html</guid>
       <description>看到好几个站长都在推这个，正好对百度统计也有点不想用了，就试一试51la的统计吧。目前用了大概有一个月的时间，和百度统计比较了一下： 统计出来</description>
     </item>
     
     <item>
       <title>一个对小孩磨牙比较有效中药方子</title>
-      <link>https://iliu.org/4215.html</link>
+      <link>https://tunan.org/4215.html</link>
       <pubDate>Thu, 04 Aug 2022 01:05:24 +0000</pubDate>
       
-      <guid>https://iliu.org/4215.html</guid>
+      <guid>https://tunan.org/4215.html</guid>
       <description>最近一段时间天热，家里如果开俩个空调的话，那电费噌噌的往上涨，所以，这段时间都让女儿睡我们屋里她小时候睡的小床。就发现女儿睡觉不太安稳，牙齿</description>
     </item>
     
     <item>
       <title>群晖安装trilium笔记web端不刷新的处理方法</title>
-      <link>https://iliu.org/4154.html</link>
+      <link>https://tunan.org/4154.html</link>
       <pubDate>Sun, 26 Jun 2022 03:50:24 +0000</pubDate>
       
-      <guid>https://iliu.org/4154.html</guid>
+      <guid>https://tunan.org/4154.html</guid>
       <description>最初装上trilium上之后，发现web端新建笔记或者删除笔记等都不会刷新。也和中文博客群里的少君等人讨论过，也没有得出过什么结论，毕竟环境</description>
     </item>
     
     <item>
       <title>关于笔记软件的选择</title>
-      <link>https://iliu.org/4145.html</link>
+      <link>https://tunan.org/4145.html</link>
       <pubDate>Thu, 23 Jun 2022 02:35:24 +0000</pubDate>
       
-      <guid>https://iliu.org/4145.html</guid>
+      <guid>https://tunan.org/4145.html</guid>
       <description>最近，中文博客圈群里兴起了一股笔记软件的热潮，其实也不是最近，而是一直都有断断续续的讨论。只不过老刘一直以来都是用的群晖note，对我来说，</description>
     </item>
     
     <item>
       <title>使用群晖自动备份网站</title>
-      <link>https://iliu.org/4131.html</link>
+      <link>https://tunan.org/4131.html</link>
       <pubDate>Sat, 28 May 2022 08:23:06 +0000</pubDate>
       
-      <guid>https://iliu.org/4131.html</guid>
+      <guid>https://tunan.org/4131.html</guid>
       <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法</description>
     </item>
     
     <item>
       <title>VPS服务器系统的选择</title>
-      <link>https://iliu.org/4126.html</link>
+      <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4126.html</guid>
+      <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
     
     <item>
       <title>Windows11 如何使用ie浏览器</title>
-      <link>https://iliu.org/4120.html</link>
+      <link>https://tunan.org/4120.html</link>
       <pubDate>Thu, 26 May 2022 01:55:15 +0000</pubDate>
       
-      <guid>https://iliu.org/4120.html</guid>
+      <guid>https://tunan.org/4120.html</guid>
       <description>windows11已经抛弃了ie浏览器，但是有一些场合必须要使用，比如现在各大银行的u盾还不支持edge，有很多同学到处找IE这个软件，其实</description>
     </item>
     
     <item>
       <title>开始使用Argon主题</title>
-      <link>https://iliu.org/4079.html</link>
+      <link>https://tunan.org/4079.html</link>
       <pubDate>Wed, 16 Mar 2022 02:38:21 +0000</pubDate>
       
-      <guid>https://iliu.org/4079.html</guid>
+      <guid>https://tunan.org/4079.html</guid>
       <description>一个月前更换了Dragon主题，当时很多博友都表示有点不适合个人使用，我倒是感觉还行，最起码是把垃圾评论都给屏蔽了，唯一让我不太满意的就是对</description>
     </item>
     
     <item>
       <title>更换为Dragon主题</title>
-      <link>https://iliu.org/4060.html</link>
+      <link>https://tunan.org/4060.html</link>
       <pubDate>Fri, 11 Feb 2022 00:24:05 +0000</pubDate>
       
-      <guid>https://iliu.org/4060.html</guid>
+      <guid>https://tunan.org/4060.html</guid>
       <description>这几天被垃圾评论给盯上了，每天能收到10来个，很烦人。原来的主题虽然也是可以通过增加代码的方式来拦截一些非中文的垃圾评论，但是每次一升级主题</description>
     </item>
     
     <item>
       <title>正式使用Manjaro系统</title>
-      <link>https://iliu.org/4036.html</link>
+      <link>https://tunan.org/4036.html</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
-      <guid>https://iliu.org/4036.html</guid>
+      <guid>https://tunan.org/4036.html</guid>
       <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
     
     <item>
       <title>Django部署在debian11服务器</title>
-      <link>https://iliu.org/4029.html</link>
+      <link>https://tunan.org/4029.html</link>
       <pubDate>Fri, 14 Jan 2022 09:34:09 +0000</pubDate>
       
-      <guid>https://iliu.org/4029.html</guid>
+      <guid>https://tunan.org/4029.html</guid>
       <description>Python加Django开发网页程序真的很方便，连我这个菜鸟看看教程之类的也能写出来程序。本地测试完了之后，想在服务器上跑跑看，结果发现，</description>
     </item>
     
     <item>
       <title>manjaro安装配置fcitx5输入法</title>
-      <link>https://iliu.org/4016.html</link>
+      <link>https://tunan.org/4016.html</link>
       <pubDate>Thu, 06 Jan 2022 09:38:19 +0000</pubDate>
       
-      <guid>https://iliu.org/4016.html</guid>
+      <guid>https://tunan.org/4016.html</guid>
       <description>网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这</description>
     </item>
     
     <item>
       <title>收到支付宝芭芭农场发来的水果</title>
-      <link>https://iliu.org/4004.html</link>
+      <link>https://tunan.org/4004.html</link>
       <pubDate>Mon, 03 Jan 2022 08:11:20 +0000</pubDate>
       
-      <guid>https://iliu.org/4004.html</guid>
+      <guid>https://tunan.org/4004.html</guid>
       <description>昨天中午收到快递打来的电话，由于不在家，让放到了快递柜里。晚上回来的时候又个忘记了，好在放的是菜鸟，要是放丰巢又该收费了。 中午给哪了出来，小</description>
     </item>
     
     <item>
       <title>没有公网IP也能玩转群晖DDNS</title>
-      <link>https://iliu.org/3997.html</link>
+      <link>https://tunan.org/3997.html</link>
       <pubDate>Thu, 30 Dec 2021 02:47:58 +0000</pubDate>
       
-      <guid>https://iliu.org/3997.html</guid>
+      <guid>https://tunan.org/3997.html</guid>
       <description>我们知道，玩群晖，没有公网IP，可玩性就下降很多，虽然可以用QuickConnect，但是速度还是不太理想。其他的内网穿透啊，zerotie</description>
     </item>
     
     <item>
       <title>ubuntu20.10升级编译安装ibus-libpinyin输入法</title>
-      <link>https://iliu.org/3976.html</link>
+      <link>https://tunan.org/3976.html</link>
       <pubDate>Sat, 25 Dec 2021 05:47:41 +0000</pubDate>
       
-      <guid>https://iliu.org/3976.html</guid>
+      <guid>https://tunan.org/3976.html</guid>
       <description>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li</description>
     </item>
     
     <item>
       <title>试用荷兰的liteserverVPS</title>
-      <link>https://iliu.org/3968.html</link>
+      <link>https://tunan.org/3968.html</link>
       <pubDate>Fri, 24 Dec 2021 07:41:31 +0000</pubDate>
       
-      <guid>https://iliu.org/3968.html</guid>
+      <guid>https://tunan.org/3968.html</guid>
       <description>从篱落主机转移到Virmach主机有2多个月了吧，以前一直挂着一个香港的CDN，也不感觉太慢，后来那个CDN有点不稳定了，于是去掉了CDN，</description>
     </item>
     
     <item>
       <title>推荐一款免费开源的RSS软件-Quiterss</title>
-      <link>https://iliu.org/3958.html</link>
+      <link>https://tunan.org/3958.html</link>
       <pubDate>Thu, 23 Dec 2021 01:48:37 +0000</pubDate>
       
-      <guid>https://iliu.org/3958.html</guid>
+      <guid>https://tunan.org/3958.html</guid>
       <description>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss</description>
     </item>
     
     <item>
       <title>ubuntu20.04开机亮度最大的解决方法及输入法设置</title>
-      <link>https://iliu.org/3951.html</link>
+      <link>https://tunan.org/3951.html</link>
       <pubDate>Mon, 20 Dec 2021 09:20:38 +0000</pubDate>
       
-      <guid>https://iliu.org/3951.html</guid>
+      <guid>https://tunan.org/3951.html</guid>
       <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直</description>
     </item>
     
     <item>
       <title>python开发web程序，最好还是在Linux下</title>
-      <link>https://iliu.org/3947.html</link>
+      <link>https://tunan.org/3947.html</link>
       <pubDate>Tue, 14 Dec 2021 12:57:17 +0000</pubDate>
       
-      <guid>https://iliu.org/3947.html</guid>
+      <guid>https://tunan.org/3947.html</guid>
       <description>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。</description>
     </item>
     
     <item>
       <title>linuxmint高分屏设置</title>
-      <link>https://iliu.org/3944.html</link>
+      <link>https://tunan.org/3944.html</link>
       <pubDate>Mon, 13 Dec 2021 06:09:18 +0000</pubDate>
       
-      <guid>https://iliu.org/3944.html</guid>
+      <guid>https://tunan.org/3944.html</guid>
       <description>最近一直使用Linuxmint，如果不是一些必备的软件在Linux下没有，甚至都可以把Windows10卸载了，不过没有办法，有些软件还必须</description>
     </item>
     
     <item>
       <title>转到virmach</title>
-      <link>https://iliu.org/3934.html</link>
+      <link>https://tunan.org/3934.html</link>
       <pubDate>Fri, 05 Nov 2021 04:05:56 +0000</pubDate>
       
-      <guid>https://iliu.org/3934.html</guid>
+      <guid>https://tunan.org/3934.html</guid>
       <description>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，</description>
     </item>
     
     <item>
       <title>用input和字典初步实现我的一点小想法</title>
-      <link>https://iliu.org/3929.html</link>
+      <link>https://tunan.org/3929.html</link>
       <pubDate>Sat, 30 Oct 2021 04:28:51 +0000</pubDate>
       
-      <guid>https://iliu.org/3929.html</guid>
+      <guid>https://tunan.org/3929.html</guid>
       <description>从决心要学Python开始，到现在差不多一周的时间了吧，买了一本《Python编程，从入门到实践》的书，目前看到了第九章，函数篇。 通过上面8</description>
     </item>
     
     <item>
       <title>试用统信uos家庭版</title>
-      <link>https://iliu.org/3927.html</link>
+      <link>https://tunan.org/3927.html</link>
       <pubDate>Fri, 29 Oct 2021 01:22:00 +0000</pubDate>
       
-      <guid>https://iliu.org/3927.html</guid>
+      <guid>https://tunan.org/3927.html</guid>
       <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后</description>
     </item>
     
     <item>
       <title>几种Linux系统安装之后的体验</title>
-      <link>https://iliu.org/3925.html</link>
+      <link>https://tunan.org/3925.html</link>
       <pubDate>Mon, 25 Oct 2021 01:18:46 +0000</pubDate>
       
-      <guid>https://iliu.org/3925.html</guid>
+      <guid>https://tunan.org/3925.html</guid>
       <description>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，</description>
     </item>
     
     <item>
       <title>被百度劲风算法搞了</title>
-      <link>https://iliu.org/3911.html</link>
+      <link>https://tunan.org/3911.html</link>
       <pubDate>Sun, 26 Sep 2021 07:11:19 +0000</pubDate>
       
-      <guid>https://iliu.org/3911.html</guid>
+      <guid>https://tunan.org/3911.html</guid>
       <description>最近几天发现从网站上来咨询老刘的客户少了，以前多的时候有4-5个，少的时候也有1-2个来咨询一些问题，有些成交了，有些没有成交。但是最近一段</description>
     </item>
     
     <item>
       <title>更新群晖至DSM7.0</title>
-      <link>https://iliu.org/3887.html</link>
+      <link>https://tunan.org/3887.html</link>
       <pubDate>Mon, 06 Sep 2021 10:25:46 +0000</pubDate>
       
-      <guid>https://iliu.org/3887.html</guid>
+      <guid>https://tunan.org/3887.html</guid>
       <description>今天上午来到店内，不知道是怎么回事，产生了一些惰性，看到群里小胡同学发的白嫖亚马逊12本的电子书，就去搞了一下，看了会书，也不想更新商城的产</description>
     </item>
     
     <item>
       <title>记录一次疑似被入侵</title>
-      <link>https://iliu.org/3856.html</link>
+      <link>https://tunan.org/3856.html</link>
       <pubDate>Fri, 03 Sep 2021 03:05:41 +0000</pubDate>
       
-      <guid>https://iliu.org/3856.html</guid>
+      <guid>https://tunan.org/3856.html</guid>
       <description>九月一日凌晨0点30分左右，手机收到腾讯云发来的短信： 【腾讯云】尊敬的腾讯云用户，您好！您的腾讯云账号（账号 ID：****\*，昵称：镜缘轩</description>
     </item>
     
     <item>
       <title>cccleaner变流氓了</title>
-      <link>https://iliu.org/3844.html</link>
+      <link>https://tunan.org/3844.html</link>
       <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
       
-      <guid>https://iliu.org/3844.html</guid>
+      <guid>https://tunan.org/3844.html</guid>
       <description>老刘的笔记本电脑自从去年1月份买回来之后，一直也没怎么管过它，最近发现C盘的可用空间已经变的非常的小了，当时给分配了80G，现在只剩下不到1</description>
     </item>
     
     <item>
       <title>放弃百度小程序</title>
-      <link>https://iliu.org/3831.html</link>
+      <link>https://tunan.org/3831.html</link>
       <pubDate>Sat, 31 Jul 2021 04:03:46 +0000</pubDate>
       
-      <guid>https://iliu.org/3831.html</guid>
+      <guid>https://tunan.org/3831.html</guid>
       <description>前几天有了根据主站镜缘轩做一个百度小程序的想法。因为，一直镜缘轩网站没有快速收录的选项。据百度说，弄了小程序就会有了，所以产生了这么一个想法</description>
     </item>
     
     <item>
       <title>一次维修万和热水器的经历</title>
-      <link>https://iliu.org/3817.html</link>
+      <link>https://tunan.org/3817.html</link>
       <pubDate>Thu, 22 Jul 2021 07:42:22 +0000</pubDate>
       
-      <guid>https://iliu.org/3817.html</guid>
+      <guid>https://tunan.org/3817.html</guid>
       <description>说来可笑，我家的热水器因为本次郑州的暴雨而出现了故障。 事情是这样发生的。19日晚，女儿洗澡的时候，我听到热水器的排气扇有声响，没有太注意。1</description>
     </item>
     
     <item>
       <title>微软 Mcrosoft Store打不开的处理方法</title>
-      <link>https://iliu.org/3797.html</link>
+      <link>https://tunan.org/3797.html</link>
       <pubDate>Thu, 01 Jul 2021 11:51:06 +0000</pubDate>
       
-      <guid>https://iliu.org/3797.html</guid>
+      <guid>https://tunan.org/3797.html</guid>
       <description>昨天青山在群里说，微软的好几个软件限时免费送，最搞的一个原来卖300多，本着有便宜就占的风格，赶紧去搞去，结果进微软商店，却打不开，提示代码</description>
     </item>
     
     <item>
       <title>体验鸿蒙HarmonyOS</title>
-      <link>https://iliu.org/3794.html</link>
+      <link>https://tunan.org/3794.html</link>
       <pubDate>Wed, 30 Jun 2021 07:49:01 +0000</pubDate>
       
-      <guid>https://iliu.org/3794.html</guid>
+      <guid>https://tunan.org/3794.html</guid>
       <description>最早的时候，应该是看到了响石潭主任发的升级鸿蒙HarmonyOS的文章。并且响石潭也说，使用起来和原来的系统没有什么区别，就是更流畅了一些。</description>
     </item>
     
     <item>
       <title>奇葩的京东无线宝</title>
-      <link>https://iliu.org/3791.html</link>
+      <link>https://tunan.org/3791.html</link>
       <pubDate>Thu, 24 Jun 2021 10:28:53 +0000</pubDate>
       
-      <guid>https://iliu.org/3791.html</guid>
+      <guid>https://tunan.org/3791.html</guid>
       <description>最近天热起来了，店里的那台竞斗云可能是放到柜子离散热不良的原因，偶尔掉线的情况。于是决定换一款路由器。 选了一圈，后来决定入手京东无线宝2代的</description>
     </item>
     
     <item>
       <title>crmeb商城后台标题修改方法</title>
-      <link>https://iliu.org/3785.html</link>
+      <link>https://tunan.org/3785.html</link>
       <pubDate>Tue, 22 Jun 2021 07:45:38 +0000</pubDate>
       
-      <guid>https://iliu.org/3785.html</guid>
+      <guid>https://tunan.org/3785.html</guid>
       <description>crmeb这款商城程序怎么说呢，价格便宜（当年），ui还行，功能基本完备。但是最让人诟病的就是crmeb这个字样到处都是，修改完了，等下次一</description>
     </item>
     
     <item>
       <title>RSS终于又搞好了</title>
-      <link>https://iliu.org/3769.html</link>
+      <link>https://tunan.org/3769.html</link>
       <pubDate>Sun, 06 Jun 2021 07:21:33 +0000</pubDate>
       
-      <guid>https://iliu.org/3769.html</guid>
+      <guid>https://tunan.org/3769.html</guid>
       <description>前两天买的出去的东西过期了，看了下今年的价格基本上小80一年了，去年才60，感觉再买一年实在是划不来。正好去年的时候买的一台RN的VPS，自</description>
     </item>
     
     <item>
       <title>RackNerd的6.18活动出来了</title>
-      <link>https://iliu.org/3766.html</link>
+      <link>https://tunan.org/3766.html</link>
       <pubDate>Fri, 04 Jun 2021 02:30:17 +0000</pubDate>
       
-      <guid>https://iliu.org/3766.html</guid>
+      <guid>https://tunan.org/3766.html</guid>
       <description>前几天老刘总结了下RackNerd的使用情况，总体来说还是不错的，可惜的是，老刘刚弄了个梯子，第二天就被封了，期待过几天给解封吧。详情见：《</description>
     </item>
     
     <item>
       <title>深度deepin os 20.2.1初体验</title>
-      <link>https://iliu.org/3757.html</link>
+      <link>https://tunan.org/3757.html</link>
       <pubDate>Wed, 26 May 2021 07:30:38 +0000</pubDate>
       
-      <guid>https://iliu.org/3757.html</guid>
+      <guid>https://tunan.org/3757.html</guid>
       <description>昨天用一副康耐特防蓝光镜片换了一台2012年的联想Z475 ，AMD A6的四核CPU，他自己又给加了4G的内存。也就是说4H8G，说实话电脑是</description>
     </item>
     
     <item>
       <title>RackNerd使用情况小结</title>
-      <link>https://iliu.org/3749.html</link>
+      <link>https://tunan.org/3749.html</link>
       <pubDate>Fri, 21 May 2021 06:51:01 +0000</pubDate>
       
-      <guid>https://iliu.org/3749.html</guid>
+      <guid>https://tunan.org/3749.html</guid>
       <description>RackNerd的vps相当的便宜，像老刘这款2h2g的一年不到20美元。有很多人说RackNerd是跑路的四大金刚创办的，到底是不是也没有</description>
     </item>
     
     <item>
       <title>重新弄了下博客环境</title>
-      <link>https://iliu.org/3746.html</link>
+      <link>https://tunan.org/3746.html</link>
       <pubDate>Thu, 20 May 2021 09:30:37 +0000</pubDate>
       
-      <guid>https://iliu.org/3746.html</guid>
+      <guid>https://tunan.org/3746.html</guid>
       <description>最近一段时间发现博客回复的时候一直显示提交中，不会跳转到评论成功的页面，以前也遇到过这种问题，基本上重启vps解决，但是这次貌似重启了也作用</description>
     </item>
     
     <item>
       <title>如何禁止浏览器读取手机号码？</title>
-      <link>https://iliu.org/3714.html</link>
+      <link>https://tunan.org/3714.html</link>
       <pubDate>Wed, 24 Mar 2021 01:46:06 +0000</pubDate>
       
-      <guid>https://iliu.org/3714.html</guid>
+      <guid>https://tunan.org/3714.html</guid>
       <description>昨天一位朋友问老刘，如何才能禁止浏览器读取手机号码的问题，据朋友所说，遇到了一个细思极恐的事情。原来，朋友前两天在网上查找过关于***的产品</description>
     </item>
     
     <item>
       <title>收到Google adsense验证码</title>
-      <link>https://iliu.org/3687.html</link>
+      <link>https://tunan.org/3687.html</link>
       <pubDate>Sat, 20 Feb 2021 01:38:02 +0000</pubDate>
       
-      <guid>https://iliu.org/3687.html</guid>
+      <guid>https://tunan.org/3687.html</guid>
       <description>去年10月份的时候，Google adsense的余额到了10块钱，然后Google提示说发了一个验证码的信件。老刘查看了一下地址发现，地址是</description>
     </item>
     
     <item>
       <title>饮水机隔段还是要彻底清洗一遍的</title>
-      <link>https://iliu.org/3645.html</link>
+      <link>https://tunan.org/3645.html</link>
       <pubDate>Fri, 05 Feb 2021 02:43:34 +0000</pubDate>
       
-      <guid>https://iliu.org/3645.html</guid>
+      <guid>https://tunan.org/3645.html</guid>
       <description>早上吃过饭，由于女儿有一节线上的数学课，自己待在家里也没事，就寻思找点事做。发现饮水机该清洗一下了，也幸亏清洗了一下，彻底清洗还是蛮脏的，尽</description>
     </item>
     
     <item>
       <title>试用urlos</title>
-      <link>https://iliu.org/3597.html</link>
+      <link>https://tunan.org/3597.html</link>
       <pubDate>Thu, 21 Jan 2021 09:10:01 +0000</pubDate>
       
-      <guid>https://iliu.org/3597.html</guid>
+      <guid>https://tunan.org/3597.html</guid>
       <description>老刘一直用的是oneinstack这个命令行面板，其实也够用了。但是后来弄了一个在线商城，这个开发者基本上是以宝塔的环境来开发的，安装教程等</description>
     </item>
     
     <item>
       <title>捡漏注册了个l22.org的域名</title>
-      <link>https://iliu.org/3561.html</link>
+      <link>https://tunan.org/3561.html</link>
       <pubDate>Sun, 10 Jan 2021 09:05:27 +0000</pubDate>
       
-      <guid>https://iliu.org/3561.html</guid>
+      <guid>https://tunan.org/3561.html</guid>
       <description>前两天的时候，登陆name.com查看域名有没有转移过去，忽然发现这个网站有一个最近删除域名的链接。好奇之下点开看了一下，发现有很多，好在有</description>
     </item>
     
     <item>
       <title>把域名从阿里云转出到name.com的方法</title>
-      <link>https://iliu.org/3545.html</link>
+      <link>https://tunan.org/3545.html</link>
       <pubDate>Sun, 03 Jan 2021 08:33:54 +0000</pubDate>
       
-      <guid>https://iliu.org/3545.html</guid>
+      <guid>https://tunan.org/3545.html</guid>
       <description>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。 首先，登录阿里云的后</description>
     </item>
     
     <item>
       <title>博客web端改用apache</title>
-      <link>https://iliu.org/3520.html</link>
+      <link>https://tunan.org/3520.html</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
       
-      <guid>https://iliu.org/3520.html</guid>
+      <guid>https://tunan.org/3520.html</guid>
       <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
     </item>
     
     <item>
       <title>nginx使用CDN后获取用户真实IP的方法</title>
-      <link>https://iliu.org/3486.html</link>
+      <link>https://tunan.org/3486.html</link>
       <pubDate>Mon, 21 Dec 2020 07:15:11 +0000</pubDate>
       
-      <guid>https://iliu.org/3486.html</guid>
+      <guid>https://tunan.org/3486.html</guid>
       <description>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的</description>
     </item>
     
     <item>
       <title>流金岁月启用新域名</title>
-      <link>https://iliu.org/3470.html</link>
+      <link>https://tunan.org/3470.html</link>
       <pubDate>Thu, 17 Dec 2020 10:17:17 +0000</pubDate>
       
-      <guid>https://iliu.org/3470.html</guid>
+      <guid>https://tunan.org/3470.html</guid>
       <description>经过一番考虑，决定启用新域名 iliu.org 一是域名较短，二是本人对org情有独钟。这也将是老刘最后一次换域名了。 所以，麻烦有老刘友情链接的改下地址，（貌</description>
     </item>
     
     <item>
       <title>试用了一下火雨壁纸</title>
-      <link>https://iliu.org/3456.html</link>
+      <link>https://tunan.org/3456.html</link>
       <pubDate>Mon, 07 Dec 2020 03:41:01 +0000</pubDate>
       
-      <guid>https://iliu.org/3456.html</guid>
+      <guid>https://tunan.org/3456.html</guid>
       <description>年纪大了，想改变下一成不变的桌面。以前一直用bing官方出的一个小工具。直接对接bing的每日一图，不知道是不是因为时差的原因，和每天发布的</description>
     </item>
     
     <item>
       <title>keepass加群辉实现数据同步及浏览器自动填充密码（二）</title>
-      <link>https://iliu.org/3430.html</link>
+      <link>https://tunan.org/3430.html</link>
       <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
       
-      <guid>https://iliu.org/3430.html</guid>
+      <guid>https://tunan.org/3430.html</guid>
       <description>自从前两天体验了keepass的方便后，真的是对这个软件爱不释手了。但是在上一篇中，总体设置较为复杂，而且使用当中发现了诸多不方便之处。虽然</description>
     </item>
     
     <item>
       <title>keepass配合群晖及keepasshttp实现密码快速登陆</title>
-      <link>https://iliu.org/3413.html</link>
+      <link>https://tunan.org/3413.html</link>
       <pubDate>Thu, 26 Nov 2020 09:10:34 +0000</pubDate>
       
-      <guid>https://iliu.org/3413.html</guid>
+      <guid>https://tunan.org/3413.html</guid>
       <description>前两天看老张老师到处寻找管理密码的软件，老刘由于一直在使用Norton的密码管理，所以没有在意，后来发现Norton的服务器链接较慢，使用起</description>
     </item>
     
     <item>
       <title>捋一捋中国邮电发展过程</title>
-      <link>https://iliu.org/3395.html</link>
+      <link>https://tunan.org/3395.html</link>
       <pubDate>Sun, 22 Nov 2020 03:18:49 +0000</pubDate>
       
-      <guid>https://iliu.org/3395.html</guid>
+      <guid>https://tunan.org/3395.html</guid>
       <description>前几天看到一个“新闻”，说中国电信业的三大运营商的一把手是轮流坐庄，可谓肥水不落外人田。其实捋清中国电信业的发展历程，人家还真的就是一家人。</description>
     </item>
     
     <item>
       <title>停止使用RSS Feed</title>
-      <link>https://iliu.org/3364.html</link>
+      <link>https://tunan.org/3364.html</link>
       <pubDate>Thu, 29 Oct 2020 08:35:05 +0000</pubDate>
       
-      <guid>https://iliu.org/3364.html</guid>
+      <guid>https://tunan.org/3364.html</guid>
       <description>由于种种原因，一直在使用RSS Feed订阅诸多博友的博客。但是由于众所周知的原因。现在使用Feed非常的不方便，要想愉快的使用，必须就要挂着</description>
     </item>
     
     <item>
       <title>zerotier加openwrt路由实现内网穿透控制群晖</title>
-      <link>https://iliu.org/3356.html</link>
+      <link>https://tunan.org/3356.html</link>
       <pubDate>Sat, 24 Oct 2020 07:49:34 +0000</pubDate>
       
-      <guid>https://iliu.org/3356.html</guid>
+      <guid>https://tunan.org/3356.html</guid>
       <description>刚开始完群晖的时候，写过一片使用zerotier进行内网穿透实现连接群晖的功能。详情《使用zerotier进行内网穿透 》但是后来升级移动宽带</description>
     </item>
     
     <item>
       <title>纯代码设置frp服务器</title>
-      <link>https://iliu.org/3340.html</link>
+      <link>https://tunan.org/3340.html</link>
       <pubDate>Sun, 18 Oct 2020 07:27:04 +0000</pubDate>
       
-      <guid>https://iliu.org/3340.html</guid>
+      <guid>https://tunan.org/3340.html</guid>
       <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp</description>
     </item>
     
     <item>
       <title>打造一个安全的宝塔面板服务器环境</title>
-      <link>https://iliu.org/3326.html</link>
+      <link>https://tunan.org/3326.html</link>
       <pubDate>Sat, 17 Oct 2020 03:50:44 +0000</pubDate>
       
-      <guid>https://iliu.org/3326.html</guid>
+      <guid>https://tunan.org/3326.html</guid>
       <description>很多人都戏称宝塔面板为bug塔面板，特别是前几天出现的phpmyadmin事件，似乎更进一步的坐实了bug塔bug的地位，但是平信而论，经过</description>
     </item>
     
     <item>
       <title>网站换了一台服务器</title>
-      <link>https://iliu.org/3309.html</link>
+      <link>https://tunan.org/3309.html</link>
       <pubDate>Wed, 14 Oct 2020 07:03:04 +0000</pubDate>
       
-      <guid>https://iliu.org/3309.html</guid>
+      <guid>https://tunan.org/3309.html</guid>
       <description>前几天发现网站有点卡，特别是回复评论的时候，速度很慢。然后后台看了一下进程，发现WWW进程占用的CPU会一下一下的飙升，最高的时候达到了10</description>
     </item>
     
     <item>
       <title>nodecache开通了中国直连线路</title>
-      <link>https://iliu.org/3283.html</link>
+      <link>https://tunan.org/3283.html</link>
       <pubDate>Sun, 11 Oct 2020 02:29:24 +0000</pubDate>
       
-      <guid>https://iliu.org/3283.html</guid>
+      <guid>https://tunan.org/3283.html</guid>
       <description>在以前的文章（推荐一款国外CDN——Nodecache，注册即送1T流量）中介绍过nodecache这个CDN服务商，当时是注册送1T的流量</description>
     </item>
     
     <item>
       <title>一款可以设置Microsoft Defender的辅助软件</title>
-      <link>https://iliu.org/3279.html</link>
+      <link>https://tunan.org/3279.html</link>
       <pubDate>Sat, 10 Oct 2020 07:53:31 +0000</pubDate>
       
-      <guid>https://iliu.org/3279.html</guid>
+      <guid>https://tunan.org/3279.html</guid>
       <description>自从Windows 10推出以来，微软的Microsoft Defender已经可以作为一款合格的杀毒软件来使用了，但是微软为了平衡误杀和安全之</description>
     </item>
     
     <item>
       <title>网易词典笔2.0简单开箱</title>
-      <link>https://iliu.org/3268.html</link>
+      <link>https://tunan.org/3268.html</link>
       <pubDate>Sun, 20 Sep 2020 02:19:37 +0000</pubDate>
       
-      <guid>https://iliu.org/3268.html</guid>
+      <guid>https://tunan.org/3268.html</guid>
       <description>前端时间给女儿买了一套《书虫》系列和《疯狂校园》系列的英语读本。书虫还好，句子比较简单，有些单词就算不认识，根据上下文的关系以及后面的生词表</description>
     </item>
     
     <item>
       <title>卖出去了一个域名</title>
-      <link>https://iliu.org/3264.html</link>
+      <link>https://tunan.org/3264.html</link>
       <pubDate>Thu, 17 Sep 2020 00:38:20 +0000</pubDate>
       
-      <guid>https://iliu.org/3264.html</guid>
+      <guid>https://tunan.org/3264.html</guid>
       <description>昨天晚上给女儿辅导完作业，顺手拿起手机看看群里的信息什么的。忽然发现有一封新邮件。点开一看，发现是西部数码发过来的： 尊敬的用户： 您发布的一口</description>
     </item>
     
     <item>
       <title>从宝塔面板换成oneinstack踩的一个坑</title>
-      <link>https://iliu.org/3240.html</link>
+      <link>https://tunan.org/3240.html</link>
       <pubDate>Thu, 27 Aug 2020 03:25:28 +0000</pubDate>
       
-      <guid>https://iliu.org/3240.html</guid>
+      <guid>https://tunan.org/3240.html</guid>
       <description>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板</description>
     </item>
     
     <item>
       <title>腾讯的CDN还是可以的</title>
-      <link>https://iliu.org/3217.html</link>
+      <link>https://tunan.org/3217.html</link>
       <pubDate>Fri, 24 Jul 2020 09:35:42 +0000</pubDate>
       
-      <guid>https://iliu.org/3217.html</guid>
+      <guid>https://tunan.org/3217.html</guid>
       <description>2018年的时候，申请了腾讯的COS，CDN等，因为那时候cos有免费50g的额度，CDN每月10g的免费流量，COS倒是一直用着，cdn因</description>
     </item>
     
     <item>
       <title>人教版五年级下册数学易错题集</title>
-      <link>https://iliu.org/3197.html</link>
+      <link>https://tunan.org/3197.html</link>
       <pubDate>Sun, 28 Jun 2020 07:25:45 +0000</pubDate>
       
-      <guid>https://iliu.org/3197.html</guid>
+      <guid>https://tunan.org/3197.html</guid>
       <description>填空类（一） 1．把 5 米长的绳子平均剪成 4 段，每段长（ ）米，每段是全长的（ ）。 2．把 3kg 水果平均分给 4 个小朋友，每个小朋友分得这 3kg 水果的（ ），每</description>
     </item>
     
     <item>
       <title>给鱼缸上了沼泽过滤</title>
-      <link>https://iliu.org/3167.html</link>
+      <link>https://tunan.org/3167.html</link>
       <pubDate>Wed, 27 May 2020 02:13:32 +0000</pubDate>
       
-      <guid>https://iliu.org/3167.html</guid>
+      <guid>https://tunan.org/3167.html</guid>
       <description>一个多月前，买了几条草金，pdd上买的。由于原来的那个玻璃鱼缸有点小，而且我是一个很懒的人，对清理鱼缸壁上的绿苔深恶痛绝。所以，决定换一个陶</description>
     </item>
     

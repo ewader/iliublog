@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Active Back for Business on 图南博客</title>
-    <link>https://iliu.org/tags/active-back-for-business/</link>
+    <link>https://tunan.org/tags/active-back-for-business/</link>
     <description>Recent content in Active Back for Business on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 May 2022 08:23:06 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/active-back-for-business/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 08:23:06 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/active-back-for-business/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用群晖自动备份网站</title>
-      <link>https://iliu.org/4131.html</link>
+      <link>https://tunan.org/4131.html</link>
       <pubDate>Sat, 28 May 2022 08:23:06 +0000</pubDate>
       
-      <guid>https://iliu.org/4131.html</guid>
+      <guid>https://tunan.org/4131.html</guid>
       <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法</description>
     </item>
     

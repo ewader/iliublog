@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>真实ip on 图南博客</title>
-    <link>https://iliu.org/tags/%E7%9C%9F%E5%AE%9Eip/</link>
+    <link>https://tunan.org/tags/%E7%9C%9F%E5%AE%9Eip/</link>
     <description>Recent content in 真实ip on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/%E7%9C%9F%E5%AE%9Eip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%9C%9F%E5%AE%9Eip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客web端改用apache</title>
-      <link>https://iliu.org/3520.html</link>
+      <link>https://tunan.org/3520.html</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
       
-      <guid>https://iliu.org/3520.html</guid>
+      <guid>https://tunan.org/3520.html</guid>
       <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
     </item>
     
     <item>
       <title>nginx使用CDN后获取用户真实IP的方法</title>
-      <link>https://iliu.org/3486.html</link>
+      <link>https://tunan.org/3486.html</link>
       <pubDate>Mon, 21 Dec 2020 07:15:11 +0000</pubDate>
       
-      <guid>https://iliu.org/3486.html</guid>
+      <guid>https://tunan.org/3486.html</guid>
       <description>老刘前两天弄了个racknerd的便宜的vps，准备把一个网站放到这个vps上，再顺便把篱落的这台VPS好好的整理一下，当时装系统的时候装的</description>
     </item>
     

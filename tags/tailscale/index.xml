@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tailscale on 图南博客</title>
-    <link>https://iliu.org/tags/tailscale/</link>
+    <link>https://tunan.org/tags/tailscale/</link>
     <description>Recent content in Tailscale on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Oct 2023 10:13:38 +0000</lastBuildDate><atom:link href="https://iliu.org/tags/tailscale/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Oct 2023 10:13:38 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/tailscale/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>回归简单的方式</title>
-      <link>https://iliu.org/4527.html</link>
+      <link>https://tunan.org/4527.html</link>
       <pubDate>Tue, 10 Oct 2023 10:13:38 +0000</pubDate>
       
-      <guid>https://iliu.org/4527.html</guid>
+      <guid>https://tunan.org/4527.html</guid>
       <description>博客圈里其实都是一群喜欢折腾的人,而且掌控欲很强，想要实现的东西，首先第一反应是：是不是可以自己部署。这样的好处是，所有的数据都是私人的数据</description>
     </item>
     
