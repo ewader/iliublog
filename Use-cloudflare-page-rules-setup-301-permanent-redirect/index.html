@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>利用cloudflare页面规则设置301永久跳转 | 图南博客</title>
 <meta name="keywords" content="301, cloudflare">
-<meta name="description" content="Desc Text.">
+<meta name="description" content="利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。">
 <meta name="author" content="老刘">
 <link rel="canonical" href="https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -56,7 +56,7 @@
 
     </style>
 </noscript><meta property="og:title" content="利用cloudflare页面规则设置301永久跳转" />
-<meta property="og:description" content="Desc Text." />
+<meta property="og:description" content="利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-12-01T15:45:19+08:00" />
@@ -64,7 +64,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="利用cloudflare页面规则设置301永久跳转"/>
-<meta name="twitter:description" content="Desc Text."/>
+<meta name="twitter:description" content="利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。"/>
 
 
 <script type="application/ld+json">
@@ -93,11 +93,11 @@
   "@type": "BlogPosting",
   "headline": "利用cloudflare页面规则设置301永久跳转",
   "name": "利用cloudflare页面规则设置301永久跳转",
-  "description": "Desc Text.",
+  "description": "利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。",
   "keywords": [
      301 , "cloudflare"
   ],
-  "articleBody": "前言 细心的读者可能已经发现，图南博客的域名已经由iliu.org 更换到tunan.org。这个域名是之前在Google注册的，可惜的80端口被墙了，也不知道怎么实现域名的80端口被墙。暂时的使用一段时间后还是使用了原域名。\n前两天的时候，就感觉还是需要用tunan这个域名，和博客的名字比较搭配，而且用了ssl之后，网站走的443端口，基本上也不会影响什么，所以就切换了过来。\n换域名之后另一个需要的解决的事情是要把iliu.org的网址301跳转到新网站，以前用VPS的时候，直接在nginx里设置，现在不用vps了，有没有别的方法呢？答案是肯定的，而且比vps更方便。那就是使用Cloudflare的页面规则进行跳转。\n方法 进入到cloudflare的个人中心，点击需要跳转的网站域名，点击DNS。 把域名解析到8.8.8.8，当然你解析到1.1.1.1也是可以的。然后点击规则，再点击页面规则。具体的设置如下图： 这样，就把iliu.org这个网站的网址，按照同样的规则，跳转到了tunan.org这个网站。\n使用免费的cloudflare一个域名只有3个免费的页面规则，因此还有另外一个方法也可以实现，那就是利用cloudflare的workers。\n进入到cloudflare的后台后，点击Workers 和 Pages。\n点击创建应用程序,再点击创建workers：把下面的代码修改一下，复制到代码区保存。\n/** * Welcome to Cloudflare Workers! This is your first worker. * * - Run \"npm run dev\" in your terminal to start a development server * - Open a browser tab at http://localhost:8787/ to see your worker in action * - Run \"npm run deploy\" to publish your worker * * Learn more at https://developers.cloudflare.com/workers/ */ // Redirect requests from one domain to another const base = \"https://tunan.org\" const statusCode = 301 async function handleRequest(request) { const url = new URL(request.url) const { pathname, search } = url const destinationURL = base + pathname + search return Response.redirect(destinationURL, statusCode) } addEventListener(\"fetch\", async event =\u003e { event.respondWith(handleRequest(event.request)) }) 上面秩序把域名化成你的域名，然后设置workers的域名是你要转出的域名即可。\n",
+  "articleBody": "前言 细心的读者可能已经发现，图南博客的域名已经由iliu.org 更换到tunan.org。这个域名是之前在Google注册的，可惜的80端口被墙了，也不知道是怎么实现强域名80端口的。于是在暂时使用一段时间后又使用了原域名。\n前两天的时候，感觉还是需要用tunan这个域名，和博客的名字比较搭配，而且用了ssl之后，网站走的443端口，基本上也不会影响什么，所以就切换了过来。\n换域名之后另一个需要的解决的事情是要把iliu.org的网址301跳转到新网站，以前用VPS的时候，直接在nginx里设置，现在不用vps了，有没有别的方法呢？答案是肯定的，而且比vps更方便。那就是使用Cloudflare的页面规则进行跳转。\n方法 进入到cloudflare的个人中心，点击需要跳转的网站域名，点击DNS。 把域名解析到8.8.8.8，当然你解析到1.1.1.1也是可以的。然后点击规则，再点击页面规则。具体的设置如下图： 这样，就把iliu.org这个网站的网址，按照同样的规则，跳转到了tunan.org这个网站。\n使用免费的cloudflare一个域名只有3个免费的页面规则，因此还有另外一个方法也可以实现，那就是利用cloudflare的workers。\n进入到cloudflare的后台后，点击Workers 和 Pages。\n点击创建应用程序,再点击创建workers：把下面的代码修改一下，复制到代码区保存。\n/** * Welcome to Cloudflare Workers! This is your first worker. * * - Run \"npm run dev\" in your terminal to start a development server * - Open a browser tab at http://localhost:8787/ to see your worker in action * - Run \"npm run deploy\" to publish your worker * * Learn more at https://developers.cloudflare.com/workers/ */ // Redirect requests from one domain to another const base = \"https://tunan.org\" const statusCode = 301 async function handleRequest(request) { const url = new URL(request.url) const { pathname, search } = url const destinationURL = base + pathname + search return Response.redirect(destinationURL, statusCode) } addEventListener(\"fetch\", async event =\u003e { event.respondWith(handleRequest(event.request)) }) 上面秩序把域名化成你的域名，然后设置workers的域名是你要转出的域名即可。\n",
   "wordCount" : "746",
   "inLanguage": "zh",
   "datePublished": "2023-12-01T15:45:19+08:00",
@@ -199,7 +199,7 @@
       利用cloudflare页面规则设置301永久跳转
     </h1>
     <div class="post-description">
-      Desc Text.
+      利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。
     </div>
     <div class="post-meta"><span title='2023-12-01 15:45:19 +0800 CST'>2023-12-01</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘
 
@@ -222,8 +222,8 @@
 </div>
 
   <div class="post-content"><h2 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h2>
-<p>细心的读者可能已经发现，图南博客的域名已经由<code>iliu.org</code> 更换到<code>tunan.org</code>。这个域名是之前在<code>Google</code>注册的，可惜的80端口被墙了，也不知道怎么实现域名的80端口被墙。暂时的使用一段时间后还是使用了原域名。</p>
-<p>前两天的时候，就感觉还是需要用tunan这个域名，和博客的名字比较搭配，而且用了ssl之后，网站走的443端口，基本上也不会影响什么，所以就切换了过来。</p>
+<p>细心的读者可能已经发现，图南博客的域名已经由<code>iliu.org</code> 更换到<code>tunan.org</code>。这个域名是之前在<code>Google</code>注册的，可惜的80端口被墙了，也不知道是怎么实现强域名80端口的。于是在暂时使用一段时间后又使用了原域名。</p>
+<p>前两天的时候，感觉还是需要用tunan这个域名，和博客的名字比较搭配，而且用了ssl之后，网站走的443端口，基本上也不会影响什么，所以就切换了过来。</p>
 <p>换域名之后另一个需要的解决的事情是要把<code>iliu.org</code>的网址301跳转到新网站，以前用VPS的时候，直接在<code>nginx</code>里设置，现在不用vps了，有没有别的方法呢？答案是肯定的，而且比vps更方便。那就是使用<code>Cloudflare</code>的页面规则进行跳转。</p>
 <h2 id="方法">方法<a hidden class="anchor" aria-hidden="true" href="#方法">#</a></h2>
 <p>进入到<code>cloudflare</code>的个人中心，点击需要跳转的网站域名，点击DNS。
