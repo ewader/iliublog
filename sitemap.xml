@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tunan.org/categories/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/posts/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/tags/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/categories/%E5%BE%B7%E5%85%85%E7%AC%A6/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/tags/%E5%B7%AB/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/about-wu/</loc>
+    <lastmod>2023-12-04T09:16:57+08:00</lastmod>
+  </url><url>
     <loc>https://tunan.org/tags/301/</loc>
     <lastmod>2023-12-01T15:45:19+08:00</lastmod>
   </url><url>
-    <loc>https://tunan.org/categories/</loc>
-    <lastmod>2023-12-01T15:45:19+08:00</lastmod>
-  </url><url>
     <loc>https://tunan.org/tags/cloudflare/</loc>
-    <lastmod>2023-12-01T15:45:19+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/posts/</loc>
-    <lastmod>2023-12-01T15:45:19+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/</loc>
     <lastmod>2023-12-01T15:45:19+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</loc>
@@ -22,12 +34,6 @@
   </url><url>
     <loc>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</loc>
     <lastmod>2023-12-01T15:45:19+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/</loc>
-    <lastmod>2023-12-01T15:45:19+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/categories/%E5%BE%B7%E5%85%85%E7%AC%A6/</loc>
-    <lastmod>2023-11-28T18:03:50+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E6%84%9F%E6%82%9F/</loc>
     <lastmod>2023-11-28T18:03:50+08:00</lastmod>

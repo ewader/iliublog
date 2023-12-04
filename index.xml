@@ -6,7 +6,16 @@
     <description>Recent content on 图南博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Dec 2023 15:45:19 +0800</lastBuildDate><atom:link href="https://tunan.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 09:16:57 +0800</lastBuildDate><atom:link href="https://tunan.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>巫</title>
+      <link>https://tunan.org/about-wu/</link>
+      <pubDate>Mon, 04 Dec 2023 09:16:57 +0800</pubDate>
+      
+      <guid>https://tunan.org/about-wu/</guid>
+      <description>任何一种事物，职业也好，其他也好，都不可能是一成不变的。变化才是宇宙唯一不变的法则。至于巫，他辉煌过，这就够了。至于遗憾，大可不必。毕竟现在巫确实是骗子的代名词。</description>
+    </item>
+    
     <item>
       <title>利用cloudflare页面规则设置301永久跳转</title>
       <link>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</link>
