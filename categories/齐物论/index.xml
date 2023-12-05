@@ -98,6 +98,24 @@
     </item>
     
     <item>
+      <title>视光周刊（第8期):电子产品对眼睛就只有坏处吗？</title>
+      <link>https://tunan.org/optics-weekly-issue-8/</link>
+      <pubDate>Fri, 27 Oct 2023 02:24:17 +0000</pubDate>
+      
+      <guid>https://tunan.org/optics-weekly-issue-8/</guid>
+      <description>这里记录每周值得分享的视光内容。周五在光学视界公众号和图南博客发布。 投稿可在图南博客注册用户后在线投稿，或发邮件至：ewader@qq.co</description>
+    </item>
+    
+    <item>
+      <title>视光周刊（第7期）：你拥有几副眼镜或者太阳镜？</title>
+      <link>https://tunan.org/4539.html</link>
+      <pubDate>Wed, 25 Oct 2023 00:23:10 +0000</pubDate>
+      
+      <guid>https://tunan.org/4539.html</guid>
+      <description>这里记录每周值得分享的视光内容。周五在光学视界公众号发布。感谢镜缘轩转载。 投稿可在博客注册用户后在线投稿，或发邮件至：ewader@qq.c</description>
+    </item>
+    
+    <item>
       <title>视光周刊（第5期）：多大浓度的阿托品对防控近视更好？</title>
       <link>https://tunan.org/4523.html</link>
       <pubDate>Fri, 06 Oct 2023 07:27:39 +0000</pubDate>
@@ -167,6 +185,15 @@
       
       <guid>https://tunan.org/4375.html</guid>
       <description>我们在玩群晖的时候，往往不会满足于群晖只作为局域网里的一个服务器的存在，还想让它发挥更大的作用，让我们无论身在何地，都可以自由的访问我们群晖</description>
+    </item>
+    
+    <item>
+      <title>在manjaro中安装使用Rime并启用雾凇输入法</title>
+      <link>https://tunan.org/4367.html</link>
+      <pubDate>Sun, 23 Apr 2023 09:47:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/4367.html</guid>
+      <description>前几天，在朋友的推荐下，使用了小狼毫rime输入法，不过那是在Windows11里使用的，装的另外一个系统是manjaro，偶尔想搞几下Py</description>
     </item>
     
     <item>
@@ -833,6 +860,1118 @@
       
       <guid>https://tunan.org/3167.html</guid>
       <description>一个多月前，买了几条草金，pdd上买的。由于原来的那个玻璃鱼缸有点小，而且我是一个很懒的人，对清理鱼缸壁上的绿苔深恶痛绝。所以，决定换一个陶</description>
+    </item>
+    
+    <item>
+      <title>肺炎时刻话病毒</title>
+      <link>https://tunan.org/3055.html</link>
+      <pubDate>Sun, 02 Feb 2020 03:33:12 +0000</pubDate>
+      
+      <guid>https://tunan.org/3055.html</guid>
+      <description>最近由于新型冠状病毒的影响，从初一开始就一直宅在家里，期间除了陪女儿游戏意外，最多的时候还是看看书。正好kindle包月的书里就有几本关于病</description>
+    </item>
+    
+    <item>
+      <title>无痛胃肠镜的体验</title>
+      <link>https://tunan.org/3048.html</link>
+      <pubDate>Fri, 31 Jan 2020 01:53:15 +0000</pubDate>
+      
+      <guid>https://tunan.org/3048.html</guid>
+      <description>年前的时候入院进行术后的第二次复查，彩超、CT、血液等检查都正常，但是大便常规的潜血项目显示为弱阳性。正常情况下应该是阴性才对，当时有点牙龈</description>
+    </item>
+    
+    <item>
+      <title>郑州市中医院推出的防感1号药方</title>
+      <link>https://tunan.org/3040.html</link>
+      <pubDate>Mon, 27 Jan 2020 08:18:23 +0000</pubDate>
+      
+      <guid>https://tunan.org/3040.html</guid>
+      <description>这两天，一些中药诊疗方案逐步出台。受中医守护数千年的中国人，希望中医药能够带来更多的预防和治疗方案。 今天一早，郑州市中医院的草药房就收到了十</description>
+    </item>
+    
+    <item>
+      <title>解决升级PHPmake: *** No rule to make target `install’. Stop.的问题</title>
+      <link>https://tunan.org/3022.html</link>
+      <pubDate>Sat, 18 Jan 2020 10:14:33 +0000</pubDate>
+      
+      <guid>https://tunan.org/3022.html</guid>
+      <description>今天发现PHP7.3已经有7.3.13版本了，而我博客的版本还是7.3.10，所以，为了更好的安全性就决定把php升级到最新的版本。其实，o</description>
+    </item>
+    
+    <item>
+      <title>使用群晖，配置打印机，实现无线打印机的功能</title>
+      <link>https://tunan.org/3005.html</link>
+      <pubDate>Sun, 12 Jan 2020 03:05:02 +0000</pubDate>
+      
+      <guid>https://tunan.org/3005.html</guid>
+      <description>换成荣耀的这台笔记本之后，由于接口比较少，再加上一个笔记本插上usb数据线连上打印机，也不够方便，因为有时候笔记本还要拿回家用用。恰好再群晖</description>
+    </item>
+    
+    <item>
+      <title>Kindle Previewer v3.27  亚马逊官方电子书模拟器</title>
+      <link>https://tunan.org/2999.html</link>
+      <pubDate>Fri, 10 Jan 2020 07:12:58 +0000</pubDate>
+      
+      <guid>https://tunan.org/2999.html</guid>
+      <description>Kindle Previewer 是一个模拟 Kindle 设备和应用程序显示书籍内容的使用界面工具。是亚马逊官方开发的一款kindle系列产品模拟器，可以模拟出kindle系列产品的</description>
+    </item>
+    
+    <item>
+      <title>推荐篱落主机的香港VPS</title>
+      <link>https://tunan.org/2981.html</link>
+      <pubDate>Mon, 06 Jan 2020 02:02:06 +0000</pubDate>
+      
+      <guid>https://tunan.org/2981.html</guid>
+      <description>从去年11月底开始使用小张的篱落主机至今，差不多两个多月的时间。算是基本了解了篱落主机的性能和客服的人性化服务。由于线路速度以及服务器的稳定</description>
+    </item>
+    
+    <item>
+      <title>网站被黑了？</title>
+      <link>https://tunan.org/2934.html</link>
+      <pubDate>Fri, 13 Dec 2019 05:23:20 +0000</pubDate>
+      
+      <guid>https://tunan.org/2934.html</guid>
+      <description>最近一段时间，网站的关键字里总会穿插着一些贷款的关键字，当然点击这些页面是404的状态。看网页的标题，也没有诸如网站的推广啊，或者自己的网站</description>
+    </item>
+    
+    <item>
+      <title>宝塔面板安装FRP内网穿透控制群晖</title>
+      <link>https://tunan.org/2918.html</link>
+      <pubDate>Sat, 07 Dec 2019 03:28:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/2918.html</guid>
+      <description>前两天给大家介绍了利用zerotier来进行内网穿透控制群晖的方法，详见：黑群晖的福音，利用zerotier进行内网穿透。但是，zeroti</description>
+    </item>
+    
+    <item>
+      <title>推荐一款免费的视频剪辑软件shotcut</title>
+      <link>https://tunan.org/2914.html</link>
+      <pubDate>Fri, 06 Dec 2019 02:37:53 +0000</pubDate>
+      
+      <guid>https://tunan.org/2914.html</guid>
+      <description>跋涉者最近在弄另一个网站的时候，需要把一些长的视频剪辑成一个短的预览视频，这样没有权限看的人，只能看到短视频，而支付积分后则可以看完整的视频</description>
+    </item>
+    
+    <item>
+      <title>竞斗云2.0初步使用记</title>
+      <link>https://tunan.org/2909.html</link>
+      <pubDate>Thu, 05 Dec 2019 07:02:08 +0000</pubDate>
+      
+      <guid>https://tunan.org/2909.html</guid>
+      <description>前几天张波老师送了一台竞斗云2.0，这也是一款矿难的产物。原价好像将近2000块钱，现在矿难，矿贩子便宜处理，100多块钱就能买一台。 收到后</description>
+    </item>
+    
+    <item>
+      <title>车载毫米波雷达究竟是如何运作的？</title>
+      <link>https://tunan.org/2902.html</link>
+      <pubDate>Mon, 02 Dec 2019 01:10:14 +0000</pubDate>
+      
+      <guid>https://tunan.org/2902.html</guid>
+      <description>现在无人驾驶汽车技术是一个热点的话题，跋涉者一直以为这项技术是用摄像头来实现的，看来是孤陋寡闻了。今天在《学习强国》上看到了这样一篇关于这方</description>
+    </item>
+    
+    <item>
+      <title>35元的电动牙刷怎么样？</title>
+      <link>https://tunan.org/2882.html</link>
+      <pubDate>Thu, 28 Nov 2019 02:04:30 +0000</pubDate>
+      
+      <guid>https://tunan.org/2882.html</guid>
+      <description>最近朋友知道我上线了在线商城后说他有一款性价比非常高的电动牙刷，可以在我的在线商城里代卖一下。具体是 可以充电 6档刷牙模式 送4个美国杜邦的刷头</description>
+    </item>
+    
+    <item>
+      <title>使用zerotier进行内网穿透</title>
+      <link>https://tunan.org/2872.html</link>
+      <pubDate>Wed, 27 Nov 2019 07:33:08 +0000</pubDate>
+      
+      <guid>https://tunan.org/2872.html</guid>
+      <description>自从到手了暴风酷播之后，抽空就折腾了下NAS，目前来说系统方面已经没有什么问题了，自己需要使用的套件也基本上弄好了，唯一一个需要搞定的问题就</description>
+    </item>
+    
+    <item>
+      <title>换篱落的空间，用宝塔面板，CSRF校验失败</title>
+      <link>https://tunan.org/2865.html</link>
+      <pubDate>Mon, 25 Nov 2019 01:55:14 +0000</pubDate>
+      
+      <guid>https://tunan.org/2865.html</guid>
+      <description>昨天在群里看到老胡发的篱落的特价VPS，忽然发现我也在他说的那个群，以前是衡天主机的客户群，后来好像卖给给香港人后，小张自己搞了个篱落主机。</description>
+    </item>
+    
+    <item>
+      <title>再次折腾黑群晖系统</title>
+      <link>https://tunan.org/2860.html</link>
+      <pubDate>Sat, 23 Nov 2019 02:51:56 +0000</pubDate>
+      
+      <guid>https://tunan.org/2860.html</guid>
+      <description>昨天拍了一些眼镜架的图片，可以却同步不到群晖的monents里面，有了群晖之后有些事情确实特别的方便，比如我拍的镜架的图片，想传到在线商城里</description>
+    </item>
+    
+    <item>
+      <title>记暴风酷播云2期折腾黑群晖</title>
+      <link>https://tunan.org/2855.html</link>
+      <pubDate>Mon, 18 Nov 2019 07:28:30 +0000</pubDate>
+      
+      <guid>https://tunan.org/2855.html</guid>
+      <description>双11前后，张波老师弄了个zhang.gg和zhang.bo的两个域名，看gg不贵，而且有www.liuday.com这个域名还没有被注册，</description>
+    </item>
+    
+    <item>
+      <title>博客更换到阿里云香港轻量，并升级到wordpress5.3.0</title>
+      <link>https://tunan.org/2851.html</link>
+      <pubDate>Thu, 14 Nov 2019 23:53:20 +0000</pubDate>
+      
+      <guid>https://tunan.org/2851.html</guid>
+      <description>昨天在折腾FRP的时候，怕影响到现有的环境，所以，买了一个阿里云轻量1H1G的主机，因为我知道，一个月24元，其实我不是打算用一个月而是打算</description>
+    </item>
+    
+    <item>
+      <title>岁月如流 驶过美好时光</title>
+      <link>https://tunan.org/2846.html</link>
+      <pubDate>Tue, 12 Nov 2019 00:25:45 +0000</pubDate>
+      
+      <guid>https://tunan.org/2846.html</guid>
+      <description>我，是一辆自行车，也是历史的见证者。在我的生命中，有过炙手可热的辉煌岁月，也经历过一时的落寞。但庆幸的是，我从未被这个世界所遗忘，并且陪伴了</description>
+    </item>
+    
+    <item>
+      <title>一道比较难懂的五年级数学题</title>
+      <link>https://tunan.org/2842.html</link>
+      <pubDate>Wed, 06 Nov 2019 03:01:19 +0000</pubDate>
+      
+      <guid>https://tunan.org/2842.html</guid>
+      <description>昨天女儿的数学其中考试卷子发下来了，还算可以，其实如果她再细心一点的话，分数还能有一些提高，甚至百分也不是不可能，总是在细节处丢分。无语了。</description>
+    </item>
+    
+    <item>
+      <title>支付宝申请ETC的体验</title>
+      <link>https://tunan.org/2825.html</link>
+      <pubDate>Thu, 24 Oct 2019 04:58:08 +0000</pubDate>
+      
+      <guid>https://tunan.org/2825.html</guid>
+      <description>这段时间本来处于很尴尬地位的ETC在国家相关政策的指引下，成功的变成了各路的宠儿，各个机构都上杆子的免费送。甚至，国家的政策还被很多别有用心</description>
+    </item>
+    
+    <item>
+      <title>饭后四个小时不洗碗筷，会让人中毒？</title>
+      <link>https://tunan.org/2811.html</link>
+      <pubDate>Fri, 18 Oct 2019 01:02:15 +0000</pubDate>
+      
+      <guid>https://tunan.org/2811.html</guid>
+      <description>早上照例用天猫精灵来作为闹钟提醒起床，起床后听听天猫精灵里的早间新闻，还是蛮不错的，这个新闻是和当地的媒体合作的，播报都是发生在当地的一些重</description>
+    </item>
+    
+    <item>
+      <title>好马与战马——谈企业人才</title>
+      <link>https://tunan.org/2802.html</link>
+      <pubDate>Sat, 12 Oct 2019 12:12:52 +0000</pubDate>
+      
+      <guid>https://tunan.org/2802.html</guid>
+      <description>查理的农场养了3匹马——小白、小黄与小黑。 小白个性温和，不管对人或其它的动物非常温和，无攻击性，任何人都可以摸它，查理的小孩喜欢骑着它到处玩</description>
+    </item>
+    
+    <item>
+      <title>蚂蚁为什么会搬家？</title>
+      <link>https://tunan.org/2786.html</link>
+      <pubDate>Mon, 30 Sep 2019 06:30:48 +0000</pubDate>
+      
+      <guid>https://tunan.org/2786.html</guid>
+      <description>大家都知道一句谚语：“蚂蚁搬家，大雨哗哗”。但是蚂蚁搬家就一定会下雨吗？今天接女儿回家的路上，适逢一窝的蚂蚁正在井然有序的搬家，之所以确定是</description>
+    </item>
+    
+    <item>
+      <title>美国人至今也想不通（一篇让大家眼睛湿润的文章）</title>
+      <link>https://tunan.org/2729.html</link>
+      <pubDate>Tue, 17 Sep 2019 00:55:36 +0000</pubDate>
+      
+      <guid>https://tunan.org/2729.html</guid>
+      <description>[原创典藏]美国人至今也想不通（一篇让大家眼睛湿润的文章）(转载)美国人至今也想不通，上甘岭为什么会打不下来。美国的军事研究者们用电脑模拟得</description>
+    </item>
+    
+    <item>
+      <title>经典菜名，都是你想不到的</title>
+      <link>https://tunan.org/2727.html</link>
+      <pubDate>Sun, 15 Sep 2019 09:32:03 +0000</pubDate>
+      
+      <guid>https://tunan.org/2727.html</guid>
+      <description>1。那个著名的“穿过你的黑发的我的手”— 海带炖猪蹄：） 2。我在公司楼下的饭店点过一道菜《母子相会》，菜上来一看，晕！居然是黄豆炒豆芽！ 3。我</description>
+    </item>
+    
+    <item>
+      <title>WordPress开启Nginx fastcgi_cache缓存加速</title>
+      <link>https://tunan.org/2700.html</link>
+      <pubDate>Sun, 08 Sep 2019 01:51:11 +0000</pubDate>
+      
+      <guid>https://tunan.org/2700.html</guid>
+      <description>昨天下午没有太多事情，想起来一直想弄的nginx fastcgi_cache还没有弄，于是趁着重装景安服务器的功夫，顺便把这个玩意也搞搞，弄到</description>
+    </item>
+    
+    <item>
+      <title>再说说景安的服务</title>
+      <link>https://tunan.org/2697.html</link>
+      <pubDate>Sat, 07 Sep 2019 03:35:21 +0000</pubDate>
+      
+      <guid>https://tunan.org/2697.html</guid>
+      <description>自从上次看到景安欠薪的消息以后，虽然觉得很惋惜，但是也没有太放在心上，毕竟作为河南最大的IDC，还是再新三板上市的企业，不可能马上就挂的，况</description>
+    </item>
+    
+    <item>
+      <title>关于风水，风水都是骗人的吗？</title>
+      <link>https://tunan.org/2626.html</link>
+      <pubDate>Thu, 22 Aug 2019 08:54:06 +0000</pubDate>
+      
+      <guid>https://tunan.org/2626.html</guid>
+      <description>在ＫＩＮＤＬＥ上随便找书看，发现了一本写风水的书，就随便翻了翻。以前觉得风水都是迷信居多，但是看了之后发现，风水也不完全是一无是处。 风水是中</description>
+    </item>
+    
+    <item>
+      <title>中纪委“点名”《哪吒》：这个人最该被问责！</title>
+      <link>https://tunan.org/2594.html</link>
+      <pubDate>Tue, 06 Aug 2019 11:44:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/2594.html</guid>
+      <description>我们看《哪吒·魔童降世》，到底在看什么？ 中国的神话，不能单纯当童话故事来看。神仙妖鬼那些事，其实都是人的事。小小的陈塘关里，也包罗着人生百态</description>
+    </item>
+    
+    <item>
+      <title>景安服务器（vps)挂载数据盘</title>
+      <link>https://tunan.org/2585.html</link>
+      <pubDate>Sun, 04 Aug 2019 09:37:21 +0000</pubDate>
+      
+      <guid>https://tunan.org/2585.html</guid>
+      <description>以前没有注意，后来在做快照的时候发现服务器还有个数据盘的快照，和系统盘是分开的。查了一下，数据盘是送的一块专门用来放数据的另一个盘，就象我们</description>
+    </item>
+    
+    <item>
+      <title>lnmp一键开启waf及使用 Fail2Ban防护</title>
+      <link>https://tunan.org/2556.html</link>
+      <pubDate>Sun, 28 Jul 2019 09:07:40 +0000</pubDate>
+      
+      <guid>https://tunan.org/2556.html</guid>
+      <description>试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥</description>
+    </item>
+    
+    <item>
+      <title>给7b2的主题加上评论回复功能</title>
+      <link>https://tunan.org/2552.html</link>
+      <pubDate>Thu, 25 Jul 2019 00:54:22 +0000</pubDate>
+      
+      <guid>https://tunan.org/2552.html</guid>
+      <description>7b2主题默认是不会给评论者回复邮件的。也曾经问过作者，作者说如果实现这个的话，没几天邮箱就被封掉了，可能作者有作者的理由吧，但是不加的话，</description>
+    </item>
+    
+    <item>
+      <title>景安备案太慢，原来是真出问题了</title>
+      <link>https://tunan.org/2522.html</link>
+      <pubDate>Thu, 18 Jul 2019 08:13:37 +0000</pubDate>
+      
+      <guid>https://tunan.org/2522.html</guid>
+      <description>前天突发奇想，想要把这个网站也给备案了。于是关站，在景安提交了备案申请，结果让我很不开心，现在景安备案给人的体验是太糟糕了。于是果断删除备案</description>
+    </item>
+    
+    <item>
+      <title>备忘，使用阿里云ossfs备份网站</title>
+      <link>https://tunan.org/2513.html</link>
+      <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/2513.html</guid>
+      <description>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心</description>
+    </item>
+    
+    <item>
+      <title>记一次因为标点符号导致重装服务器的经历</title>
+      <link>https://tunan.org/2257.html</link>
+      <pubDate>Fri, 12 Jul 2019 08:59:58 +0000</pubDate>
+      
+      <guid>https://tunan.org/2257.html</guid>
+      <description>前两天的时候，镜缘轩网站出了点问题，加上那个服务器被我折腾的乱七八糟的，所以就想重新弄一下生产环境。为了不影响网站的访问，就先暂时把网站解析</description>
+    </item>
+    
+    <item>
+      <title>nodecache的服务条款很霸王啊</title>
+      <link>https://tunan.org/2250.html</link>
+      <pubDate>Tue, 09 Jul 2019 08:47:39 +0000</pubDate>
+      
+      <guid>https://tunan.org/2250.html</guid>
+      <description>nodecache是一款新出的cdn服务商，搜索引擎上关于它的资料很少，今天搜了半天也只是找到一个快照，是和某个国外主机论坛合作推广送50美</description>
+    </item>
+    
+    <item>
+      <title>利用cloudFlare的边缘计算workers实现外链转内链跳转</title>
+      <link>https://tunan.org/2248.html</link>
+      <pubDate>Tue, 09 Jul 2019 01:20:11 +0000</pubDate>
+      
+      <guid>https://tunan.org/2248.html</guid>
+      <description>跋涉者曾经分享过一篇7b2主题外链跳转的文章，那篇文章实现的原理是在自己服务器里增加一个跳转的页面代码。 [zrz_insert_post id=1656] 不过今天看张戈大神的一篇文章Cl</description>
+    </item>
+    
+    <item>
+      <title>Godaddy可以用微信管理域名</title>
+      <link>https://tunan.org/2207.html</link>
+      <pubDate>Wed, 26 Jun 2019 00:38:56 +0000</pubDate>
+      
+      <guid>https://tunan.org/2207.html</guid>
+      <description>不得不说微信现在的影响力是越来越大了，就连当年蹭退出中国风的godaddy现在也开始使用微信来管理域名了，今天打开邮箱就收到了如下的邮件。 用</description>
+    </item>
+    
+    <item>
+      <title>wordpress自动升级到5.2.2</title>
+      <link>https://tunan.org/1787.html</link>
+      <pubDate>Wed, 19 Jun 2019 02:15:39 +0000</pubDate>
+      
+      <guid>https://tunan.org/1787.html</guid>
+      <description>今天打开邮箱，发现系统发的邮件。 嗨！您位于 https://iliu.org 的站点已被成功升级到WordPress 5.2.2。 您不需要再做什么。 要获取更多关于5.2.2版本</description>
+    </item>
+    
+    <item>
+      <title>xshell6更新至0125</title>
+      <link>https://tunan.org/1712.html</link>
+      <pubDate>Sat, 15 Jun 2019 07:35:45 +0000</pubDate>
+      
+      <guid>https://tunan.org/1712.html</guid>
+      <description>xshell这个货更新额速度真快，隔不了几天就发布一个新版本，这不，跋涉者刚打开邮箱，就看到又有更新了。 Software Release Notes Release Date: June 05, 2019 With last week’s update, w</description>
+    </item>
+    
+    <item>
+      <title>7b2主题每日签到不刷新的解决办法</title>
+      <link>https://tunan.org/1710.html</link>
+      <pubDate>Wed, 12 Jun 2019 02:04:14 +0000</pubDate>
+      
+      <guid>https://tunan.org/1710.html</guid>
+      <description>前一段时间忽然发现跋涉者另外一个网站镜缘轩上每日签到抽取积分的那个选项不能自动刷新了，每天都是显示同一样的数字，然后看明月登楼的一个网站，也</description>
+    </item>
+    
+    <item>
+      <title>推荐一款国外CDN——Nodecache，注册即送1T流量</title>
+      <link>https://tunan.org/1679.html</link>
+      <pubDate>Mon, 03 Jun 2019 02:09:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/1679.html</guid>
+      <description>最新消息，只要邀请一个人，就能永久每月5G的流量，还是不错的 国内没有备案的站长最头疼的无非是不能使用国内诸多的cdn加速以及隐藏真实IP地址</description>
+    </item>
+    
+    <item>
+      <title>儿童节的来历顺祝大家六一快乐</title>
+      <link>https://tunan.org/1671.html</link>
+      <pubDate>Sat, 01 Jun 2019 08:53:57 +0000</pubDate>
+      
+      <guid>https://tunan.org/1671.html</guid>
+      <description>又是一年儿童节，在这个开心快乐、记录成长的时刻，祝愿天下所有的小朋友们节日快乐，愿： 开心永远伴随着你们 快乐永远围绕着你们 幸福天天想念着你们 平</description>
+    </item>
+    
+    <item>
+      <title>给7B2主题加上外链自动跳转功能</title>
+      <link>https://tunan.org/1656.html</link>
+      <pubDate>Mon, 27 May 2019 07:08:40 +0000</pubDate>
+      
+      <guid>https://tunan.org/1656.html</guid>
+      <description>7B2主题默认是没有外链自动跳转功能的，这玩意要说有用吧，作用不大，要说没用吧，大家都这么加，所以跋涉者也给外链增加一个自动跳转。 是不是很漂</description>
+    </item>
+    
+    <item>
+      <title>上海云盾CDN简要设置指南</title>
+      <link>https://tunan.org/1653.html</link>
+      <pubDate>Sun, 26 May 2019 02:29:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1653.html</guid>
+      <description>在免费cdn市场上，广大站长所使用的一般是又拍云cdn，360网站加速，上海云盾cdn以及腾讯云cdn，笔者以前也是使用的又拍云cdn,可能</description>
+    </item>
+    
+    <item>
+      <title>7b2主题添加百度是否收录及禁止非管理员访问后台</title>
+      <link>https://tunan.org/1636.html</link>
+      <pubDate>Sat, 25 May 2019 07:00:29 +0000</pubDate>
+      
+      <guid>https://tunan.org/1636.html</guid>
+      <description>原来使用的是知更鸟的begin主题，和7b2的主题可以说是侧重点不同，不可否认的是7b2主题 在展示网页的方面和begin有一定的差距，比如b</description>
+    </item>
+    
+    <item>
+      <title>鲫鱼汤小儿不咳嗽</title>
+      <link>https://tunan.org/1547.html</link>
+      <pubDate>Thu, 26 Jul 2012 11:16:33 +0000</pubDate>
+      
+      <guid>https://tunan.org/1547.html</guid>
+      <description>小儿脏腑娇嫩，不耐寒热，脾虚肝旺，外感风寒就会影响到肺或导致脾虚而失去正常功能。对久咳不愈的小儿可以用鲫鱼汤治疗。鲫鱼性甘平，入脾、胃、大肠</description>
+    </item>
+    
+    <item>
+      <title>每天早上先闻闻孩子的口气</title>
+      <link>https://tunan.org/1523.html</link>
+      <pubDate>Thu, 10 Nov 2011 02:39:39 +0000</pubDate>
+      
+      <guid>https://tunan.org/1523.html</guid>
+      <description>想在第一时间掌握孩子今天的健康状况吗？中医专家教您：每天早上起床第一件事是，闻闻孩子的口气。 河南省中医院治未病中心武月萍博士把自己的经验与读</description>
+    </item>
+    
+    <item>
+      <title>女儿坐汽车（摇摇车）</title>
+      <link>https://tunan.org/1515.html</link>
+      <pubDate>Tue, 25 Oct 2011 10:47:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1515.html</guid>
+      <description>小美女做汽车了，歌曲有春天在哪里等等，天天要坐，每次坐都开心的不得了，每天早上一定要去绿都城坐一次，唉，这可怎么办？？？？？？ 小美女做汽车了</description>
+    </item>
+    
+    <item>
+      <title>12种关于豆腐的药膳</title>
+      <link>https://tunan.org/1497.html</link>
+      <pubDate>Sun, 09 Oct 2011 11:23:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1497.html</guid>
+      <description>1.治伤风感冒 豆腐50克，淡豆豉10-15克，葱白5根，共煮热透，趁热食用并盖被发汗。 ** 2. 治支气管哮喘** 1)豆腐500克，麦芽糖60克，生</description>
+    </item>
+    
+    <item>
+      <title>豆腐的药用价值—让宝宝每天吃点豆腐吧</title>
+      <link>https://tunan.org/1494.html</link>
+      <pubDate>Sun, 09 Oct 2011 11:20:12 +0000</pubDate>
+      
+      <guid>https://tunan.org/1494.html</guid>
+      <description>1999年11月份，美国FDI通过一个豆类的研究报告，证实豆制品对治疗心血管疾病有确实的疗效。 早在几年前，我国就实行了大豆计划行动，这项行动</description>
+    </item>
+    
+    <item>
+      <title>推荐几个本在再用的免费网盘</title>
+      <link>https://tunan.org/1481.html</link>
+      <pubDate>Fri, 30 Sep 2011 03:22:16 +0000</pubDate>
+      
+      <guid>https://tunan.org/1481.html</guid>
+      <description>笔记本还是05年买的，硬盘有点小 只有30G，本来已经淘汰了，不过开了小店以后，就拿到店内用了,硬盘太小，所以就找一些可以直接同步的网络硬盘来</description>
+    </item>
+    
+    <item>
+      <title>过早认字警惕宝宝近视</title>
+      <link>https://tunan.org/1475.html</link>
+      <pubDate>Mon, 26 Sep 2011 22:22:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/1475.html</guid>
+      <description>现在3岁不到就开始看电视、画画、看书、认字；三四岁就开始学琴识谱、学英文、认数字、玩电脑，这些近距离用眼活动会让孩子的视力发育提前，过早加入</description>
+    </item>
+    
+    <item>
+      <title>常吃香蕉12种疾病远离你</title>
+      <link>https://tunan.org/1472.html</link>
+      <pubDate>Mon, 26 Sep 2011 11:44:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/1472.html</guid>
+      <description>香蕉，芭蕉科(Musaceae)芭蕉属(Musa)植物，又指其果实，热带地区广泛栽培食用。香蕉味香、富于营养，终年可收获，在温带地区也很受重</description>
+    </item>
+    
+    <item>
+      <title>吃饭也能护齿</title>
+      <link>https://tunan.org/1466.html</link>
+      <pubDate>Tue, 20 Sep 2011 03:32:41 +0000</pubDate>
+      
+      <guid>https://tunan.org/1466.html</guid>
+      <description>很多人都没想到，用不同的方法去吃不同的食物也能对牙齿进行保健！“蘑菇皇后”香菇最能预防龋齿；乳酪是最好的口腔酸碱平衡卫士；酸甜的葡萄干也是健</description>
+    </item>
+    
+    <item>
+      <title>重阳节的来历及风俗</title>
+      <link>https://tunan.org/1459.html</link>
+      <pubDate>Wed, 14 Sep 2011 10:01:46 +0000</pubDate>
+      
+      <guid>https://tunan.org/1459.html</guid>
+      <description>重阳之意来源于《易经》，古老的已经把六定为阴数，把九定为阳数，九月九日，日月并阳，故而重阳，是个吉利的日子，《旧唐书·王勃传》记载：王勃的《</description>
+    </item>
+    
+    <item>
+      <title>化解家庭矛盾中的经济学原理</title>
+      <link>https://tunan.org/1456.html</link>
+      <pubDate>Wed, 14 Sep 2011 09:47:17 +0000</pubDate>
+      
+      <guid>https://tunan.org/1456.html</guid>
+      <description>家庭中难免会有矛盾纠纷，美国作家宝拉·苏彻曼和珍妮·安德森在《小俩口经济学》一书中，用经济学的思路告诉大家，应该怎样轻松化解家庭矛盾。 不要平</description>
+    </item>
+    
+    <item>
+      <title>小儿多动症的治疗方法</title>
+      <link>https://tunan.org/1435.html</link>
+      <pubDate>Sun, 11 Sep 2011 13:19:55 +0000</pubDate>
+      
+      <guid>https://tunan.org/1435.html</guid>
+      <description>现在有些孩子几乎停不下来，上课不安静听讲，做作业小动作不断；智力超群却成绩平平。家长和老师为此苦恼不已。有的家长会疑惑地询问：孩子是不是得了</description>
+    </item>
+    
+    <item>
+      <title>中秋节，你不得不知道的几个传说</title>
+      <link>https://tunan.org/1425.html</link>
+      <pubDate>Fri, 09 Sep 2011 14:42:38 +0000</pubDate>
+      
+      <guid>https://tunan.org/1425.html</guid>
+      <description>中秋节了，可以给宝宝讲讲关于中秋节的一些故事了，华彩从网上整理了一些关于中秋节的传说，我相信，你也有不知道的，有木有？ 吴刚折桂 关于中秋节还有</description>
+    </item>
+    
+    <item>
+      <title>中秋节的来历及习俗</title>
+      <link>https://tunan.org/1422.html</link>
+      <pubDate>Fri, 09 Sep 2011 14:35:14 +0000</pubDate>
+      
+      <guid>https://tunan.org/1422.html</guid>
+      <description>后天就是中秋节了，那么你知道中秋节的来历吗、？ 今天华彩就给大家讲讲故事！有宝宝的父母们，如果宝宝问你中秋节咋来的，不知道，可是很没面子哦！ 农</description>
+    </item>
+    
+    <item>
+      <title>新浪SAE文件管理及防盗链的设置</title>
+      <link>https://tunan.org/1334.html</link>
+      <pubDate>Wed, 07 Sep 2011 02:56:02 +0000</pubDate>
+      
+      <guid>https://tunan.org/1334.html</guid>
+      <description>我们知道新浪SAE不管是流量也好，储存空间也好，占用CPU的时间也好都是要收费的，也就是要云豆豆的，因此相对其他流量不限制的空间来说，我们的</description>
+    </item>
+    
+    <item>
+      <title>配置WP-Mail-SMTP的技巧</title>
+      <link>https://tunan.org/1331.html</link>
+      <pubDate>Tue, 06 Sep 2011 11:08:45 +0000</pubDate>
+      
+      <guid>https://tunan.org/1331.html</guid>
+      <description>网站搬到新浪SAE之后，由于不支持mail（）函数，所以只好采用WP-MAIL-SMTP这个插件来发送密码评论等，但是这个插件非常的不容易配</description>
+    </item>
+    
+    <item>
+      <title>推荐使用邮政储蓄银行的信用卡</title>
+      <link>https://tunan.org/1328.html</link>
+      <pubDate>Tue, 06 Sep 2011 09:30:47 +0000</pubDate>
+      
+      <guid>https://tunan.org/1328.html</guid>
+      <description>照例翻开报纸，正介绍邮政储蓄的信用卡，看了以后发现，还确实不错！其特点为网点多、好还款、终生免年费、卡片遗失银行承担风险、自选多档期分期付款</description>
+    </item>
+    
+    <item>
+      <title>推荐一个很不错的德国免费空间kilu.de</title>
+      <link>https://tunan.org/1282.html</link>
+      <pubDate>Sun, 04 Sep 2011 07:15:11 +0000</pubDate>
+      
+      <guid>https://tunan.org/1282.html</guid>
+      <description>&lt;p&gt;华彩生活一般不给亲们推荐免费空间，因为如果不稳定的话，用不了几天就挂了，让亲们的心血白白浪费，反而不美，但是今天华彩生活给大家推荐的这个德国的免费空间，大家可以放心的使用，只要没有违禁的内容，时间不是问题，稳定不是问题！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>女儿最喜欢的儿歌系列—好爸爸坏爸爸</title>
+      <link>https://tunan.org/1259.html</link>
+      <pubDate>Thu, 01 Sep 2011 05:38:12 +0000</pubDate>
+      
+      <guid>https://tunan.org/1259.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://iliu.org/wp-content/uploads/2019/08/1824c863dd7459.jpg&#34;&gt;&lt;img decoding=&#34;async&#34; loading=&#34;lazy&#34; width=&#34;900&#34; height=&#34;900&#34; src=&#34;https://iliu.org/wp-content/uploads/2019/08/1824c863dd7459.jpg&#34; alt=&#34;&#34; class=&#34;aligncenter size-full wp-image-2631&#34; srcset=&#34;https://iliu.org/wp-content/uploads/2019/08/1824c863dd7459.jpg 900w, https://iliu.org/wp-content/uploads/2019/08/1824c863dd7459-768x768.jpg 768w&#34; sizes=&#34;(max-width: 900px) 100vw, 900px&#34; /&gt;&lt;/a&gt;我有一个好爸爸&lt;br&gt;
+爸爸 爸爸 爸爸 爸爸 好爸爸 好爸爸&lt;br&gt;
+我有一个好爸爸&lt;br&gt;
+做起饭来锵铛铛 锵铛铛&lt;br&gt;
+洗起衣服嚓嚓嚓 嚓嚓嚓&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>司机小区内按喇叭吓醒婴儿赔百元</title>
+      <link>https://tunan.org/1171.html</link>
+      <pubDate>Sat, 13 Aug 2011 01:56:09 +0000</pubDate>
+      
+      <guid>https://tunan.org/1171.html</guid>
+      <description>&lt;p&gt;本报讯 昨天上午10点多钟，一名中年男子开车在南京浦口区浦东花园4幢楼下时，遇到道路两侧有不少孩子玩耍，于是连按了两声喇叭，结果惊醒旁边婴儿车内的婴儿，推车的孩子奶奶心疼，与车主发生争执，还惊动了警方，最终，驾驶员赔了100元。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>女儿最喜欢的动画片-三个和尚没水喝</title>
+      <link>https://tunan.org/1149.html</link>
+      <pubDate>Fri, 05 Aug 2011 02:15:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1149.html</guid>
+      <description>每次都要登录优酷看，转发到博客上来，就没那么麻烦了，呵呵 http://v.youku.com/v_show/id_XMzE5NDgwMA==.html</description>
+    </item>
+    
+    <item>
+      <title>三岁前入托危害儿童健康</title>
+      <link>https://tunan.org/1097.html</link>
+      <pubDate>Thu, 20 Jan 2011 07:08:34 +0000</pubDate>
+      
+      <guid>https://tunan.org/1097.html</guid>
+      <description>澳大利亚儿童教育专家、临床医学家提出警告说，把年龄不足三岁的孩子交给托儿所会增加损害他们正常心理发育的危险。很多托儿所无法照顾到孩子，遭到忽</description>
+    </item>
+    
+    <item>
+      <title>2010年年终盘点（来源于网络）</title>
+      <link>https://tunan.org/1039.html</link>
+      <pubDate>Fri, 17 Dec 2010 06:12:13 +0000</pubDate>
+      
+      <guid>https://tunan.org/1039.html</guid>
+      <description>1.发改委成立至今只做过两件事：1.涨价，2.替涨价辩护！ 2.目前中国有效的反腐手段有：1.夫妻反目；2.家中被盗；3.意外事故；4.情人举</description>
+    </item>
+    
+    <item>
+      <title>用黑莓手机查询郑州公交车到站gps信息</title>
+      <link>https://tunan.org/959.html</link>
+      <pubDate>Fri, 29 Oct 2010 01:34:58 +0000</pubDate>
+      
+      <guid>https://tunan.org/959.html</guid>
+      <description>以前觉得手机上网就是个鸡肋，食之无味、弃之可惜，最近发现，原来的观点是错误的，其实手机上网还是能做很多很多的事情的，相信很多朋友都和我一样有</description>
+    </item>
+    
+    <item>
+      <title>只需三步，让你的wordpress在godaddy免费空间上完美呈现</title>
+      <link>https://tunan.org/950.html</link>
+      <pubDate>Thu, 28 Oct 2010 06:03:38 +0000</pubDate>
+      
+      <guid>https://tunan.org/950.html</guid>
+      <description>以前本站有一篇文章，说是解决godaddy免费空间广告条对wordpress后台的影响，当时是采用第三方软件来实现的，但是到底有没有一种方法</description>
+    </item>
+    
+    <item>
+      <title>做博客比做网站难</title>
+      <link>https://tunan.org/851.html</link>
+      <pubDate>Mon, 23 Aug 2010 04:14:49 +0000</pubDate>
+      
+      <guid>https://tunan.org/851.html</guid>
+      <description>华彩亲子博客从建站到现在也有8个月了吧，发现做博客比做网站要难很多。 首先，搜索引擎收录的慢，到现在百度收录的还大部分都是垃圾的东西，并没有形</description>
+    </item>
+    
+    <item>
+      <title>网站又搬家了—这次选的衡天小张的服务器</title>
+      <link>https://tunan.org/845.html</link>
+      <pubDate>Sun, 22 Aug 2010 09:50:38 +0000</pubDate>
+      
+      <guid>https://tunan.org/845.html</guid>
+      <description>&lt;p&gt;上次把博客放到了PIPNI的空间上，可惜的是速度较慢，而godaddy的windows空间使用起来又不太理想，刚好逛论坛的时候看到了衡天小张的信息，GOOGLE了一下，信誉各方面也不错，直接就去付款买了一个，价格很便宜。不过使用的结果可是一波三折！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>换到pipni的空间了</title>
+      <link>https://tunan.org/804.html</link>
+      <pubDate>Mon, 09 Aug 2010 09:02:49 +0000</pubDate>
+      
+      <guid>https://tunan.org/804.html</guid>
+      <description>&lt;h3 id=&#34;以前用的godaddy的空间是申请域名的时候送的不过可惜的是linux空间有个很大很大的广告广告业不怕但是却影响到页面的显示显而易见的是godaddy的本意就是不是让你好好用他这个空间否则谁还用收费的空间啊windows空间对wordpress的支持又很一般重要的是ping虽然是200多点但访问起来却不是很快&#34;&gt;         以前用的godaddy的空间，是申请域名的时候送的，不过可惜的是Linux空间有个很大很大的广告，广告业不怕，但是却影响到页面的显示，显而易见的是，godaddy的本意就是不是让你好好用他这个空间，否则谁还用收费的空间啊。windows空间对WordPress的支持又很一般，重要的是PING虽然是200多点，但访问起来却不是很快。&lt;/h3&gt;</description>
+    </item>
+    
+    <item>
+      <title>美国护士发错药vs中国护士发错-真是的让人想哭</title>
+      <link>https://tunan.org/779.html</link>
+      <pubDate>Sat, 24 Jul 2010 03:14:48 +0000</pubDate>
+      
+      <guid>https://tunan.org/779.html</guid>
+      <description>&lt;p&gt;　这位护士叫玛丽，在纽约一家医院已经工作了三年。这年纽约气候异常，住院病人激增，玛丽忙得脚不沾地。一天给病人发药时，她张冠李戴发错了药，幸好被及时发现，没有酿成事故。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>看看河南人有啥牛的</title>
+      <link>https://tunan.org/646.html</link>
+      <pubDate>Sun, 04 Apr 2010 08:57:05 +0000</pubDate>
+      
+      <guid>https://tunan.org/646.html</guid>
+      <description>河南没啥 —-“一部河南史半部中国史”的”解嘲” 一、河南没啥历史 1、也就是在五六十万年以前有了猿人活动而已（南召）； 2、也就是在8000年前形</description>
+    </item>
+    
+    <item>
+      <title>父亲在养育女孩中起到的作用</title>
+      <link>https://tunan.org/645.html</link>
+      <pubDate>Thu, 01 Apr 2010 12:46:48 +0000</pubDate>
+      
+      <guid>https://tunan.org/645.html</guid>
+      <description>&lt;p&gt;来自父亲的爱是无私的，是博大的，它能够撑起女儿的一片天。因此，”富养女孩”，就要父亲对女儿付出更多的关注和支持，让女儿在尊重疼爱中找到幸福的方向，找到温馨的感觉。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>世界十大神迹</title>
+      <link>https://tunan.org/623.html</link>
+      <pubDate>Thu, 11 Mar 2010 03:48:10 +0000</pubDate>
+      
+      <guid>https://tunan.org/623.html</guid>
+      <description>我们赖以生存的美丽地球实在是太神秘了。我们每个人来到世界上从出生到消亡，与宇宙天体的发展史相比实在是弹指一挥间都没有。因此，人生苦短，璧如朝</description>
+    </item>
+    
+    <item>
+      <title>信念,心中的绿洲——《一碗阳春面》读后感</title>
+      <link>https://tunan.org/620.html</link>
+      <pubDate>Sun, 07 Mar 2010 09:18:35 +0000</pubDate>
+      
+      <guid>https://tunan.org/620.html</guid>
+      <description>文/新闻出版职校 张佳南 日本著名作家栗良平的《一碗阳春面》这篇小说,叙写了逆境中的母子三人咬紧牙关,互相扶持,战胜困难度过艰难岁月,终于走向成</description>
+    </item>
+    
+    <item>
+      <title>一碗阳春面有名一碗清汤荞麦面原文阅读</title>
+      <link>https://tunan.org/615.html</link>
+      <pubDate>Sun, 07 Mar 2010 09:10:40 +0000</pubDate>
+      
+      <guid>https://tunan.org/615.html</guid>
+      <description>前一段时间，培训心态课的时候，曾经引用过里面的文字，学员都反映比较好，干脆把全文都发出来，给需要的朋友，记得当时学这篇课文的时候，感动的稀里</description>
+    </item>
+    
+    <item>
+      <title>为预测地震的网友喊冤</title>
+      <link>https://tunan.org/600.html</link>
+      <pubDate>Sat, 27 Feb 2010 02:27:23 +0000</pubDate>
+      
+      <guid>https://tunan.org/600.html</guid>
+      <description>&lt;p&gt;2月20日下午至21日凌晨，山西的晋中、太原、吕梁、长治、阳泉等地出现大面积地震传言，造成百万名以上群众情绪紧张，夜间通宵露宿于广场”被等地震”，事后，山西省地震局等在21日上午出面辟谣，社会情绪渐趋平静。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>小女孩背百家姓，一个误人子弟的春晚节目！</title>
+      <link>https://tunan.org/575.html</link>
+      <pubDate>Fri, 19 Feb 2010 08:57:43 +0000</pubDate>
+      
+      <guid>https://tunan.org/575.html</guid>
+      <description>春晚越来越像一场秀，越来越失去了当初看春晚的激情，节目越来越烂！烂也不要紧，作为中央级的媒体，你毁人不倦就不对了。 2010央视春节晚会上，有</description>
+    </item>
+    
+    <item>
+      <title>换了个模板</title>
+      <link>https://tunan.org/510.html</link>
+      <pubDate>Wed, 27 Jan 2010 13:12:24 +0000</pubDate>
+      
+      <guid>https://tunan.org/510.html</guid>
+      <description>&lt;div id=&#34;PublishedByWebStory-[5]1_9E1BF9E071E245608EFF8B18147FA688_36C3D77B6EEF43E29413A9A14728CCBA_1&#34;&gt;
+  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 上午把工作整完了以后照例去到网上寻觅，一直想要找到一个自己比较满意的模板，原来用的那个也是比较喜欢的，而且非常的清爽，但毕竟与我博客的主题不太相符。先前一直寻找baby的主题，但是一直都没有找到，今天偶尔想到是不是可以找找家庭方面的主题，别说，还真的找到了，就是目前我所用的这个。
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>小测三款博客离线编辑软件</title>
+      <link>https://tunan.org/500.html</link>
+      <pubDate>Sun, 24 Jan 2010 13:50:01 +0000</pubDate>
+      
+      <guid>https://tunan.org/500.html</guid>
+      <description>现在window下主要的离线博客主要有windows live write，zoundry raven以及国内一家公司开发的菊子曰。下面本人就对这三个软</description>
+    </item>
+    
+    <item>
+      <title>开发出godaddy免费空间的另外一个用途</title>
+      <link>https://tunan.org/485.html</link>
+      <pubDate>Sat, 23 Jan 2010 07:04:06 +0000</pubDate>
+      
+      <guid>https://tunan.org/485.html</guid>
+      <description>&lt;p&gt;      godaddy免费空间确实太大了，用这也比较爽，虽然有个很大的广告，但是看在免费的份上也就别较真了。这么稳定又快速的空间，就将就用吧。有很多同学说了，这么大的空间，只装一个博客有点浪费了，那么下面我就给大家说说这个空间可以装的另外的程序。达到全面利用这个大空间的目的。&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>体验了下失而复得</title>
+      <link>https://tunan.org/477.html</link>
+      <pubDate>Wed, 20 Jan 2010 12:17:03 +0000</pubDate>
+      
+      <guid>https://tunan.org/477.html</guid>
+      <description>昨天下午4点多的时候，忽然发现网站打不开了，显示404错误，发现ftp也不能用，进到godaddy的后台，文件管理也进不去了，不过数据库没有</description>
+    </item>
+    
+    <item>
+      <title>解决godaddy免费空间广告带来影响的方法</title>
+      <link>https://tunan.org/476.html</link>
+      <pubDate>Tue, 19 Jan 2010 01:39:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/476.html</guid>
+      <description>众所周知，godaddy免费空间带有一个很大的广告条，有广告也就罢了，不厚道的是通过增加的广告代码，使得很多源代码发生了错误，这是因为它的广</description>
+    </item>
+    
+    <item>
+      <title>关于百度被黑</title>
+      <link>https://tunan.org/446.html</link>
+      <pubDate>Wed, 13 Jan 2010 06:20:51 +0000</pubDate>
+      
+      <guid>https://tunan.org/446.html</guid>
+      <description>&lt;p&gt;昨天最热门的话题可能就是百度被黑的时间了，印象中百度一直很稳定的，可能也曾经遭受到各类的攻击，但是从来没有被黑的这么彻底，所以刚被黑的时候还不敢确定是不是被黑了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>wordpress中文tag、中文分类找不到文章的解决方法</title>
+      <link>https://tunan.org/407.html</link>
+      <pubDate>Sat, 09 Jan 2010 02:19:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/407.html</guid>
+      <description>原来用的linux的主机，在设定固定连接后不存在中文tag、中文分类找不到文章，但自从换了godaddy的windows主机以后，由于iis</description>
+    </item>
+    
+    <item>
+      <title>中星九号升级后的处理办法</title>
+      <link>https://tunan.org/400.html</link>
+      <pubDate>Fri, 08 Jan 2010 04:33:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/400.html</guid>
+      <description>&lt;p&gt;中星九号在2010年元月4日开始加密播出了，这给山寨机顶盒带来了毁灭性的打击，收到的电视台从54个下降到了12个，而且大都是少数民族的语言。本来在12月份的时候也想搞个这玩意呢，不过，身在广电系统的老大说要加密了，不要买，才打消了念头，现在想来，幸亏没有买啊，如果买了的话，不白白浪费了100多白花花的人民币？从网上找了些解决的方法，希望给有这方面需求的人带来些帮助！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>完美解决godaddy免费空间广告条对wordpress后台的影响</title>
+      <link>https://tunan.org/388.html</link>
+      <pubDate>Sun, 03 Jan 2010 13:09:22 +0000</pubDate>
+      
+      <guid>https://tunan.org/388.html</guid>
+      <description>自从从godaddy搞了域名之后，一直对它提供的免费空间耿耿于怀，用也不是，不用又觉得可惜，难怪网上都说此空间是一个鸡肋。很多童鞋都把此空间</description>
+    </item>
+    
+    <item>
+      <title>提供WordPress 主题 Marcelle的汉化版本</title>
+      <link>https://tunan.org/304.html</link>
+      <pubDate>Sat, 26 Dec 2009 08:05:16 +0000</pubDate>
+      
+      <guid>https://tunan.org/304.html</guid>
+      <description>昨天发掘出 Marcelle这个主题，很快为他的那种简约而清爽的界面而吸引，打算使用这个主题，简单的汉化以后，觉得还不错，不过今天就又发现了个</description>
+    </item>
+    
+    <item>
+      <title>不得不发的视频，让你泰国人嚣张</title>
+      <link>https://tunan.org/227.html</link>
+      <pubDate>Sun, 20 Dec 2009 03:04:31 +0000</pubDate>
+      
+      <guid>https://tunan.org/227.html</guid>
+      <description>在昨天的中泰拳王争霸赛中，少林俗家弟子张开印用三拳就ko了泰国的皇家拳手，不久前泰拳还要挑战少林寺，现在知道厉害了吧，仅仅一个俗家弟子你们就</description>
+    </item>
+    
+    <item>
+      <title>介绍一个free.fr旗下的小空间chez.com</title>
+      <link>https://tunan.org/221.html</link>
+      <pubDate>Sat, 19 Dec 2009 12:06:02 +0000</pubDate>
+      
+      <guid>https://tunan.org/221.html</guid>
+      <description>free.fr旗下的小空间chez.com，之所以说是小空间，因为不知道空间的大小，速度还不错，稳定性应该也不错，其实这空间2001年就有了</description>
+    </item>
+    
+    <item>
+      <title>推荐一个免费发短信的软件——天翼live</title>
+      <link>https://tunan.org/190.html</link>
+      <pubDate>Wed, 16 Dec 2009 08:25:15 +0000</pubDate>
+      
+      <guid>https://tunan.org/190.html</guid>
+      <description>由于用的是电信的手机，昨天收到了一条短信，大意是电信也推出了可以像QQ、msn等一样可以免费发送短信的客户端，并且每个月可以免费发送300条</description>
+    </item>
+    
+    <item>
+      <title>2009年最新年度工作总结</title>
+      <link>https://tunan.org/156.html</link>
+      <pubDate>Tue, 08 Dec 2009 05:45:49 +0000</pubDate>
+      
+      <guid>https://tunan.org/156.html</guid>
+      <description>&lt;p&gt;一年已经快过去了，元旦还有22天就到了，现在把群里的工作情况做如下工作通报:&lt;br&gt;
+在一年里，我们紧密扎根在群里，高举“有空必来，有来必言，有言必留，有留必看”理论的伟大旗帜，认真贯彻落实“雁过留声，人过留言”的要求，坚持“知无不言、言无不尽”的指导思想，弘扬“一不怕手酸，二不怕加班”的大无畏精神，把“保持联系，经常骚扰”作为振兴群的第一要务！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>推荐——360安全卫士华彩生活定制版</title>
+      <link>https://tunan.org/127.html</link>
+      <pubDate>Sat, 05 Dec 2009 06:32:17 +0000</pubDate>
+      
+      <guid>https://tunan.org/127.html</guid>
+      <description>&lt;p&gt;奇虎公司为了感谢鄙人对360安全卫士的杰出贡献，特发布了“华彩生活”版360安全卫士。&lt;br&gt;
+该版本软件可以帮助你进行查杀流行木马、清除恶意软件、修补系统漏洞，全方位、实时地阻击潜在威胁！口碑极好，完全免费。界面截图如下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>冬天洗澡时小心浴霸伤眼睛</title>
+      <link>https://tunan.org/117.html</link>
+      <pubDate>Tue, 24 Nov 2009 13:33:10 +0000</pubDate>
+      
+      <guid>https://tunan.org/117.html</guid>
+      <description>浴霸的灯泡很亮，在短时间内能使浴室快速升温。不过，长时间在浴霸下面洗澡，强光很容易灼伤眼睛。 专家发言：强光会造成光污染。经常长时间使用浴霸，</description>
+    </item>
+    
+    <item>
+      <title>关于生活的感悟——强烈推荐</title>
+      <link>https://tunan.org/114.html</link>
+      <pubDate>Mon, 23 Nov 2009 11:51:48 +0000</pubDate>
+      
+      <guid>https://tunan.org/114.html</guid>
+      <description>&lt;p&gt;如果这篇文章没有分享给你，那是我的错。&lt;br&gt;
+如果这篇文章分享给你了，你却没有读，继续走弯路的你不要怪我。&lt;br&gt;
+如果你看了这篇文章，只读了一半你就说没时间了，说明你已经是个“茫”人了。&lt;br&gt;
+如果你看完了，你觉得这篇文章只是讲讲大道理，说明你的人生阅历还不够，需要你把这篇文章珍藏，走出去碰几年壁，头破血流后再回来，再读，你就会感叹自己的年少无知。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>甲流与普通流感有什么区别？</title>
+      <link>https://tunan.org/109.html</link>
+      <pubDate>Thu, 19 Nov 2009 23:19:17 +0000</pubDate>
+      
+      <guid>https://tunan.org/109.html</guid>
+      <description>&lt;p&gt;秋末冬初，正事甲流肆虐的时候，为了能让大家对甲流与普通流感有什么区别有一个了解，从网上综合了一些说法，供大家参考，当然以医院的诊断为准，本方法并不能替代医院的诊断。&lt;br&gt;
+甲流一般在3小时至6小时内，会急速发高烧(37.8℃以上)，高烧会持续3天至4天，体温超过37.8℃以上的市民，最好戴好口罩去发热门诊检测；而普通感冒偶尔会发高烧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>给大家再推荐一个杀毒软件——mcafee8.7i</title>
+      <link>https://tunan.org/71.html</link>
+      <pubDate>Mon, 26 Oct 2009 13:04:31 +0000</pubDate>
+      
+      <guid>https://tunan.org/71.html</guid>
+      <description>&lt;p&gt;        记得上次给大家推荐过360杀毒正式版1.0，不知道大家有没有用？是不是感觉到不管是资源占用也好，还是查杀率也好都是挺不错的，本次华彩在给大家推荐一款杀毒软件，可以说与360相比，有过之而无不及。因为360毕竟是半路出家，不过是引擎还有病毒库都不是自己的东西，而我要给大家推荐的这个软件就是大名鼎鼎的MCAFEE杀毒软件。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>治疗近视眼的速效法</title>
+      <link>https://tunan.org/1144.html</link>
+      <pubDate>Tue, 20 Oct 2009 01:26:19 +0000</pubDate>
+      
+      <guid>https://tunan.org/1144.html</guid>
+      <description>&lt;p&gt; &lt;/p&gt;
+&lt;p align=&#34;left&#34;&gt;
+  中医讲肝开窍于目，肾注精于目，所以许多眼疾中医都从肝肾来调治，中药的&lt;strong&gt;羊肝明目丸，石斛夜光丸，明目地黄丸&lt;/strong&gt;等等，无不遵循这种治疗原则。但是，这些方法对于治疗近视却疗效不佳。根源就在于近视的原因更多的是由于长期的眼部肌肉疲劳造成的。问题并不在深层脏腑，而是在经络层面。明白了这一点，近视的问题就可以迎刃而解。直接调控眼部肌肉供血的是膀胱经的后颈区。
+&lt;/p&gt;
+&lt;p align=&#34;left&#34;&gt;
+  眼部的肌肉我们无法直接调控，触及不到，但我们可以把眼部的肌肉和后颈的肌肉连接进来，通过调节后颈肌肉就可以治疗眼疾。岂不是非常便利吗？
+&lt;/p&gt;
+&lt;p align=&#34;left&#34;&gt;
+  如何连接
+&lt;/p&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;strong&gt;一、&lt;/strong&gt;&lt;strong&gt;转眼球</description>
+    </item>
+    
+    <item>
+      <title>预防近视的食谱</title>
+      <link>https://tunan.org/1143.html</link>
+      <pubDate>Mon, 19 Oct 2009 13:05:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1143.html</guid>
+      <description>&lt;p&gt;近视很无奈，但是只要我们注意保护视力，还是可以做到预防的，以下就是一些可以预防近视的食谱，仅供参考！&lt;/p&gt;
+&lt;p style=&#34;TEXT-INDENT: 2em&#34;&gt;
+  甜品可以助长近视眼的发展。因为糖分在人体内的代谢需要大量的维生素B1，并降低体内钙的含量，从而使眼球壁弹力减弱，助长近视加深。因此过量的甜食不利于近视患者。</description>
+    </item>
+    
+    <item>
+      <title>中国平安 – 平安车险报价体验赢3888元加油卡</title>
+      <link>https://tunan.org/1141.html</link>
+      <pubDate>Sun, 18 Oct 2009 11:40:10 +0000</pubDate>
+      
+      <guid>https://tunan.org/1141.html</guid>
+      <description>中国平安车险的最新有奖活动，按照车险投保平台页面指示提交报价即可获得“赢取188-3888元不等油卡”的抽奖机会（无需支付款项，到提示上门收</description>
+    </item>
+    
+    <item>
+      <title>推荐一本书——用脑拿订单</title>
+      <link>https://tunan.org/1139.html</link>
+      <pubDate>Thu, 15 Oct 2009 13:04:32 +0000</pubDate>
+      
+      <guid>https://tunan.org/1139.html</guid>
+      <description>用脑拿订单下载 很不错的一本书，适合销售新手老手观看 下载地址</description>
+    </item>
+    
+    <item>
+      <title>又见经典</title>
+      <link>https://tunan.org/1138.html</link>
+      <pubDate>Thu, 15 Oct 2009 12:41:31 +0000</pubDate>
+      
+      <guid>https://tunan.org/1138.html</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;我抽的不是烟，是寂寞！&lt;/li&gt;
+&lt;li&gt;别在我的坟前哭，脏了我轮回的路。&lt;/li&gt;
+&lt;li&gt;我这人从不记仇,一般有仇当场我就报了。&lt;/li&gt;
+&lt;li&gt;已经将整个青春都用来检讨青春，还要把整个生命都用来怀疑生命。&lt;/li&gt;
+&lt;li&gt;是这样的张总，你在家里的电脑上按了CTRL+C，然后在公司的电脑上再按CTRL+V是肯定不行的。即使同一篇文章也不行。不不，多贵的电脑都不行。&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>郑州大学远程教育《护理研究》作业答案</title>
+      <link>https://tunan.org/1136.html</link>
+      <pubDate>Wed, 07 Oct 2009 12:02:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/1136.html</guid>
+      <description>&lt;p&gt;       这几天老婆的护理研究作业一直没有办法完成，因为这个课程从网上根本就搜不到合适的答案，没办法老婆把这个光荣而艰巨的任务交给了我，并从她同事那里拿来了一本护理研究的书，其实各行业都是相通的，想当年我也写过毕业论文。勉强还记得一些东西，在加上老婆找的这本书，总算搞出来了一些答案，好在郑大的老师还不算变态，只让做5道就行。一下答案仅供参考！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>推荐电信旗下可免费发短信的2G免费手机邮箱</title>
+      <link>https://tunan.org/1135.html</link>
+      <pubDate>Mon, 05 Oct 2009 12:52:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/1135.html</guid>
+      <description>189邮箱是由中国电信推出的免费邮箱服务，yourname@189.cn域名后缀，类似中国移动的139邮箱，仅限中国电信用户使用，每月可向中</description>
+    </item>
+    
+    <item>
+      <title>MBO导向的绩效管理</title>
+      <link>https://tunan.org/361.html</link>
+      <pubDate>Sat, 04 Apr 2009 04:48:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/361.html</guid>
+      <description>MBO导向绩效管理的成功实施，需要企业从理念、制度、组织环境的营造到员工努力各方面的保证。 经营与管理是企业发展过程中相互影响、相互作用、对立</description>
+    </item>
+    
+    <item>
+      <title>人力资源管理者的思辨和创新</title>
+      <link>https://tunan.org/360.html</link>
+      <pubDate>Sat, 04 Apr 2009 04:43:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/360.html</guid>
+      <description>中国的人力资源管理者相比于其他职位来说,真的是压力很大的一群人！原因很多，比如大环境不尽如人意，人力资源理念进中国的时间不长，老板不重视人力</description>
+    </item>
+    
+    <item>
+      <title>人力资源管理各模块之间逻辑关系浅析</title>
+      <link>https://tunan.org/359.html</link>
+      <pubDate>Thu, 02 Apr 2009 06:37:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/359.html</guid>
+      <description>日前笔者在准备人力资源咨询项目交流课件时，对人力资源各个模块进行了梳理。在梳理过程中，笔者对人力资源管理各个模块之间的逻辑关系有了以下认识：</description>
+    </item>
+    
+    <item>
+      <title>为移动草拟《央视曝光问题 调查结果》新闻稿</title>
+      <link>https://tunan.org/358.html</link>
+      <pubDate>Mon, 16 Mar 2009 09:03:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/358.html</guid>
+      <description>针对央视3.15晚会曝光“群发垃圾短信、出售用户信息”，中国移动相关负责人接受媒体采访时表示，中国移动对3.15晚会曝光（群发垃圾短信、出售</description>
+    </item>
+    
+    <item>
+      <title>舔屁沟”为什么这么火？</title>
+      <link>https://tunan.org/355.html</link>
+      <pubDate>Mon, 16 Mar 2009 02:20:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/355.html</guid>
+      <description>“这样舔屁沟我很激动”（舔屁沟）广东媒体2009年制造的新流行词，有网友说这是广东媒体人的骄傲，这是一个伟大的创造，该报社应该嘉奖那个发明了</description>
+    </item>
+    
+    <item>
+      <title>看《走西口》悟管理</title>
+      <link>https://tunan.org/351.html</link>
+      <pubDate>Sat, 07 Mar 2009 06:59:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/351.html</guid>
+      <description>中央电视台黄金时间播出的电视连续剧《走西口》收视率极高，成为大家街谈巷议的焦点谈资，除鼓励人们积极创业及其中曲折的故事情节外，从企业管理角度</description>
+    </item>
+    
+    <item>
+      <title>[团队游戏]红与黑</title>
+      <link>https://tunan.org/348.html</link>
+      <pubDate>Sun, 22 Feb 2009 02:42:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/348.html</guid>
+      <description>游戏规则 1、目的：你队与另一队分别为队A、队B，各自争取取得高分。 2、程序：每轮你队有两种选择——-红或黑，由工作人员了解你队每轮的选择并告</description>
+    </item>
+    
+    <item>
+      <title>几种常用薪酬制度的优劣比较</title>
+      <link>https://tunan.org/345.html</link>
+      <pubDate>Wed, 18 Feb 2009 12:12:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/345.html</guid>
+      <description>科学有效的激励机制能够让员工发挥出最佳的潜能，为企业创造更大的价值。激励的方法很多，但是薪酬可以说是一种最重要的、最易使用的方法。它是企业对</description>
+    </item>
+    
+    <item>
+      <title>绩效考核流程的九个环节</title>
+      <link>https://tunan.org/336.html</link>
+      <pubDate>Wed, 04 Feb 2009 00:16:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/336.html</guid>
+      <description>通过在实际工作中摸索，本人设计了一套行之有效的绩效考核流程（见图一），它包括九个环节。 在介绍这个绩效考核流程前必须先介绍在流程中的四个角色：</description>
+    </item>
+    
+    <item>
+      <title>院士课题组多篇论文涉学术造假被国际期刊撤销</title>
+      <link>https://tunan.org/335.html</link>
+      <pubDate>Tue, 03 Feb 2009 06:31:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/335.html</guid>
+      <description>一位熟知内情的学者认为，如果来自同一课题组的学术论文存在编造实验数据或者将一次实验复制到多个论文中，那么，只有将这些论文全部检索出来进行比对</description>
+    </item>
+    
+    <item>
+      <title>Hostse免费提供1GB无广告空间&#43;10Mysql/LayeredPanel</title>
+      <link>https://tunan.org/331.html</link>
+      <pubDate>Sat, 31 Jan 2009 13:24:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/331.html</guid>
+      <description>1000MB（1GB）免费空间无任何广告支持PHP+Mysql数据库10个数据库支持绑定顶级域名免费提供二级域名25000宽带支持FTP上传</description>
     </item>
     
   </channel>

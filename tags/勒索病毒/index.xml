@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>勒索病毒 on 图南博客</title>
+    <link>https://tunan.org/tags/%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92/</link>
+    <description>Recent content in 勒索病毒 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 13 May 2019 03:45:41 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%8B%92%E7%B4%A2%E7%97%85%E6%AF%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>勒索病毒解决方案索引</title>
+      <link>https://tunan.org/25.html</link>
+      <pubDate>Mon, 13 May 2019 03:45:41 +0000</pubDate>
+      
+      <guid>https://tunan.org/25.html</guid>
+      <description>&lt;p&gt;最近在卡饭论坛看到他们出了一个勒索病毒解决方案的帖子汇总，加上身边有朋友也确实中了勒索病毒，所以，本文把这个贴子转载以下，如果有需要的朋友可以直接参考。所载得工具全都是官方得工具，可以放心得使用。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

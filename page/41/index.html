@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>推荐一个手机看书的app，阅读app
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我们知道手机上看书最大的糟点是毁眼和广告。毁眼就不说了，这个要么少看，要么戴上防蓝光眼镜然后少看，广告可就是太烦人了，那铺天盖地的，不给你弹...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-20 07:40:34 +0000 +0000'>2019-07-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 推荐一个手机看书的app，阅读app" href="https://tunan.org/2533.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>半生不熟人生意难做
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>都说熟人的生意难做，其实熟人还相对比较好一些，半生不熟人的生意才更难做。这不，跋涉者就遇到了。 前两天一个朋友联系我说，他的一个朋友需要配一副...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-20 02:09:14 +0000 +0000'>2019-07-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 半生不熟人生意难做" href="https://tunan.org/2530.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>又犯了人云亦云的毛病
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>从小接受的教育就是要实践出真知，别人的意见可以参考，但是不能完全照搬。不能像小马过河里的小马一样。 这不，今天差点又犯了人云亦云的毛病。 事情的...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-19 09:12:00 +0000 +0000'>2019-07-19</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 又犯了人云亦云的毛病" href="https://tunan.org/2526.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>景安备案太慢，原来是真出问题了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前天突发奇想，想要把这个网站也给备案了。于是关站，在景安提交了备案申请，结果让我很不开心，现在景安备案给人的体验是太糟糕了。于是果断删除备案...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-18 08:13:37 +0000 +0000'>2019-07-18</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 景安备案太慢，原来是真出问题了" href="https://tunan.org/2522.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>给自己的荣耀V9升级到emui9.1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>跋涉者的这部荣耀v9手机已经使用两年了，由于华为官方一直在升级系统，所以，感觉还能再用两年，哈哈。华为再升级系统这点做的确实不错。 首先我们看...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-16 01:18:46 +0000 +0000'>2019-07-16</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 给自己的荣耀V9升级到emui9.1" href="https://tunan.org/2520.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>英语中过桥用walk over 还是用walk across？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前几天女儿的新概念英语测试中有一道题，一道填空题： They are walking______the bridge. 女儿刚开始的答案是along，这个是肯定不对的，因为walk along是沿着….....</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-15 12:57:36 +0000 +0000'>2019-07-15</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 英语中过桥用walk over 还是用walk across？" href="https://tunan.org/2517.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>备忘，使用阿里云ossfs备份网站
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-15 03:27:27 +0000 +0000'>2019-07-15</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 备忘，使用阿里云ossfs备份网站" href="https://tunan.org/2513.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>centos7.6更改dns的方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天在重新安装服务器的生产环境的时候发现无法申请Let’s Encrypt的证书，根据我的经验，一般把服务器上的dns设置成Google的8....</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-12 09:29:00 +0000 +0000'>2019-07-12</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to centos7.6更改dns的方法" href="https://tunan.org/2260.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>记一次因为标点符号导致重装服务器的经历
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前两天的时候，镜缘轩网站出了点问题，加上那个服务器被我折腾的乱七八糟的，所以就想重新弄一下生产环境。为了不影响网站的访问，就先暂时把网站解析...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-12 08:59:58 +0000 +0000'>2019-07-12</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 记一次因为标点符号导致重装服务器的经历" href="https://tunan.org/2257.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>nodecache的服务条款很霸王啊
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>nodecache是一款新出的cdn服务商，搜索引擎上关于它的资料很少，今天搜了半天也只是找到一个快照，是和某个国外主机论坛合作推广送50美...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-09 08:47:39 +0000 +0000'>2019-07-09</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to nodecache的服务条款很霸王啊" href="https://tunan.org/2250.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/40/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/42/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

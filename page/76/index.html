@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>宝宝发烧的处理原则
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>颖颖这几天总是发烧，昨天更是发烧到半夜，从网上寻找相关的资料，以备安全使用！
+发烧的原因主要是由疾病引起，如：呼吸道感染、脑膜炎、泌尿道感染等，因此应适时找出发烧的原因，对症下药才能退烧。若体温不稳定，则表示疾病尚未痊愈，疾病痊愈，发烧即退。发烧是儿童最常见的症状，最易引起父母亲的担心。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-22 02:19:04 +0000 +0000'>2009-12-22</span>&nbsp;·&nbsp;7 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 宝宝发烧的处理原则" href="https://tunan.org/239.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>6个月宝宝成长小结
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>颖颖已经6个月零10天了，颖爸觉得孩子半岁是个分水岭，应该给颖颖做一个好好的总结。看看宝贝现在的状态，不知道哪个专家说的，半岁以后从母体带来的免疫力都已经消耗至尽，该容易生病了，还真的是这样，才零10天的小丫头，这不就来了一次发烧，头几天还有些轻微的感冒，不过幸亏不太严重，经过颖妈、颖爸、颖爷、颖奶的共同努力，通过中午的电话回访，证明宝贝已经不再发烧了，中午的体温是36.8度。还算正常。在以后的日子里肯定还会有很多次与病魔做斗争的经历，不过别怕宝贝，有爸妈爷爷奶奶在呢！
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-21 07:07:08 +0000 +0000'>2009-12-21</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 6个月宝宝成长小结" href="https://tunan.org/238.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>如何从网上淘宝淘到满意的奶粉
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>物价在上涨，工资确不见涨的动静。而咱们的小宝们还是要吃啊，大了以后或者妈妈要去上班，就要加些奶粉。可超市的奶粉真的很贵，该怎么办呢，去淘宝看了一下，发现淘宝的奶粉真的很便宜。但是又不敢去买，毕竟是咱心头肉要吃的东西，一点也不敢马虎，可看看那诱人的价格，又不能不令人心动。犹豫再三还是抱着试试看的心态从网上给女儿买了一罐，雅培的，还不错。现在华彩就把在网上购买奶粉的心得给大家说说。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-21 03:10:19 +0000 +0000'>2009-12-21</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 如何从网上淘宝淘到满意的奶粉" href="https://tunan.org/235.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>可怜的女儿，又发烧了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天下班回到家中，被告知女儿在下午4点多的时候开始发烧了，最高的时候发烧到了38.5度，只见额头上贴了个退热贴，已经给吃了些小儿氨酚磺钠颗粒...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-21 02:01:42 +0000 +0000'>2009-12-21</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 可怜的女儿，又发烧了" href="https://tunan.org/232.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>不得不发的视频，让你泰国人嚣张
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在昨天的中泰拳王争霸赛中，少林俗家弟子张开印用三拳就ko了泰国的皇家拳手，不久前泰拳还要挑战少林寺，现在知道厉害了吧，仅仅一个俗家弟子你们就...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-20 03:04:31 +0000 +0000'>2009-12-20</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 不得不发的视频，让你泰国人嚣张" href="https://tunan.org/227.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>在郑许、郑焦、郑洛轻轨铁路建立前说两句
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>欣闻郑许、郑焦、郑洛公交将在下个月开通，这样的话不仅去许昌、开封、焦作的不仅仅可以节约不少的时间，而且价格也会降低不少，更重要的是让那些黑车...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-20 01:56:05 +0000 +0000'>2009-12-20</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 在郑许、郑焦、郑洛轻轨铁路建立前说两句" href="https://tunan.org/223.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>介绍一个free.fr旗下的小空间chez.com
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>free.fr旗下的小空间chez.com，之所以说是小空间，因为不知道空间的大小，速度还不错，稳定性应该也不错，其实这空间2001年就有了...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-19 12:06:02 +0000 +0000'>2009-12-19</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 介绍一个free.fr旗下的小空间chez.com" href="https://tunan.org/221.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>女儿会藏猫猫了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>今天休息，上午把厨房收拾了一下，然后陪老婆去买了件大衣和鞋子，大衣是艾莲达的，鞋子是意尔康的，还不错，穿上看起来像那么回事了。 下午和女儿玩了...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-19 11:53:02 +0000 +0000'>2009-12-19</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 女儿会藏猫猫了" href="https://tunan.org/218.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>转一篇文章，关于宝宝6-7月应注意发展的能力
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>婴儿说的能力 发出父母听不懂的语音 能无意发出爸妈等音，还能发出一些谁也听不懂的声音。有时好像要说话，有时还有不同的表情，发出不同的音，有高兴的...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-18 09:24:30 +0000 +0000'>2009-12-18</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 转一篇文章，关于宝宝6-7月应注意发展的能力" href="https://tunan.org/214.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>女儿半岁了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>忽然发现上周的今天也就是12月11号是女儿半岁的日子，竟然都忙的忘记了。不过还好，还不算晚，明天周末，带着宝贝出去照几张照片来。 现在的女儿已...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-12-18 08:59:38 +0000 +0000'>2009-12-18</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 女儿半岁了" href="https://tunan.org/212.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/75/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/77/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

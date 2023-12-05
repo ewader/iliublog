@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>oss on 图南博客</title>
+    <link>https://tunan.org/tags/oss/</link>
+    <description>Recent content in oss on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 Jul 2019 03:27:27 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>备忘，使用阿里云ossfs备份网站</title>
+      <link>https://tunan.org/2513.html</link>
+      <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
+      
+      <guid>https://tunan.org/2513.html</guid>
+      <description>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心</description>
+    </item>
+    
+  </channel>
+</rss>

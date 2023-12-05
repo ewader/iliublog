@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nginx fastcgi_cache on 图南博客</title>
+    <link>https://tunan.org/tags/nginx-fastcgi_cache/</link>
+    <description>Recent content in Nginx fastcgi_cache on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 08 Sep 2019 01:51:11 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/nginx-fastcgi_cache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WordPress开启Nginx fastcgi_cache缓存加速</title>
+      <link>https://tunan.org/2700.html</link>
+      <pubDate>Sun, 08 Sep 2019 01:51:11 +0000</pubDate>
+      
+      <guid>https://tunan.org/2700.html</guid>
+      <description>昨天下午没有太多事情，想起来一直想弄的nginx fastcgi_cache还没有弄，于是趁着重装景安服务器的功夫，顺便把这个玩意也搞搞，弄到</description>
+    </item>
+    
+  </channel>
+</rss>

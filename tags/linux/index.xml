@@ -88,5 +88,23 @@
       <description>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，</description>
     </item>
     
+    <item>
+      <title>常用的几个Linux的命令</title>
+      <link>https://tunan.org/2535.html</link>
+      <pubDate>Sat, 20 Jul 2019 08:49:47 +0000</pubDate>
+      
+      <guid>https://tunan.org/2535.html</guid>
+      <description>作为一个命令记不全的人，每次都要跋山涉水的找命令，这次把一些经常用到的命令综合到一起，省的再去翻找别人的文章。 Linux 删除文件夹和文件的命令 删除文</description>
+    </item>
+    
+    <item>
+      <title>centos7.6更改dns的方法</title>
+      <link>https://tunan.org/2260.html</link>
+      <pubDate>Fri, 12 Jul 2019 09:29:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/2260.html</guid>
+      <description>今天在重新安装服务器的生产环境的时候发现无法申请Let’s Encrypt的证书，根据我的经验，一般把服务器上的dns设置成Google的8.</description>
+    </item>
+    
   </channel>
 </rss>

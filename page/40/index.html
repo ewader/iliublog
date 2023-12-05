@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>[连载]装在口袋里的爸爸（同人版）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>神秘的插班生 “啊，吵死了！爸爸你到底在干嘛？”我说“还让不让我写作业了？” 哦，对了，我叫杨歌，是小学六年级的学生，最近，爸爸总是在发明东西，...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-07 12:25:38 +0000 +0000'>2019-08-07</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to [连载]装在口袋里的爸爸（同人版）" href="https://tunan.org/2599.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>中纪委“点名”《哪吒》：这个人最该被问责！
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我们看《哪吒·魔童降世》，到底在看什么？ 中国的神话，不能单纯当童话故事来看。神仙妖鬼那些事，其实都是人的事。小小的陈塘关里，也包罗着人生百态...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-06 11:44:27 +0000 +0000'>2019-08-06</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 中纪委“点名”《哪吒》：这个人最该被问责！" href="https://tunan.org/2594.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>景安服务器（vps)挂载数据盘
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>以前没有注意，后来在做快照的时候发现服务器还有个数据盘的快照，和系统盘是分开的。查了一下，数据盘是送的一块专门用来放数据的另一个盘，就象我们...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-04 09:37:21 +0000 +0000'>2019-08-04</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 景安服务器（vps)挂载数据盘" href="https://tunan.org/2585.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>我最敬佩的一个人
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果有人问我，谁是你最敬佩的一个人？我一定会回答：“我们的班主任——孙老师！”为什么这么说呢？别急，且听我慢慢道来。 孙老师有一双犀利的眼睛，...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-08-02 08:48:11 +0000 +0000'>2019-08-02</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;liuxiaoya</footer>
+  <a class="entry-link" aria-label="post link to 我最敬佩的一个人" href="https://tunan.org/2580.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>尽信书不如无书
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最近在折腾阿里云的这台轻量应用服务器，给它增加一些防护的措施，经过这几天的折腾，明白了一个道理，那就是老祖宗曾经总结出的来话： 尽信书不如无书...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-30 03:28:14 +0000 +0000'>2019-07-30</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 尽信书不如无书" href="https://tunan.org/2574.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>lnmp一键开启waf及使用 Fail2Ban防护
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-28 09:07:40 +0000 +0000'>2019-07-28</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to lnmp一键开启waf及使用 Fail2Ban防护" href="https://tunan.org/2556.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>给7b2的主题加上评论回复功能
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>7b2主题默认是不会给评论者回复邮件的。也曾经问过作者，作者说如果实现这个的话，没几天邮箱就被封掉了，可能作者有作者的理由吧，但是不加的话，...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-25 00:54:22 +0000 +0000'>2019-07-25</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 给7b2的主题加上评论回复功能" href="https://tunan.org/2552.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>WPS现在真的可以用了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>WPS可以说算是金山的一款良心产品了，不过跋涉者已经好久没有用它了，原因无他，就是有太多的广告，不过这两天试用下来，由于每日可以签到送会员 ，...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-24 12:55:34 +0000 +0000'>2019-07-24</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to WPS现在真的可以用了" href="https://tunan.org/2547.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>从1到N：企业数字化生存指南
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>昨天晚上照例陪女儿看书，话说我的kindle都快被女儿给霸占住了，好不容易从她手里弄了过来。然后，她看她的简版《水浒传》，我在kindle里...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-21 07:34:52 +0000 +0000'>2019-07-21</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 从1到N：企业数字化生存指南" href="https://tunan.org/2539.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>常用的几个Linux的命令
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>作为一个命令记不全的人，每次都要跋山涉水的找命令，这次把一些经常用到的命令综合到一起，省的再去翻找别人的文章。 Linux 删除文件夹和文件的命令 删除文...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-07-20 08:49:47 +0000 +0000'>2019-07-20</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 常用的几个Linux的命令" href="https://tunan.org/2535.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/39/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/41/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

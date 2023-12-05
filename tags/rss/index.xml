@@ -34,5 +34,14 @@
       <description>由于种种原因，一直在使用RSS Feed订阅诸多博友的博客。但是由于众所周知的原因。现在使用Feed非常的不方便，要想愉快的使用，必须就要挂着</description>
     </item>
     
+    <item>
+      <title>还是用回了RSS FEED</title>
+      <link>https://tunan.org/3051.html</link>
+      <pubDate>Sat, 01 Feb 2020 01:14:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/3051.html</guid>
+      <description>以前用的RSS feed,由于速度慢，加上看了张波老师的博客，就自己搭建了RSS网站，可是Tinny rss一直有点问题，所以就用了FRESH R</description>
+    </item>
+    
   </channel>
 </rss>

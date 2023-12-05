@@ -16,5 +16,23 @@
       <description>在远程连接群晖的实践中，老刘一切介绍过zerotier和IPv6。但是实际的使用过程中，zerotier有时候握手的速度很慢，而且配置起来比</description>
     </item>
     
+    <item>
+      <title>宝塔面板安装FRP内网穿透控制群晖</title>
+      <link>https://tunan.org/2918.html</link>
+      <pubDate>Sat, 07 Dec 2019 03:28:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/2918.html</guid>
+      <description>前两天给大家介绍了利用zerotier来进行内网穿透控制群晖的方法，详见：黑群晖的福音，利用zerotier进行内网穿透。但是，zeroti</description>
+    </item>
+    
+    <item>
+      <title>使用zerotier进行内网穿透</title>
+      <link>https://tunan.org/2872.html</link>
+      <pubDate>Wed, 27 Nov 2019 07:33:08 +0000</pubDate>
+      
+      <guid>https://tunan.org/2872.html</guid>
+      <description>自从到手了暴风酷播之后，抽空就折腾了下NAS，目前来说系统方面已经没有什么问题了，自己需要使用的套件也基本上弄好了，唯一一个需要搞定的问题就</description>
+    </item>
+    
   </channel>
 </rss>

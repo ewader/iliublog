@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>长期汤拌饭影响宝宝咀嚼能力
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一周岁的宝宝，因为一直以来吃较硬的东西就会呕吐，再加上常便秘，所以一直没敢给他吃太硬的东西，所以现在咀嚼练得不好，现在老是喜欢吃汤拌饭，或者...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-16 06:10:23 +0000 +0000'>2011-01-16</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 长期汤拌饭影响宝宝咀嚼能力" href="https://tunan.org/1083.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>孩子大发脾气时，家长怎么说
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>情景 **** 伟伟刚起床时是不喜欢除了妈妈之外的人抱他的，否则他就会大哭或发脾气，让人无法亲近。 宝宝思维剖析 **** 由于孩子刚起床，身心状况尚未完全清醒及...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-10 08:15:07 +0000 +0000'>2011-01-10</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 孩子大发脾气时，家长怎么说" href="https://tunan.org/1081.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>孩子任性、反抗时，家长怎么说
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>情景 **** 甜甜频频咬桌脚，妈妈怎么劝她她也不听，还故意咬得更起劲。 宝宝思维剖析 **** 当宝宝认为做某件事很有趣时，他们就会抱着尝试的心态去做，如果大人...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-10 08:13:16 +0000 +0000'>2011-01-10</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 孩子任性、反抗时，家长怎么说" href="https://tunan.org/1078.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>如何指导幼儿正确刷牙
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如何指导幼儿正确刷牙 1.使用前，将牙刷用温水浸泡1～2分钟，使刷毛变得柔软。 2.宝宝使用牙刷时，频率不宜太快；刷牙时先刷上排牙齿，再刷下排牙...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-07 06:55:30 +0000 +0000'>2011-01-07</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 如何指导幼儿正确刷牙" href="https://tunan.org/1076.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>如何给婴幼儿进行口腔护理？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>宝宝口腔的护理
+许多父母常常忽略婴幼儿期(指孩子从出生后到3周岁的这一段时间)宝宝的口腔保健，其实这时期的口腔保健同样忽视不得。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-07 06:52:18 +0000 +0000'>2011-01-07</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 如何给婴幼儿进行口腔护理？" href="https://tunan.org/1074.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>如何帮助宝宝摆脱害怕
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>刚要关灯，孩子就哭闹起来，因为他怕黑；要去幼儿园了，孩子却不愿意放开你的手， 因为他害怕离开妈妈……怎么安慰孩子的“害怕”？ 让我们看看，图画书...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-05 13:38:35 +0000 +0000'>2011-01-05</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 如何帮助宝宝摆脱害怕" href="https://tunan.org/1072.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>给孩子来点蘑菇补补铁
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 蘑菇品种丰富，并且富含大量蛋白质、维生素等，其中铁的含量非常丰富，且极易被宝宝消化吸收。所以小宝宝想要补铁，最适于食用一些新鲜、幼嫩的蘑菇。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-04 14:42:20 +0000 +0000'>2011-01-04</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 给孩子来点蘑菇补补铁" href="https://tunan.org/1070.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>从1岁开始，把握宝宝的涂鸦期
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>唐代《添丁诗》“忽来案上翻墨汁，涂抹诗书如老鸦。”涂鸦：在字典中也是这样解释的：形容字写得很坏。似乎在一般人眼里，涂鸦是一种不好的行为。殊不...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-04 14:36:49 +0000 +0000'>2011-01-04</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 从1岁开始，把握宝宝的涂鸦期" href="https://tunan.org/1068.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>宝宝的肢体语言
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>肢体语言是人外在表现的一部分。有良好表达能力的人，总是较受欢迎，并有较佳的人际关系，让我们从婴幼儿时期，就开始关注宝宝的肢体语言。 宝宝要想逐...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-03 07:59:27 +0000 +0000'>2011-01-03</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 宝宝的肢体语言" href="https://tunan.org/1066.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>宝宝挑食的原因分析
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1.没有适时添加辅食 添加辅食对小宝宝不仅仅是营养的需要，同时也是乳牙咀嚼能力和味觉发育的锻炼。如果在宝宝需要增添辅食时，仍完全喂养母乳或配方...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-12-31 06:46:59 +0000 +0000'>2010-12-31</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 宝宝挑食的原因分析" href="https://tunan.org/1065.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/53/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/55/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

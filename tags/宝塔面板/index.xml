@@ -25,5 +25,14 @@
       <description>年初的时候，由于疫情的原因，在家没事就折腾服务器，由于看上了宝塔面板的FRP插件，所以把网站环境管理面板从oneinstack换成了宝塔面板</description>
     </item>
     
+    <item>
+      <title>换篱落的空间，用宝塔面板，CSRF校验失败</title>
+      <link>https://tunan.org/2865.html</link>
+      <pubDate>Mon, 25 Nov 2019 01:55:14 +0000</pubDate>
+      
+      <guid>https://tunan.org/2865.html</guid>
+      <description>昨天在群里看到老胡发的篱落的特价VPS，忽然发现我也在他说的那个群，以前是衡天主机的客户群，后来好像卖给给香港人后，小张自己搞了个篱落主机。</description>
+    </item>
+    
   </channel>
 </rss>

@@ -34,5 +34,14 @@
       <description>最近一段时间发现博客回复的时候一直显示提交中，不会跳转到评论成功的页面，以前也遇到过这种问题，基本上重启vps解决，但是这次貌似重启了也作用</description>
     </item>
     
+    <item>
+      <title>wordpress自动升级到5.2.2</title>
+      <link>https://tunan.org/1787.html</link>
+      <pubDate>Wed, 19 Jun 2019 02:15:39 +0000</pubDate>
+      
+      <guid>https://tunan.org/1787.html</guid>
+      <description>今天打开邮箱，发现系统发的邮件。 嗨！您位于 https://iliu.org 的站点已被成功升级到WordPress 5.2.2。 您不需要再做什么。 要获取更多关于5.2.2版本</description>
+    </item>
+    
   </channel>
 </rss>

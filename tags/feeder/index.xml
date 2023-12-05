@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>feeder on 图南博客</title>
+    <link>https://tunan.org/tags/feeder/</link>
+    <description>Recent content in feeder on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Feb 2020 01:14:28 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/feeder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>还是用回了RSS FEED</title>
+      <link>https://tunan.org/3051.html</link>
+      <pubDate>Sat, 01 Feb 2020 01:14:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/3051.html</guid>
+      <description>以前用的RSS feed,由于速度慢，加上看了张波老师的博客，就自己搭建了RSS网站，可是Tinny rss一直有点问题，所以就用了FRESH R</description>
+    </item>
+    
+  </channel>
+</rss>

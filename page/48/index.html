@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>推荐几个本在再用的免费网盘
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>笔记本还是05年买的，硬盘有点小 只有30G，本来已经淘汰了，不过开了小店以后，就拿到店内用了,硬盘太小，所以就找一些可以直接同步的网络硬盘来...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-30 03:22:16 +0000 +0000'>2011-09-30</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 推荐几个本在再用的免费网盘" href="https://tunan.org/1481.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>最不实用婴儿用品排行榜
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>一、安抚奶嘴 吮吸是宝宝与生俱来的、除了哭闹之外唯一的表达方式，父母们常会看到宝宝吮吸奶头却不吃奶或吮吸手指的情况，这其实是宝宝在安慰自己。而...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-28 14:21:40 +0000 +0000'>2011-09-28</span>&nbsp;·&nbsp;6 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 最不实用婴儿用品排行榜" href="https://tunan.org/1478.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>过早认字警惕宝宝近视
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>现在3岁不到就开始看电视、画画、看书、认字；三四岁就开始学琴识谱、学英文、认数字、玩电脑，这些近距离用眼活动会让孩子的视力发育提前，过早加入...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-26 22:22:27 +0000 +0000'>2011-09-26</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 过早认字警惕宝宝近视" href="https://tunan.org/1475.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>常吃香蕉12种疾病远离你
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>香蕉，芭蕉科(Musaceae)芭蕉属(Musa)植物，又指其果实，热带地区广泛栽培食用。香蕉味香、富于营养，终年可收获，在温带地区也很受重...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-26 11:44:00 +0000 +0000'>2011-09-26</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 常吃香蕉12种疾病远离你" href="https://tunan.org/1472.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>女儿这几天可能积食了
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>食欲不振、肚子胀气、夜间咳嗽，还有些上火，间或留鼻血，可能还有些感冒，这几天给吃的健儿清解液，可能积食现在好多了，不过感冒还没有怎么好，鼻塞...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-26 11:37:41 +0000 +0000'>2011-09-26</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 女儿这几天可能积食了" href="https://tunan.org/1469.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>吃饭也能护齿
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>很多人都没想到，用不同的方法去吃不同的食物也能对牙齿进行保健！“蘑菇皇后”香菇最能预防龋齿；乳酪是最好的口腔酸碱平衡卫士；酸甜的葡萄干也是健...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-20 03:32:41 +0000 +0000'>2011-09-20</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 吃饭也能护齿" href="https://tunan.org/1466.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>做窝沟封闭 防宝宝龋齿
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>_ 龋齿_俗称“蛀牙”或“虫牙”，是牙齿表面的细菌在作怪。孩子患_龋齿_主要是由于进食大量含糖量高的食物，又不能及时、有效地清洁牙齿所导致。龋...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-19 03:12:11 +0000 +0000'>2011-09-19</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 做窝沟封闭 防宝宝龋齿" href="https://tunan.org/1463.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>重阳节的来历及风俗
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>重阳之意来源于《易经》，古老的已经把六定为阴数，把九定为阳数，九月九日，日月并阳，故而重阳，是个吉利的日子，《旧唐书·王勃传》记载：王勃的《...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-14 10:01:46 +0000 +0000'>2011-09-14</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 重阳节的来历及风俗" href="https://tunan.org/1459.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>化解家庭矛盾中的经济学原理
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>家庭中难免会有矛盾纠纷，美国作家宝拉·苏彻曼和珍妮·安德森在《小俩口经济学》一书中，用经济学的思路告诉大家，应该怎样轻松化解家庭矛盾。 不要平...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-14 09:47:17 +0000 +0000'>2011-09-14</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 化解家庭矛盾中的经济学原理" href="https://tunan.org/1456.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>0-3岁宝宝补钙小窍门
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>婴儿身体中的矿物质约占体重的5%，钙约占体重的2%。身体的钙大多分布在骨骼和牙齿中，约占总量锝99%，其余1%分布在血液、细胞间液及软组织中...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-09-13 13:46:10 +0000 +0000'>2011-09-13</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 0-3岁宝宝补钙小窍门" href="https://tunan.org/1450.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/47/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/49/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

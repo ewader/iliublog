@@ -16,5 +16,14 @@
       <description>以前老刘写过《宝塔面板安装FRP内网穿透控制群晖》的文章，最近发现不知道是这个插件的作者不再开发了还是其他的原因，xeath开发的这个frp</description>
     </item>
     
+    <item>
+      <title>宝塔面板安装FRP内网穿透控制群晖</title>
+      <link>https://tunan.org/2918.html</link>
+      <pubDate>Sat, 07 Dec 2019 03:28:28 +0000</pubDate>
+      
+      <guid>https://tunan.org/2918.html</guid>
+      <description>前两天给大家介绍了利用zerotier来进行内网穿透控制群晖的方法，详见：黑群晖的福音，利用zerotier进行内网穿透。但是，zeroti</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>live on 图南博客</title>
+    <link>https://tunan.org/tags/live/</link>
+    <description>Recent content in live on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Dec 2009 08:25:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>推荐一个免费发短信的软件——天翼live</title>
+      <link>https://tunan.org/190.html</link>
+      <pubDate>Wed, 16 Dec 2009 08:25:15 +0000</pubDate>
+      
+      <guid>https://tunan.org/190.html</guid>
+      <description>由于用的是电信的手机，昨天收到了一条短信，大意是电信也推出了可以像QQ、msn等一样可以免费发送短信的客户端，并且每个月可以免费发送300条</description>
+    </item>
+    
+  </channel>
+</rss>

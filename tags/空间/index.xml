@@ -16,5 +16,14 @@
       <description>前几天发现网站有点卡，特别是回复评论的时候，速度很慢。然后后台看了一下进程，发现WWW进程占用的CPU会一下一下的飙升，最高的时候达到了10</description>
     </item>
     
+    <item>
+      <title>网站又搬家了—这次选的衡天小张的服务器</title>
+      <link>https://tunan.org/845.html</link>
+      <pubDate>Sun, 22 Aug 2010 09:50:38 +0000</pubDate>
+      
+      <guid>https://tunan.org/845.html</guid>
+      <description>&lt;p&gt;上次把博客放到了PIPNI的空间上，可惜的是速度较慢，而godaddy的windows空间使用起来又不太理想，刚好逛论坛的时候看到了衡天小张的信息，GOOGLE了一下，信誉各方面也不错，直接就去付款买了一个，价格很便宜。不过使用的结果可是一波三折！&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

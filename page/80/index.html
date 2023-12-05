@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>图南博客</title>
+<meta name="keywords" content="图南, 博客, 验光师, linux, hugo, wordpress, 群晖, 南怀瑾, 庄子">
+<meta name="description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录">
+<meta name="author" content="老刘">
+<link rel="canonical" href="https://tunan.org/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tunan.org/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tunan.org/img/favicon.png">
+<link rel="apple-touch-icon" href="https://tunan.org/img/favicon.png">
+<link rel="mask-icon" href="https://tunan.org/img/favicon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tunan.org/index.xml">
+<link rel="alternate" type="application/json" href="https://tunan.org/index.json">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="图南博客" />
+<meta property="og:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tunan.org/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="图南博客"/>
+<meta name="twitter:description" content="老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "图南博客",
+  "url": "https://tunan.org/",
+  "description": "老刘的个人博客，一些读书、工作、生活方面的杂记，及折腾各种物件的记录",
+  "thumbnailUrl": "https://tunan.org/img/favicon.png",
+  "sameAs": [
+      "https://github.com/ewader", "https://twitter.com/tunanblog", "index.xml", ""
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://tunan.org/" accesskey="h" title="图南博客 (Alt + H)">图南博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://tunan.org/" title="🏠主页">
+                    <span class="active">🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/archives" title="⏱归档">
+                    <span>⏱归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/categories" title="🧩分类">
+                    <span>🧩分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tunan.org/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>如何杜绝宝宝咬乳头？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>颖颖这几天养成了个坏习惯，就是在快要吃饱的时候，会狠狠的咬一下她妈妈的乳头，而且咬一下就抬头看看妈妈，好像很好玩的样子，你说她，她还以为你是在逗她。到网上查了下，发现这是孩子的普遍现象。解决办法也很简单：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-28 05:07:06 +0000 +0000'>2009-10-28</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 如何杜绝宝宝咬乳头？" href="https://tunan.org/79.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>360杀毒一个BUg存在依旧
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>360正式版推出以来，因其免费的在战略及不错的病毒查杀能力以及很小的的资源占用，迅速的征服了我，凭良心说话，确实是一款不错的杀毒软件，但是可...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-27 12:54:36 +0000 +0000'>2009-10-27</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 360杀毒一个BUg存在依旧" href="https://tunan.org/76.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>女儿今天吃的有些多
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>女儿今天可能有点撑着了，早上给她喂了半个鹌鹑蛋的蛋黄，上午9点的时候给她喂的奶粉，11点多的时候给她喂了三小勺米粉，估计吃的太多了，老婆下班...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-27 12:33:13 +0000 +0000'>2009-10-27</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 女儿今天吃的有些多" href="https://tunan.org/73.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>给大家再推荐一个杀毒软件——mcafee8.7i
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 记得上次给大家推荐过360杀毒正式版1.0，不知道大家有没有用？是不是感觉到不管是资源占用也好，还是查杀率也好都是挺不错的，本次华彩在给大家推荐一款杀毒软件，可以说与360相比，有过之而无不及。因为360毕竟是半路出家，不过是引擎还有病毒库都不是自己的东西，而我要给大家推荐的这个软件就是大名鼎鼎的MCAFEE杀毒软件。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-26 13:04:31 +0000 +0000'>2009-10-26</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 给大家再推荐一个杀毒软件——mcafee8.7i" href="https://tunan.org/71.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>郑州那么大，却容不下一只狗
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>早上上班，走到秦岭路的时候，适逢中原区的城管正在抓狗，我对城管一直没有好印象，原来城管管的是人，比如卖烤白薯的老人，比如沿街摆地摊的市民。但是好像布厂街附近那么多摆衣服摊的人确实没有管的，城管的工作一直都是该管的他没有能力去管，不该管的他却要去管，并且管理的方式也很简单，对于卖烤白薯的，直接没收炉子就可以了，对于地摊，东西没收也很方便，更有甚者—有人曾经投诉被拉走的冰柜了满满的雪糕，等要回来的时候雪糕不知道哪去了！现在城管终于对自己的工作开始升级，开始管理狗了！
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-26 04:38:25 +0000 +0000'>2009-10-26</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 郑州那么大，却容不下一只狗" href="https://tunan.org/69.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>冯德全早教法是不是真的有用
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>第一次听说冯德全的事情是上次去内蒙古赤峰出差的时候，看山东教育台的时候，看到的这个节目，听到了这个名字，直接给老婆打电话看在网上有没有下载，...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-25 12:13:07 +0000 +0000'>2009-10-25</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 冯德全早教法是不是真的有用" href="https://tunan.org/66.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>宝宝睡眠的十二个错误习惯
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>宝宝的睡眠质量对他的生长发育至关重要，研究发现，有好的睡眠质量的宝宝不仅在身高、体质方面表现出色，智力的发展也同样优异。怎样让宝宝有个好的睡眠？睡眠中的不宜之处都有哪些？且看本文为你一一盘点。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-24 13:11:55 +0000 +0000'>2009-10-24</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 宝宝睡眠的十二个错误习惯" href="https://tunan.org/64.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>何时给宝宝添加米粉?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 何时给宝宝添加米粉?宝贝已经四个半月了，开始尝试着给她增加一些辅食了，尽管**世界卫生组织（WHO）建议“纯母乳喂养应坚持到孩子六月龄”，并在全球范围提倡：辅食的添加应该在婴儿六个月时开始。但是由于宝宝的妈妈在三个月的时候就开始上班了，已经给颖颖添加了奶粉，所以现在也给宝宝把米粉添加上，宝贝对食物很是喜欢，平时吃饭的时候都记得流口水，给她吃上一点点稀饭都高兴的不得了，但还是不放心，又上网上查了下添加辅食的时机：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-24 12:56:40 +0000 +0000'>2009-10-24</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 何时给宝宝添加米粉?" href="https://tunan.org/60.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>四个月的宝宝如何喂米粉？
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>最早添加的辅食应是蛋黄
+添加蛋黄的方法如下：
+将鸡蛋煮熟、剥壳，取出蛋黄，研磨成粉。开始时每天喂一只蛋黄的1/8，以后逐渐增加到1/4、1/2，直至整个蛋黄。蛋黄粉可用开水调和，在两次喂奶中间给宝宝吃；也可直接调入米粉。6个月左右可改食蛋黄粥；7、8个月时可吃蒸蛋（包括蛋清）了。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-22 12:57:45 +0000 +0000'>2009-10-22</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 四个月的宝宝如何喂米粉？" href="https://tunan.org/59.html"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>纸尿裤再利用妙招
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>如果宝宝喜欢坐（小）马桶大便或识把后，家长就会发现纸尿裤的pp部位很多时候是未用到的（特别是男孩子），就这么扔掉，可惜了。但又不知怎么利用。
+妙用一：护角 把纸尿裤用过部分剪去，留下未用部分。把桌角、地台角护上，用宽透明胶带粘牢。就可防止1-3岁宝宝学步学跑玩耍时磕碰受伤。特别适合比较宽大锐利的直角，高度在75-95cm内的直角。至于地台的角不过是怕宝宝摔倒时，不小心头部碰到这些锐角受伤，因此，20-30cm高的地台角也要护住。这是铁蛋奶奶教我的妙招。 妙用二：吸湿 宝宝摘掉纸尿裤后的一段练习时间内，不小心尿湿了地面，这个废纸尿裤可以成为用抹布前吸尿的好工具。因为，如果直接用抹布吸的话，抹布经常吸尿不经开水烫过，很快就会烂掉。而用废纸尿裤先行将尿吸干再用抹布擦的话，很好擦，也不会特别损伤抹布。 还有家里如果安装净水装置，用桶接排出的废水，如发生溢水，也可以用此吸水。 妙用三：擦皮鞋 ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-21 12:36:05 +0000 +0000'>2009-10-21</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;老刘</footer>
+  <a class="entry-link" aria-label="post link to 纸尿裤再利用妙招" href="https://tunan.org/57.html"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://tunan.org/page/79/">
+      «&nbsp;上一页&nbsp;
+    </a>
+    <a class="next" href="https://tunan.org/page/81/">下一页&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://tunan.org/">图南博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

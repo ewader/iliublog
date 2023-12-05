@@ -16,5 +16,14 @@
       <description>前几天在安装CRMEB商城的时候，由于不想再用宝塔了，先是选择oneinstack,但是会有一些问题，比如，用www用户无法在终端运行php</description>
     </item>
     
+    <item>
+      <title>lnmp一键开启waf及使用 Fail2Ban防护</title>
+      <link>https://tunan.org/2556.html</link>
+      <pubDate>Sun, 28 Jul 2019 09:07:40 +0000</pubDate>
+      
+      <guid>https://tunan.org/2556.html</guid>
+      <description>试用了阿里云香港的轻量服务器之后，赶紧确实是一个不错的选择，因此，决定把网站给迁移过来。以前都是用的oneinstack安装包，这是因为军哥</description>
+    </item>
+    
   </channel>
 </rss>

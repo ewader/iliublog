@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>mcafee on 图南博客</title>
+    <link>https://tunan.org/tags/mcafee/</link>
+    <description>Recent content in mcafee on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 11 Jan 2010 12:35:00 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/mcafee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>介绍本人所用的软件——安全软件篇</title>
+      <link>https://tunan.org/428.html</link>
+      <pubDate>Mon, 11 Jan 2010 12:35:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/428.html</guid>
+      <description>接触安全软件是在1999年chi病毒爆发的时候，那时候刚好宿舍的电脑被感染，从一个光盘里安装上了熊猫的杀毒软件，能升级，通过扫描查找出来了大</description>
+    </item>
+    
+    <item>
+      <title>介绍mcafeee的规则命名方式</title>
+      <link>https://tunan.org/150.html</link>
+      <pubDate>Sun, 06 Dec 2009 11:56:48 +0000</pubDate>
+      
+      <guid>https://tunan.org/150.html</guid>
+      <description>&lt;p&gt;上期给大家介绍一个一个杀毒软件，mcafee8.7I，不知道您现在用的如何，是不是觉得很爽啊，其实mcafee默认的规则已经很适合一般的用户了，不过用了这么长时间，您一定想打造属于您自己的规则，那您就往下看这文章了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>给大家再推荐一个杀毒软件——mcafee8.7i</title>
+      <link>https://tunan.org/71.html</link>
+      <pubDate>Mon, 26 Oct 2009 13:04:31 +0000</pubDate>
+      
+      <guid>https://tunan.org/71.html</guid>
+      <description>&lt;p&gt;        记得上次给大家推荐过360杀毒正式版1.0，不知道大家有没有用？是不是感觉到不管是资源占用也好，还是查杀率也好都是挺不错的，本次华彩在给大家推荐一款杀毒软件，可以说与360相比，有过之而无不及。因为360毕竟是半路出家，不过是引擎还有病毒库都不是自己的东西，而我要给大家推荐的这个软件就是大名鼎鼎的MCAFEE杀毒软件。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关键时刻还是相信mcafee</title>
+      <link>https://tunan.org/343.html</link>
+      <pubDate>Sun, 15 Feb 2009 09:57:00 +0000</pubDate>
+      
+      <guid>https://tunan.org/343.html</guid>
+      <description>今天很不幸，电脑中招了，貌似是那个著名的中华吸血鬼病毒，这个病毒会在%systemroot%＼Tasks＼中释放“安装.bat”，在系统目录</description>
+    </item>
+    
+  </channel>
+</rss>
