@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>电台 on 图南博客</title>
+    <link>https://tunan.org/tags/%E7%94%B5%E5%8F%B0/</link>
+    <description>Recent content in 电台 on 图南博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 09 Dec 2023 15:14:58 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%94%B5%E5%8F%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 12 9 Love in the Radio</title>
+      <link>https://tunan.org/optics-weekly-issue-8/</link>
+      <pubDate>Sat, 09 Dec 2023 15:14:58 +0800</pubDate>
+      
+      <guid>https://tunan.org/optics-weekly-issue-8/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+  </channel>
+</rss>
