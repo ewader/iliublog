@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tunan.org/optics-weekly-issue-8/</loc>
-    <lastmod>2023-12-09T15:14:58+08:00</lastmod>
-  </url><url>
     <loc>https://tunan.org/categories/</loc>
     <lastmod>2023-12-09T15:14:58+08:00</lastmod>
   </url><url>
@@ -21,6 +18,9 @@
     <lastmod>2023-12-09T15:14:58+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/</loc>
+    <lastmod>2023-12-09T15:14:58+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/Love-in-the-radio/</loc>
     <lastmod>2023-12-09T15:14:58+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/categories/%E5%BE%B7%E5%85%85%E7%AC%A6/</loc>
