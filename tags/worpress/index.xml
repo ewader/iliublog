@@ -4,6 +4,11 @@
     <title>worpress on 图南博客</title>
     <link>https://tunan.org/tags/worpress/</link>
     <description>Recent content in worpress on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 06 Sep 2011 11:08:45 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/worpress/index.xml" rel="self" type="application/rss+xml" />

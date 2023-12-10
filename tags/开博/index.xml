@@ -4,6 +4,11 @@
     <title>开博 on 图南博客</title>
     <link>https://tunan.org/tags/%E5%BC%80%E5%8D%9A/</link>
     <description>Recent content in 开博 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 09 May 2019 10:17:38 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%BC%80%E5%8D%9A/index.xml" rel="self" type="application/rss+xml" />

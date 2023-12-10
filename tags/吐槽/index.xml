@@ -4,6 +4,11 @@
     <title>吐槽 on 图南博客</title>
     <link>https://tunan.org/tags/%E5%90%90%E6%A7%BD/</link>
     <description>Recent content in 吐槽 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 17 Mar 2020 07:47:13 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%90%90%E6%A7%BD/index.xml" rel="self" type="application/rss+xml" />

@@ -4,6 +4,11 @@
     <title>shotcut on 图南博客</title>
     <link>https://tunan.org/tags/shotcut/</link>
     <description>Recent content in shotcut on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 06 Dec 2019 02:37:53 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/shotcut/index.xml" rel="self" type="application/rss+xml" />

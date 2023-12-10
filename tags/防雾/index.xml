@@ -4,6 +4,11 @@
     <title>防雾 on 图南博客</title>
     <link>https://tunan.org/tags/%E9%98%B2%E9%9B%BE/</link>
     <description>Recent content in 防雾 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 13 Nov 2023 17:46:57 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%98%B2%E9%9B%BE/index.xml" rel="self" type="application/rss+xml" />

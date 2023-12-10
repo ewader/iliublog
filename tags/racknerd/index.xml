@@ -4,6 +4,11 @@
     <title>RackNerd on 图南博客</title>
     <link>https://tunan.org/tags/racknerd/</link>
     <description>Recent content in RackNerd on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 15 Nov 2022 07:47:39 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/racknerd/index.xml" rel="self" type="application/rss+xml" />

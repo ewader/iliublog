@@ -4,6 +4,11 @@
     <title>RSS on 图南博客</title>
     <link>https://tunan.org/tags/rss/</link>
     <description>Recent content in RSS on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/rss/index.xml" rel="self" type="application/rss+xml" />

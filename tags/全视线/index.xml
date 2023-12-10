@@ -4,6 +4,11 @@
     <title>全视线 on 图南博客</title>
     <link>https://tunan.org/tags/%E5%85%A8%E8%A7%86%E7%BA%BF/</link>
     <description>Recent content in 全视线 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 Feb 2022 03:18:10 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%85%A8%E8%A7%86%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" />

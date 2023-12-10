@@ -4,6 +4,11 @@
     <title>PHP升级 on 图南博客</title>
     <link>https://tunan.org/tags/php%E5%8D%87%E7%BA%A7/</link>
     <description>Recent content in PHP升级 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 18 Jan 2020 10:14:33 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/php%E5%8D%87%E7%BA%A7/index.xml" rel="self" type="application/rss+xml" />

@@ -4,6 +4,11 @@
     <title>朋友圈 on 图南博客</title>
     <link>https://tunan.org/tags/%E6%9C%8B%E5%8F%8B%E5%9C%88/</link>
     <description>Recent content in 朋友圈 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 23 May 2019 03:20:55 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%9C%8B%E5%8F%8B%E5%9C%88/index.xml" rel="self" type="application/rss+xml" />

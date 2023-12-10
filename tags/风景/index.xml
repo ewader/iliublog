@@ -4,6 +4,11 @@
     <title>风景 on 图南博客</title>
     <link>https://tunan.org/tags/%E9%A3%8E%E6%99%AF/</link>
     <description>Recent content in 风景 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Sep 2019 06:09:08 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%A3%8E%E6%99%AF/index.xml" rel="self" type="application/rss+xml" />

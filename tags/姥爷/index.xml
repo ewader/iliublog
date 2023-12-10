@@ -4,6 +4,11 @@
     <title>姥爷 on 图南博客</title>
     <link>https://tunan.org/tags/%E5%A7%A5%E7%88%B7/</link>
     <description>Recent content in 姥爷 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 24 Feb 2022 01:58:46 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A7%A5%E7%88%B7/index.xml" rel="self" type="application/rss+xml" />

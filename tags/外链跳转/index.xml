@@ -4,6 +4,11 @@
     <title>外链跳转 on 图南博客</title>
     <link>https://tunan.org/tags/%E5%A4%96%E9%93%BE%E8%B7%B3%E8%BD%AC/</link>
     <description>Recent content in 外链跳转 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 09 Jul 2019 01:20:11 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%96%E9%93%BE%E8%B7%B3%E8%BD%AC/index.xml" rel="self" type="application/rss+xml" />

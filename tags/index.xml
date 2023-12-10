@@ -4,6 +4,11 @@
     <title>Tags on 图南博客</title>
     <link>https://tunan.org/tags/</link>
     <description>Recent content in Tags on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 09 Dec 2023 15:14:58 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/index.xml" rel="self" type="application/rss+xml" />

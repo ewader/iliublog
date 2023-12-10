@@ -4,6 +4,11 @@
     <title>管控 on 图南博客</title>
     <link>https://tunan.org/tags/%E7%AE%A1%E6%8E%A7/</link>
     <description>Recent content in 管控 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Jan 2022 03:54:58 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%AE%A1%E6%8E%A7/index.xml" rel="self" type="application/rss+xml" />
