@@ -2,14 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tunan.org/tags/2024/</loc>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/posts/the-first-snow-in-2024/</loc>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
+  </url><url>
     <loc>https://tunan.org/categories/</loc>
-    <lastmod>2024-01-15T08:20:35+08:00</lastmod>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/posts/</loc>
-    <lastmod>2024-01-15T08:20:35+08:00</lastmod>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/</loc>
-    <lastmod>2024-01-15T08:20:35+08:00</lastmod>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/</loc>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/tags/%E9%9B%AA/</loc>
+    <lastmod>2024-01-16T09:05:48+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-01-15T08:20:35+08:00</lastmod>
@@ -17,13 +32,7 @@
     <loc>https://tunan.org/tags/%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2024-01-15T08:20:35+08:00</lastmod>
   </url><url>
-    <loc>https://tunan.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
-    <lastmod>2024-01-15T08:20:35+08:00</lastmod>
-  </url><url>
     <loc>https://tunan.org/tags/%E5%95%86%E6%A0%87/</loc>
-    <lastmod>2024-01-15T08:20:35+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/</loc>
     <lastmod>2024-01-15T08:20:35+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/posts/miscellaneous-notes-2/</loc>
@@ -57,9 +66,6 @@
     <lastmod>2023-12-11T14:49:37+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E5%86%AC%E5%A4%A9/</loc>
-    <lastmod>2023-12-11T14:49:37+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/%E9%9B%AA/</loc>
     <lastmod>2023-12-11T14:49:37+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E7%94%B5%E5%8F%B0/</loc>
