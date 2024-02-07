@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Jan 2024 09:05:48 +0800</lastBuildDate><atom:link href="https://tunan.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 15:09:30 +0800</lastBuildDate><atom:link href="https://tunan.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Fcitx5 for Android，读《万历十五年》</title>
+      <link>https://tunan.org/posts/use-fcitx5-andriod-input/</link>
+      <pubDate>Wed, 07 Feb 2024 15:09:30 +0800</pubDate>
+      
+      <guid>https://tunan.org/posts/use-fcitx5-andriod-input/</guid>
+      <description> </description>
+    </item>
+    
     <item>
       <title>2024年的第一场雪</title>
       <link>https://tunan.org/posts/the-first-snow-in-2024/</link>
