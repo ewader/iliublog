@@ -11,7 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Feb 2024 10:36:12 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Feb 2024 15:16:38 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>乡愁</title>
+      <link>https://tunan.org/tags/%E4%B9%A1%E6%84%81/</link>
+      <pubDate>Tue, 20 Feb 2024 15:16:38 +0800</pubDate>
+      
+      <guid>https://tunan.org/tags/%E4%B9%A1%E6%84%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>杂记</title>
+      <link>https://tunan.org/tags/%E6%9D%82%E8%AE%B0/</link>
+      <pubDate>Tue, 20 Feb 2024 15:16:38 +0800</pubDate>
+      
+      <guid>https://tunan.org/tags/%E6%9D%82%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>第二十条</title>
       <link>https://tunan.org/tags/%E7%AC%AC%E4%BA%8C%E5%8D%81%E6%9D%A1/</link>
@@ -31,7 +49,7 @@
     </item>
     
     <item>
-      <title>fcitx5</title>
+      <title>Fcitx5</title>
       <link>https://tunan.org/tags/fcitx5/</link>
       <pubDate>Wed, 07 Feb 2024 15:09:30 +0800</pubDate>
       
@@ -220,7 +238,7 @@
     </item>
     
     <item>
-      <title>cloudFlare</title>
+      <title>Cloudflare</title>
       <link>https://tunan.org/tags/cloudflare/</link>
       <pubDate>Fri, 01 Dec 2023 15:45:19 +0800</pubDate>
       
@@ -364,7 +382,7 @@
     </item>
     
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://tunan.org/tags/git/</link>
       <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
       
@@ -373,7 +391,7 @@
     </item>
     
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://tunan.org/tags/hugo/</link>
       <pubDate>Sat, 04 Nov 2023 20:36:45 +0800</pubDate>
       
@@ -382,7 +400,7 @@
     </item>
     
     <item>
-      <title>papermod</title>
+      <title>Papermod</title>
       <link>https://tunan.org/tags/papermod/</link>
       <pubDate>Sat, 04 Nov 2023 20:36:45 +0800</pubDate>
       
@@ -454,7 +472,7 @@
     </item>
     
     <item>
-      <title>anytype</title>
+      <title>Anytype</title>
       <link>https://tunan.org/tags/anytype/</link>
       <pubDate>Thu, 12 Oct 2023 01:07:28 +0000</pubDate>
       
@@ -472,7 +490,7 @@
     </item>
     
     <item>
-      <title>trilium</title>
+      <title>Trilium</title>
       <link>https://tunan.org/tags/trilium/</link>
       <pubDate>Thu, 12 Oct 2023 01:07:28 +0000</pubDate>
       
@@ -1030,7 +1048,7 @@
     </item>
     
     <item>
-      <title>manjaro</title>
+      <title>Manjaro</title>
       <link>https://tunan.org/tags/manjaro/</link>
       <pubDate>Sun, 23 Apr 2023 09:47:27 +0000</pubDate>
       
@@ -1039,7 +1057,7 @@
     </item>
     
     <item>
-      <title>rime输入法</title>
+      <title>Rime输入法</title>
       <link>https://tunan.org/tags/rime%E8%BE%93%E5%85%A5%E6%B3%95/</link>
       <pubDate>Sun, 23 Apr 2023 09:47:27 +0000</pubDate>
       
@@ -1120,7 +1138,7 @@
     </item>
     
     <item>
-      <title>crmeb</title>
+      <title>Crmeb</title>
       <link>https://tunan.org/tags/crmeb/</link>
       <pubDate>Thu, 06 Apr 2023 09:42:54 +0000</pubDate>
       
@@ -1129,7 +1147,7 @@
     </item>
     
     <item>
-      <title>lnmp</title>
+      <title>Lnmp</title>
       <link>https://tunan.org/tags/lnmp/</link>
       <pubDate>Thu, 06 Apr 2023 09:42:54 +0000</pubDate>
       
@@ -1138,7 +1156,7 @@
     </item>
     
     <item>
-      <title>thinphp</title>
+      <title>Thinphp</title>
       <link>https://tunan.org/tags/thinphp/</link>
       <pubDate>Thu, 06 Apr 2023 09:42:54 +0000</pubDate>
       
@@ -1318,7 +1336,7 @@
     </item>
     
     <item>
-      <title>django</title>
+      <title>Django</title>
       <link>https://tunan.org/tags/django/</link>
       <pubDate>Fri, 18 Nov 2022 00:17:14 +0000</pubDate>
       
@@ -1327,7 +1345,7 @@
     </item>
     
     <item>
-      <title>mysql</title>
+      <title>Mysql</title>
       <link>https://tunan.org/tags/mysql/</link>
       <pubDate>Fri, 18 Nov 2022 00:17:14 +0000</pubDate>
       
@@ -1336,7 +1354,7 @@
     </item>
     
     <item>
-      <title>gnome</title>
+      <title>Gnome</title>
       <link>https://tunan.org/tags/gnome/</link>
       <pubDate>Wed, 16 Nov 2022 01:40:50 +0000</pubDate>
       
@@ -1372,7 +1390,7 @@
     </item>
     
     <item>
-      <title>cloudcone</title>
+      <title>Cloudcone</title>
       <link>https://tunan.org/tags/cloudcone/</link>
       <pubDate>Mon, 07 Nov 2022 06:58:25 +0000</pubDate>
       
@@ -1399,7 +1417,7 @@
     </item>
     
     <item>
-      <title>http host头漏洞</title>
+      <title>Http Host头漏洞</title>
       <link>https://tunan.org/tags/http-host%E5%A4%B4%E6%BC%8F%E6%B4%9E/</link>
       <pubDate>Fri, 14 Oct 2022 03:26:57 +0000</pubDate>
       
@@ -1759,7 +1777,7 @@
     </item>
     
     <item>
-      <title>websocket错误</title>
+      <title>Websocket错误</title>
       <link>https://tunan.org/tags/websocket%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sun, 26 Jun 2022 03:50:24 +0000</pubDate>
       
@@ -1786,7 +1804,7 @@
     </item>
     
     <item>
-      <title>logseq</title>
+      <title>Logseq</title>
       <link>https://tunan.org/tags/logseq/</link>
       <pubDate>Thu, 23 Jun 2022 02:35:24 +0000</pubDate>
       
@@ -1795,7 +1813,7 @@
     </item>
     
     <item>
-      <title>obsidian</title>
+      <title>Obsidian</title>
       <link>https://tunan.org/tags/obsidian/</link>
       <pubDate>Thu, 23 Jun 2022 02:35:24 +0000</pubDate>
       
@@ -1948,7 +1966,7 @@
     </item>
     
     <item>
-      <title>centos</title>
+      <title>Centos</title>
       <link>https://tunan.org/tags/centos/</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
@@ -1957,7 +1975,7 @@
     </item>
     
     <item>
-      <title>debian</title>
+      <title>Debian</title>
       <link>https://tunan.org/tags/debian/</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
@@ -1966,7 +1984,7 @@
     </item>
     
     <item>
-      <title>ubuntu</title>
+      <title>Ubuntu</title>
       <link>https://tunan.org/tags/ubuntu/</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
       
@@ -2002,7 +2020,7 @@
     </item>
     
     <item>
-      <title>ie浏览器</title>
+      <title>Ie浏览器</title>
       <link>https://tunan.org/tags/ie%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
       <pubDate>Thu, 26 May 2022 01:55:15 +0000</pubDate>
       
@@ -2011,7 +2029,7 @@
     </item>
     
     <item>
-      <title>windows11</title>
+      <title>Windows11</title>
       <link>https://tunan.org/tags/windows11/</link>
       <pubDate>Thu, 26 May 2022 01:55:15 +0000</pubDate>
       
@@ -2128,7 +2146,7 @@
     </item>
     
     <item>
-      <title>argon主题</title>
+      <title>Argon主题</title>
       <link>https://tunan.org/tags/argon%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Wed, 16 Mar 2022 02:38:21 +0000</pubDate>
       
@@ -2353,7 +2371,7 @@
     </item>
     
     <item>
-      <title>deepin</title>
+      <title>Deepin</title>
       <link>https://tunan.org/tags/deepin/</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
@@ -2362,7 +2380,7 @@
     </item>
     
     <item>
-      <title>uos</title>
+      <title>Uos</title>
       <link>https://tunan.org/tags/uos/</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
       
@@ -2371,7 +2389,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://tunan.org/tags/python/</link>
       <pubDate>Fri, 14 Jan 2022 09:34:09 +0000</pubDate>
       
@@ -2434,7 +2452,7 @@
     </item>
     
     <item>
-      <title>mangaro</title>
+      <title>Mangaro</title>
       <link>https://tunan.org/tags/mangaro/</link>
       <pubDate>Thu, 06 Jan 2022 09:38:19 +0000</pubDate>
       
@@ -2488,7 +2506,7 @@
     </item>
     
     <item>
-      <title>ddns</title>
+      <title>Ddns</title>
       <link>https://tunan.org/tags/ddns/</link>
       <pubDate>Thu, 30 Dec 2021 02:47:58 +0000</pubDate>
       
@@ -2497,7 +2515,7 @@
     </item>
     
     <item>
-      <title>ipv6</title>
+      <title>Ipv6</title>
       <link>https://tunan.org/tags/ipv6/</link>
       <pubDate>Thu, 30 Dec 2021 02:47:58 +0000</pubDate>
       
@@ -2560,7 +2578,7 @@
     </item>
     
     <item>
-      <title>kindle</title>
+      <title>Kindle</title>
       <link>https://tunan.org/tags/kindle/</link>
       <pubDate>Mon, 27 Dec 2021 13:23:01 +0000</pubDate>
       
@@ -2596,7 +2614,7 @@
     </item>
     
     <item>
-      <title>ibus</title>
+      <title>Ibus</title>
       <link>https://tunan.org/tags/ibus/</link>
       <pubDate>Sat, 25 Dec 2021 05:47:41 +0000</pubDate>
       
@@ -2605,7 +2623,7 @@
     </item>
     
     <item>
-      <title>libpinyin</title>
+      <title>Libpinyin</title>
       <link>https://tunan.org/tags/libpinyin/</link>
       <pubDate>Sat, 25 Dec 2021 05:47:41 +0000</pubDate>
       
@@ -2632,7 +2650,7 @@
     </item>
     
     <item>
-      <title>liteserver</title>
+      <title>Liteserver</title>
       <link>https://tunan.org/tags/liteserver/</link>
       <pubDate>Fri, 24 Dec 2021 07:41:31 +0000</pubDate>
       
@@ -2758,7 +2776,7 @@
     </item>
     
     <item>
-      <title>windows</title>
+      <title>Windows</title>
       <link>https://tunan.org/tags/windows/</link>
       <pubDate>Tue, 14 Dec 2021 12:57:17 +0000</pubDate>
       
@@ -2785,7 +2803,7 @@
     </item>
     
     <item>
-      <title>linuxmint</title>
+      <title>Linuxmint</title>
       <link>https://tunan.org/tags/linuxmint/</link>
       <pubDate>Mon, 13 Dec 2021 06:09:18 +0000</pubDate>
       
@@ -2857,7 +2875,7 @@
     </item>
     
     <item>
-      <title>virmach</title>
+      <title>Virmach</title>
       <link>https://tunan.org/tags/virmach/</link>
       <pubDate>Fri, 05 Nov 2021 04:05:56 +0000</pubDate>
       
@@ -2866,7 +2884,7 @@
     </item>
     
     <item>
-      <title>input</title>
+      <title>Input</title>
       <link>https://tunan.org/tags/input/</link>
       <pubDate>Sat, 30 Oct 2021 04:28:51 +0000</pubDate>
       
@@ -3136,7 +3154,7 @@
     </item>
     
     <item>
-      <title>dsm7.0</title>
+      <title>Dsm7.0</title>
       <link>https://tunan.org/tags/dsm7.0/</link>
       <pubDate>Mon, 06 Sep 2021 10:25:46 +0000</pubDate>
       
@@ -3244,7 +3262,7 @@
     </item>
     
     <item>
-      <title>avg</title>
+      <title>Avg</title>
       <link>https://tunan.org/tags/avg/</link>
       <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
       
@@ -3253,7 +3271,7 @@
     </item>
     
     <item>
-      <title>cccleaner</title>
+      <title>Cccleaner</title>
       <link>https://tunan.org/tags/cccleaner/</link>
       <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
       
@@ -3622,7 +3640,7 @@
     </item>
     
     <item>
-      <title>php8.0</title>
+      <title>Php8.0</title>
       <link>https://tunan.org/tags/php8.0/</link>
       <pubDate>Thu, 20 May 2021 09:30:37 +0000</pubDate>
       
@@ -3883,7 +3901,7 @@
     </item>
     
     <item>
-      <title>Google adsense</title>
+      <title>Google Adsense</title>
       <link>https://tunan.org/tags/google-adsense/</link>
       <pubDate>Sat, 20 Feb 2021 01:38:02 +0000</pubDate>
       
@@ -3892,7 +3910,7 @@
     </item>
     
     <item>
-      <title>pin</title>
+      <title>Pin</title>
       <link>https://tunan.org/tags/pin/</link>
       <pubDate>Sat, 20 Feb 2021 01:38:02 +0000</pubDate>
       
@@ -4135,7 +4153,7 @@
     </item>
     
     <item>
-      <title>urlos</title>
+      <title>Urlos</title>
       <link>https://tunan.org/tags/urlos/</link>
       <pubDate>Thu, 21 Jan 2021 09:10:01 +0000</pubDate>
       
@@ -4144,7 +4162,7 @@
     </item>
     
     <item>
-      <title>org域名</title>
+      <title>Org域名</title>
       <link>https://tunan.org/tags/org%E5%9F%9F%E5%90%8D/</link>
       <pubDate>Sun, 10 Jan 2021 09:05:27 +0000</pubDate>
       
@@ -4207,7 +4225,7 @@
     </item>
     
     <item>
-      <title>name.com</title>
+      <title>Name.com</title>
       <link>https://tunan.org/tags/name.com/</link>
       <pubDate>Sun, 03 Jan 2021 08:33:54 +0000</pubDate>
       
@@ -4279,7 +4297,7 @@
     </item>
     
     <item>
-      <title>apache</title>
+      <title>Apache</title>
       <link>https://tunan.org/tags/apache/</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
       
@@ -4297,7 +4315,7 @@
     </item>
     
     <item>
-      <title>wordpress</title>
+      <title>Wordpress</title>
       <link>https://tunan.org/tags/wordpress/</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
       
@@ -4369,7 +4387,7 @@
     </item>
     
     <item>
-      <title>cdn</title>
+      <title>Cdn</title>
       <link>https://tunan.org/tags/cdn/</link>
       <pubDate>Mon, 21 Dec 2020 07:15:11 +0000</pubDate>
       
@@ -4495,7 +4513,7 @@
     </item>
     
     <item>
-      <title>keepass</title>
+      <title>Keepass</title>
       <link>https://tunan.org/tags/keepass/</link>
       <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
       
@@ -4504,7 +4522,7 @@
     </item>
     
     <item>
-      <title>keepassxc</title>
+      <title>Keepassxc</title>
       <link>https://tunan.org/tags/keepassxc/</link>
       <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
       
@@ -4684,7 +4702,7 @@
     </item>
     
     <item>
-      <title>zerotier</title>
+      <title>Zerotier</title>
       <link>https://tunan.org/tags/zerotier/</link>
       <pubDate>Sat, 24 Oct 2020 07:49:34 +0000</pubDate>
       
@@ -4720,7 +4738,7 @@
     </item>
     
     <item>
-      <title>id</title>
+      <title>Id</title>
       <link>https://tunan.org/tags/id/</link>
       <pubDate>Tue, 20 Oct 2020 07:24:11 +0000</pubDate>
       
@@ -4765,7 +4783,7 @@
     </item>
     
     <item>
-      <title>frp</title>
+      <title>Frp</title>
       <link>https://tunan.org/tags/frp/</link>
       <pubDate>Sun, 18 Oct 2020 07:27:04 +0000</pubDate>
       
@@ -4792,7 +4810,7 @@
     </item>
     
     <item>
-      <title>bug</title>
+      <title>Bug</title>
       <link>https://tunan.org/tags/bug/</link>
       <pubDate>Sat, 17 Oct 2020 03:50:44 +0000</pubDate>
       
@@ -4963,7 +4981,7 @@
     </item>
     
     <item>
-      <title>No input file specified</title>
+      <title>No Input File Specified</title>
       <link>https://tunan.org/tags/no-input-file-specified/</link>
       <pubDate>Thu, 27 Aug 2020 03:25:28 +0000</pubDate>
       
@@ -4972,7 +4990,7 @@
     </item>
     
     <item>
-      <title>oneinstack</title>
+      <title>Oneinstack</title>
       <link>https://tunan.org/tags/oneinstack/</link>
       <pubDate>Thu, 27 Aug 2020 03:25:28 +0000</pubDate>
       
@@ -5107,7 +5125,7 @@
     </item>
     
     <item>
-      <title>nas</title>
+      <title>Nas</title>
       <link>https://tunan.org/tags/nas/</link>
       <pubDate>Thu, 04 Jun 2020 10:02:22 +0000</pubDate>
       
@@ -5224,7 +5242,7 @@
     </item>
     
     <item>
-      <title>凯米X-drive</title>
+      <title>凯米X-Drive</title>
       <link>https://tunan.org/tags/%E5%87%AF%E7%B1%B3x-drive/</link>
       <pubDate>Fri, 08 May 2020 02:50:04 +0000</pubDate>
       
@@ -5332,7 +5350,7 @@
     </item>
     
     <item>
-      <title>Apple iPad第七代</title>
+      <title>Apple IPad第七代</title>
       <link>https://tunan.org/tags/apple-ipad%E7%AC%AC%E4%B8%83%E4%BB%A3/</link>
       <pubDate>Sun, 22 Mar 2020 08:48:36 +0000</pubDate>
       
@@ -5341,7 +5359,7 @@
     </item>
     
     <item>
-      <title>iPad</title>
+      <title>IPad</title>
       <link>https://tunan.org/tags/ipad/</link>
       <pubDate>Sun, 22 Mar 2020 08:48:36 +0000</pubDate>
       
@@ -5467,7 +5485,7 @@
     </item>
     
     <item>
-      <title>feeder</title>
+      <title>Feeder</title>
       <link>https://tunan.org/tags/feeder/</link>
       <pubDate>Sat, 01 Feb 2020 01:14:28 +0000</pubDate>
       
@@ -5530,7 +5548,7 @@
     </item>
     
     <item>
-      <title>php</title>
+      <title>Php</title>
       <link>https://tunan.org/tags/php/</link>
       <pubDate>Sat, 18 Jan 2020 10:14:33 +0000</pubDate>
       
@@ -5593,7 +5611,7 @@
     </item>
     
     <item>
-      <title>kindle模拟器</title>
+      <title>Kindle模拟器</title>
       <link>https://tunan.org/tags/kindle%E6%A8%A1%E6%8B%9F%E5%99%A8/</link>
       <pubDate>Fri, 10 Jan 2020 07:12:58 +0000</pubDate>
       
@@ -5755,7 +5773,7 @@
     </item>
     
     <item>
-      <title>shotcut</title>
+      <title>Shotcut</title>
       <link>https://tunan.org/tags/shotcut/</link>
       <pubDate>Fri, 06 Dec 2019 02:37:53 +0000</pubDate>
       
@@ -5773,7 +5791,7 @@
     </item>
     
     <item>
-      <title>openwrt</title>
+      <title>Openwrt</title>
       <link>https://tunan.org/tags/openwrt/</link>
       <pubDate>Thu, 05 Dec 2019 07:02:08 +0000</pubDate>
       
@@ -6043,15 +6061,6 @@
     </item>
     
     <item>
-      <title>杂记</title>
-      <link>https://tunan.org/tags/%E6%9D%82%E8%AE%B0/</link>
-      <pubDate>Sun, 06 Oct 2019 05:56:15 +0000</pubDate>
-      
-      <guid>https://tunan.org/tags/%E6%9D%82%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>国庆节</title>
       <link>https://tunan.org/tags/%E5%9B%BD%E5%BA%86%E8%8A%82/</link>
       <pubDate>Mon, 30 Sep 2019 06:40:44 +0000</pubDate>
@@ -6160,7 +6169,7 @@
     </item>
     
     <item>
-      <title>Nginx fastcgi_cache</title>
+      <title>Nginx Fastcgi_cache</title>
       <link>https://tunan.org/tags/nginx-fastcgi_cache/</link>
       <pubDate>Sun, 08 Sep 2019 01:51:11 +0000</pubDate>
       
@@ -6169,7 +6178,7 @@
     </item>
     
     <item>
-      <title>wordpress优化</title>
+      <title>Wordpress优化</title>
       <link>https://tunan.org/tags/wordpress%E4%BC%98%E5%8C%96/</link>
       <pubDate>Sun, 08 Sep 2019 01:51:11 +0000</pubDate>
       
@@ -6331,7 +6340,7 @@
     </item>
     
     <item>
-      <title>cnd获取真实ip</title>
+      <title>Cnd获取真实ip</title>
       <link>https://tunan.org/tags/cnd%E8%8E%B7%E5%8F%96%E7%9C%9F%E5%AE%9Eip/</link>
       <pubDate>Sun, 28 Jul 2019 09:07:40 +0000</pubDate>
       
@@ -6358,7 +6367,7 @@
     </item>
     
     <item>
-      <title>wps</title>
+      <title>Wps</title>
       <link>https://tunan.org/tags/wps/</link>
       <pubDate>Wed, 24 Jul 2019 12:55:34 +0000</pubDate>
       
@@ -6367,7 +6376,7 @@
     </item>
     
     <item>
-      <title>wps会员</title>
+      <title>Wps会员</title>
       <link>https://tunan.org/tags/wps%E4%BC%9A%E5%91%98/</link>
       <pubDate>Wed, 24 Jul 2019 12:55:34 +0000</pubDate>
       
@@ -6376,7 +6385,7 @@
     </item>
     
     <item>
-      <title>kindle电子书</title>
+      <title>Kindle电子书</title>
       <link>https://tunan.org/tags/kindle%E7%94%B5%E5%AD%90%E4%B9%A6/</link>
       <pubDate>Sun, 21 Jul 2019 07:34:52 +0000</pubDate>
       
@@ -6403,7 +6412,7 @@
     </item>
     
     <item>
-      <title>linux命令</title>
+      <title>Linux命令</title>
       <link>https://tunan.org/tags/linux%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 20 Jul 2019 08:49:47 +0000</pubDate>
       
@@ -6484,7 +6493,7 @@
     </item>
     
     <item>
-      <title>emui9.1</title>
+      <title>Emui9.1</title>
       <link>https://tunan.org/tags/emui9.1/</link>
       <pubDate>Tue, 16 Jul 2019 01:18:46 +0000</pubDate>
       
@@ -6502,7 +6511,7 @@
     </item>
     
     <item>
-      <title>across</title>
+      <title>Across</title>
       <link>https://tunan.org/tags/across/</link>
       <pubDate>Mon, 15 Jul 2019 12:57:36 +0000</pubDate>
       
@@ -6511,7 +6520,7 @@
     </item>
     
     <item>
-      <title>over</title>
+      <title>Over</title>
       <link>https://tunan.org/tags/over/</link>
       <pubDate>Mon, 15 Jul 2019 12:57:36 +0000</pubDate>
       
@@ -6529,7 +6538,7 @@
     </item>
     
     <item>
-      <title>oss</title>
+      <title>Oss</title>
       <link>https://tunan.org/tags/oss/</link>
       <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
       
@@ -6538,7 +6547,7 @@
     </item>
     
     <item>
-      <title>ossfs</title>
+      <title>Ossfs</title>
       <link>https://tunan.org/tags/ossfs/</link>
       <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
       
@@ -6709,7 +6718,7 @@
     </item>
     
     <item>
-      <title>godaddy</title>
+      <title>Godaddy</title>
       <link>https://tunan.org/tags/godaddy/</link>
       <pubDate>Wed, 26 Jun 2019 00:38:56 +0000</pubDate>
       
@@ -6808,7 +6817,7 @@
     </item>
     
     <item>
-      <title>xshell</title>
+      <title>Xshell</title>
       <link>https://tunan.org/tags/xshell/</link>
       <pubDate>Sat, 15 Jun 2019 07:35:45 +0000</pubDate>
       
@@ -6934,7 +6943,7 @@
     </item>
     
     <item>
-      <title>qq</title>
+      <title>Qq</title>
       <link>https://tunan.org/tags/qq/</link>
       <pubDate>Wed, 29 May 2019 01:47:53 +0000</pubDate>
       
@@ -6961,7 +6970,7 @@
     </item>
     
     <item>
-      <title>nofollow</title>
+      <title>Nofollow</title>
       <link>https://tunan.org/tags/nofollow/</link>
       <pubDate>Mon, 27 May 2019 07:08:40 +0000</pubDate>
       
@@ -7501,7 +7510,7 @@
     </item>
     
     <item>
-      <title>worpress</title>
+      <title>Worpress</title>
       <link>https://tunan.org/tags/worpress/</link>
       <pubDate>Tue, 06 Sep 2011 11:08:45 +0000</pubDate>
       
@@ -8230,7 +8239,7 @@
     </item>
     
     <item>
-      <title>gps</title>
+      <title>Gps</title>
       <link>https://tunan.org/tags/gps/</link>
       <pubDate>Fri, 29 Oct 2010 01:34:58 +0000</pubDate>
       
@@ -8257,7 +8266,7 @@
     </item>
     
     <item>
-      <title>godaddy免费空间</title>
+      <title>Godaddy免费空间</title>
       <link>https://tunan.org/tags/godaddy%E5%85%8D%E8%B4%B9%E7%A9%BA%E9%97%B4/</link>
       <pubDate>Thu, 28 Oct 2010 06:03:38 +0000</pubDate>
       
@@ -8284,7 +8293,7 @@
     </item>
     
     <item>
-      <title>Opera mini</title>
+      <title>Opera Mini</title>
       <link>https://tunan.org/tags/opera-mini/</link>
       <pubDate>Tue, 14 Sep 2010 05:48:30 +0000</pubDate>
       
@@ -8689,7 +8698,7 @@
     </item>
     
     <item>
-      <title>cctv曝光</title>
+      <title>Cctv曝光</title>
       <link>https://tunan.org/tags/cctv%E6%9B%9D%E5%85%89/</link>
       <pubDate>Fri, 05 Feb 2010 07:31:35 +0000</pubDate>
       
@@ -8725,7 +8734,7 @@
     </item>
     
     <item>
-      <title>window live writer</title>
+      <title>Window Live Writer</title>
       <link>https://tunan.org/tags/window-live-writer/</link>
       <pubDate>Sun, 24 Jan 2010 13:50:01 +0000</pubDate>
       
@@ -8734,7 +8743,7 @@
     </item>
     
     <item>
-      <title>zoundry raven</title>
+      <title>Zoundry Raven</title>
       <link>https://tunan.org/tags/zoundry-raven/</link>
       <pubDate>Sun, 24 Jan 2010 13:50:01 +0000</pubDate>
       
@@ -8779,7 +8788,7 @@
     </item>
     
     <item>
-      <title>office</title>
+      <title>Office</title>
       <link>https://tunan.org/tags/office/</link>
       <pubDate>Thu, 14 Jan 2010 13:09:10 +0000</pubDate>
       
@@ -8788,7 +8797,7 @@
     </item>
     
     <item>
-      <title>word</title>
+      <title>Word</title>
       <link>https://tunan.org/tags/word/</link>
       <pubDate>Thu, 14 Jan 2010 13:09:10 +0000</pubDate>
       
@@ -8806,7 +8815,7 @@
     </item>
     
     <item>
-      <title>google</title>
+      <title>Google</title>
       <link>https://tunan.org/tags/google/</link>
       <pubDate>Wed, 13 Jan 2010 09:42:43 +0000</pubDate>
       
@@ -8815,7 +8824,7 @@
     </item>
     
     <item>
-      <title>google中国</title>
+      <title>Google中国</title>
       <link>https://tunan.org/tags/google%E4%B8%AD%E5%9B%BD/</link>
       <pubDate>Wed, 13 Jan 2010 09:42:43 +0000</pubDate>
       
@@ -8833,7 +8842,7 @@
     </item>
     
     <item>
-      <title>avast!</title>
+      <title>Avast!</title>
       <link>https://tunan.org/tags/avast/</link>
       <pubDate>Mon, 11 Jan 2010 12:35:00 +0000</pubDate>
       
@@ -8842,7 +8851,7 @@
     </item>
     
     <item>
-      <title>mcafee</title>
+      <title>Mcafee</title>
       <link>https://tunan.org/tags/mcafee/</link>
       <pubDate>Mon, 11 Jan 2010 12:35:00 +0000</pubDate>
       
@@ -8851,7 +8860,7 @@
     </item>
     
     <item>
-      <title>webqq mini</title>
+      <title>Webqq Mini</title>
       <link>https://tunan.org/tags/webqq-mini/</link>
       <pubDate>Mon, 11 Jan 2010 08:46:00 +0000</pubDate>
       
@@ -9040,7 +9049,7 @@
     </item>
     
     <item>
-      <title>live</title>
+      <title>Live</title>
       <link>https://tunan.org/tags/live/</link>
       <pubDate>Wed, 16 Dec 2009 08:25:15 +0000</pubDate>
       
@@ -9049,7 +9058,7 @@
     </item>
     
     <item>
-      <title>msn</title>
+      <title>Msn</title>
       <link>https://tunan.org/tags/msn/</link>
       <pubDate>Wed, 16 Dec 2009 08:25:15 +0000</pubDate>
       
@@ -9067,7 +9076,7 @@
     </item>
     
     <item>
-      <title>sis显卡</title>
+      <title>Sis显卡</title>
       <link>https://tunan.org/tags/sis%E6%98%BE%E5%8D%A1/</link>
       <pubDate>Fri, 11 Dec 2009 06:48:00 +0000</pubDate>
       
@@ -9139,7 +9148,7 @@
     </item>
     
     <item>
-      <title>comodo</title>
+      <title>Comodo</title>
       <link>https://tunan.org/tags/comodo/</link>
       <pubDate>Tue, 27 Oct 2009 12:54:36 +0000</pubDate>
       
@@ -9310,7 +9319,7 @@
     </item>
     
     <item>
-      <title>kpi</title>
+      <title>Kpi</title>
       <link>https://tunan.org/tags/kpi/</link>
       <pubDate>Wed, 04 Feb 2009 00:16:00 +0000</pubDate>
       
