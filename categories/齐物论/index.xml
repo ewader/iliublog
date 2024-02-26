@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Feb 2024 08:52:19 +0800</lastBuildDate><atom:link href="https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Feb 2024 15:38:13 +0800</lastBuildDate><atom:link href="https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>给Hugo PaperMod增加giscus评论系统</title>
+      <link>https://tunan.org/posts/add-comment-system-to-hugopapermo/</link>
+      <pubDate>Mon, 26 Feb 2024 15:38:13 +0800</pubDate>
+      
+      <guid>https://tunan.org/posts/add-comment-system-to-hugopapermo/</guid>
+      <description> </description>
+    </item>
+    
     <item>
       <title>电视和投影仪，哪个对孩子的眼睛更好？</title>
       <link>https://tunan.org/posts/which-better-for-children/</link>
