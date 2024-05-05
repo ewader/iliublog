@@ -57,16 +57,25 @@
 
     </style>
 </noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-0XVC4DWYPH', { 'anonymize_ip': false });
-}
-</script>
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XVC4DWYPH"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0XVC4DWYPH');
+        }
+      </script>
+    
+  
+
 <meta property="og:title" content="解决升级PHPmake: *** No rule to make target `install’. Stop.的问题" />
 <meta property="og:description" content="今天发现PHP7.3已经有7.3.13版本了，而我博客的版本还是7.3.10，所以，为了更好的安全性就决定把php升级到最新的版本。其实，o" />
 <meta property="og:type" content="article" />
