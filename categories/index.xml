@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Jun 2024 21:55:25 +0800</lastBuildDate><atom:link href="https://tunan.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jun 2024 15:29:17 +0800</lastBuildDate><atom:link href="https://tunan.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>齐物论</title>
+      <link>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</link>
+      <pubDate>Mon, 24 Jun 2024 15:29:17 +0800</pubDate>
+      
+      <guid>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>人世间</title>
       <link>https://tunan.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</link>
@@ -27,15 +36,6 @@
       <pubDate>Mon, 17 Jun 2024 15:13:16 +0800</pubDate>
       
       <guid>https://tunan.org/categories/%E5%BE%B7%E5%85%85%E7%AC%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>齐物论</title>
-      <link>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</link>
-      <pubDate>Mon, 26 Feb 2024 15:38:13 +0800</pubDate>
-      
-      <guid>https://tunan.org/categories/%E9%BD%90%E7%89%A9%E8%AE%BA/</guid>
       <description></description>
     </item>
     
