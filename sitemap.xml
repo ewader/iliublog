@@ -2,32 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tunan.org/categories/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
     <loc>https://tunan.org/posts/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/%E9%BA%BB%E8%BE%A3%E7%83%AB/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/%E9%BA%A6%E7%A7%AF%E5%B1%B1/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/posts/one-day-tour-of-maijishan/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
-  </url><url>
-    <loc>https://tunan.org/tags/%E5%A4%A9%E6%B0%B4/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
+    <lastmod>2024-07-16T17:34:05+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/</loc>
-    <lastmod>2024-07-02T17:34:05+08:00</lastmod>
+    <lastmod>2024-07-16T17:34:05+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/categories/</loc>
+    <lastmod>2024-06-24T15:29:17+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/tags/</loc>
+    <lastmod>2024-06-24T15:29:17+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E7%A9%BA%E8%B0%83/</loc>
     <lastmod>2024-06-24T15:29:17+08:00</lastmod>
@@ -48,6 +33,9 @@
     <lastmod>2024-06-21T21:55:25+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E4%BA%B2%E5%AD%90/</loc>
+    <lastmod>2024-06-21T21:55:25+08:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/categories/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
     <lastmod>2024-06-21T21:55:25+08:00</lastmod>
   </url><url>
     <loc>https://tunan.org/tags/%E4%B8%AD%E8%80%83/</loc>
@@ -553,6 +541,9 @@
   </url><url>
     <loc>https://tunan.org/4427.html</loc>
     <lastmod>2023-08-01T02:56:51+00:00</lastmod>
+  </url><url>
+    <loc>https://tunan.org/tags/%E5%A4%A9%E6%B0%B4/</loc>
+    <lastmod>2023-07-30T09:05:26+00:00</lastmod>
   </url><url>
     <loc>https://tunan.org/4425.html</loc>
     <lastmod>2023-07-30T09:05:26+00:00</lastmod>
