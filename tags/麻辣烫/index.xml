@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>麻辣烫 on 图南博客</title>
+    <link>https://tunan.org/tags/%E9%BA%BB%E8%BE%A3%E7%83%AB/</link>
+    <description>Recent content in 麻辣烫 on 图南博客</description>
+    <image>
+      <title>图南博客</title>
+      <url>https://tunan.org/%20</url>
+      <link>https://tunan.org/%20</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Jul 2024 17:34:05 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%BA%BB%E8%BE%A3%E7%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>麦积山一日游</title>
+      <link>https://tunan.org/posts/one-day-tour-of-maijishan/</link>
+      <pubDate>Tue, 02 Jul 2024 17:34:05 +0800</pubDate>
+      
+      <guid>https://tunan.org/posts/one-day-tour-of-maijishan/</guid>
+      <description> </description>
+    </item>
+    
+  </channel>
+</rss>
