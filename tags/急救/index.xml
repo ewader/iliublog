@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Jun 2022 02:01:50 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%80%A5%E6%95%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 02:01:50 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%80%A5%E6%95%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>遇事更应冷静思考</title>
       <link>https://tunan.org/4141.html</link>
       <pubDate>Tue, 07 Jun 2022 02:01:50 +0000</pubDate>
-      
       <guid>https://tunan.org/4141.html</guid>
       <description>这两天，被全网关注得莫过于郑州的“120”事件了。大家关注这类事件，是因为不管120也好，110也罢，都和每个人的生命财产息息相关。这些电话</description>
     </item>
-    
   </channel>
 </rss>

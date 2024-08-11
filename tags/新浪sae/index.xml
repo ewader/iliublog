@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Sep 2011 03:47:52 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%96%B0%E6%B5%AAsae/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Sep 2011 03:47:52 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%96%B0%E6%B5%AAsae/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>即日起把博客转至新浪SAE</title>
       <link>https://tunan.org/1253.html</link>
       <pubDate>Thu, 01 Sep 2011 03:47:52 +0000</pubDate>
-      
       <guid>https://tunan.org/1253.html</guid>
       <description>&lt;p&gt;        原来的域名和空间陆续就要到期了，看到新浪出了SAE这个玩意，也就意识到终于可以放心的找个稳定的地方来存储我的博客了。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 16 Dec 2009 08:25:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Dec 2009 08:25:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/live/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐一个免费发短信的软件——天翼live</title>
       <link>https://tunan.org/190.html</link>
       <pubDate>Wed, 16 Dec 2009 08:25:15 +0000</pubDate>
-      
       <guid>https://tunan.org/190.html</guid>
       <description>由于用的是电信的手机，昨天收到了一条短信，大意是电信也推出了可以像QQ、msn等一样可以免费发送短信的客户端，并且每个月可以免费发送300条</description>
     </item>
-    
   </channel>
 </rss>

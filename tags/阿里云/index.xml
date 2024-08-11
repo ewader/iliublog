@@ -9,35 +9,30 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Jan 2021 08:33:54 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 08:33:54 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>把域名从阿里云转出到name.com的方法</title>
       <link>https://tunan.org/3545.html</link>
       <pubDate>Sun, 03 Jan 2021 08:33:54 +0000</pubDate>
-      
       <guid>https://tunan.org/3545.html</guid>
       <description>前两天，老刘想把在阿里云的一个域名转到name.com,后续可能还会把一些不需要备案的都转出去，其实转出的方法也很简单。 首先，登录阿里云的后</description>
     </item>
-    
     <item>
       <title>又犯了人云亦云的毛病</title>
       <link>https://tunan.org/2526.html</link>
       <pubDate>Fri, 19 Jul 2019 09:12:00 +0000</pubDate>
-      
       <guid>https://tunan.org/2526.html</guid>
       <description>从小接受的教育就是要实践出真知，别人的意见可以参考，但是不能完全照搬。不能像小马过河里的小马一样。 这不，今天差点又犯了人云亦云的毛病。 事情的</description>
     </item>
-    
     <item>
       <title>备忘，使用阿里云ossfs备份网站</title>
       <link>https://tunan.org/2513.html</link>
       <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
-      
       <guid>https://tunan.org/2513.html</guid>
       <description>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Sep 2021 10:25:46 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/dsm7.0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 10:25:46 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/dsm7.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>更新群晖至DSM7.0</title>
       <link>https://tunan.org/3887.html</link>
       <pubDate>Mon, 06 Sep 2021 10:25:46 +0000</pubDate>
-      
       <guid>https://tunan.org/3887.html</guid>
       <description>今天上午来到店内，不知道是怎么回事，产生了一些惰性，看到群里小胡同学发的白嫖亚马逊12本的电子书，就去搞了一下，看了会书，也不想更新商城的产</description>
     </item>
-    
   </channel>
 </rss>

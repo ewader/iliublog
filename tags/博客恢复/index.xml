@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Mar 2020 02:23:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%8D%9A%E5%AE%A2%E6%81%A2%E5%A4%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Mar 2020 02:23:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%8D%9A%E5%AE%A2%E6%81%A2%E5%A4%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客从灾难中恢复</title>
       <link>https://tunan.org/3080.html</link>
       <pubDate>Sun, 08 Mar 2020 02:23:15 +0000</pubDate>
-      
       <guid>https://tunan.org/3080.html</guid>
       <description>昨天服务器有点不正常，考虑到是前两天折腾一些东西的时候造成的，所以打算重新搞一下系统。搞之前备份了一下，结果，生成环境弄好之后，恢复数据库的</description>
     </item>
-    
   </channel>
 </rss>

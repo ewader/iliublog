@@ -9,45 +9,38 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jun 2019 00:38:56 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/godaddy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2019 00:38:56 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/godaddy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Godaddy可以用微信管理域名</title>
       <link>https://tunan.org/2207.html</link>
       <pubDate>Wed, 26 Jun 2019 00:38:56 +0000</pubDate>
-      
       <guid>https://tunan.org/2207.html</guid>
       <description>不得不说微信现在的影响力是越来越大了，就连当年蹭退出中国风的godaddy现在也开始使用微信来管理域名了，今天打开邮箱就收到了如下的邮件。 用</description>
     </item>
-    
     <item>
       <title>杯具，原来上传的图片等都没有能转过来</title>
       <link>https://tunan.org/515.html</link>
       <pubDate>Sun, 31 Jan 2010 08:01:10 +0000</pubDate>
-      
       <guid>https://tunan.org/515.html</guid>
       <description>杯具啊，1月29日的时候发现ip被和谐了，于是毫不犹豫的转系统。可能godaddy方面出现了问题，文件没有能转过来。神那！ 洗具的是，数据库内</description>
     </item>
-    
     <item>
       <title>开发出godaddy免费空间的另外一个用途</title>
       <link>https://tunan.org/485.html</link>
       <pubDate>Sat, 23 Jan 2010 07:04:06 +0000</pubDate>
-      
       <guid>https://tunan.org/485.html</guid>
       <description>&lt;p&gt;      godaddy免费空间确实太大了，用这也比较爽，虽然有个很大的广告，但是看在免费的份上也就别较真了。这么稳定又快速的空间，就将就用吧。有很多同学说了，这么大的空间，只装一个博客有点浪费了，那么下面我就给大家说说这个空间可以装的另外的程序。达到全面利用这个大空间的目的。&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>解决godaddy免费空间广告带来影响的方法</title>
       <link>https://tunan.org/476.html</link>
       <pubDate>Tue, 19 Jan 2010 01:39:32 +0000</pubDate>
-      
       <guid>https://tunan.org/476.html</guid>
       <description>众所周知，godaddy免费空间带有一个很大的广告条，有广告也就罢了，不厚道的是通过增加的广告代码，使得很多源代码发生了错误，这是因为它的广</description>
     </item>
-    
   </channel>
 </rss>

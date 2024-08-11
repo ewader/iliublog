@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 25 Sep 2021 10:09:13 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%A0%A1%E8%AE%AF%E9%80%9A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Sep 2021 10:09:13 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%A0%A1%E8%AE%AF%E9%80%9A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>终于可以把校讯通取消了</title>
       <link>https://tunan.org/3909.html</link>
       <pubDate>Sat, 25 Sep 2021 10:09:13 +0000</pubDate>
-      
       <guid>https://tunan.org/3909.html</guid>
       <description>昨天接到班主任的短信，学校不在使用校讯通和I家校，而是换了另外一个系统，通过微信公众号来发送孩子进校和离校的信息。看到信息的第一时间，老刘就</description>
     </item>
-    
   </channel>
 </rss>

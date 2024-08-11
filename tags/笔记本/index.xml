@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 May 2021 07:30:38 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 07:30:38 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>深度deepin os 20.2.1初体验</title>
       <link>https://tunan.org/3757.html</link>
       <pubDate>Wed, 26 May 2021 07:30:38 +0000</pubDate>
-      
       <guid>https://tunan.org/3757.html</guid>
       <description>昨天用一副康耐特防蓝光镜片换了一台2012年的联想Z475 ，AMD A6的四核CPU，他自己又给加了4G的内存。也就是说4H8G，说实话电脑是</description>
     </item>
-    
   </channel>
 </rss>

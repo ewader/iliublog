@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 24 Jul 2020 09:35:42 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E8%85%BE%E8%AE%AFcdn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jul 2020 09:35:42 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E8%85%BE%E8%AE%AFcdn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>腾讯的CDN还是可以的</title>
       <link>https://tunan.org/3217.html</link>
       <pubDate>Fri, 24 Jul 2020 09:35:42 +0000</pubDate>
-      
       <guid>https://tunan.org/3217.html</guid>
       <description>2018年的时候，申请了腾讯的COS，CDN等，因为那时候cos有免费50g的额度，CDN每月10g的免费流量，COS倒是一直用着，cdn因</description>
     </item>
-    
   </channel>
 </rss>

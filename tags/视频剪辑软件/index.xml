@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 06 Dec 2019 02:37:53 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Dec 2019 02:37:53 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐一款免费的视频剪辑软件shotcut</title>
       <link>https://tunan.org/2914.html</link>
       <pubDate>Fri, 06 Dec 2019 02:37:53 +0000</pubDate>
-      
       <guid>https://tunan.org/2914.html</guid>
       <description>跋涉者最近在弄另一个网站的时候，需要把一些长的视频剪辑成一个短的预览视频，这样没有权限看的人，只能看到短视频，而支付积分后则可以看完整的视频</description>
     </item>
-    
   </channel>
 </rss>

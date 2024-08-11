@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 14 Nov 2019 23:53:20 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Nov 2019 23:53:20 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客更换到阿里云香港轻量，并升级到wordpress5.3.0</title>
       <link>https://tunan.org/2851.html</link>
       <pubDate>Thu, 14 Nov 2019 23:53:20 +0000</pubDate>
-      
       <guid>https://tunan.org/2851.html</guid>
       <description>昨天在折腾FRP的时候，怕影响到现有的环境，所以，买了一个阿里云轻量1H1G的主机，因为我知道，一个月24元，其实我不是打算用一个月而是打算</description>
     </item>
-    
     <item>
       <title>又犯了人云亦云的毛病</title>
       <link>https://tunan.org/2526.html</link>
       <pubDate>Fri, 19 Jul 2019 09:12:00 +0000</pubDate>
-      
       <guid>https://tunan.org/2526.html</guid>
       <description>从小接受的教育就是要实践出真知，别人的意见可以参考，但是不能完全照搬。不能像小马过河里的小马一样。 这不，今天差点又犯了人云亦云的毛病。 事情的</description>
     </item>
-    
   </channel>
 </rss>

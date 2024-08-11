@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Aug 2021 01:52:23 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%94%B5%E6%B3%A2%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Aug 2021 01:52:23 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%94%B5%E6%B3%A2%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电波表如何接收日本电波对时塔的信号</title>
       <link>https://tunan.org/3841.html</link>
       <pubDate>Wed, 18 Aug 2021 01:52:23 +0000</pubDate>
-      
       <guid>https://tunan.org/3841.html</guid>
       <description>最近一段时间以来，除了8月7日左右，位于中国商丘的BPC电波发射塔，短暂的几天有信号以外，其他时间都是处于无信号状态，可能是在检修，也可能是</description>
     </item>
-    
   </channel>
 </rss>

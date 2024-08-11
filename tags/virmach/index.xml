@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Nov 2021 04:05:56 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/virmach/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Nov 2021 04:05:56 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/virmach/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>转到virmach</title>
       <link>https://tunan.org/3934.html</link>
       <pubDate>Fri, 05 Nov 2021 04:05:56 +0000</pubDate>
-      
       <guid>https://tunan.org/3934.html</guid>
       <description>看看篱落的VPS月底就到期了，也不打算再续费了。去年在Virmach买了一个便宜的VPS，2h2g才20$,算下来也就是人民币100来块钱，</description>
     </item>
-    
   </channel>
 </rss>

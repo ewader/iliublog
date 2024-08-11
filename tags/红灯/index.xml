@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 30 Jan 2022 07:38:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%BA%A2%E7%81%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jan 2022 07:38:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%BA%A2%E7%81%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>好像闯红灯了</title>
       <link>https://tunan.org/4051.html</link>
       <pubDate>Sun, 30 Jan 2022 07:38:15 +0000</pubDate>
-      
       <guid>https://tunan.org/4051.html</guid>
       <description>昨天开车回家，路过一个路口的时候，明明觉得直行还有左传的灯都是亮的，但是转过去的时候，又抬眼看了一眼，发现左传的灯不亮。于是，对自己刚开始看</description>
     </item>
-    
   </channel>
 </rss>

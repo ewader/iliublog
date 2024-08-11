@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Oct 2023 01:07:28 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/anytype/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 01:07:28 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/anytype/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>回归简单之笔记软件</title>
       <link>https://tunan.org/4533.html</link>
       <pubDate>Thu, 12 Oct 2023 01:07:28 +0000</pubDate>
-      
       <guid>https://tunan.org/4533.html</guid>
       <description>早些的时候，我对笔记软件是没有什么需求的。后来折腾了群晖后，就适用群晖的dsnote记录一些东西，感觉还不错。记得是2022年的5月，在酒店</description>
     </item>
-    
   </channel>
 </rss>

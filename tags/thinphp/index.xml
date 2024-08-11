@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 06 Apr 2023 09:42:54 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/thinphp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Apr 2023 09:42:54 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/thinphp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用lnmp安装thinkphp类的程序，文件夹没有权限</title>
       <link>https://tunan.org/4344.html</link>
       <pubDate>Thu, 06 Apr 2023 09:42:54 +0000</pubDate>
-      
       <guid>https://tunan.org/4344.html</guid>
       <description>前几天在安装CRMEB商城的时候，由于不想再用宝塔了，先是选择oneinstack,但是会有一些问题，比如，用www用户无法在终端运行php</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 02 Dec 2019 01:10:14 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E6%B1%BD%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2019 01:10:14 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E6%B1%BD%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>车载毫米波雷达究竟是如何运作的？</title>
       <link>https://tunan.org/2902.html</link>
       <pubDate>Mon, 02 Dec 2019 01:10:14 +0000</pubDate>
-      
       <guid>https://tunan.org/2902.html</guid>
       <description>现在无人驾驶汽车技术是一个热点的话题，跋涉者一直以为这项技术是用摄像头来实现的，看来是孤陋寡闻了。今天在《学习强国》上看到了这样一篇关于这方</description>
     </item>
-    
   </channel>
 </rss>

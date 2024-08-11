@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 01:19:52 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2019 01:19:52 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大数据悖论及人工智能等</title>
       <link>https://tunan.org/1705.html</link>
       <pubDate>Tue, 11 Jun 2019 01:19:52 +0000</pubDate>
-      
       <guid>https://tunan.org/1705.html</guid>
       <description>前几天在kindle搜索《未来简史》，包月的书库里这本书没有，但是却有一本《新未来简史》，是讲区块链、大数据以及人工智能等方面的的书，作者是</description>
     </item>
-    
   </channel>
 </rss>

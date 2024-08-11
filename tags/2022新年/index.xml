@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 01 Jan 2022 02:05:10 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/2022%E6%96%B0%E5%B9%B4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 02:05:10 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/2022%E6%96%B0%E5%B9%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022,新年快乐</title>
       <link>https://tunan.org/4002.html</link>
       <pubDate>Sat, 01 Jan 2022 02:05:10 +0000</pubDate>
-      
       <guid>https://tunan.org/4002.html</guid>
       <description>没有年终总结的日子，也是挺惬意的。 2021年没怎么感觉呢，就过完了，希望朋友们一切安好 2022年，万象更新，愿亲友们身体健康，一切顺利，祝愿</description>
     </item>
-    
   </channel>
 </rss>

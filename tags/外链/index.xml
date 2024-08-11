@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 09 Jul 2019 01:20:11 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%96%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Jul 2019 01:20:11 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%A4%96%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用cloudFlare的边缘计算workers实现外链转内链跳转</title>
       <link>https://tunan.org/2248.html</link>
       <pubDate>Tue, 09 Jul 2019 01:20:11 +0000</pubDate>
-      
       <guid>https://tunan.org/2248.html</guid>
       <description>跋涉者曾经分享过一篇7b2主题外链跳转的文章，那篇文章实现的原理是在自己服务器里增加一个跳转的页面代码。 [zrz_insert_post id=1656] 不过今天看张戈大神的一篇文章Cl</description>
     </item>
-    
     <item>
       <title>给7B2主题加上外链自动跳转功能</title>
       <link>https://tunan.org/1656.html</link>
       <pubDate>Mon, 27 May 2019 07:08:40 +0000</pubDate>
-      
       <guid>https://tunan.org/1656.html</guid>
       <description>7B2主题默认是没有外链自动跳转功能的，这玩意要说有用吧，作用不大，要说没用吧，大家都这么加，所以跋涉者也给外链增加一个自动跳转。 是不是很漂</description>
     </item>
-    
   </channel>
 </rss>

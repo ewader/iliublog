@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 04 Jun 2021 02:30:17 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/618/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 02:30:17 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/618/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RackNerd的6.18活动出来了</title>
       <link>https://tunan.org/3766.html</link>
       <pubDate>Fri, 04 Jun 2021 02:30:17 +0000</pubDate>
-      
       <guid>https://tunan.org/3766.html</guid>
       <description>前几天老刘总结了下RackNerd的使用情况，总体来说还是不错的，可惜的是，老刘刚弄了个梯子，第二天就被封了，期待过几天给解封吧。详情见：《</description>
     </item>
-    
   </channel>
 </rss>

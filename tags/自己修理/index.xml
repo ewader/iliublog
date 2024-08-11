@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Jun 2020 02:32:51 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E8%87%AA%E5%B7%B1%E4%BF%AE%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jun 2020 02:32:51 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E8%87%AA%E5%B7%B1%E4%BF%AE%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>磨边机修理记</title>
       <link>https://tunan.org/3175.html</link>
       <pubDate>Tue, 02 Jun 2020 02:32:51 +0000</pubDate>
-      
       <guid>https://tunan.org/3175.html</guid>
       <description>算下来这个磨边机用了大概8年了，期间也算没出什么大问题，也可能和自己的业务量少有关。不过最近总感觉有点力不从心。重新买一台吧，又得万把块，就</description>
     </item>
-    
   </channel>
 </rss>

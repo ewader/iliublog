@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Sep 2011 11:08:45 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/wp-mail-smtp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Sep 2011 11:08:45 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/wp-mail-smtp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>配置WP-Mail-SMTP的技巧</title>
       <link>https://tunan.org/1331.html</link>
       <pubDate>Tue, 06 Sep 2011 11:08:45 +0000</pubDate>
-      
       <guid>https://tunan.org/1331.html</guid>
       <description>网站搬到新浪SAE之后，由于不支持mail（）函数，所以只好采用WP-MAIL-SMTP这个插件来发送密码评论等，但是这个插件非常的不容易配</description>
     </item>
-    
   </channel>
 </rss>

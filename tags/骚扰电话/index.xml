@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Sep 2022 01:17:21 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%AA%9A%E6%89%B0%E7%94%B5%E8%AF%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Sep 2022 01:17:21 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%AA%9A%E6%89%B0%E7%94%B5%E8%AF%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>只有魔法才能打败魔法？miui的AI通话简单试用</title>
       <link>https://tunan.org/4260.html</link>
       <pubDate>Fri, 30 Sep 2022 01:17:21 +0000</pubDate>
-      
       <guid>https://tunan.org/4260.html</guid>
       <description>对于骚然电话，一直都是一个让人头疼的东西。国家虽然三令五申的出台一些法规，但是起到的作用优先。有时候正在休息，一个电话过来，一看却是骚然电话</description>
     </item>
-    
   </channel>
 </rss>

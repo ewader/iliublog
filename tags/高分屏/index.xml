@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Dec 2021 06:09:18 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%AB%98%E5%88%86%E5%B1%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 06:09:18 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%AB%98%E5%88%86%E5%B1%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linuxmint高分屏设置</title>
       <link>https://tunan.org/3944.html</link>
       <pubDate>Mon, 13 Dec 2021 06:09:18 +0000</pubDate>
-      
       <guid>https://tunan.org/3944.html</guid>
       <description>最近一直使用Linuxmint，如果不是一些必备的软件在Linux下没有，甚至都可以把Windows10卸载了，不过没有办法，有些软件还必须</description>
     </item>
-    
   </channel>
 </rss>

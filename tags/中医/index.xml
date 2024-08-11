@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 19 Dec 2023 14:33:23 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%B8%AD%E5%8C%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Dec 2023 14:33:23 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%B8%AD%E5%8C%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>人到中年话养生</title>
       <link>https://tunan.org/posts/fouce-on-health-in-middle-age/</link>
       <pubDate>Tue, 19 Dec 2023 14:33:23 +0800</pubDate>
-      
       <guid>https://tunan.org/posts/fouce-on-health-in-middle-age/</guid>
       <description> </description>
     </item>
-    
   </channel>
 </rss>

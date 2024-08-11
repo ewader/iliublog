@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Jan 2024 09:05:48 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%9B%AA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 09:05:48 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%9B%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024年的第一场雪</title>
       <link>https://tunan.org/posts/the-first-snow-in-2024/</link>
       <pubDate>Tue, 16 Jan 2024 09:05:48 +0800</pubDate>
-      
       <guid>https://tunan.org/posts/the-first-snow-in-2024/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>2023年冬天的第一场雪</title>
       <link>https://tunan.org/posts/the-first-snow-in-winter-of-2023/</link>
       <pubDate>Mon, 11 Dec 2023 14:49:37 +0800</pubDate>
-      
       <guid>https://tunan.org/posts/the-first-snow-in-winter-of-2023/</guid>
       <description>周日凌晨，淅淅沥沥的小雨滋润着干旱已久的商城。满地法桐的落叶，也预示着这股冷空气来势汹汹。夜半时分，鹅毛大雪终于如期而至。</description>
     </item>
-    
   </channel>
 </rss>

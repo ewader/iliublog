@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Aug 2022 08:50:32 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 08:50:32 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>加入51la的优站计划</title>
       <link>https://tunan.org/4226.html</link>
       <pubDate>Tue, 16 Aug 2022 08:50:32 +0000</pubDate>
-      
       <guid>https://tunan.org/4226.html</guid>
       <description>看到好几个站长都在推这个，正好对百度统计也有点不想用了，就试一试51la的统计吧。目前用了大概有一个月的时间，和百度统计比较了一下： 统计出来</description>
     </item>
-    
   </channel>
 </rss>

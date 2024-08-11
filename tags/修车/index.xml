@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Sep 2022 08:05:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%BF%AE%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 08:05:40 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%BF%AE%E8%BD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>修车</title>
       <link>https://tunan.org/4242.html</link>
       <pubDate>Mon, 05 Sep 2022 08:05:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4242.html</guid>
       <description>前段时间用车的时候，忽然发现空调不好使了。大热的天，没有凉风。不过跑了一会又正常了。昨天没有什么生意，于是带着女儿和媳妇到植物园耍了一会，空</description>
     </item>
-    
   </channel>
 </rss>

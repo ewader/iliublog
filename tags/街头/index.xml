@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 29 Jul 2022 07:21:42 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E8%A1%97%E5%A4%B4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 07:21:42 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E8%A1%97%E5%A4%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>街头</title>
       <link>https://tunan.org/4208.html</link>
       <pubDate>Fri, 29 Jul 2022 07:21:42 +0000</pubDate>
-      
       <guid>https://tunan.org/4208.html</guid>
       <description>今天在街头等红绿灯，忽然感觉少了点什么，后来想了一想，原来是少了拿着小旗的交通协管员。忽然意识到，很长时间里没有看到过他们了，印象中，从疫情</description>
     </item>
-    
   </channel>
 </rss>

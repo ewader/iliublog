@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Oct 2009 12:52:28 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%85%8D%E8%B4%B9%E5%8F%91%E7%9F%AD%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Oct 2009 12:52:28 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%85%8D%E8%B4%B9%E5%8F%91%E7%9F%AD%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐电信旗下可免费发短信的2G免费手机邮箱</title>
       <link>https://tunan.org/1135.html</link>
       <pubDate>Mon, 05 Oct 2009 12:52:28 +0000</pubDate>
-      
       <guid>https://tunan.org/1135.html</guid>
       <description>189邮箱是由中国电信推出的免费邮箱服务，yourname@189.cn域名后缀，类似中国移动的139邮箱，仅限中国电信用户使用，每月可向中</description>
     </item>
-    
   </channel>
 </rss>

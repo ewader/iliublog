@@ -9,44 +9,37 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 16 Mar 2022 02:38:21 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 02:38:21 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开始使用Argon主题</title>
       <link>https://tunan.org/4079.html</link>
       <pubDate>Wed, 16 Mar 2022 02:38:21 +0000</pubDate>
-      
       <guid>https://tunan.org/4079.html</guid>
       <description>一个月前更换了Dragon主题，当时很多博友都表示有点不适合个人使用，我倒是感觉还行，最起码是把垃圾评论都给屏蔽了，唯一让我不太满意的就是对</description>
     </item>
-    
     <item>
       <title>更换为Dragon主题</title>
       <link>https://tunan.org/4060.html</link>
       <pubDate>Fri, 11 Feb 2022 00:24:05 +0000</pubDate>
-      
       <guid>https://tunan.org/4060.html</guid>
       <description>这几天被垃圾评论给盯上了，每天能收到10来个，很烦人。原来的主题虽然也是可以通过增加代码的方式来拦截一些非中文的垃圾评论，但是每次一升级主题</description>
     </item>
-    
     <item>
       <title>碎碎念</title>
       <link>https://tunan.org/3387.html</link>
       <pubDate>Wed, 11 Nov 2020 02:45:23 +0000</pubDate>
-      
       <guid>https://tunan.org/3387.html</guid>
       <description>关于自然养鱼 还是挺靠谱的，现在运行差不多一个月了吧，小鱼生活的很好，上面的一页莲也长得不错，用养鱼的水浇的花也长的很茂盛。就这么一直下去吧，</description>
     </item>
-    
     <item>
       <title>提供WordPress 主题 Marcelle的汉化版本</title>
       <link>https://tunan.org/304.html</link>
       <pubDate>Sat, 26 Dec 2009 08:05:16 +0000</pubDate>
-      
       <guid>https://tunan.org/304.html</guid>
       <description>昨天发掘出 Marcelle这个主题，很快为他的那种简约而清爽的界面而吸引，打算使用这个主题，简单的汉化以后，觉得还不错，不过今天就又发现了个</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 26 May 2020 09:07:28 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%AE%89%E5%85%A8%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 May 2020 09:07:28 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%AE%89%E5%85%A8%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>把安全软件换成360了</title>
       <link>https://tunan.org/3165.html</link>
       <pubDate>Tue, 26 May 2020 09:07:28 +0000</pubDate>
-      
       <guid>https://tunan.org/3165.html</guid>
       <description>说实话，不用360已经很久很久了，久到不知道上次是什么时候用的它。这些年来用过卡巴斯基、诺顿、ESET等。今天，看到一个消息，美国把360也</description>
     </item>
-    
   </channel>
 </rss>

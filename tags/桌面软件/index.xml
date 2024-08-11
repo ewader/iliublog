@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Dec 2020 03:41:01 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%A1%8C%E9%9D%A2%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 03:41:01 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%A1%8C%E9%9D%A2%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>试用了一下火雨壁纸</title>
       <link>https://tunan.org/3456.html</link>
       <pubDate>Mon, 07 Dec 2020 03:41:01 +0000</pubDate>
-      
       <guid>https://tunan.org/3456.html</guid>
       <description>年纪大了，想改变下一成不变的桌面。以前一直用bing官方出的一个小工具。直接对接bing的每日一图，不知道是不是因为时差的原因，和每天发布的</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Mar 2023 08:22:04 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%BC%A0%E5%A5%87/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 08:22:04 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%BC%A0%E5%A5%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>传奇私服一个怀旧的地方加除草</title>
       <link>https://tunan.org/4334.html</link>
       <pubDate>Tue, 07 Mar 2023 08:22:04 +0000</pubDate>
-      
       <guid>https://tunan.org/4334.html</guid>
       <description>很久没有更新博客了，这博客是越不更新就越懒，时间久了就更不想动了。 最近找到一个好玩的东西，不是网络上炒的火热的那个API，是老张搞的一个传奇</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Aug 2022 02:24:58 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%A9%E6%B0%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 02:24:58 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%A4%A9%E6%B0%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>这几天是真热</title>
       <link>https://tunan.org/4217.html</link>
       <pubDate>Sat, 06 Aug 2022 02:24:58 +0000</pubDate>
-      
       <guid>https://tunan.org/4217.html</guid>
       <description>明天立秋，算是夏天的尾巴了，但是这天是真热啊。连着一周，高温38℃，低温30℃左右，难道这就是传说中的秋老虎？ 今年这天气，连北极都穿短袖了，</description>
     </item>
-    
     <item>
       <title>今天是真冷</title>
       <link>https://tunan.org/3558.html</link>
       <pubDate>Thu, 07 Jan 2021 08:46:11 +0000</pubDate>
-      
       <guid>https://tunan.org/3558.html</guid>
       <description>2021年1月07日，小寒后的第二天，入冬以来最冷的一天。最低温度-11度，最高温度-2度。 印象中好几年都没有这么冷的天了，有时候就算晚上冷</description>
     </item>
-    
   </channel>
 </rss>

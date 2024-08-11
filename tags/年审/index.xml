@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 29 Dec 2021 09:11:22 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%B9%B4%E5%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 09:11:22 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%B9%B4%E5%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>生活中的二三事</title>
       <link>https://tunan.org/3995.html</link>
       <pubDate>Wed, 29 Dec 2021 09:11:22 +0000</pubDate>
-      
       <guid>https://tunan.org/3995.html</guid>
       <description>奇葩的历史老师 昨天接女儿放学，她很不高兴的说，历史作业不合格。问，为啥啊，错的太多了吗？回答：不是，是错的太少了。 原来历史老师怕学生直接抄答</description>
     </item>
-    
   </channel>
 </rss>

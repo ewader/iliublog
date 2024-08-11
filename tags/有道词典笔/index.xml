@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Sep 2020 02:19:37 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2020 02:19:37 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网易词典笔2.0简单开箱</title>
       <link>https://tunan.org/3268.html</link>
       <pubDate>Sun, 20 Sep 2020 02:19:37 +0000</pubDate>
-      
       <guid>https://tunan.org/3268.html</guid>
       <description>前端时间给女儿买了一套《书虫》系列和《疯狂校园》系列的英语读本。书虫还好，句子比较简单，有些单词就算不认识，根据上下文的关系以及后面的生词表</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Jun 2019 07:35:45 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/xshell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jun 2019 07:35:45 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/xshell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>xshell6更新至0125</title>
       <link>https://tunan.org/1712.html</link>
       <pubDate>Sat, 15 Jun 2019 07:35:45 +0000</pubDate>
-      
       <guid>https://tunan.org/1712.html</guid>
       <description>xshell这个货更新额速度真快，隔不了几天就发布一个新版本，这不，跋涉者刚打开邮箱，就看到又有更新了。 Software Release Notes Release Date: June 05, 2019 With last week’s update, w</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 12 Jul 2019 08:59:58 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jul 2019 08:59:58 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记一次因为标点符号导致重装服务器的经历</title>
       <link>https://tunan.org/2257.html</link>
       <pubDate>Fri, 12 Jul 2019 08:59:58 +0000</pubDate>
-      
       <guid>https://tunan.org/2257.html</guid>
       <description>前两天的时候，镜缘轩网站出了点问题，加上那个服务器被我折腾的乱七八糟的，所以就想重新弄一下生产环境。为了不影响网站的访问，就先暂时把网站解析</description>
     </item>
-    
   </channel>
 </rss>

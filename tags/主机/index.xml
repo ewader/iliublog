@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 14 Oct 2020 07:03:04 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%B8%BB%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Oct 2020 07:03:04 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%B8%BB%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网站换了一台服务器</title>
       <link>https://tunan.org/3309.html</link>
       <pubDate>Wed, 14 Oct 2020 07:03:04 +0000</pubDate>
-      
       <guid>https://tunan.org/3309.html</guid>
       <description>前几天发现网站有点卡，特别是回复评论的时候，速度很慢。然后后台看了一下进程，发现WWW进程占用的CPU会一下一下的飙升，最高的时候达到了10</description>
     </item>
-    
   </channel>
 </rss>

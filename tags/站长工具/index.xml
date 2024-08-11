@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Dec 2019 05:23:20 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%AB%99%E9%95%BF%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Dec 2019 05:23:20 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%AB%99%E9%95%BF%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网站被黑了？</title>
       <link>https://tunan.org/2934.html</link>
       <pubDate>Fri, 13 Dec 2019 05:23:20 +0000</pubDate>
-      
       <guid>https://tunan.org/2934.html</guid>
       <description>最近一段时间，网站的关键字里总会穿插着一些贷款的关键字，当然点击这些页面是404的状态。看网页的标题，也没有诸如网站的推广啊，或者自己的网站</description>
     </item>
-    
   </channel>
 </rss>

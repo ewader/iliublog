@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Oct 2020 07:49:34 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Oct 2020 07:49:34 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>zerotier加openwrt路由实现内网穿透控制群晖</title>
       <link>https://tunan.org/3356.html</link>
       <pubDate>Sat, 24 Oct 2020 07:49:34 +0000</pubDate>
-      
       <guid>https://tunan.org/3356.html</guid>
       <description>刚开始完群晖的时候，写过一片使用zerotier进行内网穿透实现连接群晖的功能。详情《使用zerotier进行内网穿透 》但是后来升级移动宽带</description>
     </item>
-    
     <item>
       <title>使用zerotier进行内网穿透</title>
       <link>https://tunan.org/2872.html</link>
       <pubDate>Wed, 27 Nov 2019 07:33:08 +0000</pubDate>
-      
       <guid>https://tunan.org/2872.html</guid>
       <description>自从到手了暴风酷播之后，抽空就折腾了下NAS，目前来说系统方面已经没有什么问题了，自己需要使用的套件也基本上弄好了，唯一一个需要搞定的问题就</description>
     </item>
-    
   </channel>
 </rss>

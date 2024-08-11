@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Feb 2024 15:09:03 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Feb 2024 15:09:03 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024年，高德地图和百度地图选哪个？</title>
       <link>https://tunan.org/posts/comparison-between-autonavi-map-and-baidu-map/</link>
       <pubDate>Sat, 24 Feb 2024 15:09:03 +0800</pubDate>
-      
       <guid>https://tunan.org/posts/comparison-between-autonavi-map-and-baidu-map/</guid>
       <description>百度在车道级导航方面更优秀，高德在会车提醒方面有亮点</description>
     </item>
-    
   </channel>
 </rss>

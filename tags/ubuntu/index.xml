@@ -9,56 +9,47 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS服务器系统的选择</title>
       <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
-    
     <item>
       <title>正式使用Manjaro系统</title>
       <link>https://tunan.org/4036.html</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4036.html</guid>
       <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
-    
     <item>
       <title>ubuntu20.04开机亮度最大的解决方法及输入法设置</title>
       <link>https://tunan.org/3951.html</link>
       <pubDate>Mon, 20 Dec 2021 09:20:38 +0000</pubDate>
-      
       <guid>https://tunan.org/3951.html</guid>
       <description>从很久以前UBUNTU就有一个毛病，有些电脑安装后，开机后屏幕的亮度会是最大。据说从很低的一个版本都有这样bug存在，但是不知道为啥官方一直</description>
     </item>
-    
     <item>
       <title>ubuntu9.10 sis显卡驱动程序</title>
       <link>https://tunan.org/158.html</link>
       <pubDate>Fri, 11 Dec 2009 06:48:00 +0000</pubDate>
-      
       <guid>https://tunan.org/158.html</guid>
       <description>今天从上午把ubuntu9.10装上后就一直为系统的分辨率的问题而寻找，真的让人很郁闷的是SIS的显卡，UBUNTU竟然不支持，其实这也不能</description>
     </item>
-    
     <item>
       <title>升级到ubuntu9.10，无线网卡丢失的解决方法</title>
       <link>https://tunan.org/104.html</link>
       <pubDate>Tue, 17 Nov 2009 13:24:47 +0000</pubDate>
-      
       <guid>https://tunan.org/104.html</guid>
       <description>&lt;p&gt;综合网上的帖子，解决的方法有2&lt;br&gt;
 1为：本人ubuntu菜鸟，处女贴，大家多捧场。&lt;/p&gt;
 &lt;p&gt;我是ibm x40机器，系统在9.04的时候，不需要安装无线驱动，升级到了9.10后，发现无线网卡找不到了。&lt;/p&gt;
 &lt;p&gt;输入命令ifconfig，只能看到eth0和lo。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

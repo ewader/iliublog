@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Jan 2022 00:24:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/deepin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jan 2022 00:24:40 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/deepin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>正式使用Manjaro系统</title>
       <link>https://tunan.org/4036.html</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4036.html</guid>
       <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
-    
     <item>
       <title>深度deepin os 20.2.1初体验</title>
       <link>https://tunan.org/3757.html</link>
       <pubDate>Wed, 26 May 2021 07:30:38 +0000</pubDate>
-      
       <guid>https://tunan.org/3757.html</guid>
       <description>昨天用一副康耐特防蓝光镜片换了一台2012年的联想Z475 ，AMD A6的四核CPU，他自己又给加了4G的内存。也就是说4H8G，说实话电脑是</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Mar 2010 12:06:00 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%BD%93%E6%A3%80%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2010 12:06:00 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%BD%93%E6%A3%80%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>9个月体检报告</title>
       <link>https://tunan.org/632.html</link>
       <pubDate>Thu, 18 Mar 2010 12:06:00 +0000</pubDate>
-      
       <guid>https://tunan.org/632.html</guid>
       <description>体重：8.5kg，身长：72厘米，头围44.2 厘米，前囟：1.6*1.0</description>
     </item>
-    
   </channel>
 </rss>

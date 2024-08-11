@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 11 Jan 2010 12:35:00 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/avast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2010 12:35:00 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/avast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>介绍本人所用的软件——安全软件篇</title>
       <link>https://tunan.org/428.html</link>
       <pubDate>Mon, 11 Jan 2010 12:35:00 +0000</pubDate>
-      
       <guid>https://tunan.org/428.html</guid>
       <description>接触安全软件是在1999年chi病毒爆发的时候，那时候刚好宿舍的电脑被感染，从一个光盘里安装上了熊猫的杀毒软件，能升级，通过扫描查找出来了大</description>
     </item>
-    
   </channel>
 </rss>

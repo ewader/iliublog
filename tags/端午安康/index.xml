@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 25 Jun 2020 00:03:36 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%AB%AF%E5%8D%88%E5%AE%89%E5%BA%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jun 2020 00:03:36 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%AB%AF%E5%8D%88%E5%AE%89%E5%BA%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>恭祝大家端午安康</title>
       <link>https://tunan.org/3193.html</link>
       <pubDate>Thu, 25 Jun 2020 00:03:36 +0000</pubDate>
-      
       <guid>https://tunan.org/3193.html</guid>
       <description>一年一度的端午节来了，恭祝大家端午安康！！！</description>
     </item>
-    
   </channel>
 </rss>

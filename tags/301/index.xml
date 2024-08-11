@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Dec 2023 15:45:19 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/301/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 15:45:19 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/301/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用cloudflare页面规则设置301永久跳转</title>
       <link>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</link>
       <pubDate>Fri, 01 Dec 2023 15:45:19 +0800</pubDate>
-      
       <guid>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</guid>
       <description>利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。</description>
     </item>
-    
   </channel>
 </rss>

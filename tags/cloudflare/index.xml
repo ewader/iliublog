@@ -9,35 +9,30 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Dec 2023 15:45:19 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 15:45:19 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用cloudflare页面规则设置301永久跳转</title>
       <link>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</link>
       <pubDate>Fri, 01 Dec 2023 15:45:19 +0800</pubDate>
-      
       <guid>https://tunan.org/Use-cloudflare-page-rules-setup-301-permanent-redirect/</guid>
       <description>利用cloudflare页面规则设置301永久跳转,比使用nginx更方便。</description>
     </item>
-    
     <item>
       <title>博客web端改用apache</title>
       <link>https://tunan.org/3520.html</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
-      
       <guid>https://tunan.org/3520.html</guid>
       <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
     </item>
-    
     <item>
       <title>利用cloudFlare的边缘计算workers实现外链转内链跳转</title>
       <link>https://tunan.org/2248.html</link>
       <pubDate>Tue, 09 Jul 2019 01:20:11 +0000</pubDate>
-      
       <guid>https://tunan.org/2248.html</guid>
       <description>跋涉者曾经分享过一篇7b2主题外链跳转的文章，那篇文章实现的原理是在自己服务器里增加一个跳转的页面代码。 [zrz_insert_post id=1656] 不过今天看张戈大神的一篇文章Cl</description>
     </item>
-    
   </channel>
 </rss>

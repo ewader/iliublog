@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Aug 2021 09:59:10 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/cccleaner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 09:59:10 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/cccleaner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cccleaner变流氓了</title>
       <link>https://tunan.org/3844.html</link>
       <pubDate>Fri, 20 Aug 2021 09:59:10 +0000</pubDate>
-      
       <guid>https://tunan.org/3844.html</guid>
       <description>老刘的笔记本电脑自从去年1月份买回来之后，一直也没怎么管过它，最近发现C盘的可用空间已经变的非常的小了，当时给分配了80G，现在只剩下不到1</description>
     </item>
-    
   </channel>
 </rss>

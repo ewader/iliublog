@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 04 Apr 2020 08:37:38 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%B8%85%E6%98%8E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2020 08:37:38 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%B8%85%E6%98%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>清明祭</title>
       <link>https://tunan.org/3117.html</link>
       <pubDate>Sat, 04 Apr 2020 08:37:38 +0000</pubDate>
-      
       <guid>https://tunan.org/3117.html</guid>
       <description>清明是我国四大传统节日之一，相传，在春秋时期，晋国公子重耳为逃避骊姬之乱而流亡国外，一日乏食，饥馑非常，随臣介之推（介子推）走到僻静处，从自</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 20 Jan 2010 12:17:03 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%B1%E8%80%8C%E5%A4%8D%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2010 12:17:03 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%A4%B1%E8%80%8C%E5%A4%8D%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>体验了下失而复得</title>
       <link>https://tunan.org/477.html</link>
       <pubDate>Wed, 20 Jan 2010 12:17:03 +0000</pubDate>
-      
       <guid>https://tunan.org/477.html</guid>
       <description>昨天下午4点多的时候，忽然发现网站打不开了，显示404错误，发现ftp也不能用，进到godaddy的后台，文件管理也进不去了，不过数据库没有</description>
     </item>
-    
   </channel>
 </rss>

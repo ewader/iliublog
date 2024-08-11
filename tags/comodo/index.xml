@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Oct 2009 12:54:36 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/comodo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Oct 2009 12:54:36 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/comodo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>360杀毒一个BUg存在依旧</title>
       <link>https://tunan.org/76.html</link>
       <pubDate>Tue, 27 Oct 2009 12:54:36 +0000</pubDate>
-      
       <guid>https://tunan.org/76.html</guid>
       <description>360正式版推出以来，因其免费的在战略及不错的病毒查杀能力以及很小的的资源占用，迅速的征服了我，凭良心说话，确实是一款不错的杀毒软件，但是可</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 18 Nov 2022 00:17:14 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Nov 2022 00:17:14 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django设置使用MySql的时候遇到的一些坑</title>
       <link>https://tunan.org/4298.html</link>
       <pubDate>Fri, 18 Nov 2022 00:17:14 +0000</pubDate>
-      
       <guid>https://tunan.org/4298.html</guid>
       <description>Django默认使用的数据库是sqllit,如果是一个小项目的话是完全够用的，但是如果考虑到这个项目未来的话，一般都会换成Mysql或者其他</description>
     </item>
-    
     <item>
       <title>Django部署在debian11服务器</title>
       <link>https://tunan.org/4029.html</link>
       <pubDate>Fri, 14 Jan 2022 09:34:09 +0000</pubDate>
-      
       <guid>https://tunan.org/4029.html</guid>
       <description>Python加Django开发网页程序真的很方便，连我这个菜鸟看看教程之类的也能写出来程序。本地测试完了之后，想在服务器上跑跑看，结果发现，</description>
     </item>
-    
   </channel>
 </rss>

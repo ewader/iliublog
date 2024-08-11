@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 30 Jul 2019 03:28:14 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jul 2019 03:28:14 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>尽信书不如无书</title>
       <link>https://tunan.org/2574.html</link>
       <pubDate>Tue, 30 Jul 2019 03:28:14 +0000</pubDate>
-      
       <guid>https://tunan.org/2574.html</guid>
       <description>最近在折腾阿里云的这台轻量应用服务器，给它增加一些防护的措施，经过这几天的折腾，明白了一个道理，那就是老祖宗曾经总结出的来话： 尽信书不如无书</description>
     </item>
-    
   </channel>
 </rss>

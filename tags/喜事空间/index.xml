@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 22 Dec 2009 04:46:46 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%96%9C%E4%BA%8B%E7%A9%BA%E9%97%B4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2009 04:46:46 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%96%9C%E4%BA%8B%E7%A9%BA%E9%97%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>两件喜事</title>
       <link>https://tunan.org/252.html</link>
       <pubDate>Tue, 22 Dec 2009 04:46:46 +0000</pubDate>
-      
       <guid>https://tunan.org/252.html</guid>
       <description>第一件喜事：宝贝上午没有发烧 第二件喜事：所用的空间从2G变成了5g，流量从20g变成了100G 呵呵，上午的时候还以为被水产了呢，但是ping</description>
     </item>
-    
   </channel>
 </rss>

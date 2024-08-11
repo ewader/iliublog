@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 14 Dec 2020 06:42:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%A4%BE%E5%8C%BA%E5%9B%A2%E8%B4%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 06:42:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%A4%BE%E5%8C%BA%E5%9B%A2%E8%B4%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>社区团购的一些思考</title>
       <link>https://tunan.org/3462.html</link>
       <pubDate>Mon, 14 Dec 2020 06:42:15 +0000</pubDate>
-      
       <guid>https://tunan.org/3462.html</guid>
       <description>最近最火的莫过于社区团购了，头部的这些个互联网大佬们，争先恐后的布局，唯恐拉在了后面，以至于央媒都出来泼冷水，说别盯着那几斤白菜和水果。诚然</description>
     </item>
-    
   </channel>
 </rss>

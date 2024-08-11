@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Jul 2021 04:03:46 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%99%BE%E5%BA%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jul 2021 04:03:46 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%99%BE%E5%BA%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>放弃百度小程序</title>
       <link>https://tunan.org/3831.html</link>
       <pubDate>Sat, 31 Jul 2021 04:03:46 +0000</pubDate>
-      
       <guid>https://tunan.org/3831.html</guid>
       <description>前几天有了根据主站镜缘轩做一个百度小程序的想法。因为，一直镜缘轩网站没有快速收录的选项。据百度说，弄了小程序就会有了，所以产生了这么一个想法</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 Sep 2021 07:11:19 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 07:11:19 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>被百度劲风算法搞了</title>
       <link>https://tunan.org/3911.html</link>
       <pubDate>Sun, 26 Sep 2021 07:11:19 +0000</pubDate>
-      
       <guid>https://tunan.org/3911.html</guid>
       <description>最近几天发现从网站上来咨询老刘的客户少了，以前多的时候有4-5个，少的时候也有1-2个来咨询一些问题，有些成交了，有些没有成交。但是最近一段</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 25 Nov 2019 01:55:14 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/csrf%E6%A0%A1%E9%AA%8C%E5%A4%B1%E8%B4%A5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Nov 2019 01:55:14 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/csrf%E6%A0%A1%E9%AA%8C%E5%A4%B1%E8%B4%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>换篱落的空间，用宝塔面板，CSRF校验失败</title>
       <link>https://tunan.org/2865.html</link>
       <pubDate>Mon, 25 Nov 2019 01:55:14 +0000</pubDate>
-      
       <guid>https://tunan.org/2865.html</guid>
       <description>昨天在群里看到老胡发的篱落的特价VPS，忽然发现我也在他说的那个群，以前是衡天主机的客户群，后来好像卖给给香港人后，小张自己搞了个篱落主机。</description>
     </item>
-    
   </channel>
 </rss>

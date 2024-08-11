@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Jul 2019 12:55:34 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/wps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2019 12:55:34 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/wps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WPS现在真的可以用了</title>
       <link>https://tunan.org/2547.html</link>
       <pubDate>Wed, 24 Jul 2019 12:55:34 +0000</pubDate>
-      
       <guid>https://tunan.org/2547.html</guid>
       <description>WPS可以说算是金山的一款良心产品了，不过跋涉者已经好久没有用它了，原因无他，就是有太多的广告，不过这两天试用下来，由于每日可以签到送会员 ，</description>
     </item>
-    
     <item>
       <title>介绍本人所用的软件——办公软件篇</title>
       <link>https://tunan.org/462.html</link>
       <pubDate>Thu, 14 Jan 2010 13:09:10 +0000</pubDate>
-      
       <guid>https://tunan.org/462.html</guid>
       <description>在前面《介绍本人所用的软件–安全软件篇》给大家介绍了本人对安全软的理解，以及这么多年来使用电脑安全软件的心得体会，今天就给大家聊聊我所用的办</description>
     </item>
-    
   </channel>
 </rss>

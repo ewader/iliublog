@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/quiterss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Dec 2021 01:48:37 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/quiterss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐一款免费开源的RSS软件-Quiterss</title>
       <link>https://tunan.org/3958.html</link>
       <pubDate>Thu, 23 Dec 2021 01:48:37 +0000</pubDate>
-      
       <guid>https://tunan.org/3958.html</guid>
       <description>RSS对于很多博主来说都不会陌生，很多博友还都有着使用RSS订阅的习惯。有很多朋友还专门在VPS用tiny tinyRSS或者freshrss</description>
     </item>
-    
   </channel>
 </rss>

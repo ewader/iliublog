@@ -9,107 +9,86 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 08 Nov 2023 18:27:29 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Nov 2023 18:27:29 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EndeavourOS安装之后的几件事</title>
       <link>https://tunan.org/A-few-things-after-installing-EndeavourOS/</link>
       <pubDate>Wed, 08 Nov 2023 18:27:29 +0800</pubDate>
-      
       <guid>https://tunan.org/A-few-things-after-installing-EndeavourOS/</guid>
       <description>很多追求新，追求精简的Linux系统的使用者，往往都会推荐Arch Linux，这个系统特点是精简，精简到什么都需要你来搞定，所以也让很多人望</description>
     </item>
-    
     <item>
       <title>如何使用git并把代码提交到GitHub</title>
       <link>https://tunan.org/how-to-use-git/</link>
       <pubDate>Sun, 05 Nov 2023 17:08:14 +0800</pubDate>
-      
       <guid>https://tunan.org/how-to-use-git/</guid>
       <description>这篇文章纯粹给初学者看的，大佬请无视。使用Hugo之后，为了方便推送方便，一般要用到git这个软件。今天就来谈谈git具体的用法。 git的用</description>
     </item>
-    
     <item>
       <title>正式使用Manjaro系统</title>
       <link>https://tunan.org/4036.html</link>
       <pubDate>Mon, 17 Jan 2022 00:24:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4036.html</guid>
       <description>昨天把开发python 的这个电脑也更换成manjaro这个系统了。经过一段时间的试用，感觉这个系统确实是一个使用起来舒服有稳定的系统。 man</description>
     </item>
-    
     <item>
       <title>manjaro安装配置fcitx5输入法</title>
       <link>https://tunan.org/4016.html</link>
       <pubDate>Thu, 06 Jan 2022 09:38:19 +0000</pubDate>
-      
       <guid>https://tunan.org/4016.html</guid>
       <description>网上很多文章都说manjaro多么的牛叉，软件如何的多，如何的稳定，滚动更新如何的方便等等等等。下午没事，在一台不怎么用的电脑上试用了一下这</description>
     </item>
-    
     <item>
       <title>ubuntu20.10升级编译安装ibus-libpinyin输入法</title>
       <link>https://tunan.org/3976.html</link>
       <pubDate>Sat, 25 Dec 2021 05:47:41 +0000</pubDate>
-      
       <guid>https://tunan.org/3976.html</guid>
       <description>以前无论是使用Uos还是linuxmint或者是ubtuntu，都是直接安装搜狗输入法。可以和ubuntu兼容最好的还是自带的ibus-li</description>
     </item>
-    
     <item>
       <title>python开发web程序，最好还是在Linux下</title>
       <link>https://tunan.org/3947.html</link>
       <pubDate>Tue, 14 Dec 2021 12:57:17 +0000</pubDate>
-      
       <guid>https://tunan.org/3947.html</guid>
       <description>看了一些python教程，很多都是在windows下进行的开发，由于老刘对linux还算是有一丢丢的了解，所以从开始就在ubuntu下进行。</description>
     </item>
-    
     <item>
       <title>最终还是用回了Linux mint</title>
       <link>https://tunan.org/3932.html</link>
       <pubDate>Mon, 01 Nov 2021 01:56:20 +0000</pubDate>
-      
       <guid>https://tunan.org/3932.html</guid>
       <description>安装统信uos后，一度用着挺不的，各方面都很满意，于是花了9.9激活了，结果激活后没多久就感觉不好了。原因是和deepin的毛病一样，莫名其</description>
     </item>
-    
     <item>
       <title>试用统信uos家庭版</title>
       <link>https://tunan.org/3927.html</link>
       <pubDate>Fri, 29 Oct 2021 01:22:00 +0000</pubDate>
-      
       <guid>https://tunan.org/3927.html</guid>
       <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后</description>
     </item>
-    
     <item>
       <title>几种Linux系统安装之后的体验</title>
       <link>https://tunan.org/3925.html</link>
       <pubDate>Mon, 25 Oct 2021 01:18:46 +0000</pubDate>
-      
       <guid>https://tunan.org/3925.html</guid>
       <description>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，</description>
     </item>
-    
     <item>
       <title>常用的几个Linux的命令</title>
       <link>https://tunan.org/2535.html</link>
       <pubDate>Sat, 20 Jul 2019 08:49:47 +0000</pubDate>
-      
       <guid>https://tunan.org/2535.html</guid>
       <description>作为一个命令记不全的人，每次都要跋山涉水的找命令，这次把一些经常用到的命令综合到一起，省的再去翻找别人的文章。 Linux 删除文件夹和文件的命令 删除文</description>
     </item>
-    
     <item>
       <title>centos7.6更改dns的方法</title>
       <link>https://tunan.org/2260.html</link>
       <pubDate>Fri, 12 Jul 2019 09:29:00 +0000</pubDate>
-      
       <guid>https://tunan.org/2260.html</guid>
       <description>今天在重新安装服务器的生产环境的时候发现无法申请Let’s Encrypt的证书，根据我的经验，一般把服务器上的dns设置成Google的8.</description>
     </item>
-    
   </channel>
 </rss>

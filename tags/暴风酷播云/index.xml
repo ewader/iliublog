@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Nov 2019 02:51:56 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E6%9A%B4%E9%A3%8E%E9%85%B7%E6%92%AD%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Nov 2019 02:51:56 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E6%9A%B4%E9%A3%8E%E9%85%B7%E6%92%AD%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>再次折腾黑群晖系统</title>
       <link>https://tunan.org/2860.html</link>
       <pubDate>Sat, 23 Nov 2019 02:51:56 +0000</pubDate>
-      
       <guid>https://tunan.org/2860.html</guid>
       <description>昨天拍了一些眼镜架的图片，可以却同步不到群晖的monents里面，有了群晖之后有些事情确实特别的方便，比如我拍的镜架的图片，想传到在线商城里</description>
     </item>
-    
     <item>
       <title>记暴风酷播云2期折腾黑群晖</title>
       <link>https://tunan.org/2855.html</link>
       <pubDate>Mon, 18 Nov 2019 07:28:30 +0000</pubDate>
-      
       <guid>https://tunan.org/2855.html</guid>
       <description>双11前后，张波老师弄了个zhang.gg和zhang.bo的两个域名，看gg不贵，而且有www.liuday.com这个域名还没有被注册，</description>
     </item>
-    
   </channel>
 </rss>

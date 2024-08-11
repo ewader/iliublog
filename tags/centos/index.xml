@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS服务器系统的选择</title>
       <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
-    
     <item>
       <title>centos7.6更改dns的方法</title>
       <link>https://tunan.org/2260.html</link>
       <pubDate>Fri, 12 Jul 2019 09:29:00 +0000</pubDate>
-      
       <guid>https://tunan.org/2260.html</guid>
       <description>今天在重新安装服务器的生产环境的时候发现无法申请Let’s Encrypt的证书，根据我的经验，一般把服务器上的dns设置成Google的8.</description>
     </item>
-    
   </channel>
 </rss>

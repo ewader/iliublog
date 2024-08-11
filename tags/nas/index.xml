@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jun 2020 10:02:22 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jun 2020 10:02:22 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NAS算是有点用处了</title>
       <link>https://tunan.org/3179.html</link>
       <pubDate>Thu, 04 Jun 2020 10:02:22 +0000</pubDate>
-      
       <guid>https://tunan.org/3179.html</guid>
       <description>去年的看老张弄NAS，也跟风弄了一个黑群晖，不过弄来之后就基本上处于闲置的状态。想不到用来做什么。存个图片，备份个文件，完事之后就关机，不然</description>
     </item>
-    
   </channel>
 </rss>

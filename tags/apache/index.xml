@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 07:35:59 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客web端改用apache</title>
       <link>https://tunan.org/3520.html</link>
       <pubDate>Wed, 30 Dec 2020 07:35:59 +0000</pubDate>
-      
       <guid>https://tunan.org/3520.html</guid>
       <description>试用了几天Cloudflare加racknerd的2h2g的小鸡，感觉还算差强人意。所以干脆就先把博客放这里算了，然后又突发奇想，其他的网站</description>
     </item>
-    
   </channel>
 </rss>

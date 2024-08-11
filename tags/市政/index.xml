@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Jan 2021 06:39:31 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%B8%82%E6%94%BF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 06:39:31 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%B8%82%E6%94%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>水管被挖断了</title>
       <link>https://tunan.org/3551.html</link>
       <pubDate>Wed, 06 Jan 2021 06:39:31 +0000</pubDate>
-      
       <guid>https://tunan.org/3551.html</guid>
       <description>早上起床，照例拿着杯子来到水龙头前接水刷牙，可是水龙头拧开了，水却没有流出来。事先也没有收到任何停水得通知，心想可能天气太冷，把某个地方得水</description>
     </item>
-    
   </channel>
 </rss>

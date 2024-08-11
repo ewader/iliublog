@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Jul 2019 08:49:47 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/linux%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Jul 2019 08:49:47 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/linux%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>常用的几个Linux的命令</title>
       <link>https://tunan.org/2535.html</link>
       <pubDate>Sat, 20 Jul 2019 08:49:47 +0000</pubDate>
-      
       <guid>https://tunan.org/2535.html</guid>
       <description>作为一个命令记不全的人，每次都要跋山涉水的找命令，这次把一些经常用到的命令综合到一起，省的再去翻找别人的文章。 Linux 删除文件夹和文件的命令 删除文</description>
     </item>
-    
   </channel>
 </rss>

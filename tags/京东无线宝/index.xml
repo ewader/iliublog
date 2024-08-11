@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 24 Jun 2021 10:28:53 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%BA%AC%E4%B8%9C%E6%97%A0%E7%BA%BF%E5%AE%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 10:28:53 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%BA%AC%E4%B8%9C%E6%97%A0%E7%BA%BF%E5%AE%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>奇葩的京东无线宝</title>
       <link>https://tunan.org/3791.html</link>
       <pubDate>Thu, 24 Jun 2021 10:28:53 +0000</pubDate>
-      
       <guid>https://tunan.org/3791.html</guid>
       <description>最近天热起来了，店里的那台竞斗云可能是放到柜子离散热不良的原因，偶尔掉线的情况。于是决定换一款路由器。 选了一圈，后来决定入手京东无线宝2代的</description>
     </item>
-    
   </channel>
 </rss>

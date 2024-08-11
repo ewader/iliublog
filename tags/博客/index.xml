@@ -9,53 +9,44 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 15 Jan 2024 08:20:35 +0800</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 08:20:35 +0800</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>杂记#2</title>
       <link>https://tunan.org/posts/miscellaneous-notes-2/</link>
       <pubDate>Mon, 15 Jan 2024 08:20:35 +0800</pubDate>
-      
       <guid>https://tunan.org/posts/miscellaneous-notes-2/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>朋友们，博客改名加换域名了！</title>
       <link>https://tunan.org/4399.html</link>
       <pubDate>Sun, 21 May 2023 09:18:15 +0000</pubDate>
-      
       <guid>https://tunan.org/4399.html</guid>
       <description>流金岁月换域名，换博客名了 最近读《庄子》，对绝云气、负青天、然后图南的大鹏很是羡慕，遂改博客名为图南博客，域名为https://tunan.</description>
     </item>
-    
     <item>
       <title>重新弄了下博客环境</title>
       <link>https://tunan.org/3746.html</link>
       <pubDate>Thu, 20 May 2021 09:30:37 +0000</pubDate>
-      
       <guid>https://tunan.org/3746.html</guid>
       <description>最近一段时间发现博客回复的时候一直显示提交中，不会跳转到评论成功的页面，以前也遇到过这种问题，基本上重启vps解决，但是这次貌似重启了也作用</description>
     </item>
-    
     <item>
       <title>博客改名字了</title>
       <link>https://tunan.org/3018.html</link>
       <pubDate>Sat, 18 Jan 2020 08:20:51 +0000</pubDate>
-      
       <guid>https://tunan.org/3018.html</guid>
       <description>全年5月份左右开始把个人博客独立出来，当时也不知道起个什么名字好，就姑且叫做跋涉者了，半年过去了，发现也没有什么好跋涉的。所记录的也仅仅是如</description>
     </item>
-    
     <item>
       <title>做博客比做网站难</title>
       <link>https://tunan.org/851.html</link>
       <pubDate>Mon, 23 Aug 2010 04:14:49 +0000</pubDate>
-      
       <guid>https://tunan.org/851.html</guid>
       <description>华彩亲子博客从建站到现在也有8个月了吧，发现做博客比做网站要难很多。 首先，搜索引擎收录的慢，到现在百度收录的还大部分都是垃圾的东西，并没有形</description>
     </item>
-    
   </channel>
 </rss>

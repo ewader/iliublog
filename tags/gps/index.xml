@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 29 Oct 2010 01:34:58 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/gps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2010 01:34:58 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/gps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用黑莓手机查询郑州公交车到站gps信息</title>
       <link>https://tunan.org/959.html</link>
       <pubDate>Fri, 29 Oct 2010 01:34:58 +0000</pubDate>
-      
       <guid>https://tunan.org/959.html</guid>
       <description>以前觉得手机上网就是个鸡肋，食之无味、弃之可惜，最近发现，原来的观点是错误的，其实手机上网还是能做很多很多的事情的，相信很多朋友都和我一样有</description>
     </item>
-    
   </channel>
 </rss>

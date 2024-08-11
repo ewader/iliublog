@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 29 Oct 2021 01:22:00 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%AE%B6%E5%BA%AD%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Oct 2021 01:22:00 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%AE%B6%E5%BA%AD%E7%89%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>试用统信uos家庭版</title>
       <link>https://tunan.org/3927.html</link>
       <pubDate>Fri, 29 Oct 2021 01:22:00 +0000</pubDate>
-      
       <guid>https://tunan.org/3927.html</guid>
       <description>之前上篇文章说了折腾Linux的因由，最后确定使用原版的ubuntu。不过在使用的过程中发现。还是有些许的小毛病。主要是安装了搜狗输入法之后</description>
     </item>
-    
   </channel>
 </rss>

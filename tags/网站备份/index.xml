@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 15 Jul 2019 03:27:27 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%BD%91%E7%AB%99%E5%A4%87%E4%BB%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jul 2019 03:27:27 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%BD%91%E7%AB%99%E5%A4%87%E4%BB%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>备忘，使用阿里云ossfs备份网站</title>
       <link>https://tunan.org/2513.html</link>
       <pubDate>Mon, 15 Jul 2019 03:27:27 +0000</pubDate>
-      
       <guid>https://tunan.org/2513.html</guid>
       <description>昨天看到明月云服务上有篇关于使用ossfs备份网站的文章，看起来也不复杂，于是就试用了一下，试用后感觉真是体验不错，用这个后，妈妈再也不担心</description>
     </item>
-    
   </channel>
 </rss>

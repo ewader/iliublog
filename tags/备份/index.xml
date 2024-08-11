@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 May 2022 08:23:06 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%A4%87%E4%BB%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 08:23:06 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%A4%87%E4%BB%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用群晖自动备份网站</title>
       <link>https://tunan.org/4131.html</link>
       <pubDate>Sat, 28 May 2022 08:23:06 +0000</pubDate>
-      
       <guid>https://tunan.org/4131.html</guid>
       <description>不管是做网站也好，写独立博客也好，最重要的事情之一就是备份。几乎每一个站长都经历过一不小心，多年的心血付之东流的经历。不过好在现在备份的方法</description>
     </item>
-    
   </channel>
 </rss>

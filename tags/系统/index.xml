@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 07:29:40 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS服务器系统的选择</title>
       <link>https://tunan.org/4126.html</link>
       <pubDate>Fri, 27 May 2022 07:29:40 +0000</pubDate>
-      
       <guid>https://tunan.org/4126.html</guid>
       <description>随着云业务的蓬勃发展，很多独立博客的博主，个人网站站长都抛弃了曾经的虚拟主机而选择VPS，vps相对于虚拟主机来说，容量更大，可玩性更高；同</description>
     </item>
-    
     <item>
       <title>最终还是用回了Linux mint</title>
       <link>https://tunan.org/3932.html</link>
       <pubDate>Mon, 01 Nov 2021 01:56:20 +0000</pubDate>
-      
       <guid>https://tunan.org/3932.html</guid>
       <description>安装统信uos后，一度用着挺不的，各方面都很满意，于是花了9.9激活了，结果激活后没多久就感觉不好了。原因是和deepin的毛病一样，莫名其</description>
     </item>
-    
   </channel>
 </rss>

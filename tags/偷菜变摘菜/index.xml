@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Jan 2010 06:55:32 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E5%81%B7%E8%8F%9C%E5%8F%98%E6%91%98%E8%8F%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jan 2010 06:55:32 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E5%81%B7%E8%8F%9C%E5%8F%98%E6%91%98%E8%8F%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>盘点2009年末网络上的那点事</title>
       <link>https://tunan.org/391.html</link>
       <pubDate>Mon, 04 Jan 2010 06:55:32 +0000</pubDate>
-      
       <guid>https://tunan.org/391.html</guid>
       <description>2009年从历法上讲已经是过去式了，但我们中国人往往是按农历算，过了春节才真正的进入了下一个年头。岁末了，来盘点盘点岁末发生在网络中的这点事</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,26 +9,23 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 Jan 2020 08:20:51 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E8%B7%8B%E6%B6%89%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jan 2020 08:20:51 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E8%B7%8B%E6%B6%89%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客改名字了</title>
       <link>https://tunan.org/3018.html</link>
       <pubDate>Sat, 18 Jan 2020 08:20:51 +0000</pubDate>
-      
       <guid>https://tunan.org/3018.html</guid>
       <description>全年5月份左右开始把个人博客独立出来，当时也不知道起个什么名字好，就姑且叫做跋涉者了，半年过去了，发现也没有什么好跋涉的。所记录的也仅仅是如</description>
     </item>
-    
     <item>
       <title>7b2主题每日签到不刷新的解决办法</title>
       <link>https://tunan.org/1710.html</link>
       <pubDate>Wed, 12 Jun 2019 02:04:14 +0000</pubDate>
-      
       <guid>https://tunan.org/1710.html</guid>
       <description>前一段时间忽然发现跋涉者另外一个网站镜缘轩上每日签到抽取积分的那个选项不能自动刷新了，每天都是显示同一样的数字，然后看明月登楼的一个网站，也</description>
     </item>
-    
   </channel>
 </rss>

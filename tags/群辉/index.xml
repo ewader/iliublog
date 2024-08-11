@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 29 Nov 2020 00:53:36 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%BE%A4%E8%BE%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Nov 2020 00:53:36 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%BE%A4%E8%BE%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>keepass加群辉实现数据同步及浏览器自动填充密码（二）</title>
       <link>https://tunan.org/3430.html</link>
       <pubDate>Sun, 29 Nov 2020 00:53:36 +0000</pubDate>
-      
       <guid>https://tunan.org/3430.html</guid>
       <description>自从前两天体验了keepass的方便后，真的是对这个软件爱不释手了。但是在上一篇中，总体设置较为复杂，而且使用当中发现了诸多不方便之处。虽然</description>
     </item>
-    
   </channel>
 </rss>

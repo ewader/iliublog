@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 16 Mar 2022 02:38:21 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/argon%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 02:38:21 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/argon%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开始使用Argon主题</title>
       <link>https://tunan.org/4079.html</link>
       <pubDate>Wed, 16 Mar 2022 02:38:21 +0000</pubDate>
-      
       <guid>https://tunan.org/4079.html</guid>
       <description>一个月前更换了Dragon主题，当时很多博友都表示有点不适合个人使用，我倒是感觉还行，最起码是把垃圾评论都给屏蔽了，唯一让我不太满意的就是对</description>
     </item>
-    
   </channel>
 </rss>

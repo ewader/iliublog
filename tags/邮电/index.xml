@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 22 Nov 2020 03:18:49 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E9%82%AE%E7%94%B5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Nov 2020 03:18:49 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E9%82%AE%E7%94%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>捋一捋中国邮电发展过程</title>
       <link>https://tunan.org/3395.html</link>
       <pubDate>Sun, 22 Nov 2020 03:18:49 +0000</pubDate>
-      
       <guid>https://tunan.org/3395.html</guid>
       <description>前几天看到一个“新闻”，说中国电信业的三大运营商的一把手是轮流坐庄，可谓肥水不落外人田。其实捋清中国电信业的发展历程，人家还真的就是一家人。</description>
     </item>
-    
   </channel>
 </rss>

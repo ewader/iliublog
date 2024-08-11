@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Aug 2022 12:33:43 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 12:33:43 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>陆续把一些基础服务转到nas上</title>
       <link>https://tunan.org/4211.html</link>
       <pubDate>Tue, 02 Aug 2022 12:33:43 +0000</pubDate>
-      
       <guid>https://tunan.org/4211.html</guid>
       <description>前几天RSS不太正常访问了，这个RSS服务一直建立在甲骨文的一个免费小鸡上面。一直也挺稳定的，貌似是容器还是什么出了点问题，就访问不了。而且</description>
     </item>
-    
   </channel>
 </rss>

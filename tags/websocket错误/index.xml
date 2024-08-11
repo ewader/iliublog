@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 Jun 2022 03:50:24 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/websocket%E9%94%99%E8%AF%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jun 2022 03:50:24 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/websocket%E9%94%99%E8%AF%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>群晖安装trilium笔记web端不刷新的处理方法</title>
       <link>https://tunan.org/4154.html</link>
       <pubDate>Sun, 26 Jun 2022 03:50:24 +0000</pubDate>
-      
       <guid>https://tunan.org/4154.html</guid>
       <description>最初装上trilium上之后，发现web端新建笔记或者删除笔记等都不会刷新。也和中文博客群里的少君等人讨论过，也没有得出过什么结论，毕竟环境</description>
     </item>
-    
   </channel>
 </rss>

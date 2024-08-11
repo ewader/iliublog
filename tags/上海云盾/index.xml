@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 26 May 2019 02:29:32 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E4%B8%8A%E6%B5%B7%E4%BA%91%E7%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 May 2019 02:29:32 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E4%B8%8A%E6%B5%B7%E4%BA%91%E7%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>上海云盾CDN简要设置指南</title>
       <link>https://tunan.org/1653.html</link>
       <pubDate>Sun, 26 May 2019 02:29:32 +0000</pubDate>
-      
       <guid>https://tunan.org/1653.html</guid>
       <description>在免费cdn市场上，广大站长所使用的一般是又拍云cdn，360网站加速，上海云盾cdn以及腾讯云cdn，笔者以前也是使用的又拍云cdn,可能</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Jan 2020 03:47:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%9F%AD%E8%AF%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jan 2020 03:47:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%9F%AD%E8%AF%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>加了个微语的栏目</title>
       <link>https://tunan.org/2973.html</link>
       <pubDate>Sun, 05 Jan 2020 03:47:15 +0000</pubDate>
-      
       <guid>https://tunan.org/2973.html</guid>
       <description>加了个微语的栏目，记录下日常发生的琐碎的事情。本来想和张波老师他们一样，专门搞一个网站，后来想想自己的精力还是很有限，再运营一个网站那也是很</description>
     </item>
-    
   </channel>
 </rss>

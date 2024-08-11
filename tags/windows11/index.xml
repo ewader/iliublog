@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 May 2022 01:55:15 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/windows11/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 01:55:15 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/windows11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows11 如何使用ie浏览器</title>
       <link>https://tunan.org/4120.html</link>
       <pubDate>Thu, 26 May 2022 01:55:15 +0000</pubDate>
-      
       <guid>https://tunan.org/4120.html</guid>
       <description>windows11已经抛弃了ie浏览器，但是有一些场合必须要使用，比如现在各大银行的u盾还不支持edge，有很多同学到处找IE这个软件，其实</description>
     </item>
-    
   </channel>
 </rss>

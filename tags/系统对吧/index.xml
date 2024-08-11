@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 25 Oct 2021 01:18:46 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%90%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Oct 2021 01:18:46 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E5%90%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>几种Linux系统安装之后的体验</title>
       <link>https://tunan.org/3925.html</link>
       <pubDate>Mon, 25 Oct 2021 01:18:46 +0000</pubDate>
-      
       <guid>https://tunan.org/3925.html</guid>
       <description>前一段张波老师说打算学习Python。正好老刘也有这么一个心思。之所以要学这个，是因为老刘一直以来都想弄一个客户查询系统。这个系统也很简单，</description>
     </item>
-    
   </channel>
 </rss>

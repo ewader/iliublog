@@ -9,17 +9,16 @@
       <url>https://tunan.org/%20</url>
       <link>https://tunan.org/%20</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Jan 2020 07:12:58 +0000</lastBuildDate><atom:link href="https://tunan.org/tags/kindle%E6%A8%A1%E6%8B%9F%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jan 2020 07:12:58 +0000</lastBuildDate>
+    <atom:link href="https://tunan.org/tags/kindle%E6%A8%A1%E6%8B%9F%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kindle Previewer v3.27  亚马逊官方电子书模拟器</title>
       <link>https://tunan.org/2999.html</link>
       <pubDate>Fri, 10 Jan 2020 07:12:58 +0000</pubDate>
-      
       <guid>https://tunan.org/2999.html</guid>
       <description>Kindle Previewer 是一个模拟 Kindle 设备和应用程序显示书籍内容的使用界面工具。是亚马逊官方开发的一款kindle系列产品模拟器，可以模拟出kindle系列产品的</description>
     </item>
-    
   </channel>
 </rss>
